@@ -10,6 +10,9 @@ export const HomePage: React.FC = () => {
       <div>
         <NavLink to="/input">Input</NavLink>
       </div>
+      <div>
+        <NavLink to="/menu">Menu</NavLink>
+      </div>
     </>
   );
 };

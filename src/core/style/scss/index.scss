@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 /* Layout */
 .kse-layout-header {
   height: 64px;
@@ -13,6 +17,10 @@
 
 .kse-layout-header a {
   line-height: 64px;
+}
+
+.kse-layout-dummy {
+  height: 64px;
 }
 
 /* Row */
@@ -34,6 +42,10 @@
 
 .kse-row-space-between {
   justify-content: space-between;
+}
+
+.kse-row-end {
+  justify-content: flex-end;
 }
 
 .kse-row-center {
@@ -172,13 +184,9 @@
   color: rgba(0, 0, 0, 0.88);
   font-size: 14px;
   height: 32px;
-  padding: 4px 15px;
+  line-height: 32px;
+  padding: 0px 15px;
   border-radius: 4px;
-}
-
-.kse-btn-large {
-  height: 48px;
-  padding: 8px 20px;
 }
 
 .kse-btn-primary {
@@ -228,6 +236,12 @@
   transition: 0s;
 }
 
+.kse-btn-large {
+  line-height: 48px;
+  height: 48px;
+  padding: 0px 20px;
+}
+
 /*Menu*/
 .kse-menu {
   box-sizing: border-box;
@@ -261,6 +275,7 @@
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 64px;
+  height: 64px;
   box-sizing: border-box;
   flex: none;
   margin: 0;
@@ -297,6 +312,10 @@
 .kse-menu-item:hover * {
   color: #0097e6 !important;
   fill: #0097e6 !important;
+}
+
+.kse-menu-item a {
+  color: rgb(0 0 0 / 85%);
 }
 
 /* Shadow */

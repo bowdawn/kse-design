@@ -1,14 +1,10 @@
-import { Button } from "antd";
 import React from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useRouteError,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ButtonPage } from "../pages/ButtonPage";
 import { HomePage } from "../pages/HomePage";
 import { InputPage } from "../pages/InputPage";
-import { buttonPath, inputPath } from "./paths";
+import { MenuPage } from "../pages/MenuPage";
+import { buttonPath, inputPath, menuPath } from "./paths";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: inputPath,
     element: <InputPage />,
+  },
+  {
+    path: menuPath,
+    element: <MenuPage />,
   },
 
   {
