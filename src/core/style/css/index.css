@@ -13,10 +13,18 @@
 
 .kse-layout-header a {
   line-height: 64px;
+  text-decoration: none;
 }
 
 .kse-layout-dummy {
   height: 64px;
+}
+.kse-layout-header-middle-mobile {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.kse-layout-header-middle-mobile img {
+  width: 150px;
 }
 
 /* Row */
@@ -46,6 +54,10 @@
 
 .kse-row-center {
   justify-content: center;
+}
+
+.kse-row-align-center {
+  align-items: center;
 }
 
 /* Space */
