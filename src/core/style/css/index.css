@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 /* Layout */
 .kse-layout-header {
   height: 64px;
@@ -316,6 +312,7 @@ a {
 
 .kse-menu-item a {
   color: rgb(0 0 0 / 85%);
+  text-decoration: none;
 }
 
 /* Shadow */
