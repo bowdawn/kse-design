@@ -7,7 +7,7 @@ module.exports = {
   mode: "development",
   output: {
     filename: "bundle.[fullhash].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
   },
   plugins: [
     new HtmlWebpackPlugin({
