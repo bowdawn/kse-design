@@ -8,6 +8,9 @@ export const HomePage: React.FC = () => {
         <NavLink to="/button">Button</NavLink>
       </div>
       <div>
+        <NavLink to="/icon">Icon</NavLink>
+      </div>
+      <div>
         <NavLink to="/input">Input</NavLink>
       </div>
       <div>

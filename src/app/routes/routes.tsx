@@ -2,9 +2,10 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ButtonPage } from "../pages/ButtonPage";
 import { HomePage } from "../pages/HomePage";
+import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
 import { MenuPage } from "../pages/MenuPage";
-import { buttonPath, inputPath, menuPath } from "./paths";
+import { buttonPath, inputPath, menuPath, iconPath } from "./paths";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: buttonPath,
     element: <ButtonPage />,
+  },
+  {
+    path: iconPath,
+    element: <IconPage />,
   },
 
   {
