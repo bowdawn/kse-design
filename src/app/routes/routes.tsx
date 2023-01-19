@@ -5,7 +5,14 @@ import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
 import { MenuPage } from "../pages/MenuPage";
-import { buttonPath, inputPath, menuPath, iconPath } from "./paths";
+import { TypographyPage } from "../pages/TypographyPage";
+import {
+  buttonPath,
+  inputPath,
+  menuPath,
+  iconPath,
+  typographyPath,
+} from "./paths";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +37,10 @@ const router = createBrowserRouter([
     path: menuPath,
     element: <MenuPage />,
   },
-
+  {
+    path: typographyPath,
+    element: <TypographyPage />,
+  },
   {
     path: "/*",
     element: <HomePage />,

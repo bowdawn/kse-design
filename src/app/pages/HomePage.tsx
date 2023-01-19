@@ -16,6 +16,9 @@ export const HomePage: React.FC = () => {
       <div>
         <NavLink to="/menu">Menu</NavLink>
       </div>
+      <div>
+        <NavLink to="/typography">Typography</NavLink>
+      </div>
     </>
   );
 };

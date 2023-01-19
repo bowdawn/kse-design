@@ -181,6 +181,43 @@ export const MenuPage: React.FC = () => {
           <sup className="kse-badge-count"> 5 </sup>
         </a>
       </div>
+      <div>Mobile Bottom Header</div>
+      <div className="kse-shadow kse-row kse-row-center kse-layout-header-bottom-mobile ">
+        <div className="kse-row kse-menu">
+          <div className="kse-menu-item">
+            <a className="kse-space-small kse-space-align-center kse-text-large header-menu menu-1">
+              <span className="kse-link-hover">상품보기</span>
+            </a>
+          </div>
+          <div className="kse-menu-item">
+            <a className="" href="/shop/page.html?id=1">
+              <span className="txt kse-link-hover kse-text-large">은시세</span>
+            </a>
+          </div>
+          <div className="kse-menu-item">
+            <a className="" href="/shop/page.html?id=3">
+              <span className="txt kse-link-hover kse-text-large">금시세</span>
+            </a>
+          </div>
+          <div className="kse-menu-item">
+            <a className="" href="/board/board.html?code=ksilverex_image1">
+              <span className="txt kse-link-hover kse-text-large">매거진</span>
+            </a>
+          </div>
+          <div className="kse-menu-item">
+            <a className="" href="/board/board.html?code=ksilverex_image2">
+              <span className="txt kse-link-hover kse-text-large">이벤트</span>
+            </a>
+          </div>
+          <div className="kse-menu-item">
+            <a className="" href="/shop/shopbrand.html?xcode=011&type=X">
+              <span className="txt kse-link-hover kse-text-large">
+                위탁판매
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
