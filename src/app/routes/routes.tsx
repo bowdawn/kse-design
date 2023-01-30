@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ButtonPage } from "../pages/ButtonPage";
 import { CollapsePage } from "../pages/CollapsePage";
+import { ColorPage } from "../pages/ColorPage";
 import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
@@ -14,6 +15,7 @@ import {
   iconPath,
   typographyPath,
   collapsePath,
+  colorsPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -29,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: collapsePath,
     element: <CollapsePage />,
+  },
+  {
+    path: colorsPath,
+    element: <ColorPage />,
   },
   {
     path: iconPath,

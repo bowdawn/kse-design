@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {
   buttonPath,
   collapsePath,
+  colorsPath,
   iconPath,
   inputPath,
   menuPath,
@@ -20,6 +21,9 @@ export const HomePage: React.FC = () => {
       </div>
       <div>
         <NavLink to={"/" + collapsePath}>Collapse</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + colorsPath}>Colors</NavLink>
       </div>
       <div>
         <NavLink to={"/" + inputPath}>Input</NavLink>
