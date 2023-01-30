@@ -1,23 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import {
+  buttonPath,
+  collapsePath,
+  iconPath,
+  inputPath,
+  menuPath,
+  typographyPath,
+} from "../routes/paths";
 
 export const HomePage: React.FC = () => {
   return (
     <>
       <div>
-        <NavLink to="/button">Button</NavLink>
+        <NavLink to={"/" + buttonPath}>Button</NavLink>
       </div>
       <div>
-        <NavLink to="/icon">Icon</NavLink>
+        <NavLink to={"/" + iconPath}>Icon</NavLink>
       </div>
       <div>
-        <NavLink to="/input">Input</NavLink>
+        <NavLink to={"/" + collapsePath}>Collapse</NavLink>
       </div>
       <div>
-        <NavLink to="/menu">Menu</NavLink>
+        <NavLink to={"/" + inputPath}>Input</NavLink>
       </div>
       <div>
-        <NavLink to="/typography">Typography</NavLink>
+        <NavLink to={"/" + menuPath}>Menu</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + typographyPath}>Typography</NavLink>
       </div>
     </>
   );

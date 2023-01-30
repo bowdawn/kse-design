@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ButtonPage } from "../pages/ButtonPage";
+import { CollapsePage } from "../pages/CollapsePage";
 import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
@@ -12,6 +13,7 @@ import {
   menuPath,
   iconPath,
   typographyPath,
+  collapsePath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -23,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: buttonPath,
     element: <ButtonPage />,
+  },
+  {
+    path: collapsePath,
+    element: <CollapsePage />,
   },
   {
     path: iconPath,
