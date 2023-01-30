@@ -1,3 +1,8 @@
+/* Review Wraper */
+.kse-review-wrapper .pr-cate-plus {
+  background-color: #0097e6 !important;
+}
+
 /* Layout */
 .kse-layout-header {
   height: 64px;
@@ -37,6 +42,12 @@
   width: 150px;
 }
 
+/* Display */
+
+.kse-hide {
+  display: none;
+}
+
 /* Row */
 
 .kse-row {
@@ -72,30 +83,45 @@
 
 /* Column */
 .kse-col-block {
-  flex: 1;
+  flex: 1 !important;
 }
 .kse-col-center {
   text-align: center;
 }
 
+/* Content */
+.kse-content {
+  padding: 24px;
+}
+
 /* Space */
 .kse-space {
-  display: inline-flex;
+  display: flex;
 }
 
 .kse-space-middle {
-  display: inline-flex;
   gap: 16px;
 }
 
 .kse-space-small {
-  display: inline-flex;
   gap: 8px;
 }
 
 .kse-space-align-center {
   display: inline-flex;
   align-items: center;
+}
+
+.kse-space-vertical-middle {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.kse-space-vertical-small {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }
 
 /* Typography */
@@ -229,9 +255,55 @@
   line-height: 1.5714285714285714;
   color: rgba(0, 0, 0, 0.88);
   font-size: 14px;
-
   padding: 8px 15px;
   border-radius: 4px;
+}
+
+.kse-btn-wrap .MS_input_file_button {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  touch-action: manipulation;
+  line-height: 1.5714285714285714;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+.kse-btn-wrap .MS_input_file_button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 4px 4px #0097e6;
+}
+
+.kse-btn-wrap .MS_input_file_button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 4px 4px #0097e6;
 }
 
 .kse-btn-primary {
@@ -257,6 +329,14 @@
 }
 
 .kse-btn-default:not(:disabled):hover * {
+  color: #4096ff !important;
+  border-color: #4096ff !important;
+}
+
+.kse-btn-default-active {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
   color: #4096ff !important;
   border-color: #4096ff !important;
 }
@@ -319,7 +399,7 @@
   margin-bottom: 0;
   padding-inline-start: 0;
   outline: none;
-  transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+
   display: flex;
   line-height: 46px;
   border: 0;
@@ -351,7 +431,7 @@
   display: inline-block;
   vertical-align: bottom;
   padding-right: 64px;
-  transition: border-color 0.3s, background 0.3s;
+
   top: 1px;
   margin-top: -1px;
   margin-bottom: 0;
@@ -374,6 +454,10 @@
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
+}
+
+.kse-layout-header-bottom-mobile .kse-menu-item:before {
+  transition: all 0s ease-in-out;
 }
 .kse-menu-item:hover::before {
   width: calc(100% - 64px);
@@ -510,6 +594,13 @@
   padding: 24px;
 }
 
+.kse-card-hoverable:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
 /* Input */
 
 .kse-input,
@@ -519,7 +610,7 @@
   margin: 0;
   padding: 4px 11px;
   color: rgba(0, 0, 0, 0.88);
-  font-size: 14px;
+  font-size: 14px !important;
   line-height: 1.5714285714285714;
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
@@ -619,6 +710,40 @@
 
 /* Collapse */
 .kse-collapse-header {
-  background-color: rgb(0, 0, 0, 0.02);
+  background-color: #f0f0f0;
+  padding: 12px 16px;
   font-size: 16px;
+}
+
+.kse-collapse-header-large {
+  background-color: #f0f0f0;
+  flex: 1;
+  padding: 20px 24px;
+  font-size: 16px;
+}
+
+.kse-collapse-content {
+  padding: 16px;
+}
+
+.kse-collapse-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.kse-collapse-header-text {
+  font-size: 20px;
+}
+
+/* List */
+
+.kse-list {
+}
+
+.kse-list-item {
+  padding: 12px 24px;
+}
+
+.kse-list-item-small {
+  padding: 8px 16px;
 }
