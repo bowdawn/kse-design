@@ -2,7 +2,7 @@ import React from "react";
 
 export const TagPage: React.FC = () => {
   return (
-    <>
+    <div style={{ padding: 20 }}>
       <h1>Presets</h1>
       <br />
       <div className="kse-space kse-space-middle">
@@ -20,7 +20,11 @@ export const TagPage: React.FC = () => {
       </div>
       <br />
       <h1>Custom</h1>
-      <div className="kse-tag kse-tag-primary">tag1</div>
-    </>
+      <div className="kse-tag kse-tag-primary">primary</div>
+      <h1>Current Tags</h1>
+      <div className="kse-space kse-space-middle">
+        <div className="kse-tag kse-tag-primary">인기상품</div>
+      </div>
+    </div>
   );
 };
