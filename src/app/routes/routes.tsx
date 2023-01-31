@@ -72,7 +72,9 @@ export const AppRoutes: React.FC = () => {
         <a href="/">Home</a>
         <div style={{ height: "16px" }}></div>
       </div>
-      <RouterProvider router={router} />
+      <div className="kse-content">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 };

@@ -418,6 +418,10 @@
   border-radius: 100% !important;
 }
 
+.kse-btn-circle:after {
+  border-radius: 100% !important;
+}
+
 .kse-btn-danger::after {
   box-shadow: 0 0 4px 4px #ff4d4f;
 }
