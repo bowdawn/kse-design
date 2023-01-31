@@ -414,11 +414,27 @@
   box-shadow: 0 0 4px 4px #0097e6;
 }
 
+.kse-btn-circle {
+  border-radius: 100% !important;
+}
+
+.kse-btn-danger::after {
+  box-shadow: 0 0 4px 4px #ff4d4f;
+}
+
+.kse-btn-danger:active:after {
+  box-shadow: 0 0 0 0 #ff4d4f;
+}
+
 .kse-btn:active:after {
   box-shadow: 0 0 0 0 #0097e6;
   border-radius: 4px;
   opacity: 1;
   transition: 0s;
+}
+
+.kse-btn-circle:active:after {
+  border-radius: 100% !important;
 }
 
 .kse-btn-large {
