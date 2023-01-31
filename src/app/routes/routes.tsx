@@ -7,6 +7,7 @@ import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
 import { MenuPage } from "../pages/MenuPage";
+import { TagPage } from "../pages/TagPage";
 import { TypographyPage } from "../pages/TypographyPage";
 import {
   buttonPath,
@@ -16,6 +17,7 @@ import {
   typographyPath,
   collapsePath,
   colorsPath,
+  tagPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -52,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: typographyPath,
     element: <TypographyPage />,
+  },
+  {
+    path: tagPath,
+    element: <TagPage />,
   },
   {
     path: "/*",

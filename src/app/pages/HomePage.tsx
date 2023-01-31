@@ -7,6 +7,7 @@ import {
   iconPath,
   inputPath,
   menuPath,
+  tagPath,
   typographyPath,
 } from "../routes/paths";
 
@@ -30,6 +31,9 @@ export const HomePage: React.FC = () => {
       </div>
       <div>
         <NavLink to={"/" + menuPath}>Menu</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + tagPath}>Tag</NavLink>
       </div>
       <div>
         <NavLink to={"/" + typographyPath}>Typography</NavLink>

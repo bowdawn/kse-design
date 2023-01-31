@@ -786,10 +786,7 @@
 }
 
 /* Tag */
-.kse-tag-primary {
-  background-color: rgb(16, 142, 233);
-  color: #fff;
-  border-color: transparent;
+.kse-tag {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -811,4 +808,75 @@
   opacity: 1;
   transition: all 0.2s;
   text-align: start;
+}
+.kse-tag-primary {
+  background-color: #0097e6 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.kse-tag-magenta {
+  color: #c41d7f;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+
+.kse-tag-red {
+  color: #cf1322;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+
+.kse-tag-volcano {
+  color: #d4380d;
+  background: #fff2e8;
+  border-color: #ffbb96;
+}
+
+.kse-tag-orange {
+  color: #d46b08;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.kse-tag-gold {
+  color: #d48806;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+.kse-tag-lime {
+  color: #7cb305;
+  background: #fcffe6;
+  border-color: #eaff8f;
+}
+
+.kse-tag-green {
+  color: #389e0d;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.kse-tag-cyan {
+  color: #08979c;
+  background: #e6fffb;
+  border-color: #87e8de;
+}
+
+.kse-tag-blue {
+  color: #0958d9;
+  background: #e6f4ff;
+  border-color: #91caff;
+}
+
+.kse-tag-geekblue {
+  color: #1d39c4;
+  background: #f0f5ff;
+  border-color: #adc6ff;
+}
+
+.kse-tag-purple {
+  color: #531dab;
+  background: #f9f0ff;
+  border-color: #d3adf7;
 }
