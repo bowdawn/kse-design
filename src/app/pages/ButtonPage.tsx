@@ -1,5 +1,5 @@
 import React from "react";
-
+import HeartPlusOutlined from "../../core/svg/heart-plus-outlined.svg";
 export const ButtonPage: React.FC = () => {
   return (
     <>
@@ -17,6 +17,13 @@ export const ButtonPage: React.FC = () => {
       <button className="kse-btn kse-btn-primary">primary</button>
       <div>primary large button</div>
       <button className="kse-btn kse-btn-primary kse-btn-large">primary</button>
+      <div>icon button</div>
+      <button className="kse-btn kse-btn-default kse-btn-large kse-btn-circle">
+        <HeartPlusOutlined style={{ display: "block", height: 18 }} />
+      </button>
+      <button className="kse-btn  kse-btn-large kse-btn-circle kse-btn-danger">
+        <HeartPlusOutlined style={{ display: "block", height: 18 }} />
+      </button>
     </>
   );
 };

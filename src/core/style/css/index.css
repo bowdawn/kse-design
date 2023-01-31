@@ -360,14 +360,37 @@
   box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
 }
 
+.kse-btn-danger {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+}
+
+.kse-btn-circle {
+  padding: 12px !important;
+  border-radius: 100% !important;
+}
+
 .kse-btn-default:not(:disabled):hover {
   color: #4096ff !important;
   border-color: #4096ff !important;
 }
 
+.kse-btn-danger:not(:disabled):hover {
+  color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+}
+
 .kse-btn-default:not(:disabled):hover * {
   color: #4096ff !important;
   border-color: #4096ff !important;
+  fill: #4096ff;
+}
+
+.kse-btn-danger:not(:disabled):hover * {
+  color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+  fill: #ff4d4f !important;
 }
 
 .kse-btn-default-active {
