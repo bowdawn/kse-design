@@ -1,88 +1,100 @@
 <!--/include_header(1)/-->
 
-<!-- container -->
-<div id="container">
-    <!-- contents -->
-    <div id="contents">
-        <!-- main -->
-        <main class="login">
-            <center>
-                <br />
-                <h3 class="kse-title-3">멤버십 고객 로그인</h3>
-            </center>
-            <section class="member">
-                <!--/form_login/-->
-                <div class="loginInput">
-                    <!--/input_login_id/-->
-                    <!--/input_login_pw/-->
-                </div>
+<div id="container ">
+    <div id="findIdpw" class="kse-content">
+        <!--/form_lost_password/-->
+        <!-- 아이디 -->
 
-                <div class="loginMiddle kse-space-vertical-small">
-                    <div class="loginCheck">
-                        <label><!--/checkbox_save_id/-->
-                            아이디 저장</label>
-                        <label><!--/checkbox_auto_login/-->
-                            자동 로그인</label>
-                        <label><!--/checkbox_security/-->
-                            보안 로그인</label>
-                    </div>
+        <center>
 
-                    <!--/if_input_powerapp_invite/-->
-
-                    <div class="loginInput">
-                        <!--/input_powerapp_invite/-->
-                    </div>
-                    <!--/end_if/-->
-                    <div class="kse-row">
-                        <a href="<!--/link_login_button/-->" class="kse-btn kse-btn-primary kse-block">로그인</a>
-                    </div>
-                    <div class="kse-row">
-                        <a href="<!--/link_password_lost/-->" class="kse-btn kse-btn-default kse-block">아이디/비밀번호 찾기</a>
-                    </div>
+            <h3 class="kse-title-3">아이디 찾기</h3>
+        </center>
+        <br />
+        <div>
+            <p>아이디를 찾기 위한 방법을 선택하세요.</p>
+            <div class="radio-wrap">
+                <label><!--/radio_find_id_email/--> 이메일</label>
+                <label><!--/radio_find_id_mobile/--> 휴대폰</label>
+            </div>
+            <div class="loginInput kse-input-wrapper">
+                <!--/input_user_name/-->
+                <div class="div-idtype" id="<!--/find_id_email_wrap/-->"><!--/input_find_id_email/--></div>
+                <div class="div-idtype" id="<!--/find_id_mobile_wrap/-->" style="display:none;">
+                    <!--/input_find_id_mobile/--></div>
+            </div>
+            <br />
+            <div class="loginMiddle">
+                <div class="kse-row">
+                    <a href="<!--/link_find_id/-->" class="kse-btn kse-btn-primary kse-block">아이디 찾기</a>
                 </div>
-                <!--/end_form/-->
-            </section>
-            <!--/if_use_login_sns/-->
-            <section class="sns-login">
-                <div class="sns-title">
-                    <img src="/images/d3/m_01/mobile_sns_login_title@2x.png" />
-                </div>
-                <ul>
-                    <!--/if_link_login_facebook/-->
-                    <li class="facebook">
-                        <a href="<!--/link_login_facebook/-->"><span></span>페이스북으로 로그인</a>
-                    </li>
-                    <!--/end_if/-->
-                    <!--/if_link_login_naver/-->
-                    <li class="naver">
-                        <a href="<!--/link_login_naver/-->"><span></span>네이버로 로그인</a>
-                    </li>
-                    <!--/end_if/-->
-                    <!--/if_link_login_kakao/-->
-                    <li class="kakaotalk">
-                        <a href="<!--/link_login_kakao/-->"><span></span>카카오톡으로 로그인</a>
-                    </li>
-                    <!--/end_if/-->
-                </ul>
-                <!-- .sns-login -->
-            </section>
-            <!--/end_if/-->
-            <section class="loginBottom">
-                <h4 class="bold">비회원이신가요?</h4>
-                <p>
-                    한국은거래소 멤버십회원이 되시면 쿠폰할인, 멤버십포인트 적립 등 다양한
-                    혜택과 서비스를 이용하실 수 있습니다.
-                </p>
                 <br />
                 <div class="kse-row">
-                    <a href="<!--/link_join/-->" class="kse-btn kse-btn-primary kse-col-block">신규가입</a>
+                    <a href="<!--/link_login/-->" class="kse-btn kse-btn-default kse-block">로그인</a>
                 </div>
-            </section>
-        </main>
-        <!-- //main -->
-    </div>
-    <!-- //contents -->
-</div>
-<!-- //container -->
+            </div>
+        </div>
+        <!-- 비밀번호 -->
+        <br />
+        <hr class="kse-divider" />
+        <br />
 
-<!--/include_footer(1)/-->
+        <center>
+
+            <h3 class="kse-title-3">임시 비밀번호 발급</h3>
+        </center>
+        <div class="member">
+            <p>임시 비밀번호 발급을 위한 방법을 선택 하세요.</p>
+            <div class="radio-wrap">
+                <label><!--/radio_find_pw_email/--> 이메일</label>
+                <label><!--/radio_find_pw_mobile/--> 휴대폰</label>
+                <!--/if_radio_find_pw_auth/-->
+                <label><!--/radio_find_pw_auth/--> 본인인증</label>
+                <!--/end_if/-->
+            </div>
+            <!--/block_find_pw_input/-->
+            <div class="loginInput">
+                <!--/input_user_id/-->
+                <div class="div-pwtype" id="<!--/find_pw_email_wrap/-->"><!--/input_email(txt-input)/--></div>
+                <div class="div-pwtype" id="<!--/find_pw_mobile_wrap/-->" style="display:none;"><!--/input_mobile/-->
+                </div>
+            </div>
+
+            <div class="loginMiddle">
+
+                <br />
+                <div class="kse-row">
+                    <a href="<!--/link_find_pw/-->" class="kse-btn kse-btn-primary kse-block">임시 비밀번호 발급</a>
+                </div>
+                <br />
+                <div class="kse-row">
+                    <a href="<!--/link_login/-->" class="kse-btn kse-btn-default kse-block">로그인</a>
+                </div>
+            </div>
+            <!--/end_block/-->
+            <!--/if_use_auth/-->
+            <!--/block_find_pw_auth/-->
+            <div class="loginBottom">
+                <p>
+                    <!--/if_link_mobile_auth/-->
+                    휴대폰<!--/if_link_ipin_auth/--> 또는 <!--/end_if/-->
+                    <!--/end_if/-->
+                    <!--/if_link_ipin_auth/--> 아이핀 <!--/end_if/-->
+                    을 통해 임시 비밀번호를 발급 받을 수 있습니다.<br />
+                    아래 인증 버튼을 눌러 본인인증을 진행해 주세요.
+
+                    <!--/if_link_mobile_auth/-->
+                    <a href="<!--/link_mobile_auth/-->" class="btn_Red">휴대폰 인증</a>
+                    <!--/end_if/-->
+                    <!--/if_link_ipin_auth/-->
+                    <a href="<!--/link_ipin_auth/-->" class="btn_Red">아이핀 인증</a>
+                    <!--/end_if/-->
+                    <a href="<!--/link_login/-->" class="btn_White">로그인</a>
+                </p>
+            </div>
+            <!--/end_block/-->
+            <!--/end_if/-->
+            <!--/end_form/-->
+        </div><!-- #findIdpw -->
+    </div>
+
+    <!--/include_footer(1)/-->
