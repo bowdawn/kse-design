@@ -240,6 +240,41 @@
   color: #69b1ff;
 }
 
+.kse-title-1 {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.2105263157894737;
+}
+
+.kse-title-2 {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2666666666666666;
+}
+
+.kse-title-3 {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+}
+
+.kse-title-4 {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.kse-title-5 {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /* Affix */
 .kse-affix {
   position: absolute;
@@ -688,7 +723,7 @@
   height: unset;
   box-sizing: border-box;
   margin: 0;
-  padding: 4px 11px;
+  padding: 8px 15px;
   color: rgba(0, 0, 0, 0.88);
   font-size: 14px !important;
   line-height: 1.5714285714285714;
@@ -741,6 +776,7 @@
   border-right: none;
 }
 .kse-input-suffix-wrapper button {
+  height: 100%;
   border-end-start-radius: 0;
   border-start-start-radius: 0;
 }
@@ -768,7 +804,7 @@
 }
 
 .kse-input-suffix-btn {
-  height: 32px;
+  height: 100%;
 }
 
 .kse-input-suffix-wrapper button:active {
