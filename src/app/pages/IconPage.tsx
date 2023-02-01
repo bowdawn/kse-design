@@ -8,6 +8,7 @@ import HeartPlusOutlined from "../../core/svg/heart-plus-outlined.svg";
 export const IconPage: React.FC = () => {
   return (
     <>
+      <h1>Styles</h1>
       <div>Small Icon (size 16px)</div>
       <SearchOutlined className="kse-icon-small" />
       <div>Default Icon (size 32px)</div>
@@ -39,6 +40,15 @@ export const IconPage: React.FC = () => {
           <div>icon 6</div>( - )
         </div>
       </div>
+      <h1>Looking For More Icons?</h1>
+      <h3>Antd Icons (750+ icons)</h3>
+      <a href="https://ant.design/components/icon">
+        https://ant.design/components/icon
+      </a>
+      <h3>Ant Design + Material Design Icons (5000+ icons)</h3>
+      <a href="https://2fd.github.io/ant-design-icons/">
+        https://2fd.github.io/ant-design-icons/
+      </a>
     </>
   );
 };
