@@ -20,134 +20,211 @@
 
 <!--/head_banner/-->
 
-<div id="topBnr">
-  <div class="topWrap">
-    <a href="/shop/page.html?id=2" id="txt"
+<header class="kse-layout-header kse-block">
+  <div class="kse-row kse-row-lg kse-row-space-between">
+    <a
+      href="/shop/page.html?id=2"
+      class="kse-link-primary-bg-hover kse-text-middle"
       >한국은거래소는 건전한 투자와 수집문화 발전에 앞장서고 있습니다.</a
     >
-    <ul>
+
+    <div class="kse-space kse-space-align-center kse-space-middle">
       <!--/if_login/-->
-      <li><a href="<!--/link_logout/-->"> 로그아웃 </a></li>
-      <li><a href="<!--/link_join/-->"> 정보수정 </a></li>
+      <a
+        href="<!--/link_logout/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        로그아웃
+      </a>
+      <a
+        href="<!--/link_join/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        정보수정
+      </a>
       <!--/else/-->
-      <li><a href="<!--/link_login/-->"> 로그인 </a></li>
-      <li><a href="<!--/link_join/-->"> 회원가입 </a></li>
+      <a
+        href="<!--/link_login/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        로그인
+      </a>
+      <a
+        href="<!--/link_join/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        회원가입
+      </a>
       <!--/end_if/-->
-      <li><a href="<!--/link_mypage/-->"> 라운지 </a></li>
-      <li><a href="/shop/confirm_login.html?type=myorder"> 주문조회 </a></li>
-      <li>
-        <a href="<!--/link_basket/-->">
-          나의 금고 (<!--/user_basket_quantity/-->)
-        </a>
-      </li>
-    </ul>
+      <a
+        href="<!--/link_mypage/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        라운지
+      </a>
+      <a
+        href="/shop/confirm_login.html?type=myorder"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        주문조회
+      </a>
+      <a
+        href="<!--/link_basket/-->"
+        class="kse-link-primary-bg-hover kse-text-middle"
+      >
+        나의 금고 (<!--/user_basket_quantity/-->)
+      </a>
+    </div>
   </div>
-</div>
-<div class="header_wrap">
-  <div class="logo_wrap" style="padding-top: 10px">
-    <div class="logo">
+</header>
+<div class="kse-row kse-row-center kse-affix-shown">
+  <div class="kse-card">
+    <div class="kse-card-body">
       <a href="/"
-        ><img
-          src="//ksilverex.img15.kr/koreasilverexchangelogo.png"
-          style="width: 310px"
+        ><img src="//ksilverex.img15.kr/koreasilverexchangelogo.png"
       /></a>
     </div>
   </div>
-  <div id="gnb" class="menu_wrap">
-    <div id="gnbMenu" class="menu_content gnb_kurly">
-      <div class="inner_gnbkurly">
-        <div class="gnb_main">
-          <ul class="gnb">
-            <li class="menu1">
-              <a href="#none"
-                ><span class="ico"></span
-                ><span class="txt link-hover"><b>상품보기</b></span></a
-              >
-            </li>
-            <li>
-              <a class="" href="/shop/page.html?id=1"
-                ><span class="txt link-hover">은시세</span></a
-              >
-            </li>
-            <li>
-              <a class="" href="/shop/page.html?id=3"
-                ><span class="txt link-hover">금시세</span></a
-              >
-            </li>
-
-            <li>
-              <a class="" href="/board/board.html?code=ksilverex_image1"
-                ><span class="txt link-hover">매거진</span></a
-              >
-            </li>
-            <li>
-              <a class="" href="/board/board.html?code=ksilverex_image2"
-                ><span class="txt link-hover">이벤트</span></a
-              >
-            </li>
-            <li>
-              <a class="" href="/shop/shopbrand.html?xcode=011&type=X"
-                ><span class="txt link-hover">위탁판매</span></a
-              >
-            </li>
-          </ul>
-          <div class="cart_count">
-            <div class="inner_cartcount">
-              <a href="/shop/basket.html" class="btn_cart">
-                <img
-                  src="/design/ksilverex/supermarket/img/cart.png"
-                  alt="나의 금고"
-                /><!--/user_basket_quantity/--></a
-              >
-            </div>
-          </div>
-          <div id="side_search" class="gnb_search">
-            <!--/form_search/-->
-            <!--/input_search_word(input-keyword)/-->
-            <input
-              onclick="<!--/link_search_button/-->"
-              type="image"
-              src="/design/ksilverex/supermarket/img/ico_search_x2.png"
-              class="btn_search"
-            />
-            <!--/end_form/-->
-          </div>
+</div>
+<div class="kse-menu-dummy kse-block kse-row-center">
+  <div
+    class="kse-shadow kse-layout-dummy kse-row kse-row-center kse-block kse-row-lg-min kse-affix"
+  >
+    <div class="kse-row kse-row-lg kse-row-space-between">
+      <div class="kse-menu">
+        <div class="kse-menu-item">
+          <a
+            class="kse-space-small kse-space-align-center kse-text-large header-menu menu-1"
+          >
+            <svg
+              class="kse-icon"
+              viewBox="64 64 896 896"
+              focusable="false"
+              data-icon="menu"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+              ></path>
+            </svg>
+            <span class="kse-link-hover">상품보기</span>
+          </a>
         </div>
-        <div class="gnb_sub">
-          <div class="inner_sub">
-            <div class="subxbtn">
-              <img src="/design/ksilverex/supermarket/img/xbtn.png" alt="" />
-            </div>
-            <!--/loop_category1(6)/-->
-            <ul class="gnb_menu" style="height: auto">
+        <div class="kse-menu-item kse-menu-item-silver">
+          <a class="" href="/shop/page.html?id=1"
+            ><span class="txt kse-link-hover kse-text-large ">은시세</span></a
+          >
+        </div>
+        <div class="kse-menu-item kse-menu-item-gold">
+          <a class="" href="/shop/page.html?id=3"
+            ><span class="txt kse-link-hover kse-text-large">금시세</span></a
+          >
+        </div>
+        <div class="kse-menu-item kse-menu-item-magazine">
+          <a class="" href="/board/board.html?code=ksilverex_image1"
+            ><span class="txt kse-link-hover kse-text-large">매거진</span></a
+          >
+        </div>
+        <div class="kse-menu-item kse-menu-item-event">
+          <a class="" href="/board/board.html?code=ksilverex_image2"
+            ><span class="txt kse-link-hover kse-text-large">이벤트</span></a
+          >
+        </div>
+        <div class="kse-menu-item kse-menu-item-consignment-dummy">
+          <a class="" href="/shop/shopbrand.html?xcode=011&type=X"
+            ><span class="txt kse-link-hover kse-text-large">위탁판매</span></a
+          >
+        </div>
+      </div>
+
+      <div class="kse-space-middle kse-space-align-center">
+        <a href="/shop/basket.html" class="kse-link-hover kse-badge">
+          <svg class="kse-icon kse-icon-link" viewBox="0 0 30 31.5">
+            <g>
+              <path
+                d="M12,15c0-1.65,1.35-3,3-3s3,1.35,3,3-1.35,3-3,3-3-1.35-3-3m-3.3,8.55l-2.25-2.1,2.25-2.25c-.75-1.2-1.2-2.7-1.2-4.2s.45-3,1.2-4.05l-2.25-2.25,2.25-2.25,2.1,2.25c1.2-.75,2.7-1.2,4.2-1.2s3,.45,4.2,1.2l2.25-2.25,2.1,2.1-2.25,2.25c.75,1.2,1.2,2.7,1.2,4.2s-.45,3-1.2,4.2l2.25,2.25-2.1,2.1-2.25-2.25c-1.2,.75-2.7,1.2-4.2,1.2s-3-.45-4.05-1.2l-2.25,2.25m6.3-13.05c-2.55,0-4.5,1.95-4.5,4.5s1.95,4.5,4.5,4.5,4.5-1.95,4.5-4.5-1.95-4.5-4.5-4.5M27,0c1.65,0,3,1.35,3,3V27c0,1.65-1.35,3-3,3h-1.5v1.5h-6v-1.5H10.5v1.5H4.5v-1.5h-1.5c-1.65,0-3-1.35-3-3V3C0,1.35,1.35,0,3,0H27m0,27V3H3V27H27Z"
+              />
+            </g>
+          </svg>
+          <sup class="kse-badge-count"> <!--/user_basket_quantity/--></sup></a
+        >
+
+        <div id="side_search" class="kse-space-item">
+          <!--/form_search/-->
+
+          <div class="kse-input-suffix-wrapper kse-input-wrapper">
+            <!--/input_search_word(input-keyword)/-->
+            <a>
+            <button
+              type="submit"
+              class="kse-input-btn-suffix kse-btn kse-btn-default"
+            >
+              
+                <svg viewBox="64 64 896 896" class="kse-icon-small">
+                  <path
+                    d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+                  ></path>
+                </svg>
+              
+            </button>
+            </a>
+          </div>
+          <!--/end_form/-->
+        </div>
+      </div>
+    </div>
+    <div class="gnb_sub kse-hide">
+      <div class="inner_sub">
+        <div class="subxbtn">
+          <svg
+            class="kse-icon kse-icon-bold-link"
+            viewBox="64 64 896 896"
+            focusable="false"
+            data-icon="close"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+            ></path>
+          </svg>
+        </div>
+        <!--/loop_category1(6)/-->
+        <ul class="gnb_menu" style="height: auto">
+          <li class="">
+            <a href="<!--/category1@link/-->" class="menu"
+              ><span class="tit"
+                ><span class="txt kse-link-bold-hover"
+                  ><!--/category1@name/--></span
+                ></span
+              ></a
+            >
+            <!--/if_category1@category2/-->
+            <ul class="sub_menu">
+              <!--/loop_category1@category2/-->
               <li class="">
-                <a href="<!--/category1@link/-->" class="menu"
-                  ><span class="tit"
-                    ><span class="txt"><!--/category1@name/--></span></span
+                <a href="<!--/category1@category2@link/-->" class="sub"
+                  ><span class="name link-hover"
+                    ><!--/category1@category2@name/--></span
                   ></a
                 >
-                <!--/if_category1@category2/-->
-                <ul class="sub_menu">
-                  <!--/loop_category1@category2/-->
-                  <li class="">
-                    <a href="<!--/category1@category2@link/-->" class="sub"
-                      ><span class="name link-hover"
-                        ><!--/category1@category2@name/--></span
-                      ></a
-                    >
-                  </li>
-                  <!--/end_loop/-->
-                </ul>
-                <!--/end_if/-->
               </li>
+              <!--/end_loop/-->
             </ul>
-            <!--/end_loop/-->
-          </div>
-        </div>
+            <!--/end_if/-->
+          </li>
+        </ul>
+        <!--/end_loop/-->
       </div>
     </div>
   </div>
 </div>
+
 <script type="text/javascript">
   (function ($) {
     $(function () {
@@ -173,7 +250,7 @@
   })(jQuery);
 </script>
 <!--주석 ~ 스크롤배너-->
-<div class="r_wing_wrap">
+<div class="r_wing_wrap kse-product-view-history">
   <div class="r_wing_content">
     <div class="bnr_wrap">
       <a href="https://smartstore.naver.com/koreasilverex" class="scroll_event"

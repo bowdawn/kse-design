@@ -503,3 +503,8 @@ td.area-btn-size-chart a.btn-size-chart:active { position: relative; top: 1px }
 #powerReview .hd-t h2 {display:none;}
 #powerReview .hd-t .pr-btn-list {display:none;}
 #powerReview .PR15N01-review-wrap > li .reply {display:none;}
+
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop {
+    float: left;
+    width: 35% !important;
+}

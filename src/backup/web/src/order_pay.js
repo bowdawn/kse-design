@@ -47,15 +47,17 @@ jQuery(document).ready(function(){
     
     jQuery(window).scroll(function(){
     
-        if(jQuery(document).scrollTop() > 200){
+        if(jQuery(document).scrollTop() > 276){
         
             var scrollVal = jQuery(document).scrollTop() - 200 ; 
         
-            jQuery(".order_right_cont").css("top",(scrollVal+ 104) +"px");
+            jQuery(".order_right_cont").css("top",(scrollVal) +"px");
+            jQuery(".order_right_cont").css("max-height","calc(100vh - 64px)");
         
         }else{
         
-            jQuery(".order_right_cont").css("top","104px");
+            jQuery(".order_right_cont").css("top","3px");
+            jQuery(".order_right_cont").css("max-height","calc(100vh - 270px)");
         
         }
         

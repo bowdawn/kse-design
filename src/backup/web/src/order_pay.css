@@ -2,7 +2,8 @@
 #contentWrap.order_page h2{line-height:58px; font-size:35px; font-weight:900; letter-spacing:-1px; color:#191919;}
 
 #contentWrap.order_page .order_left_cont{width:1040px;}
-#contentWrap.order_page .order_right_cont{position:absolute; top:104px; right:0; width:320px; box-sizing:border-box; border-radius:30px; background:#FFF; padding:15px 20px 40px; box-shadow: 10px 10px 15px #0F296B15; z-index:10; }
+#contentWrap.order_page .order_right_cont{position:absolute; top:3px; right:0; width:320px; box-sizing:border-box; border-radius: 8px; background:#FFF; padding:15px 20px 40px; box-shadow: 10px 10px 15px #0F296B15; z-index:10; max-height: calc(100vh - 276px);
+    overflow: auto; }
 /*
 #order h3 { position: relative; margin-top: 40px; padding-bottom:10px; font-size:22px; color: #202020; font-weight:bold; line-height:18px }
 */
@@ -341,3 +342,8 @@ w280  MK_pay_add_choice
 
 #order .mem-lvl p {font-size:30px;}
 div.pay_agree_box label {color:#f1191f; font-weight: 800;  } /* »ö°¥ */
+
+
+.r_wing_wrap {
+	display: none;
+}

@@ -11,6 +11,7 @@
 	
 		
 		jQuery('.input-keyword').attr('placeholder','검색어를 입력해주세요.');
+       
 
 		jQuery('.cate_03').on({
 			mouseenter : function(){
@@ -52,7 +53,8 @@ var s = { // selector
     gnbSubMenu : jQuery('#gnb .gnb_sub li'),
     gnbMenu : jQuery('#gnb .gnb_menu'),
     current : 'current',
-    time : 200                 
+    time : 200    ,
+    headerMenu: jQuery(".header-menu")
 }
 
 s.categoryOpen.hover(function(){
@@ -81,12 +83,19 @@ s.gnbSubMenu.hover(function(){
    
 });
 
+
+
+s.headerMenu.click(function(){
+    jQuery('.gnb_sub').toggleClass("kse-hide");
+});
+
+
 s.categoryOpen.click(function(){
     s.gnbSub.toggle();
 });
 
 jQuery('.subxbtn').click(function(){
-     jQuery('.gnb_sub').stop().css("display","none")
+     jQuery('.gnb_sub').toggleClass("kse-hide");
 });
 // 레이어 가로 사이즈
 function sizeAction(option, type){
@@ -133,18 +142,6 @@ resize_gnb();
 
 
 
-
-jQuery(window).scroll(function() {
-	var scroll = jQuery(window).scrollTop();
-	//console.log(scroll);
-	if (scroll >= 20) {
-		//console.log('a');
-		jQuery(".header_wrap .menu_wrap").addClass("fixed");
-	} else {
-		//console.log('a');
-		jQuery(".header_wrap .menu_wrap").removeClass("fixed");
-	}
-});
 
 
 

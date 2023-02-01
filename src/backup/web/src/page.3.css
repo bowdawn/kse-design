@@ -169,3 +169,12 @@ letter-spacing: 1px;
 .slickmdbest .item-wrap .item-cont .item-list:nth-child(4n) {
 	margin: 0 13px !important;
 }
+
+.kse-menu-item.kse-menu-item-gold::before {
+  width: calc(100% - 64px);
+}
+
+.kse-menu-item.kse-menu-item-gold * {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+}

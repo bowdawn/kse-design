@@ -17,3 +17,12 @@
 /* noimage */
 .fixed-img-collist ul li a span.noimg{ display: block; width:252px; height:252px; text-align: center; font-size:18px; color:#f2f2f2; font-weight:bold; line-height:254px; border:1px solid #e9e9e9 }
 .fixed-img-collist ul li p { margin-top:3px; font-family:dotum }
+
+.kse-menu-item.kse-menu-item-magazine::before {
+  width: calc(100% - 64px);
+}
+
+.kse-menu-item.kse-menu-item-magazine * {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+}
