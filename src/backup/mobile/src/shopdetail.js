@@ -26,9 +26,12 @@ $(function() {
     });
     fixedBtn.click(function(e){
         e.preventDefault();
+        if(!fixedBtn.hasClass('kse-disabled')) {
+
         $(this).parent().toggleClass("fixed");
         fixedBtn.children("a").toggle();
         fixedBtn.siblings(".buy_on").show();
+}
     });
     
     

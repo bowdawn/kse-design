@@ -96,20 +96,16 @@ jQuery("#close_btn").click(function() {
 
 
 
-jQuery("aside nav .fa, .categoryOpenBtn").click(function() {
-    jQuery(this).parent().siblings().children("ul").hide();
-    jQuery(this).parent().siblings().children(".fa-angle-down").removeClass("fa-rotate-180");
+jQuery(".categoryOpenBtn").click(function() {
+   
+    jQuery(this).children(".fa-angle-down").toggleClass("fa-rotate-180");
     jQuery(this).parent().children("ul").toggle();
 
-    if (jQuery(this).text() == "+") {
-        jQuery(this).text("-");
-    } else if (jQuery(this).text() == "-") {
-        jQuery(this).text("+");
-    } else {
-        jQuery(this).parent().children(".fa-angle-down").toggleClass("fa-rotate-180");
-    }
+   
     return false
 });
+
+
 
 jQuery("#category").click(function() {
     jQuery(this).addClass("act").siblings().removeClass("act");

@@ -2,10 +2,37 @@
 #review-board-write table tr {height:45px;} 
 #review-board-write table th {width:95px; text-align:left; padding-left:10px;}
 #review-board-write table td {padding:0 10px;}
-#review-board-write table .comm {width:90%;}
+#review-board-write table .comm {width:100%;}
 #review-board-write .MS_input_textarea {width:100%;}
-#review-board-write table .file .MS_input_file {width:100%; height: 35px; border: 1px solid #bbb; vertical-align: middle; padding-left: 10px; box-sizing: border-box;}
-#review-board-write table .file .MS_input_file_button {width: 115px; height: 35px; line-height: 35px; display: inline-block; position: absolute; top: 0; right: 0; background-color: #858585; color: #fff; text-align: center; border: 1px solid #858585; box-sizing: border-box; vertical-align: middle;}
-#review-board-write .pd10 {line-height: 1.7; margin:20px 0;}
+#review-board-write table .file .MS_input_file {flex: 1; height: 40px; border: 1px solid #bbb; vertical-align: middle;  box-sizing: border-box;}
+.MS_input_file_button {
+    <!-- kse-btn + kse-btn-primary static style copy here -->
+    outline: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    user-select: none;
+    touch-action: manipulation;
+    line-height: 1.5714285714285714;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    color: #fff;
+    background-color: #0097e6;
+    box-shadow: 
+}
+
+
+#review-board-write .pd10 { padding-top:0px; padding-bottom: 20px}
 #review-board-write .write-btn {padding:0 10px;}
 #review-board-write .write-btn .btn_Red {margin-bottom:10px;}

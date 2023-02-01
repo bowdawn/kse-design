@@ -24,8 +24,6 @@
 #order .chk-cont input:checked + label:after{display:block; width:10px; height:10px; position:absolute; top:3px; left:3px; content:""; border-radius:5px; border:1px solid #0097E6; box-sizing:border-box; background:#0097E6; z-index:1;}
 #order .order_head .chk-cont{float:left; margin-top:4px;}
 #order .korea-radio-addr{/*padding:10px 0;*/ color:#999; }
-#order .korea-radio-addr a{display:block !important; width:100%; height:30px !important; line-height:28px !important;  text-align:center; box-sizing:border-box; margin-top:10px; background:#Fff;}
-
 
 
 #order .prd_order {}
@@ -288,7 +286,6 @@
 #order .paym-msg { list-style:none; }
 #order .paym-input ul li { margin-top:5px; list-style:none; }
 #order .paym-input a { display:inline-block; }
-#order .paym-input a.paym-btn-confirm { height:30px; line-height:32px; padding:0 15px; background:#2367a8; border:1px solid #015198; color:#fff; }
 #order .paym-input a.paym-btn-cancel { height:30px; line-height:32px; padding:0 15px; background:#efefef; border:1px solid #ccc; }
 #order .paym-input input[type=text], 
 #order .paym-input input[type=password] { width:100px !important; }
@@ -467,29 +464,16 @@
 #order #evidence_donot_data{font-size:10px !important; line-height:15px; padding:10px 0 !important; color:#FF5320 !important; border:0 !important; }
 
 #order .fixed_btn_box{position:fixed; width:100%; height:80px; left:0; bottom:0; background-color:#0097e6; z-index:10;}
-#order .fixed_btn_box a{display:block; width:100%; height:80px; padding:18px; box-sizing:border-box; color:#FFF; text-align:center; }
+#order .fixed_btn_box a{ width:100%; height:80px; padding:18px; box-sizing:border-box; color:#FFF; text-align:center; }
 #order .fixed_btn_box a .txt-price{font-size:20px; display:block; line-height:15px; letter-spacing:-0.2px; font-weight:700;}
 #order .fixed_btn_box .total_reserve_txt{font-size:15px; line-height:45px;}
 
 
-/*
 
-<div class="btn_box fixed_btn_box">
-                <a href="javascript:send();" class="all-ok">
-                                        <em class="txt-price"><span id="op_total_price">1,741,500</span></em> 원 
-                                                
-                    <span>결제하기</span>
-                                                            <p class="total_reserve_txt">(적립예정: <span id="block_expect_reserve" data-original-reserve="1741" coupon-reserve="0">1,741</span>원)</p>
-                                                        </a>
-                <a href="javascript:history.back();" style="display:none;"><span>이전</span></a>
-            </div>
-
-*/
 
 #order .order_info_write dl dd.pname input{border:0; height:25px; width:100%; }
 #order .order_info_write .sefe_use_box img{vertical-align:middle;}
 #order .order_info_write dl dd .txt-zipcode{width:120px !important;}
-#order .order_info_write dl dd .btn_zipcode{width:120px; margin-left:10px; display:inline-block; height:26px; line-height:24px; box-sizing:border-box; text-align:center;  border-radius:13px; color: #FFF; background: #0097e6; }
 
 #order .order_info_write dl dd .txt-coupon{width:120px !important;}
 #order .order_info_write dl dd .btn_coupon{width:80px; margin-left:4px; display:inline-block; height:26px; line-height:24px; box-sizing:border-box; text-align:center;  border-radius:8px; color: #FFF; background: #191919; font-size:10px; }
@@ -542,7 +526,7 @@
 #order .orderBody .pay_method_title_box{margin-bottom:10px; }
 #order .orderBody .pay_method_title_box:after{display:table; width:100%; content:"";}
 #order .orderBody .pay_method_title_box .pay_method_title{float:left; width:calc((100% - 10px) / 2); box-sizing:border-box; height:48px; border:1px solid #767676; color:#767676; border-radius:4px;}
-#order .orderBody .pay_method_title_box .pay_method_title.now{background:#413075;}
+#order .orderBody .pay_method_title_box .pay_method_title.now{background:#00284d;}
 
 #order .orderBody .pay_method_title_box .pay_method_title > label{display:block; position:relative; padding:15px 0 0; line-height:15px; font-size:14px; color:#767676; text-align:center;}
 #order .orderBody .pay_method_title_box .pay_method_title > label em{display:block; font-size:10px;}
@@ -561,66 +545,88 @@
 
 
 
-/*
-<div class="pay_method_title_box">
-                        <!--/loop_pay_method_list/-->
-                            <!--/if_pay_method_list@pay_type(신용카드)/-->
-                            <div class="card pay_method_title">
-
-/*
-
-<div class="tbl-pay2">
-                        <table class="pay2_table">
-                            <colgroup>
-                                <col style="width:120px">
-                                <col style="width: *">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <td colspan="2">총 <b class="product_count"></b>개의 상품금액</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>주문 금액</th>
-                                    <td><!--/block_op_product_price/--><!--/number/op_product_price/--><!--/end_block/--> 원</td>                                            
-                                </tr>
-                                <tr>
-                                    <th>배송비</th>
-                                    <td><!--/block_op_delivery_price/--><!--/number/op_delivery_price/--><!--/end_block/--> <!--/block_op_delivery_unit/--> 원<!--/end_block/--></td>                                            
-                                </tr>
-                                <tr>
-                                    <th>할인 금액</th>
-                                    <td><strong><em class="fc-blue"><!--/block_op_sale_price/--><!--/number/op_sale_price/--><!--/end_block/--> 원</em></strong></td>                                            
-                                </tr>
-                                <tr>
-                                    <th>택배 보험</th>
-                                    <td><strong><em><!--/block_op_add_price/--><!--/number/op_total_vat/--><!--/end_block/--></em> 원</strong></td>                                            
-                                </tr>
-                            </tbody>
-                            <!--/if_block_final_price/-->
-                            <tfoot>
-                                <tr>
-                                    <th>결제예정 금액</th>
-                                    <td><strong class="price"><em class="fc-blue"><!--/block_op_sum_price/--><!--/number/total_price/--><!--/end_block/--> 원</em></strong></td>                                            
-                                </tr>                                                                                
-                                <!--/if_login/-->
-                                <!--/if_total_reserve/-->
-                                <tr>
-                                    <th>멤버십 포인트</th>
-                                    <td><!--/block_expect_reserve/--><!--/number/total_reserve/--><!--/end_block/--></td>                                            
-                                </tr>        
-                                <!--/end_if/-->
-                                <!--/end_if/-->
-                            </tfoot>
-                            <!--/end_if/-->
-                        </table>
-                    </div><!-- // .tbl-pay2 // -->
-                    
-*/
-
-
 #evidence_cashbill_tel input {margin-right: 5px; }
 #footer{padding-bottom:80px; }
 #order .orderBody .fc-blue{color:#f1191f;}
 div.payagree label {color:#f1191f !important; } /*색갈*/
+
+
+.kse-wrapper input[type="text"] {
+height: 100%;
+width: 100%;
+}
+
+/* 배송지 주소록 */
+#block_mobile_area {display:none; width: 100%; min-height: 100%; z-index: 1; position: fixed; left: 0; top: 0; background:rgba(60,60,60,0.8); font-size: 12px;}
+#block_mobile_area #block_mobile_area_list {width:90%; background-color: #fff; position: relative; box-shadow: 0px 1px 10px #494949; margin:80px auto;}
+.block_list li {margin: 7px 7px 7px 7px; padding: 15px 10px; border: 1px solid #d5d5d5;}
+
+#tab_addrbook, #tab_past {float: left;width: 50%; padding-bottom:5px;}
+#tab_addrbook.on a, #tab_past.on a {background: #858585; color: #ffffff;}
+#tab_addrbook a, #tab_past a {display:block;border: 1px solid #858585;line-height: 40px;text-align: center;font-size: 13px;color: #3b3b3b;background: #f1f1f1;}
+
+#block_mobile_addr_book {text-align: left;}
+#block_mobile_area_list {text-align: center;}
+#block_mobile_area_list .btn-close {display: block; width: 17px; height: 17px; background: url(/images/d3/m_01/bull/addList_btn_close.png) 0 0 no-repeat; background-size: 17px 17px; position: absolute; top:-23px; right: 0; text-indent: -9999px;}
+#block_mobile_area_list .tab_ul {overflow:hidden;}
+#block_mobile_area_list .block_list li { position: relative; border-radius:5px;}
+#block_mobile_area_list .block_list li .btn-select {display: flex; justify-content: end;}
+#block_mobile_area_list .block_list li .btn-select .btn-apply-addrbook { line-height: 1.5714285714285714;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 4px; 
+background-color: #fff;
+
+border: solid  #d9d9d9;
+    border-width: 1px;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);}
+
+#block_mobile_area_list .block_list li .btn-select .btn-add-addr { line-height: 1.5714285714285714;
+  color: #0097e6;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 4px; 
+background-color: #fff;
+margin-left: 8px;
+border: solid  #0097e6;
+    border-width: 1px;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);}
+#block_mobile_area_list .block_list li .text .name {font-weight: bold; font-size: 12px; color: #000;}
+#block_mobile_area_list .block_list li .text .ad {margin-top:5px;}
+#block_mobile_area_list .block_list li .text .name .basic {display: inline-block; margin-left: 10px; width: 60px; line-height: 20px; text-align: center; border-radius: 50px; background: #68c40e; font-weight: bold; font-size: 10px; color: #fff;}
+#block_mobile_area_list .block_list li .text .add {font-size: 12px; line-height: 22px; color: #000;}
+#block_mobile_area_list .block_list li .text .tell {font-size: 12px; line-height: 22px; color: #000;}
+
+
+
+#block_mobile_area_list .block-add-address .address-add {text-align: left;}
+#block_mobile_area_list .block-add-address .title {padding: 0 9px; line-height: 40px; font-size: 13px; font-weight: bold; color: #3b3b3b;}
+#block_mobile_area_list .block-add-address .addplace-table {border-top: 1px solid #cecece; text-align: left;}
+#block_mobile_area_list .block-add-address .addplace-table th {height: 30px; padding: 9px; background: #f5f5f5; font-size: 13px; color: #3b3b3b; border-bottom: 1px solid #dedede;}
+#block_mobile_area_list .block-add-address .addplace-table th.vta-top {vertical-align: top;}
+#block_mobile_area_list .block-add-address .addplace-table td {height: 30px; padding: 9px; border-bottom: 1px solid #dedede;}
+#block_mobile_area_list .block-add-address .addplace-table td input[type=text] {width:100%; height: 30px;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box p {margin-top: 5px;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box:first-child {margin-top: 0;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box .check {margin-top: 10px; font-size: 12px; color: #3b3b3b;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box .check input[type=checkbox] {margin-right: 5px;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box .post {overflow: hidden;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box .post .btn-gray {display: block; width: 36%; float: right; line-height: 30px; text-align: center; background: #393939; font-weight: bold; font-size: 13px; color: #fff;}
+#block_mobile_area_list .block-add-address .addplace-table .address-box .post input[name=shipping_post1],
+#block_mobile_area_list .block-add-address .addplace-table .address-box .post input[name=shipping_post2] { width: 28%; }
+#block_mobile_area_list .block-add-address .addplace-table .address-box .post input.post0 { width: 62%; }
+
+
+#block_mobile_area_list .block-add-address .addplace-table .phone {overflow: hidden;}
+#block_mobile_area_list .block-add-address .addplace-table .phone * {float: left;}
+#block_mobile_area_list .block-add-address .addplace-table .phone input[type=text] {overflow: hidden; width: 28.8%; }
+#block_mobile_area_list .block-add-address .addplace-table .phone span {display: inline-block; text-align: center; overflow: hidden; width: 6.6%; line-height: 30px;}
+#block_mobile_area_list .block-add-address .addplace-table .sel_deli_msg { width:100%; margin-bottom: 5px; }
+#block_mobile_area_list .block-add-address .addplace-table textarea { width:100%; height: 75px; }
+#block_mobile_area_list .block-add-address .btn-wrap {padding: 15px 10px; overflow: hidden;}
+
+
+.all-ok {
+    font-size: 32px;
+}

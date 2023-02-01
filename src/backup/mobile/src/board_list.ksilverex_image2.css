@@ -1,3 +1,4 @@
+#gallery-list .h_title {display: none;}
 #gallery-list .h_title .btn_Red {height: 25px; width: 60px; float: right; line-height: 25px; font-weight:normal; margin-top: -4px;}
 #gallery-list .item-search {padding:10px;}
 #gallery-list .item-search div {float:left;}
@@ -5,7 +6,7 @@
 #gallery-list .item-search div .brd-st {width:100%;}
 #gallery-list .item-search div:nth-child(2) {width:60%; box-sizing: border-box; padding: 0 5px;}
 #gallery-list .item-search div:last-child {width:15%;}
-#gallery-list .notice {border-top: 2px solid #464646;}
+
 #gallery-list .notice-bar {padding:10px 10px; border-bottom: 1px solid #bebebe;  background-color: #fefbe3;}
 #gallery-list .item { padding:20px 0;}
 #gallery-list .item .list_shopping2x {margin-bottom:20px;}
@@ -15,3 +16,12 @@
 #gallery-list .item .list_shopping2x li a { padding: 10px;}
 #gallery-list .item .list_shopping2x .list_shoppingInfo {border-top: 1px solid #bebebe; padding: 10px 0 50px; word-break: break-all; line-height: 25px;}
 #gallery-list .item .list_shopping2x .list_shoppingInfo p{color: #333; font-size: 1.2rem;}
+
+.kse-layout-header-bottom-mobile .kse-menu-item.kse-menu-item-event::before {
+  width: 100%;
+}
+
+.kse-menu-item.kse-menu-item-event * {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+}

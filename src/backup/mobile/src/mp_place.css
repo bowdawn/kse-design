@@ -16,7 +16,7 @@
 #place .address-list .list-area ul li .text-area .memo span {display:block; line-height: 15px; font-size: 11px; color: #4c4c4c; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 #place .address-list .list-area ul li .btns {margin-top: 5px; text-align: right;}
 #place .address-list .list-area ul li .btns p {display: inline-block;}
-#place .address-list .list-area ul li .btns p a {display: inline-block; float: left; margin-left: 4px; width: 50px; line-height: 24px; text-align: center; font-size: 11px; color: #ffffff;}
+#place .address-list .list-area ul li .btns p a {display: inline-block; float: left; margin-left: 4px; width: 50px; line-height: 24px; text-align: center; font-size: 11px; }
 #place .address-list .list-area ul li .btns p a.btn-black {background: #393939;}
 #place .address-list .list-area ul li .btns p a.btn-gray {background: #858585;}
 #place .section.on .h_title {border-bottom:none;}

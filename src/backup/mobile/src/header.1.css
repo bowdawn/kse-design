@@ -80,18 +80,7 @@
 .prd-consumer{font-size: 11px !important;}
 .dn{display:none !important;}
 html{overflow-x: hidden;}
-#topBnr{display: none;width:100%; background:#0097e6}
-#topBnr a#txt{
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    height: 35px;
-    line-height: 35px;
-    font-size: 13px;
-    color: #fff;}
-#topBnr p#xbtn{position:absolute; top:10px; right: 10px;}
+
 
 
 p.join{position:relative; display: inline-block;}
@@ -115,33 +104,7 @@ p.join{position:relative; display: inline-block;}
     font-family: roboto;
     font-weight: 500;}
 
-.search_box{
-    position: relative;
-    text-align: center;
-}    
 
-.search_box input{
-    border: 0;
-    width: 90%;
-    margin: 0 auto;
-    text-indent: 15px;
-    padding-left: 0 !important;
-    line-height: 32px;
-    height: 32px;
-    font-size: 12px;
-    margin-bottom: 15px;
-    border-radius: 50px;
-    position: relative;
-    background: #fff;}
-*:focus{outline:none;}
-
-.search_box a{}
-
-.search_box a img{
-    width: 22px;
-    position: absolute;
-    right: 35px;
-    top: 5px;}
 
 .menu_on {height:100%; overflow:hidden;}
 .menu_off {height:auto; overflow:initial;}
@@ -187,29 +150,23 @@ p.join{position:relative; display: inline-block;}
 #header .search .searchBox input {width:90%; height:30px; border:0px none; margin-top: 6px; padding: 0 5px;}
 #header .search .btn_search {width:45px; height:42px; line-height:50px; background-color:#822023; position:absolute; top:0; right:0;  text-align:center;}
 
-#header .top_slide{
-    border: 1px solid #ddd;
-    border-left: 0;
-    border-right: 0;
-    margin-top: 10px;}
 
-#header .top_slide a{
-    display:inline-block;
-    border-bottom: 3px solid #fff;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0px;
-    padding: 10px 7px;
-    color: #000 !important;}
+
+
 #header .top_slide a.now{border-bottom: 3px solid #6b3590 ;color: #6b3590  !important;}
 #header .top_slide .swiper-slide:nth-child(1){padding-left:7px;}
 #header .top_slide .swiper-slide{ width: initial !important; padding-right: 25px;}
 .fa-angle-down:before{color: #b6b6b6;font-size: 16px;}
 
 /* 카테고리 */
+aside #close_btn {
+ position: absolute;
+top: 0;
+right:0;
 
-#close_btn{padding: 8px;width: 20px;height: 20px; position: absolute; top: 9px; right: 7px;}
-#close_btn img {width:95%}
+}
+
+
 
 aside {position:fixed; width:100%; height:100%; left:0; bottom:0;overflow-y:auto; -webkit-overflow-scrolling: touch; z-index:999999; display:none; background: #fff;}
 aside .asideTop {position:relative; text-align:right; background: #0097e6;}
@@ -220,18 +177,22 @@ aside .search .searchBox input {width: 100%; height: 37px; border: 0px none; mar
 aside .search .btn_search {width: 45px; height: 42px; line-height: 50px;   position: absolute; bottom: 7px;  right: 23px; color: #fff; text-align: center;;}
 aside .search .btn_search img{width: 23px; vertical-align: inherit;}
 
-aside nav li {border-bottom:1px solid #ededed; position:relative;}
-aside nav li a {display: block; height: 45px; line-height:45px; padding:0 0 0 20px; margin-right: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; color: #000;}
-aside nav li .fa {position: absolute; top:0; right: 0; width: 40px; text-align: center; height: 45px; line-height:45px;}
-aside nav li > ul {background-color:#fafafa; display:none; border-top:1px solid #ededed;}
-aside nav li > ul > li {border-bottom:0px none; border-top:1px solid #ededed;}
-aside nav li > ul > li:first-child {border-top:0px none;}
-aside nav li > ul > li a {padding:0 40px 0 30px; margin: 0;font-size: 14px;color: #787878 !important;}
-aside nav li > ul > li > ul {border-top:0px none; border-top:1px solid #ccc;}
-aside nav li > ul > li > ul > li {border-bottom:0px none;}
-aside nav li > ul > li > ul > li a {padding:0 0 0 40px; margin: 0; background-color: #DDDDDD;}
+aside nav { padding-top: 20px}
+aside nav li { position:relative;}
+aside nav li a {display: block; position: relative;    }
+aside nav li .fa {   }
+
+
+
+aside nav li > ul { display:none; }
+aside nav li > ul > li { }
+aside nav li > ul > li:first-child {}
+aside nav li > ul > li a {}
+aside nav li > ul > li > ul {}
+aside nav li > ul > li > ul > li {}
+aside nav li > ul > li > ul > li a {}
 aside nav li.no-line{margin-top:0 !important; border-bottom:0 !important;}
-aside nav li.plan{text-align: center; padding-top: 25px; display: table; padding: 25px 10px;}
+aside nav li.plan{text-align: center; padding-top: 25px; display: table; padding: 20px 10px;}
 aside nav li.plan a{ margin-bottom: 10px !important;display:inline-block; width:48.5%; height: inherit; line-height: inherit; padding: 0 !important; margin: 0; border: 1px solid #ededed;}
 aside nav li.plan a:nth-child(odd){float: left;}
 aside nav li.plan a:nth-child(even){float:right;}

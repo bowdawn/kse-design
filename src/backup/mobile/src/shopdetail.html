@@ -17,7 +17,7 @@
                             <div class="thumb"><!--/multi_image_enlarge/--></div>
                             <div class="thumbnail_area">
                                 <div class="thumbnail">                                             
-                                    <!--/loop_multi_image_list(5)/-->
+                                    <!--/loop_multi_image_list(10)/-->
                                     <li class="img_list">
                                         <img src="<!--/multi_image_list@img/-->" style="cursor:pointer; width: 100%;" onclick="<!--/multi_image_list@link/-->" />
                                     </li>
@@ -130,8 +130,15 @@
                         <p>
                             <span class="shopdetailInfoCont"><em><!--/number/price_sell/--></em>원</span>
 <div class="sns-pop">
-<a href="<!--/link_scrap_fb/-->"><img src="/design/ksilverex/supermarket/mimg/sns-fb.gif" alt="페이스북" tit="페이스북"></a>
-<a href="<!--/link_scrap_ka/-->"><img src="/design/ksilverex/supermarket/mimg/sns-kt.png" alt="카카오톡" tit="카카오톡"></a>
+<a href="<!--/link_wishlist/-->" class="wish"><div class="kse-btn kse-btn-default kse-btn-circle" ><svg class="kse-icon-small" viewBox="0 0 30 28.5">
+
+    <g>
+        <path
+            d="M16.01,26.61l-1.01,.92-2.17-1.98C5.1,18.54,0,13.91,0,8.25,0,3.61,3.63,0,8.25,0c2.61,0,5.11,1.21,6.75,3.12,1.64-1.9,4.14-3.12,6.75-3.12,4.62,0,8.25,3.61,8.25,8.25,0,2.15-.75,4.14-2.07,6.17-.93-.45-1.96-.75-3.05-.85,1.36-1.86,2.11-3.59,2.11-5.31,0-3-2.25-5.25-5.25-5.25-2.31,0-4.56,1.5-5.35,3.54h-2.79c-.8-2.04-3.05-3.54-5.36-3.54-3,0-5.25,2.25-5.25,5.25,0,4.34,4.71,8.61,11.83,15.07l.16,.15,.06-.06c.12,1.14,.45,2.22,.95,3.19m6.5-10.11v4.5h-4.5v3h4.5v4.5h3v-4.5h4.5v-3h-4.5v-4.5h-3Z" />
+    </g>
+</svg></div></a>
+<a href="<!--/link_scrap_fb/-->"><img  style="height: 40px;" src="/design/ksilverex/supermarket/mimg/sns-fb.gif" alt="페이스북" tit="페이스북"></a>
+<a href="<!--/link_scrap_ka/-->"><img  style="height: 40px;" src="/design/ksilverex/supermarket/mimg/sns-kt.png" alt="카카오톡" tit="카카오톡"></a>
 </div>
                         </p>
                         <!--/end_if/-->
@@ -189,7 +196,7 @@
 <th scope="row"><div class="tb-left">멤버십 포인트</div></th>
 <td>
 <div class="tb-left">
-<b><!--/number/reserve_percent_price/-->P 적립</b> (멤버십고객 한정)
+<b><!--/number/reserve_percent_price/-->P 적립</b> (멤버십고객 대상)
 </div>
 </td>
 </tr>
@@ -234,12 +241,16 @@
 
                     <article class="option_area">
                         <!-- 상품구매 고정버튼 영역 -->
-                        <div class="fixed-btn">
+                        <div class="fixed-btn <!--/if_soldout/--> kse-disabled <!--/end_if/-->" style="padding: 15px;">
                             <img src="/images/d3/m_04/bt_option@2x.png" width="67" height="20" alt="옵션열기" class="btn_option"/>
                             <!--/if_soldout/-->
-                            <a href="#none" class="btn_Red soldout">품절</a>
+ <a href="#none" class="kse-row kse-block">
+<div class="kse-btn kse-btn-disabled kse-block" >                           
+품절
+</div>
+</a>
                             <!--/else/-->
-                            <a href="#" class="btn_Red">구매하기</a>
+                            <a href="#" class="btn_Red kse-btn kse-btn-primary">구매하기</a>
                             <!--/end_if/-->
                         </div>
                         <!-- //상품구매 고정버튼 영역 -->
@@ -466,11 +477,11 @@
                                         </p>
                                     <!--/end_loop/-->
                                     <!--/if_extra_product@link_option_select_complete/-->
-                                        <p class="opt-com"><a href="<!--/extra_product@link_option_select_complete/-->"><img src="/images/d3/modern_simple/btn/btn_h18_select_complete.gif" title="옵션 선택 완료" alt="옵션 선택 완료" /></a></p>
+                                        <p class="opt-com"><a class="kse-btn kse-btn-default" href="<!--/extra_product@link_option_select_complete/-->">선택완료</a></p>
                                     <!--/end_if/-->
                                 <!--/else/-->
                                     <!--/if_extra_product@link_option_select_complete/-->
-                                        <p class="opt-com"><a href="<!--/extra_product@link_option_select_complete/-->"><img src="/images/d3/modern_simple/btn/btn_h18_select_complete.gif" title="옵션 선택 완료" alt="옵션 선택 완료" /></a></p>
+                                        <p class="opt-com"><a href="<!--/extra_product@link_option_select_complete/-->" class="kse-btn kse-btn-default">선택 완료</a></p>
                                     <!--/end_if/-->
                                 <!--/end_if/-->
                             </div>
@@ -519,9 +530,11 @@
                         </div>
                     <!--/end_if/-->
                         </div>
-                        <div class="buy_on">
-                            <a href="<!--/link_immediate/-->" class="buy">즉시구매</a>
-                            <a href="<!--/link_basket/-->">금고에 담기</a>
+                        <div class="buy_on  " style="padding: 15px;" >
+                           <div class="kse-space kse-space-middle kse-block">
+                            <a href="<!--/link_basket/-->" class="kse-btn kse-btn-default kse-col-block" >금고에 담기</a>
+                            <a href="<!--/link_immediate/-->" class="buy kse-btn kse-btn-primary kse-col-block">즉시구매</a>
+                           <div>
                         </div>
                     </article>
 
@@ -541,13 +554,16 @@
                     <!--/end_if/-->
                     <!-- 상품구매 버튼 영역 -->
                     <div class="shopdetailButton" id="GG">
-                        <div class="shopdetailButtonTop">
+                        <div class="shopdetailButtonTop kse-space kse-space-middle">
                             <!--/if_soldout/-->
-                                <p class="soldout">상품이 품절되었습니다.</p>
-                            <!--/else/-->
-                               <a href="<!--/link_immediate/-->" class="buy">구매하기</a>
-                               <a href="<!--/link_basket/-->" class="cart">금고에 담기</a>
-                               <a href="<!--/link_wishlist/-->" class="wish">찜</a>
+<div class="kse-row kse-row-end kse-block">
+                                <p class="soldout kse-btn kse-btn-disabled">상품이 품절되었습니다</p>
+     </div>
+                       <!--/else/-->
+                               <a href="<!--/link_basket/-->" class="cart kse-btn kse-btn-default kse-btn-large kse-col-block">금고에 담기</a>
+                               <a href="<!--/link_immediate/-->" class="buy kse-btn kse-btn-primary kse-btn-large kse-col-block">구매하기</a>
+                               
+                               <!-- <a href="<!--/link_wishlist/-->" class="wish">찜</a> 숨거리 처리 -->
                             <!--/end_if/-->
                         </div>
                         <!--/if_btn_dgg/-->
@@ -616,7 +632,7 @@
                                 <!--/if_related_product@price_replace/--> 
                                 <span class="prd-replace"><!--/related_product@price_replace/--> </span>
                                 <!--/else_if_related_product@is_soldout/--> 
-                                <span class="prd-soldout">품절</span>
+                                <span class="prd-soldout">품절.</span>
                                 <!--/else/--> 
                                 
                                     <!--/if_related_product@price_consumer(+1)/--> 
@@ -692,14 +708,9 @@
                 <!--/end_if/--> 
               </div>
 
-
-
-          <br/>  
-             <div class="event"><a href="https://www.koreasilverex.co.kr/board/board.html?code=ksilverex_image2&page=1&type=v&board_cate=&num1=999946&num2=00000&number=31&lock=N"><img src="//ksilverex.img15.kr/2023_01_event/M_banner_2023newyear.png" width="100%"></a></div>
-            <div class="event"><a href="https://www.koreasilverex.co.kr/shop/roulette.html?id=8"><img src="//ksilverex.img15.kr/M_banner_roulette.jpg" width="100%"></a></div>
-          <br/>
-        
-
+             <div class="event"><a href="" width="100%"></a></div>
+            <div class="event"><a href="https://www.koreasilverex.co.kr/shop/roulette.html?id=8"><img src="//ksilverex.img15.kr/M_banner_roulette.jpg" width="100%"></a></div
+       
             <div class="shopdetailItem">
             <a id="detailReview"></a>
                 <div class="detailTab">
@@ -821,7 +832,9 @@
 
 
                 <div class="shopdetailItemPopup">
-                    <a href="<!--/link_product_detail/-->">상품정보 새창 열기</a>
+<div class="kse-row">
+                    <a href="<!--/link_product_detail/-->" class="kse-btn kse-btn-default kse-btn-large kse-block" >상품정보 새창 열기</a>
+</div>
                     <p class="shopdetailItemZoom">상세 정보를 확대해 보실 수 있습니다.</p>
                 </div>
                 <div class="shopdetailImage">
@@ -852,7 +865,7 @@
                   <div id="tabs2" class="shopdetailBoard tab_area"> <span class="tab_on"></span> </div>
                   <div class="boardList"> 
                     <!--/qna_board_target/-->
-                    <div class="util"> <a href="<!--/link_qna_board_write/-->" class="btn_Black">문의하기</a> </div>
+                    <div class="util"> <a href="<!--/link_qna_board_write/-->" class="btn_Black kse-btn kse-btn-primary">문의하기</a> </div>
                     <!--/if_qna_board/-->
                     <div class="list_board">
                       <ul>

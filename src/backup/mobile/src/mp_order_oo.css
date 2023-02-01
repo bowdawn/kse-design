@@ -1,10 +1,16 @@
 #order-list .MK_orderlist {padding:10px 5px; background-color: #eaeaea;}
+#order-list .MK_orderlist {
+    padding-bottom: 0px;
+
+}
+#order-list .MK_orderlist .product-name a:not(.kse-btn) { max-width: calc(100% - 150px);}
 #order-list .MK_orderlist .product-name a,
-#order-list .MK_orderlist .option {width: 61%; display: inline-block; padding-right: 5px; word-break: break-all;}
+#order-list .MK_orderlist .option { display: inline-block;  word-break: break-all;}
 #order-list li {margin-top:15px; background-color: #fff; border: 2px solid #464646; border-radius: 5px; box-shadow: 0 1px 3px 0 #949494;}
 #order-list li dl {padding:15px 5px; border-bottom: 1px solid #dedede;}
+#order-list li dl:last-of-type {padding:15px 5px; border-bottom: none;}
 #order-list li dl dt .delivery_state {color: #307BFF;}
-#order-list li dl dt .listTitleRight {float:right;}
+#order-list li dl dt .liwidth: 61%; tTitleRight {float:right;}
 #order-list li dl dt .listTitleRight .btn_write {width: 64px; display: inline-block; border: 1px solid #c6c6c6; padding:3px 0; background-color: #efefef; text-align: center; margin-left: 5px;}
 #order-list li dl dt .listTitleRight .btn_writeEnd {width: 64px; color:#959393; display: inline-block; border: 1px solid #c6c6c6; padding:3px 0; background-color: #efefef; text-align: center; margin-left: 5px;}
 #order-list li dl dd.option {margin-top:5px;}
@@ -12,9 +18,9 @@
 #order-list li dl .red-delivery span {padding: 2px; background-color: #fff; color: #FB9C15; font-size: 0.875em; border-radius: 3px; border: 1px solid #FFA82C;}
 #order-list li dl .blue-delivery span {padding: 2px; background-color: #fff; color: #3D9EFF; font-size: 0.875em; border-radius: 3px; border: 1px solid #58ACFF;}
 #order-list li dl .gray-delivery span {padding: 2px;background-color: #fff;color: #656565;font-size: 0.875em;border-radius: 3px;border: 1px solid #656565;margin-left: 4px;}
-#order-list li .item-delivery {display: table; width: 100%; padding: 5px 0; text-align: right;}
+#order-list li .item-delivery { width: 100%; padding: 5px 0; text-align: right;}
 #order-list li .item-delivery .btn_Grey {height: 45px; display: inline-block; border: 5px solid #fff; box-sizing: border-box;}
-#order-list li .item-links {display: table; width: 100%; padding: 5px 0; text-align: left;}
+#order-list li .item-links { width: 100%; padding: 5px 0; text-align: left;}
 #order-list li .item-links .btn_Cancel {width:33.3%; height: 45px; line-height: 35px; background-color: #cccccc; color: #000; text-align: center; display:inline-block; border: 5px solid #fff; box-sizing: border-box;}
 #order-list li .item-links .btn_Grey {width:33.3%; height: 45px; display: inline-block; border: 5px solid #fff; box-sizing: border-box;}
 #order-list li h4 {color:#fff; background-color: #0097e6; padding:10px 5px; border-top-left-radius: 3px; border-top-right-radius: 3px;}
@@ -22,20 +28,20 @@
 #order-list li .detail {padding:0 5px;}
 #order-list li .detail .color_a63f42 {font-size:1.167em;}
 #order-list li .detail.add_info {margin-top:-1px;}
-#order-list li .delivery-detail {margin-top: 5px;}
+
 #order-list li .delivery-detail h5 {border-top: 2px solid #4a4a4a;}
-#order-list li .pay-detail {margin-top: 5px;}
+
 #order-list li .pay-detail h5 {border-top: 2px solid #4a4a4a;}
-#order-list li .detail h5 {font-weight:bold; background-color: #f1f1f1; padding:10px 15px; border-top:1px solid #4a4a4a; border-bottom:1px solid #4a4a4a;}
+#order-list li .detail h5 {font-weight:bold; background-color: #f1f1f1; padding:10px 15px; border-top:1px solid #4a4a4a;}
 #order-list li .detail h5 .btn_White {width: 64px; height: 20px; line-height: 20px; float: right;}
 #order-list li .detail table {display:none;}
 #order-list li .detail table.status-list thead {background-color: #fafafa;}
-#order-list li .detail table.status-list thead th {padding: 10px 0;}
+#order-list li .detail table.status-list thead th {padding: 10px 0; white-space: nowrap;}
 #order-list li .detail table.status-list thead th:nth-child(1), #order-list li .detail table.status-list tbody td:nth-child(1) {padding-left:15px;}
 #order-list li .detail table.status-list thead th:nth-child(2), #order-list li .detail table.status-list thead th:nth-child(3), #order-list li .detail table.status-list tbody td:nth-child(2), #order-list li .detail table.status-list tbody td:nth-child(3) {text-align: center;}
 #order-list li .detail table.status-list tbody td {padding: 10px 0;}
 #order-list li .detail table tr {border-bottom: 1px solid #dedede; font-weight:normal;}
-#order-list li .detail table th {background-color: #fafafa; padding:10px 0 10px 15px;}
+#order-list li .detail table th {background-color: #fafafa; padding:10px 0 10px 15px; white-space: nowrap;}
 #order-list li .detail table td {padding:10px 0 10px 10px; }
 #order-list .MK_link_more_order {background-color: #eaeaea; padding: 20px 10px;}
 

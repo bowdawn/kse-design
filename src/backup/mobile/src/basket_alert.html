@@ -1,92 +1,60 @@
 <div id="cartPop">
-  <div class="layer">
-    <div class="layer-pop">
-      <div class="BA-tit-fix">
-        <h3>ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½</h3>
-        <a href="<!--/layer_close_link/-->" class="BA-basket-pop-close"
-          ><span class="fa fa-times fa-2x"></span
-        ></a>
-      </div>
-      <div class="BA-txt">
-        <div class="BA-item-cont">
-          <dl class="BA-item-list">
-            <dt>
-              <a href="#none"
-                ><img
-                  src="<!--/basket_img/-->"
-                  alt="ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
-                  title="ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
-              /></a>
-            </dt>
-            <dd><!--/basket_msg/--></dd>
-          </dl>
-          <div class="BA-btn-wrap">
-            <a href="<!--/continue_link/-->">ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½</a>
-            <a href="<!--/basket_link/-->">ï¿½Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½</a>
-          </div>
+    <div class="layer">
+        <div class="layer-pop">
+            <div class="BA-tit-fix">
+                <h3>±Ý°í¿¡ º¸°üÇÏ±â</h3>
+                <a href="<!--/layer_close_link/-->" class="BA-basket-pop-close"><span class="fa fa-times fa-2x"></span></a>
+            </div>
+            <div class="BA-txt">
+                <div class="BA-item-cont">
+                    <dl class="BA-item-list">
+                        <dt><a href="#none"><img src="<!--/basket_img/-->" alt="»óÇ° ¼¶³×ÀÏ" title="»óÇ° ¼¶³×ÀÏ"></a></dt>
+                        <dd><!--/basket_msg/--></dd>
+                    </dl>
+                    <div class="BA-btn-wrap kse-space kse-space-middle">
+
+                        <a href="<!--/continue_link/-->" class="kse-btn kse-btn-default kse-btn-large kse-col-block"  >°è¼Ó ¼îÇÎÇÏ±â</a>
+                        <a href="<!--/basket_link/-->" class="kse-btn kse-btn-primary  kse-btn-large kse-col-block" >±Ý°í¿¡ ´ã±â</a>
+                    </div>
+                </div>
+                <!--/if_use_related_product/-->
+                <div class="BA-recommend-wrap">
+                    <h2 class="BA-sub-tit">
+                    <!--/if_related_title(°ü·Ã»óÇ°)/-->ÀÌ·± »óÇ°Àº ¾î¶°¼¼¿ä?<!--/end_if/-->
+                    <!--/if_related_title(Ä«Æ®ÇÁ¸®)/-->ÇÔ²² ´ãÀ¸¸é ¹è¼Ûºñ°¡ Àý¾àµÅ¿ä!<!--/end_if/-->
+                    <!--/if_related_title(ÃÖ±Ùº»»óÇ°)/-->ÃÖ±Ù º» »óÇ°<!--/end_if/-->     
+                    </h2>
+                    <!--/if_product_list/-->
+                    <!--/block_product_list/-->                                    
+                    <!-- °ü·Ã»óÇ° ¸®½ºÆ® -->
+                    <div class="BA-recommend-item">
+                    <!--/loop_product_list/-->
+                        <dl>
+                            <dt class="BA-thumb"><a href="<!--/product_list@link/-->"><img src="<!--/product_list@mobile_image/-->" alt="»óÇ° ¼¶³×ÀÏ" title="»óÇ° ¼¶³×ÀÏ"></a></dt>
+                            <dd class="BA-prd-info">
+                                <p><!--/product_list@name/--></p>
+                                <strong class="BA-price"><!--/if_product_list@price_replace/--><!--/product_list@price_replace/--><!--/else/--><!--/number/product_list@price_sell/-->¿ø<!--/end_if/--></strong>
+                            </dd>
+                        </dl>
+                        <!--/end_loop/--> 
+                    </div>
+                    <!-- // °ü·Ã»óÇ° ¸®½ºÆ® -->                
+                    <!--/end_block/-->
+                    <!--/else/-->
+                    <div class="BA-no-data">ÃßÃµ »óÇ°ÀÌ ¾ø½À´Ï´Ù.</div>
+                    <!--/end_if/-->
+                    <!-- ÆäÀÌÂ¡ -->
+                    <!--/block_paging/-->
+                    <ul class="BA-recommend-paging">
+                        <li><!--/block_prev_page/--><a href="<!--/page_prev_link/-->" class="rp_prev">prev</a><!--/end_block/--></li>
+                        <li><strong><!--/current_page/--></strong> / <!--/total_page/--></li>            
+                        <li><!--/block_next_page/--><a href="<!--/page_next_link/-->" class="rp_next">next</a><!--/end_block/--></li>
+                    </ul>
+                    <!--/end_block/-->
+                    <!-- // ÆäÀÌÂ¡ -->                    
+                </div>
+                <!--/end_if/-->
+            </div>
         </div>
-        <!--/if_use_related_product/-->
-        <div class="BA-recommend-wrap">
-          <h2 class="BA-sub-tit">
-            <!--/if_related_title(ï¿½ï¿½ï¿½Ã»ï¿½Ç°)/-->ï¿½Ì·ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½î¶°ï¿½ï¿½ï¿½ï¿½?<!--/end_if/-->
-            <!--/if_related_title(Ä«Æ®ï¿½ï¿½ï¿½ï¿½)/-->ï¿½Ô²ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ûºï¿½ ï¿½ï¿½ï¿½ï¿½Å¿ï¿½!<!--/end_if/-->
-            <!--/if_related_title(ï¿½Ö±Ùºï¿½ï¿½ï¿½Ç°)/-->ï¿½Ö±ï¿½ ï¿½ï¿½ ï¿½ï¿½Ç°<!--/end_if/-->
-          </h2>
-          <!--/if_product_list/-->
-          <!--/block_product_list/-->
-          <!-- ï¿½ï¿½ï¿½Ã»ï¿½Ç° ï¿½ï¿½ï¿½ï¿½Æ® -->
-          <div class="BA-recommend-item">
-            <!--/loop_product_list/-->
-            <dl>
-              <dt class="BA-thumb">
-                <a href="<!--/product_list@link/-->"
-                  ><img
-                    src="<!--/product_list@mobile_image/-->"
-                    alt="ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
-                    title="ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
-                /></a>
-              </dt>
-              <dd class="BA-prd-info">
-                <p><!--/product_list@name/--></p>
-                <strong class="BA-price"
-                  ><!--/if_product_list@price_replace/--><!--/product_list@price_replace/--><!--/else/--><!--/number/product_list@price_sell/-->ï¿½ï¿½<!--/end_if/--></strong
-                >
-              </dd>
-            </dl>
-            <!--/end_loop/-->
-          </div>
-          <!-- // ï¿½ï¿½ï¿½Ã»ï¿½Ç° ï¿½ï¿½ï¿½ï¿½Æ® -->
-          <!--/end_block/-->
-          <!--/else/-->
-          <div class="BA-no-data">ï¿½ï¿½Ãµ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.</div>
-          <!--/end_if/-->
-          <!-- ï¿½ï¿½ï¿½ï¿½Â¡ -->
-          <!--/block_paging/-->
-          <ul class="BA-recommend-paging">
-            <li>
-              <!--/block_prev_page/--><a
-                href="<!--/page_prev_link/-->"
-                class="rp_prev"
-                >prev</a
-              ><!--/end_block/-->
-            </li>
-            <li>
-              <strong><!--/current_page/--></strong> /
-              <!--/total_page/-->
-            </li>
-            <li>
-              <!--/block_next_page/--><a
-                href="<!--/page_next_link/-->"
-                class="rp_next"
-                >next</a
-              ><!--/end_block/-->
-            </li>
-          </ul>
-          <!--/end_block/-->
-          <!-- // ï¿½ï¿½ï¿½ï¿½Â¡ -->
-        </div>
-        <!--/end_if/-->
-      </div>
     </div>
-  </div>
 </div>

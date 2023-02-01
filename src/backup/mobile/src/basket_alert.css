@@ -12,8 +12,8 @@
 #cartPop .BA-item-cont .BA-item-list dt a { font-size:0; }
 #cartPop .BA-item-cont .BA-item-list dt img { width:100%; height:100%; }
 #cartPop .BA-item-cont .BA-item-list dd { display:table-cell; padding-left:15px; color:#000; font-family: "Malgun Gothic"; font-size:12px; letter-spacing:-1px; font-weight:normal; line-height: 20px; vertical-align:middle; text-align:left; }
-#cartPop .BA-item-cont .BA-btn-wrap a { display:inline-block; width:48.45%; height:35px; line-height:35px; border:1px solid #222021; font-family: "Malgun Gothic"; font-size:13px; color:#000; text-align:center; }
-#cartPop .BA-item-cont .BA-btn-wrap a + a { background:#0097e6; color:#fff; }
+
+
 #cartPop .BA-recommend-wrap .BA-sub-tit { margin:0; padding:0 10px; color:#3b3b3b; font-family: "Malgun Gothic"; font-size:15px; font-weight:bold; text-align:left; letter-spacing: -1px; }
 #cartPop .BA-recommend-wrap .BA-recommend-item {display:table; width:97%; margin:15px 5px 25px; text-align:left; }
 #cartPop .BA-recommend-wrap .BA-recommend-item dl { display:inline-block; width:33.333%; vertical-align:top; }

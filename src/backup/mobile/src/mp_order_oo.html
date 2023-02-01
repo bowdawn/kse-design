@@ -22,17 +22,19 @@
 			<!--/loop_order_list@delivery/-->
 			<!--/loop_order_list@delivery@product/-->
                         <dl>
-                            <dt class="product-name">
+                            <dt class="product-name kse-row kse-row-space-between kse-row-align-center" >
                             <!--/order_list@delivery@product@checkbox_item/-->
                             <!--/if_order_list@delivery@product@link/-->
                             <a href="<!--/order_list@delivery@product@link/-->" >
                             <span class="delivery_state">(<!--/order_list@delivery@product@delivery_state/-->)</span> <!--/notag/order_list@delivery@product@name/-->
                             </a>
                             <!--/end_if/-->
-                            <span class="listTitleRight">
+                            <span class="listTitleRight kse-space kse-space-middle kse-space-align-center">
+<div style="white-space: nowrap;">
                                 수량 : <!--/order_list@delivery@product@amount/-->
-                                <!--/if_order_list@delivery@product@review_write_link/-->
-                                <a href="<!--/order_list@delivery@product@review_write_link/-->" class="btn_write">리뷰작성 <span class="fa fa-chevron-right"></span></a>
+</div>                                
+<!--/if_order_list@delivery@product@review_write_link/-->
+                                <a href="<!--/order_list@delivery@product@review_write_link/-->" class=" kse-btn kse-btn-default-active">리뷰작성 </a>
                                 <!--/end_if/-->
                             </span>
                             </dt>
@@ -109,11 +111,11 @@
                         </div>
                         <!-- //배송 상세 정보 -->
                         <!--/if_order_list@delivery@link_delivery/-->
-                        <div class="ncount item-delivery clearFix">
+                        <div class="ncount item-delivery clearFix kse-row ">
                             <!--/if_order_list@delivery@link_buy_ok/-->
                             <a href="<!--/order_list@delivery@link_buy_ok/-->" class="btn_Grey fl" title="구매확정"><span>구매확정</span></a>
                             <!--/end_if/-->
-                            <a href="<!--/order_list@delivery@link_delivery/-->" class="btn_Grey" target="_blank" title="배송조회"><span>배송조회</span></a>
+                            <a href="<!--/order_list@delivery@link_delivery/-->" class="kse-btn kse-btn-primary kse-block" target="_blank" title="배송조회" style="margin: 5px;">배송조회</a>
                         </div>
                         <!--/end_if/-->
 			<!--/end_loop/-->
@@ -203,19 +205,21 @@
                         </div>
                         <!--/end_if/-->
                         <!-- //주문 추가 정보 -->
-                        <div class="ncount item-links clearFix">
+                        <div class="ncount item-links clearFix kse-row kse-row-end" >
                             <!--/if_order_list@link_cancel/-->
-                            <a href="<!--/order_list@link_cancel/-->" class="btn_Cancel"><span>주문취소</span></a>
+                            <a href="<!--/order_list@link_cancel/-->" class=" kse-btn kse-btn-default" style="margin-right:  5px;">주문취소</a>
                             <!--/end_if/-->
                             <!--/if_order_list@link_gift/-->
-                            <a href="<!--/order_list@link_gift/-->" class="btn_Grey"><span>사은품 선택</span></a>
+                            <a href="<!--/order_list@link_gift/-->" class="btn_Grey "><span>사은품 선택</span></a>
                             <!--/end_if/-->
                             <!--/if_order_list@link_cash_receipt/-->
                             <a href="<!--/order_list@link_cash_receipt/-->" class="btn_Grey"><span>현금영수증</span></a>
                             <!--/end_if/-->
                             <!--/if_order_list@link_all_smorder/-->
-                            <a href="<!--/order_list@link_all_smorder/-->" class="btn_Grey"><span>주문상세</span></a>
-                            <!--/end_if/-->
+
+                            <a href="<!--/order_list@link_all_smorder/-->" class=" kse-btn kse-btn-primary" style="margin-right:  5px;" >주문상세</a>
+    
+                       <!--/end_if/-->
                             <!--/if_order_list@link_all_return/-->
                             <a href="<!--/order_list@link_all_return/-->" class="btn_Grey"><span>선택상품 반품</span></a>
                             <!--/end_if/-->
@@ -234,8 +238,10 @@
                 <!--/end_if/-->
                 <!--/end_block/-->
                 <!--/block_order_more/-->
-                    <a href="<!--/link_more_order/-->" class="btn_White bold">주문서 더보기</a>
-                <!--/end_block/-->
+<div  class="kse-row kse-row-center">
+                    <a href="<!--/link_more_order/-->" class="kse-btn kse-btn-default">주문서 더보기</a>
+</div>                
+<!--/end_block/-->
         </main>
         <!-- //main -->
     </div>

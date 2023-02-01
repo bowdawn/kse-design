@@ -12,7 +12,6 @@
 /* 개인정보 수집이용, 제3제공, 취급위탁 테이블 */
 hr, caption, legend {display: none;}
 #container {font-size:16px;}
-.btn-agree a {display:block; margin:0 20px; padding:16px 0; background:#000; border-radius:6px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-weight:700; letter-spacing:-1px;}
 /* e 220819 신규 */
 
 /* 이용약관 */

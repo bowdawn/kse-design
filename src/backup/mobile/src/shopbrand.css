@@ -126,4 +126,31 @@
 	font-weight: bold !important;
 	margin-left: 2px;
 }
+.shopbrandTitle a {
+    display: block;
+    width: 100%;
+}
+
+.shopbrandTitle img {
+    display: block;
+    width: 100%;
+}
+
+.kse-layout-header-bottom-mobile .kse-menu-item.kse-menu-item-consignment::before {
+  width: 100%;
+}
+
+.kse-menu-item.kse-menu-item-consignment * {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+}
+
+
+.MK-product-icons img {
+    width: 64px !important;
+    margin-bottom: 10px;
+    padding: 0px
+}
+
+
 

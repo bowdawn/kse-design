@@ -150,25 +150,16 @@ hr.line{
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .option_area.fixed .fixed-btn.fixed {display: block; position: relative;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .fixed-btn .btn_option {position: absolute; top: -16px; left: 50%; margin-left:-33px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoMultiSelect {background-color: #fff; }
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on {background-color: #f6f6f6; text-align: center; padding: 10px 15px; display:none;}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on { display:none;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a {
-    color: ##0097e6;
-    background-color: #fff;
-    width: 47%;
-    padding: 15px 0px;
-    display: inline-block;
-    margin: 0 2px;
-    border: 1px solid #000;
-    font-size: 18px;
-    font-weight: normal;
+  
+ 
+    
+   
+  
 }
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.buy {
-    color: #fff;
-    background-color: #0097e6;
-    border: 1px solid #000;
-    font-size: 18px;
-    font-weight: normal;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect {}
+
+
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .opt-com {text-align: right;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect p {margin-top: 8px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect p:last-child {margin-bottom:0px;}
@@ -254,35 +245,14 @@ hr.line{
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailTotal em {color:#f1191f; font-size:1.333em; margin-left:16px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton {text-align:center; /* padding:15px;border-bottom:1px solid #4a4a4a;*/}
 
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop{display: table; width: 100%;}
 
-p.soldout{
-    font-size: 17px;
-    padding-top: 10px;
-    color: #3b3b3b;
-    font-weight: bold;}
 
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop a {
-    width: 41%;
-    padding: 13px 0px;
-    display: inline-block;
-    margin: 0px 2px;
-    font-size: 17px !important;
-    font-weight: 100 !important;
-    }
+
+
     
     
-    
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop a.cart {border: 1px solid #000;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop a.buy {
-    float:left;
-    margin-left: 0;
-    color: #fff; background-color: #0097e6; border: 1px solid #000;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop a.wish{
-    border: 1px solid #000;
-    /* float: right; */
-    width: 13%;
-    margin-right: 0;}
+
+
 
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonBottom {margin:20px 0;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonBottom img {margin:0 2px; width:45px; height:auto;}
@@ -295,7 +265,7 @@ p.soldout{
 .shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon dt strong {font-weight: normal;}
 .shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon h4 {font-weight:bold;}
 .shopdetail .shopdetailItem .shopdetailItemPopup {text-align:center; padding:0 15px; margin:22px 0;}
-.shopdetail .shopdetailItem .shopdetailItemPopup a {font-weight:bold; color:#fff; background-color:#636363; display:block; padding:10px 0;}
+
 .shopdetail .shopdetailItem .shopdetailItemPopup .shopdetailItemZoom {height:60px; padding:0 0 0 75px; margin-top:10px; background:url("/images/d3/m_04/bg_hand@2x.gif") no-repeat 20px center; line-height: 60px; background-size: 50px auto;}
 .shopdetail .shopdetailItem .shopdetailImage img {max-width:100% !important; height: auto !important;}
 .shopdetail .shopdetailItem .shopdetailImage table {width:100% !important;}
@@ -405,7 +375,7 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 .shopdetail .shopdetailInfo .shopdetailInfoTit { height:40px; line-height:42px; padding:0 12px;  border-bottom:1px solid #c7c7c7; font-size:18px; color:#000; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap:after { clear: both; content: ""; display: block; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap { width:100%; border-bottom:1px solid #c7c7c7; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop { float:left; width:45%; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop { float:left; width:35%; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop figure { padding:15px 12px; border:0; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue { float:right; width:52%; padding:15px 0; margin-right:3%; border:0; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue .shopdetailInfoprdName { font-size:16; font-weight:bold; color:#3b3b3b; }
@@ -618,13 +588,7 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 	padding: 10px;
 }
 #tabs .util a {
-	border: 1px solid #424242;
-	display: inline-block;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 3px;
-	width: 100%;
-	text-align: center;
+
 }
 #tabs .list_board .reply-detail {
 	margin: 0 5px;
@@ -805,4 +769,8 @@ color: #000 !important;
 font-size: 23px !important;
 font-weight: bold !important;
 font-family: "Nanum Gothic", sans-serif !important;}
+}
+
+.shopdetailImage img{
+        width: -webkit-fill-available;
 }

@@ -197,9 +197,13 @@
                         <dl class="order-info-detail">
                             <dt class="require">배송지 선택</dt>
                             <dd>
-                                <div class="korea-radio-addr">
-                                    <!--/radio_delivery_addr(select-country)/-->
-                                </div>   
+                                <div class="korea-radio-addr kse-row kse-row-space-between kse-row-align-center">
+
+                             <!--/radio_delivery_addr(select-country)/-->
+<!--/if_login/-->
+    <a href="<!--/link_past_list/-->" class="btn-adr-layer kse-btn kse-btn-primary" style="margin-left: 5px;" >주소 목록</a>
+<!--/end_if/-->
+                          </div>   
                                 
                             </dd>
                         </dl>
@@ -251,9 +255,11 @@
                         <dl class="order-info-detail">
                             <dt class="require">주소</dt>
                             <dd>
-                                <!--/input_receiver_zip(txt-zipcode)/-->
-                                <a href="<!--/link_search_zip/-->" class="btn_zipcode">우편번호 찾기</a>
-                            </dd>                        
+<div class="kse-row ">
+                                <input name="post1" style="border-left: none; border-top: none; border-right: none;" id="post1" class="kse-col-block" form="order_form"  class="MS_input_txt txt-zipcode" onclick="this.blur();post();">
+                                <a href="<!--/link_search_zip/-->" class="btn_zipcode kse-btn kse-btn-primary" style="margin-left: 5px;">우편번호</a>
+</div>                       
+</dd>                        
                             <dd><!--/input_receiver_addr1(txt-input1)/--></dd>
                             <dd><!--/input_receiver_addr2(txt-input1)/--></dd>
                         </dl>                        
@@ -395,12 +401,12 @@
                                         <li><!--/input_user_id/--></li>
                                         <li><!--/input_password/--></li>
                                         <li><!--/input_email/--></li>
-                                        <li><!--/if_link_apply_join/--><a href="<!--/link_apply_join/-->" class="paym-btn-confirm">할인받기</a><!--/end_if/--></li>
+                                        <li><!--/if_link_apply_join/--><a href="<!--/link_apply_join/-->" class="paym-btn-confirm kse-btn kse-btn-primary">할인받기</a><!--/end_if/--></li>
                                     </ul>
                                 </div>
                                 <ul class="paym-msg">
                                     <li>아이디만 입력하면 주문과 가입이 동시에!</li>
-                                    <li><!--/simple_sale_message/-->!</li>
+                                    <li>100,000원 이상 주문 시, 1,000원 추가 할인!</li>
                                 </ul>
                                 <!--/end_block/-->
                                 <!--/block_simple_apply/-->
@@ -484,12 +490,14 @@
                     <div class="agree-box">                    
                         <div id="join" class="wrapper">
                             <!--/if_recall_policy/-->
+                            
                             <div class="hd">
                             <h5>청약철회 방침</h5>
                             </div>
                             <div class="cont">
                             <div class="terms" style="color:#FF5F26;">
                             <!--/recall_policy/-->
+                            
                             </div>
                             <div class="agree">
                             <label><!--/radio_recall_policy_ok/--> 동의함</label>
@@ -500,24 +508,44 @@
 
                             <!--/if_not_login/-->
                             <!--/if_use_simple_join/-->
-
-                            <div>
-                                <table style="margin-top:0; ">
-                                    <colgroup>
-                                        <col width="100" />
-                                        <col width="*" />
-                                    </colgroup>
-                                    <tbody style="background-color:#FFF; border:0;">
-                                        <tr>
-                                            <td colspan="2" style="padding-left:0;padding-right:0;">
-                                                <div class="txt-l">
-                                                    <div id="terms_agree"><!--/new_privacy_agree/--></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+        
+                            <div class="privercy-contract">                    <table class="tbl" summary="목적, 항목, 보유기간">                    <caption>개인정보 수집/이용</caption>                        <colgroup>
+                            <col width="33.33%">
+                            <col width="33.33%">
+                            <col width="33.33%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">목적</th>
+                                <th scope="col">항목</th>
+                                <th scope="col">보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                <tr class="new_privacy_0">
+                        <td class="purpose"><div class="txt-l">주문자 정보 확인, 주문 내역 안내, 주문 내역 조회</div></td>
+                        <td class="items"><div class="txt-l">주문자 정보(이름, 연락처, 이메일)</div></td>
+                        <td class="holding" rowspan="4"><div class="txt-l">주문일로부터 90일까지 보유하며, 관계 법령에 따라 5년간 보관</div></td>
+                    </tr>                    <tr class="new_privacy_1">
+                        <td class="purpose"><div class="txt-l">상품 배송(구매/환불/취소/교환)을 위한 수취인 정보</div></td>
+                        <td class="items"><div class="txt-l">수취인 정보(이름, 연락처1, 연락처2, 주소)</div></td>
+                        
+                    </tr>                    <tr class="new_privacy_2" style="display: table-row;">
+                        <td class="purpose"><div class="txt-l">무통장 결제 내역 확인을 위한 입금자명</div></td>
+                        <td class="items"><div class="txt-l">무통장 입금자명(미입력 시, 주문자명 사용)</div></td>
+                        
+                    </tr>                    <tr class="new_privacy_3" style="display: table-row;">
+                        <td class="purpose"><div class="txt-l">현금영수증 발행</div></td>
+                        <td class="items"><div class="txt-l">휴대폰번호, 국세청 현금영수증 카드번호</div></td>
+                        
+                    </tr>                    <tr class="new_privacy_4" style="display: none;">
+                        <td class="purpose"><div class="txt-l">세금계산서 발행</div></td>
+                        <td class="items"><div class="txt-l">신청자 정보(신청자명, 휴대폰번호, 이메일)</div></td>
+                        
+                    </tr>
+                        </tbody>
+                    </table>                    <div class="privercy-agree">                    </div>
+                </div>
 
                             <!--/else/-->
                             <!--/if_contract_terms/-->
@@ -961,15 +989,17 @@
 
                             
             <div class="btn_box fixed_btn_box">
-                <a href="<!--/link_payment/-->" class="all-ok">
+                <a href="<!--/link_payment/-->" class="all-ok kse-row kse-row-center kse-row-align-center">
                     <!--/if_block_final_price/-->
-                    <em class="txt-price"><!--/block_final_price/--><!--/number/total_price/--><!--/end_block/--> 원 결제하기</em>
+                    <!--/block_final_price/--><!--/number/total_price/--><!--/end_block/--> 
                     <!--/end_if/-->
+원 결제하기
                     <!--/if_login/-->
                     <!--/if_total_reserve/-->
                     <p class="total_reserve_txt">(적립예정 멤버십포인트 <!--/block_expect_reserve/--><!--/number/total_reserve/--><!--/end_block/-->P)</p>
                     <!--/end_if/-->
                     <!--/end_if/-->
+
                 </a>
                 <a href="<!--/link_back/-->" style="display:none;"><span>이전</span></a>
             </div>
@@ -1198,16 +1228,24 @@
             <!--/end_if/-->
             <div class="search-form">
                 <!--/form_addr_search/-->
-                <fieldset>
-                <legend>우편번호 검색 폼</legend>
-                <span class="keyword"><!--/input_search_addr_text/--></span><button class="btn_Grey" type="submit" onclick="<!--/link_addr_search/-->">검색</button>
-                </fieldset>
+             
+                <div class="kse-row kse-row-align-center">
+               <div class="kse-col-block kse-wrapper" style="
+    height: 40px;"><!--/input_search_addr_text/--></div><button class="kse-btn kse-btn-primary" style=" border-top-left-radius: 0px; border-bottom-left-radius: 0px;" type="submit" onclick="<!--/link_addr_search/-->">검색</button>
+             </div>
                 <!--/end_form/-->
             </div>
             <div id="searchStep02">
                 <h4>주소 선택</h4>
-                <!--/select_addr/-->
-                <a href="<!--/link_addr_select_ok/-->" class="btn_Black">다음</a>
+               <select style="
+    height: 40px;" class="addr-list MS_input_select" name="addr_search_select" form="addr_search"></select>
+<div>
+<br/>
+<div class="kse-row kse-row-center">
+     
+           <a href="<!--/link_addr_select_ok/-->" class="kse-btn kse-btn-primary">다음</a>
+</div>
+</div>
             </div>
             <!--/end_block/-->
             <!--/block_order_detail_addr/-->
@@ -1236,8 +1274,8 @@
                             <td><!--/input_search_address1/--> <!--/input_search_address2/--></td>
                         </tr>
                     </table>
-                    <div class="btn-type01 btn-ctrl">
-                        <a href="<!--/link_addr_ok/-->" class="btn_Black" >확인</a>
+                    <div class="btn-type01 btn-ctrl kse-row kse-row-center">
+                        <a href="<!--/link_addr_ok/-->" class="kse-btn kse-btn-primary" >확인</a>
                     </div>
                 </fieldset>
                 <!--/end_form/-->
@@ -1261,3 +1299,139 @@
 <!-- //본문 -->
 
 <!--/include_footer(1)/-->
+
+<!--/if_login/-->
+<!-- //모바일 주소록 레이어 START -->
+<!--/block_mobile_area/-->
+<!--/block_mobile_area_list/-->
+
+   <!-- //배송지 주소록 / 최근 배송지 선택 영역 START -->
+   <!--/block_mobile_tab_div/-->
+      <!--/block_mobile_tab_ul/-->
+         <!--/block_mobile_tab_li_addrbook/-->
+            <a href="<!--/link_delivery_addr/-->">배송지 주소록</a>
+         <!--/end_block/-->
+         <!--/block_mobile_tab_li_past/-->
+            <a href="<!--/link_recent_delivery_addr/-->">최근 배송지</a>
+         <!--/end_block/-->
+      <!--/end_block/-->
+   <!--/end_block/-->
+   <!-- //배송지 주소록 / 최근 배송지 선택 영역 END-->
+
+<!--/block_mobile_addr_book/-->
+<!--/block_mobile_addr_list/-->
+
+<!--/end_block/-->
+<!--/end_block/-->
+        <div class="btns">
+<div class="kse-row kse-row-center" style="padding: 7px; padding-top:0px;">
+<div>
+            <!--/if_block_contact_myplace/--><!--/block_contact_myplace/-->
+<div class="kse-btn kse-btn-default kse-btn-default" >
+주소록 관리
+</div  class="kse-space kse-space-small">
+<!--/end_block/--><!--/end_if/-->
+            <!--/block_contact_addplace/--><div class="kse-btn kse-btn-primary  " >배송지 추가</div><!--/end_block/-->
+            <!--/block_contact_multi_del_past/-->선택 삭제<!--/end_block/-->
+            <!--/block_contact_close_black/-->닫기<!--/end_block/-->
+      </div>
+</div>
+</div>
+      <!--/block_add_address/-->
+      <div class="address-add">
+            <div class="title">배송지 정보</div>
+            <!--/form_add_addr/-->
+
+            <div class="table">
+                <table class="addplace-table" cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="88px;">
+                        <col width="auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>배송지명</th>
+                            <td><!--/input_shipping_destination/--></td>
+                        </tr>
+                        <tr>
+                             <th>받는 사람</th>
+                             <td><!--/input_shipping_receiver/--></td>
+                        </tr>
+                        <tr>
+                            <th class="vta-top">주소</th>
+                            <td>
+                                <div class="address-box">
+                                    <p class="post kse-row kse-row-space-between kse-row-center-align">
+                                       <!--/input_shipping_post1/-->
+                                       <a href="<!--/link_search_zip/-->" class="kse-btn kse-btn-primary" style="padding: 3px 8px;">우편번호</a>
+                                    </p>
+                                    <p><!--/input_shipping_address1/--></p>
+                                    <p><!--/input_shipping_address2/--></p>
+                                    <p class="check">
+                                        <label>
+                                            <input type="checkbox" name="is_standard" value="Y">기본 배송지로 저장
+                                        </label>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <th>연락처</th>
+                            <td>
+                                <div class="phone">
+                                    <!--/input_shipping_emergency21/-->
+                                    <span>-</span>
+                                    <!--/input_shipping_emergency22/-->
+                                    <span>-</span>
+                                    <!--/input_shipping_emergency23/-->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핸드폰</th>
+                            <td>
+                                <div class="phone">
+                                    <!--/input_shipping_emergency31/-->
+                                    <span>-</span>
+                                    <!--/input_shipping_emergency32/-->
+                                    <span>-</span>
+                                    <!--/input_shipping_emergency33/-->
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/if_text_shipping_order_message/-->                   
+                        <tr>
+                            <th>주문메시지<br><em>(100자내외)</em></th>
+                            <td><!--/text_shipping_order_message/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_text_shipping_delivery_message/-->
+                        <tr>
+                            <th>배송메시지</th>
+                            <td>
+                                <!--/select_delivery_message/-->
+                                <!--/text_shipping_delivery_message/-->
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                </tbody>
+                </table>
+            </div>
+            
+            <div class="btn-wrap kse-row kse-row-center">
+<div class="kse-space kse-space-small">
+                <!--/block_contact_addplace_cancel/--><div class="kse-btn kse-btn-default">취소</div><!--/end_block/-->
+                <!--/block_contact_addplace_save/--><div class="kse-btn kse-btn-primary">저장</div><!--/end_block/-->
+</div>
+            </div>
+            
+            <!--/end_form/-->
+            
+     </div>
+     <!--/end_block/-->
+           <!--/block_contact_close/-->닫기<!--/end_block/-->
+
+<!--/end_block/-->
+<!--/end_block/-->
+<!-- //모바일 주소록 레이어 END -->
+<!--/end_if/-->

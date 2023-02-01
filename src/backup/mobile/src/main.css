@@ -179,21 +179,14 @@ ul.tabs li a {
 
 /*메인 공통 레이아웃*/
 .main_ban_wrap {
-	margin-top: 50px;
+	
 	text-align: center;
 }
 .main_ban_wrap.best {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 45px;
 }
-.main_ban_wrap h2 {
-	font-family: 'NanumSquare', sans-serif;
-	font-size: 20px;
-	padding-bottom: 0;
-	font-weight: 800;
-	letter-spacing: 0px;
-	color: #000;
-}
+
 .main_ban_wrap > div {
 	margin-left: 10px;
 	letter-spacing: 0px;
@@ -393,17 +386,11 @@ ul.tabs li a {
 	padding: 45px 0 0;
 	text-align: center;
 }
-.timesale h2 {
-	font-family: 'NanumSquare', sans-serif;
-	font-size: 21px;
-	font-weight: 800;
-	letter-spacing: 0px;
-	color: #0097e6;
-}
+
 .timesale h2 img {
 	padding-right: 9px;
 	width: 26px;
-	margin-top: -5px;
+	
 }
 .timesale p {
 	color: #000;
@@ -490,16 +477,16 @@ ul.tabs li a {
 	position: relative;
 }
 .timesale .right .prod .thumb .buy_btn {
-	background-color: #0097e6;
-	color: #fff;
+	
+
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	height: 36px;
+	height: 34px;
 	width: 30%;
-	line-height: 37px;
+	line-height: 35px;
 	text-align: center;
-	font-size: 16px;
+	
 	cursor: pointer;
 }
 .timesale .right .prod .thumb a {
@@ -576,12 +563,9 @@ ul.tabs li a {
 #special .main_ban_wrap {
 	padding-bottom: 25px;
 	margin-top: 40px;
-	padding-top: 30px;
+	
 }
-#special .main_ban_wrap h2 {
-	padding-bottom: 25px;
-        
-}
+
 
 #special .item-list dd {
 	color: #000;
@@ -1049,18 +1033,18 @@ div.md_prd{}
 	color: #8247aa;*/
 }
 .md-wrap .more_pro {
-	border: 1px solid #d5d5d5;
-	text-align: center;
-	margin: 10px auto;
-	height: 33px;
-	line-height: 33px;
-	width: 60%;
+	
+	
+	
+	
+	
+	
 }
 .md-wrap .more_pro a {
-	color: #636363;
-	font-size: 12px;
-	font-weight: bold;
-	letter-spacing: -1px;
+
+
+	
+	
 }
 .md-wrap .slick-dots {
 	height: 30px;
@@ -1109,11 +1093,11 @@ div.md_prd{}
 	background: url(/design/ksilverex/supermarket/img/next_arr.png) no-repeat !important;
 	background-position: center !important;
 }
-.plan {
-	margin-top: 25px;
-}
+
 .plan .planner li {
-	margin: 30px 49px;
+	margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 	vertical-align: top;
 }
 .plan .planner li a {
@@ -1149,22 +1133,11 @@ div.md_prd{}
 	margin: -40px 0;
 	display: table;
 }
-.plan h2 {
-	text-align: center;
-	margin: 0;
-	color: #0097e6;
-	font-weight: 900;
-	letter-spacing: 0px;
-	font-size: 20px;
-}
+
 #insta {
 	margin-top: 40px !important;
 }
-#insta h2 {
-	position: relative;
-	letter-spacing: -1px !important;
-	margin-bottom: 25px;
-}
+
 #insta p.side {
 	text-align: center;
 	font-size: 11px;
@@ -1190,18 +1163,18 @@ div.md_prd{}
 
 /* 파워리뷰 */
 .section{width:100%;}
-.section:not(:first-child){margin-bottom: 60px;}
+
 .sec_inner{padding:0 5%;}
-.section h2{font-family: 'Montserrat', 'Noto Sans KR', sans-serif;margin-bottom: 22px; font-size: 23px; color: #0097e6; font-weight: 500;}
-.section h2.en{font-weight:600}
+
+
 .more_items{display: flex; align-items: center; justify-content: center; margin: 10px 0 ; }
 .more_items a{display: inline-block; background-color: #fff; text-align: center;color: #c7c7c7;font-family: 'NanumSquareRound',sans-serif; font-size: 35px; cursor:pointer;font-weight:300 }
 .more_items a button{border:none; background-color: #fff;  color: #c7c7c7;font-family: 'NanumSquareRound',sans-serif; font-size: 35px;cursor:pointer; height:max-content; line-height:40px; font-weight:300}
 
 
-#review{background-color:#f8f8f8; padding:35px 0 30px}
+#review{background-color:#f8f8f8; padding-bottom:  30px}
 #review .sec_inner{padding:0;}
-#review h2{margin: 0 5% 22px;}
+
 #review .review_area{position:relative; padding-left:5%;}
 #review .review_area>div{width: 100%;}
 #review .review_area>div>ul{width: 100%; }

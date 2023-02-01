@@ -37,7 +37,7 @@
 .cart-ft2 { display: block; text-align: center; }
 
 .cart-free-wrap { text-align:center; margin-bottom: 10px; }
-.cart-free-wrap .btn-list-open { display:inline-block; width:90%; height:30px; line-height:30px; background:#585858; color:#fff; font-weight:bold; font-size: 1em; text-align:center; }
+
 .cart-free-wrap p { padding:10px 0 15px; font-size:15px; font-weight:bold; }
 .cart-free-wrap p span { color:#f40000; }
 .cart-free-wrap .btn-more { display:inline-block; width:94%; height:30px; line-height:30px; margin-top:10px; border:1px solid #383838; background:#fff; color:#383838; font-size:15px; text-align:center; }

@@ -178,3 +178,14 @@ font-weight: bold;
 .slickmdbest .item-wrap .item-cont .item-list:nth-child(4n) {
 	margin: 0 13px !important;
 }
+
+
+
+.kse-layout-header-bottom-mobile .kse-menu-item.kse-menu-item-silver::before {
+  width: 100%;
+}
+
+.kse-menu-item.kse-menu-item-silver * {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+}

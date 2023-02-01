@@ -9,7 +9,6 @@
 .join-type .member-both p em { font-size:1.375em; font-weight:bold; letter-spacing:-1px; }
 .join-type .member-both li:first-child p em { color:#ff6600; }
 .join-type .member-both li:last-child p em { color:#0087dd; }
-.join-type .member-both .btn-join { display:inline-block; width:100%; height:40px; line-height:38px; margin-top:10px; border:1px solid #3d3d3d; background:#0097e6; border-radius:5px; box-sizing:border-box; color:#fff; font-size:17px; text-align:center; }
 
 .sns-join { position: relative;  margin: 30px 0 20px 0;  }
 .sns-join .sns-title img { width: 300px; padding: 0 20px; }

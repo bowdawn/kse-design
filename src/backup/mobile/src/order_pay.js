@@ -167,3 +167,43 @@ jQuery(document).ready(function(){
     
     
 });
+
+
+// 모바일 주소록
+if (typeof is_useable_addrbook != 'undefined') {
+     if (is_useable_addrbook == '') { 
+         jQuery('.btn-adr-layer').text('배송지 목록');
+         jQuery('.btn-adr-layer').width('67px');
+     }
+}
+
+jQuery('.btn-adr-layer').click(function() {
+    setTimeout(function() {
+       jQuery('.btn-black.btn-apply-addrbook').prop('href','#none');
+          if (jQuery('#tab_addrbook').is(':visible')) {
+             jQuery('#contact_multi_del_past').hide();
+             jQuery('#contact_close_black').hide();
+          } else {
+             jQuery('#contact_multi_del_past').show();
+             jQuery('#contact_close_black').show();
+             jQuery("input:radio[name='place']:radio[value='A']").prop('checked', true); 
+             addrclick();
+          }
+     }, 30);
+     addrbook_focus();
+});
+    
+jQuery('#tab_addrbook').click(function() {
+   addrbook_focus();
+});
+    
+jQuery('#tab_past').click(function() {
+   addrbook_focus();
+});
+
+function addrbook_focus () {
+   setTimeout(function() {
+        jQuery('.btn-black.btn-apply-addrbook').prop('href','#none');
+        jQuery('.btn-adr-layer').focus();
+   }, 500);
+}

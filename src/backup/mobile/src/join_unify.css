@@ -69,8 +69,8 @@ ul {list-style: none;}
 #join .form-wrap ul.form-list li .check {display:table; width:100%; margin-bottom:10px;}
 #join .form-wrap ul.form-list li .check input,
 #join .form-wrap ul.form-list li .check .btn-check {display:table-cell;}
-#join .form-wrap ul.form-list li .check .btn-check {width:140px;}
-#join .form-wrap ul.form-list li .check .btn-check a {display:inline-block; width:128px; height:34px; line-height:34px; margin-left:10px; border:1px solid #000; border-radius:4px; font-family:'Malgun Gothic'; letter-spacing:-1px; font-weight:700; text-align:center;}
+#join .form-wrap ul.form-list li .check .btn-check input { }
+#join .form-wrap ul.form-list li .check .btn-check a {display:inline-block;  height:34px; line-height:34px; margin-left:10px;  font-family:'Malgun Gothic'; letter-spacing:-1px; text-align:center;}
 #join .form-wrap ul.form-list li .check .btn-sms-auth a {display:inline-block; width:128px; height:34px; line-height:34px; margin:10px 0 0 0; border:1px solid #000; border-radius:4px; font-family:'Malgun Gothic'; letter-spacing:-1px; font-weight:700; text-align:center;}
 #join .ml20 { margin-left: 20px;}
 #join .mr5 { margin-right:5px;}
@@ -85,8 +85,6 @@ ul {list-style: none;}
 #join .form-wrap ul.form-list.sns-wrap li a {font-family:'Malgun Gothic'; letter-spacing:-1px; color:#0075ff; text-decoration:underline;}
 #join .form-wrap ul.form-list.sns-wrap li button {position:absolute; right:16px; top:14px; background:transparent; border:0 none;}
 
-#join .btn-join {margin:30px 0;}
-#join .btn-join a {display:block; margin:0 20px; padding:22px 0; background:#000; border-radius:6px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-size:1.25em; font-weight:700; letter-spacing:-1px;}
 
 /* 22/08/02 개인정보 수집이용, 제3제공, 취급위탁 테이블 */
 #terms {margin:0 20px;}
@@ -141,3 +139,11 @@ ul {list-style: none;}
 .pop-layer-agree .layer-wrap .agree-chk {padding:15px 10px;}
 .pop-layer-agree .layer-wrap .agree-chk label {font-family:'Malgun Gothic'; font-size: .813em; color:#000; letter-spacing:-1px;}
 .pop-layer-agree .layer-wrap .agree-chk input {display:inline-block; margin-right:5px;}
+
+.kse-check-wrapper{
+    display: flex !important;
+}
+
+.kse-check-wrapper input{
+    flex: 1;
+}
