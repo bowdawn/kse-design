@@ -1,0 +1,114 @@
+/* ÄíÆù µî·Ï */
+#coupon-list .addCouponWrap{
+    padding:0 20px 20px;
+    border-bottom:1px solid #EDEDED;
+}
+
+#coupon-list .addCouponWrap .btnWrap .myBlueBtn{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    background: #0097E6;
+    border-radius: 25px;
+}
+
+
+#coupon-list .coupon-num {margin-bottom: 20px;}
+#coupon-list .coupon-num h3 {font-weight: bold; padding-bottom: 5px;}
+#coupon-list .coupon-num .input01 {text-align: center;}
+#coupon-list .coupon-num .input01 input {width: calc((100% - 30px)/4); height: 35px; border: 1px solid #bbb; vertical-align: middle; padding-left: 10px; box-sizing: border-box; -webkit-border-radius: 0; border-radius: 0;}
+#coupon-list .btns {padding:0 10px; margin-bottom: 20px;}
+
+
+#coupon-list .availableWrap{
+    position:relative;
+    padding:24px 24px 24px 88px;
+    margin:0 20px 28px;
+    border-radius:16px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+#coupon-list .availableWrap .imgWrap{
+    position:absolute;
+    width:44px;
+    top:24px;
+    left:24px;
+}
+
+#coupon-list .availableWrap .textWrap span{
+    display:block;
+    margin-bottom:3px;
+    font-size:12px;
+    line-height:17px;
+}
+
+#coupon-list .availableWrap .textWrap strong{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    line-height:24px;
+}
+
+/*ÄíÆù ¸®½ºÆ®*/
+#coupon-list .couponListWrap{
+    padding:28px 20px 0;
+    border-top:1px solid #EDEDED;
+}
+
+#coupon-list .couponListWrap li{
+    width:100%;
+    margin-bottom:16px;
+}
+
+#coupon-list .couponListWrap li .couponCon{
+    padding:20px;
+    border-radius:16px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+#coupon-list .couponListWrap li .couponCon .discountPer{
+    margin-bottom:4px;
+    font-size:16px;
+    font-weight:bold;
+    line-height:35px;
+}
+
+#coupon-list .couponListWrap li .couponCon .discountPer strong{
+    font-size:24px;
+    font-weight:900;
+}
+
+#coupon-list .couponListWrap li .couponCon .couponName{
+    margin-bottom:10px;
+    font-size:16px;
+    line-height:24px;
+    color:#767676;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#coupon-list .couponListWrap li .couponCon .couponDate{
+    font-size:14px;
+    color:#999;
+    line-height:24px;
+}
+
+#coupon-list .couponListWrap li .couponCon .minPrice{
+    font-size:14px;
+    color:#999;
+    line-height:24px;
+}
+
+#coupon-list .couponListWrap li .couponCon .useAble{
+    font-size:14px;
+    color:#999;
+    line-height:24px;
+}

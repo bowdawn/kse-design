@@ -1,0 +1,60 @@
+#reserve-list  .notice-info {padding:0 10px; text-align:center;}
+#reserve-list  .notice-info p {padding:10px 0;}
+#reserve-list  .notice-info p:first-child {font-weight:bold; font-size:1.167em; border-bottom:1px solid #dedede; margin-top:10px;}
+#reserve-list  .notice-info p:first-child em {color:#ab3e41; font-size:1.500em;}
+#reserve-list .cautionBox {padding: 15px 10px; background-color:#eaeaea; color:#707070; text-align: left;}
+#reserve-list .listWrap .listTit strong{display:block; font-size: 16px; font-weight: bold; line-height: 50px; padding-left: 20px; border-top: 1px solid #EDEDED;}
+#reserve-list .list {width:100%; border-top:2px solid #464646; }
+#reserve-list .list tr {border-bottom: 1px solid #bebebe;}
+#reserve-list .list th, #reserve-list .list td {height :35px; padding: 5px 0px;  }
+#reserve-list .list th {width : 75%; text-align: left; padding-left : 10px; color:#707070; font-weight:normal;}
+#reserve-list .list td { padding-right:10px;}
+#reserve-list .list .reserve-price {font-weight:bold;}
+#reserve-list .list .reserve_date { display:block; text-align:right;}
+#reserve-list .list .no_data {text-align:center;}
+#reserve-list .search_reserve {text-align: right; margin: 10px 10px 0 0;}
+#reserve-list .search_reserve .btn_Grey {display: initial; padding: 10px 20px;}
+#reserve-list .search_reserve #search_date_start,
+#reserve-list .search_reserve #search_date_end { width: 35%; }
+
+
+
+
+#reserve-list .availableWrap{
+    position:relative;
+    padding:24px 24px 90px 88px;
+    margin:0 20px 28px;
+    border-radius:16px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+#reserve-list .availableWrap .imgWrap{
+    position:absolute;
+    width:44px;
+    top:24px;
+    left:24px;
+}
+
+#reserve-list .availableWrap .textWrap span{
+    display:block;
+    margin-bottom:3px;
+    font-size:12px;
+    line-height:17px;
+}
+
+#reserve-list .availableWrap .textWrap strong{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    line-height:24px;
+}
+
+#reserve-list .availableWrap .textWrap .detailInfo{
+    position: absolute;
+    width: calc(100% - 48px);
+    margin: 0px 24px;
+    padding-top: 12px;
+    left: 0;
+    bottom: 24px;
+    border-top: 1px solid #dedede;
+}

@@ -1,0 +1,66 @@
+<!--/include_header(1)/-->
+
+<div id="container">
+    <div class="wrapper clearfix">
+        <!--
+        <nav class="title">
+            <h3>멤버십고객 신규가입</h3>
+        </nav>
+        -->
+        <div class="h_title">
+            <h3>멤버십고객 신규가입</h3>
+        </div>
+    </div>
+
+<!-- .login-form-->
+    
+    <!--/if_link_join_company/-->
+    <div class="join-type">
+        <dl class="member-type"><br />
+            <dt>한국은거래소 멤버십 회원가입</dt><br />
+            <dd>
+                한국은거래소의 멤버십포인트, 쿠폰할인 등<br />
+                다양한 혜택과 서비스를 이용하실 수 있습니다.
+            </dd><br />
+        </dl>
+        <ul class="member-both">
+            <li>
+                <p><em>일반고객</em><br />14세 이상 개인</p>
+                <a href="<!--/link_join_person/-->" class="btn-join">가입하기</a>
+            </li>
+            <li>
+                <p><em>기업고객</em><br />기업 및 기타 단체</p>
+                <a href="<!--/link_join_company/-->" class="btn-join">가입하기</a>
+            </li>
+        </ul>
+    </div>
+    <!--/end_if/-->
+</div>
+
+    <!--/form_sns_join/-->
+    <!--/if_use_login_sns/-->
+    <div class="sns-join">
+        <div class="sns-title">
+            <img src="/images/d3/m_01/mobile_sns_join_title.gif">
+        </div>
+        <ul>
+            <!--/if_link_join_facebook/--><li class="facebook"><a href="<!--/link_join_facebook/-->"><span></span>페이스북으로 가입하기</a></li><!--/end_if/-->
+            <!--/if_link_join_naver/--><li class="naver"><a href="<!--/link_join_naver/-->"><span></span>네이버로 가입하기</a></li><!--/end_if/-->
+            <!--/if_link_join_kakao/--><li class="kakao"><a href="<!--/link_join_kakao/-->"><span></span>카카오로 가입하기</a></li><!--/end_if/-->
+        </ul>
+        <!--/if_not_link_join_company/-->
+        <div class="sns-btn">
+            <!--/if_link_join_simple/-->
+            <a href="<!--/link_join_simple/-->">간편회원가입</a>
+            <!--/else/-->
+            <a href="<!--/link_join_person/-->">일반회원가입</a>
+            <!--/end_if/-->
+            <p>SNS계정이 없으신 경우 일반 회원가입을 통해<br/>회원가입을 진행할 수 있습니다.</p>
+        </div>
+
+<li> <img src="http://ksilverex.img15.kr/2023_01_event/membership.png"></li> wight:100%
+        <!--/end_if/-->
+    </div>
+    <!--/end_if/-->
+    <!--/end_form/-->
+

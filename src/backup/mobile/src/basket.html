@@ -1,0 +1,212 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="basket">
+            <div class="h_title">
+                <h3><b>나의 금고 <!--/if_user_basket_count(+1)/--><span>(<!--/user_basket_count/-->)</span><!--/end_if/--></b></h3>
+            </div>
+            
+            <!--/if_basket/-->
+            <div class="btn-wrap clearFix">
+                <!--/if_link_multi_del/-->
+                <div>
+                    <a href="<!--/link_multi_del/-->" class="btn_White"><span>선택삭제</span></a>
+                </div>
+                <!--/end_if/-->
+                <div>
+                    <a href="<!--/link_clear_basket/-->" class="btn_Grey"><span>금고 비우기</span></a>
+                </div>
+            </div>
+            <div class="all-select">
+                <label><!--/checkbox_multi_all/--> 상품 전체 선택/해제</label>
+            </div>
+            <!--/end_if/-->
+            <!--/if_basket/-->
+            <ul data-type="vertical" data-open="on" data-checkbok="on" class="not_provider">
+                <!--/loop_basket/-->
+                <li>
+                    <!--/basket@form/-->
+                    <figure>
+                        <div class="basketLeft">
+                            <!--/basket@checkbox_multi_basket/-->
+                            <a href="<!--/basket@link/-->"><img src="<!--/basket@mobile_image/-->" alt="상품명" class="response100" /></a>
+                        </div>
+                        <figcaption class="basketRight">
+                            <p class="pname">
+                                <a href="<!--/basket@link/-->"><!--/notag/basket@name(100)/--></a>
+                                <a href="<!--/basket@link_del/-->"><span class="fa fa-times fa-2x"></span></a>
+                            </p>
+                            <p>상품가 : <!--/number/basket@price_sell/-->원</p>
+                            
+                            <!--/if_basket@reserve(+1)/-->
+                            <p><!--/if_basket@used_mobile_reserve/--><span class="fa fa-mobile fa-lg"></span><!--/end_if/--> 멤버십포인트 적립 : <!--/number/basket@reserve/-->c</p>
+                            <!--/end_if/-->
+                            <!--/if_basket@point/-->
+                            <p><!--/point_unit/--> : <!--/number/basket@point/--></p>
+                            <!--/end_if/-->
+                            <!--/if_basket@delivery_title/-->
+                            <p>배송비 : <a href="javascript:alert('<!--/basket@delivery_detail/-->');"><span><!--/basket@delivery_title/--></span> <span class="fa fa-info-circle fa-lg"></span></a></p>
+                            <!--/end_if/-->
+                            <!--/if_weightdeli_use/-->
+                            <p>상품무게 : <!--/basket@weight/--></p>
+                            <!--/end_if/-->
+                            <p>
+                                수량 :
+                                <!--/basket@input_quantity(txt-input amount-input)/-->
+                                <a href="<!--/basket@link_quantity_up/-->" class=""><span class="fa fa-plus"></span></a>
+                                <a href="<!--/basket@link_quantity_down/-->" class=""><span class="fa fa-minus"></span></a>
+                                <a onclick="<!--/basket@link_quantity_update/-->" class="btn_Black"><span>수량변경</span></a>
+                            </p>
+                            <!--/if_basket@option/-->
+                            <p><!--/basket@option/--></p>
+                            <!--/end_if/-->
+                            <!--/if_is_unify_option/-->
+                            <!--/if_basket@option/-->
+                            <p><a onclick="<!--/basket@link_option_modify/-->" class="btn_Black"><span>선택사항 수정</span></a></p>
+                            <!--/end_if/-->
+                            <!--/end_if/-->
+                        </figcaption>
+                    </figure>
+                    <!--/end_form/-->
+                </li>
+                <!--/end_loop/-->
+            </ul>
+            <!--/else/-->
+            <div class="none-data">
+                <i class="fa fa-exclamation-triangle fa-2x"></i>
+                <p>금고에 담긴 상품이 없습니다.</p>
+            </div>
+            <!--/end_if/-->
+            <div class="price-total-info-top">
+                <p>
+                    상품가격 <!--/if_none_groupsale_total_price_sell(+1)/--><!--/number/none_groupsale_total_price_sell/--><!--/else/-->0<!--/end_if/-->원
+                    <!--/if_total_vat(+1)/--> + 부가세 <!--/number/total_vat/-->원<!--/end_if/-->
+                    <!--/if_total_delivery(+1)/--> + 배송료 <!--/number/total_delivery/-->원<!--/end_if/-->
+                    <!--/if_total_delivery_add(+1)/--> + 추가배송료 <!--/number/total_delivery_add/-->원<!--/end_if/-->
+                    <!--/if_group_sale_price(+1)/--> - 그룹할인 <!--/number/group_sale_price/-->원<!--/end_if/-->
+                    <!--/if_powerapp_sale_price/--> - 앱 구매할인 <!--/number/powerapp_sale_price/-->원<!--/end_if/-->
+                </p>
+            </div>
+            <div class="price-total-info-bottom">
+                <p>
+                        결제 예정 금액 : <span class="txt-price"><!--/number/total_price/-->원</span>
+                        <!--/if_total_reserve/--><br /><span class="txt-reserve">(적립예정 멤버십포인트 <!--/number/total_reserve/-->P<!--/if_powerapp_sale_reserve/--> (앱 구매 추가 멤버십포인트 <!--/number/powerapp_sale_reserve/-->P 포함)<!--/end_if/-->)</span>
+                        <!--/end_if/-->
+                </p>
+            </div>
+            <div class="delivery-type">
+                <ul>
+                    <li>50만원이상 구매시 무료배송입니다.</li><br/>
+                    <!--/if_login/-->
+                            <!--/if_group_name(초승달)/--> 
+                            <div class="mem-lvl">
+                                <div class="lvl-img"><!--/if_group_image/--><IMG SRC="http://ksilverex.img15.kr/12345.jpg"><!--/end_if/--></div>
+                                <p>
+                                    <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em> 고객님입니다.<br />
+                                    <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                    <!--/group_message/-->
+                                </p>
+                            </div><!-- .mem-lvl -->
+                            <!--/end_if/-->
+                            <!--/if_group_name(반달)/--> 
+                            <div class="mem-lvl">
+                                <div class="lvl-img"><!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG SRC="http://ksilverex.img15.kr/123456.jpg"><!--/end_if/--></div>
+                                <p>
+                                    <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em> 우수고객님입니다.<br />
+                                    <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                    <!--/group_message/-->
+                                </p>
+                            </div><!-- .mem-lvl -->
+                            <!--/end_if/-->
+                            <!--/if_group_name(상현달)/--> 
+                            <div class="mem-lvl">
+                                <div class="lvl-img"><!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG SRC="http://ksilverex.img15.kr/%BB%F3%C7%F6%B4%DE.jpg"><!--/end_if/--></div>
+                                <p>
+                                    <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em> 우수고객님입니다.<br />
+                                    <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                    <!--/group_message/-->
+                                </p>
+                            </div><!-- .mem-lvl -->
+                            <!--/end_if/-->                            
+                            <!--/if_group_name(보름달)/--> 
+                            <div class="mem-lvl">
+                                <div class="lvl-img"><!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG SRC="http://ksilverex.img15.kr/%BA%B8%B8%A7%B4%DE.jpg"><!--/end_if/--></div>
+                                <p>
+                                    <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em> 최우수고객님입니다.<br />
+                                    <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                    <!--/group_message/-->
+                                </p>
+                    <!--/if_group_message/-->
+                    <li>
+                        <!--/group_message/-->
+                    </li>
+                    <!--/end_if/-->
+                    <!--/end_if/-->
+                    <!--/end_if/-->
+
+                    <!--/if_powerapp_message/-->
+		<li>
+		    <!--/powerapp_message/-->
+		</li>
+                    <!--/end_if/-->
+                </ul>
+            </div>
+
+            <!--/if_cart_free/-->
+            <div class="cart-free-wrap">
+                <p><font color="#0097e6">배송비 무료까지</font> <span><font color="#f1191f"><!--/number/cart_free_price/-->원</font></span> <font color="#0097e6">남았습니다!</font></p>
+                <a href="#none" class="btn-list-open btn-type-02 open"><b>무료배송 추천상품</b></a>
+                <div class="list-wrap">
+                    <!--/block_cart_free/-->
+                        <ul>
+                            <!--/loop_cart_free_list/-->
+                            <li>
+                                <dl>
+                                    <dt><a href="<!--/cart_free_list@link/-->"><img src="<!--/cart_free_list@mobile_image/-->" alt="" /></a></dt>
+                                    <dd><!--/notag/cart_free_list@name/--></dd>
+                                    <dd><!--/number/cart_free_list@price_sell/-->원</dd>
+                                </dl>
+                            </li>
+                            <!--/end_loop/-->
+                        </ul>
+                    <!--/end_block/-->
+                    <!--/block_cart_free_more/-->    
+                        <a href="<!--/link_more_cart_free_list/-->" class="btn-more">더 보기 <span></span></a>
+                    <!--/end_block/-->
+                </div>
+            </div>
+            <!--/end_if/-->
+
+            <div class="order-btn">
+                <a href="<!--/link_order/-->" class="btn_Red">주문하기</a>
+            </div>
+            <div class="cart-ft2">
+                <!--/if_btn_kakaopay/-->
+                    <!--/btn_kakaopay/-->
+                <!--/end_if/-->
+                <!--/if_btn_payco/-->
+                    <!--/btn_payco/-->
+                <!--/end_if/-->
+                <!--/if_btn_nhn/-->
+                    <div class="naver-checkout">
+                        <!--/btn_nhn/-->
+                    </div>
+                <!--/end_if/-->
+                <!--/if_btn_app/-->
+                    <!--/btn_app/--> 
+                <!--/end_if/-->
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

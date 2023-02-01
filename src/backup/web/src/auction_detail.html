@@ -1,0 +1,163 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="auction">
+                    <div class="loc-navi">
+                        <p><a href="/">Home</a> &gt; 경매</p>
+                    </div>
+                    <div class="page-hd">
+                        <h2 class="hd"><span><!--/auction_subject/--></span></h2>
+                        <ul class="link">
+                            <li><a href="<!--/link_my_auction/-->">나의 경매</a></li>
+                            <li><a href="<!--/link_auction/-->">경매 목록</a></li>
+                        </ul>
+                    </div><!-- .page-hd -->
+                    <div class="page-wrap">
+                        <div class="info">
+                            <table summary="현재가격, 참여인원, 마감시간, 남은시간">
+                                <legend>경매 상품 정보</legend>
+                                <colgroup>
+                                    <col width="15%" />
+                                    <col width="35%" />
+                                    <col width="15%" />
+                                    <col width="35%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">경매 정보</th>
+                                        <th colspan="2">가격/배송 정보</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="no-bd">
+                                        <td class="title">시작시간</td>
+                                        <td><!--/date(%Y/%M/%D (%H:%i))/auction_start_date/--></td>
+                                        <td class="title">시작가격</td>
+                                        <td><!--/number/auction_start_price/-->원 <!--/if_auction_immediate_price(+1)/-->(즉시구매가 : <!--/number/auction_immediate_price/-->원)<!--/end_if/--></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title">남은시간</td>
+                                        <td><!--/auction_remain_term/--></td>
+                                        <td class="title">최종가격</td>
+                                        <td><!--/number/auction_current_price/-->원</td>
+                                    </tr>
+                                    <tr class="no-bd">
+                                        <td class="title">수량</td>
+                                        <td><!--/number/auction_quantity/-->개</td>
+                                        <td class="title">참여인원</td>
+                                        <td><!--/number/auction_apply_count/-->명</td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class="title">배송가능지역</td>
+                                        <td><!--/auction_delivery_place/--></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"><div class="tb-left"><!--/auction_content/--></div></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="no-bd">
+                                        <td colspan="4">
+                                            <div class="tb-center">
+                                             <!--/if_link_oneshot/-->
+                                                 <a href="<!--/link_oneshot/-->"><img src="/auction/images/auction_bn_fixed.gif" alt="즉시구매하기" title="즉시구매하기" /></a>
+                                             <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div id="bidWrap">
+                            <!--/form_bid/-->
+                            <div class="auc"> 
+                               <ul class="bid">
+                                  <li>입찰가격 : <!--/input_bid_price(bid-price)/--></li>
+                                  <li>입찰내용 : <!--/input_bid_comment(bid-comment)/--></li>
+                              </ul>
+                            </div>
+                            <div class="btn">
+                                <a href="<!--/link_action_bid/-->"><img src="/images/d3/modern_simple/btn/btn_auction_bid.jpg" alt="경매입찰" title="경매입찰" /></a>
+                            </div>
+                            <!--/end_form/-->
+                            <div class="desc">
+                               <ul>
+                                   <li>입찰 단위는 <!--/number/bid_min_unit/-->원 이상<!--/if_bid_max_unit(+1)/--> <!--/number/bid_max_unit/-->원 이하<!--/end_if/-->이며, 낱개 가격입니다.</li>
+                                   <li>입찰가격을 입력하실 때 콤마(,)는 빼고 입력하세요.</li>
+                                   <li>허위입찰시 관리자가 임의로 삭제가 가능합니다.</li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <h3 class="stit">LIST 경매 참여 리스트</h3>
+                            <table summary="참여일, ID, 내용, 입찰가격">
+                                <legend>경매 내역</legend>
+                                <colgroup>
+                                    <col width="150" />
+                                    <col width="100" />
+                                    <col />
+                                    <col width="80" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>참여일</th>
+                                        <th>ID</th>
+                                        <th>내용</th>
+                                        <th>입찰가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <!--/if_apply_list/--> 
+                                <!--/loop_apply_list/-->
+                                    <tr>
+                                        <td><div class="tb-center"><!--/date(%Y/%M/%D (%H:%i))/apply_list@date/--></div></td>
+                                        <td><div class="tb-center bold"><!--/apply_list@user_id/--></div></td>
+                                        <td><div class="tb-center"><!--/apply_list@comment/--></div></td>
+                                        <td><div class="tb-right"><!--/number/apply_list@price/-->원</div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                            <!--/else/-->
+                                    <tr>
+                                        <td colspan="4"><div class="tb-center">해당 경매에 입찰 내역이 없습니다.</div></td>
+                                    </tr>                                        
+                            <!--/end_if/-->
+                                </tbody>
+                            </table>
+
+                            <ol class="paging">
+                                <!--/if_pager_apply_list::first@link/-->
+                                <li class="first"><a href="<!--/pager_apply_list::first@link/-->">[처음]</a></li>
+                                <!--/end_if/-->
+                                <!--/if_pager_apply_list::prev@link/-->
+                                <li class="prev"><a href="<!--/pager_apply_list::prev@link/-->">[이전]</a></li>
+                                <!--/end_if/-->
+
+                                <!--/loop_pager_apply_list::page/-->
+                                <!--/if_pager_apply_list::page@current/-->
+                                <li class="now"><a href="<!--/pager_apply_list::current@link/-->"><!--/pager_apply_list::current/--></a></li>
+                                <!--/else/-->
+                                <li><a href="<!--/pager_apply_list::page@link/-->"><!--/pager_apply_list::page/--></a></li>
+                                <!--/end_if/-->
+                                <!--/end_loop/-->
+
+                                <!--/if_pager_apply_list::next@link/-->
+                                <li class="next"><a href="<!--/pager_apply_list::next@link/-->">[다음]</a></li>
+                                <!--/end_if/-->
+                                <!--/if_pager_apply_list::last@link/-->
+                                <li class="last"><a href="<!--/pager_apply_list::last@link/-->">[끝]</a></li>
+                                <!--/end_if/-->
+                            </ol>
+                        </div>
+                    </div><!-- .page-wrap -->
+                </div><!-- #auction -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

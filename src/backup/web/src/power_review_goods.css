@@ -1,0 +1,31 @@
+#contentWrap .prd-reviewBoard {position:relative;}
+#contentWrap .prd-reviewBoard .postLeft {width: 33%; height:100%; border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; border-bottom: 1px solid #cfcfcf; box-sizing:border-box; float:left; }
+#contentWrap .prd-reviewBoard .postLeft .connect_product {padding: 30px 18px 18px;}
+#contentWrap .prd-reviewBoard .postLeft .connect_product .prd_img {display: block; border: 1px solid #dcdcdc;}
+#contentWrap .prd-reviewBoard .postLeft .connect_product .prd_img img {width: 100%;}
+#contentWrap .prd-reviewBoard .postLeft .connect_product .prd_info {margin-top: 20px;}
+#contentWrap .prd-reviewBoard .postLeft .connect_product .prd_info .name {font-size: 15px; color: #000; letter-spacing:-1px;}
+#contentWrap .prd-reviewBoard .postLeft .connect_product .prd_info .price {margin-top: 5px; font-size: 15px; color: #000;}
+#contentWrap .prd-reviewBoard .postLeft .img-score {padding: 25px; border-top: 1px solid #e6e6e6; background: #f8f8f8;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p {margin-top: 15px; overflow: hidden;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p:first-child {margin-top: 0;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p .score-name {float: left; font-size: 13px; color: #666666;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p .star-icon {float: right;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p .star-icon  .star {font-size: 15px; color: #aeaeae;}
+#contentWrap .prd-reviewBoard .postLeft .img-score p .star-icon  .star img { width: 15px; height: 15px; }
+#contentWrap .prd-reviewBoard .postLeft .counter {padding: 15px 30px; border-bottom: 1px solid #e6e6e6; overflow: hidden; border-top: 1px solid #e6e6e6;}
+#contentWrap .prd-reviewBoard .postLeft .counter .score {float: left; font-weight: bold; font-size: 15px; color: #010101;}
+#contentWrap .prd-reviewBoard .postLeft .counter .score em {color: #ff0000;}
+#contentWrap .prd-reviewBoard .postLeft .counter .review {float: right; font-weight: bold; font-size: 15px; color: #010101;}
+#contentWrap .prd-reviewBoard .postLeft .counter .review em {color: #ff0000;}
+#contentWrap .prd-reviewBoard .postLeft .btn {padding:20px 18px;}
+#contentWrap .prd-reviewBoard .postLeft .btn .btn-prd-view {display:block; line-height:50px; text-align:center; background:#000; font-size:15px; color:#fff;}
+#contentWrap .prd-reviewBoard .postRight { box-sizing:border-box; min-height: 800px; width:65%; float:right; }
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview {padding: 18px 19px 18px 100px; position: relative; border-bottom:1px solid #e6e6e6;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .tit {position: absolute; top: 15px; left: 0; width: 100px;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .tit p {padding: 15px 10px 0 10px; line-height: 22px; font-size: 17px; font-weight: bold; color: #000; letter-spacing:-2px;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .img-list ul {overflow: hidden;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .img-list ul li {float: left; margin-left: 10px;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .img-list ul li:first-child {margin-left: 0;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .img-list ul li a {display: block; border: 1px solid #c9c9c9;}
+#contentWrap .prd-reviewBoard .postRight .best-phpotoReview .img-list ul li a img {width: 74px; height: 70px;}

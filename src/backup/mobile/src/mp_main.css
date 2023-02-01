@@ -1,0 +1,259 @@
+/*회원 그룹 정보*/
+.mypage .userGroup{
+    padding:100px 20px 50px;
+}
+
+.mypage .userGroup .lvl-img{
+    width:35%;
+    margin:0 auto 20px;
+}
+
+.mypage .userGroup .lvl-img img{
+    display:none;
+    width:100%;
+}
+
+.mypage .userGroup.rank01 .lvl-img img.rank01,
+.mypage .userGroup.rank02 .lvl-img img.rank02,
+.mypage .userGroup.rank03 .lvl-img img.rank03,
+.mypage .userGroup.rank04 .lvl-img img.rank04{
+    display:block;
+}
+
+.mypage .userGroup .nextGradeWrap{
+    position:relative;
+    padding:15px 0;
+}
+
+.mypage .userGroup .nextGradeWrap ul li{
+    position:relative;
+    width:calc((100% - 20px)/3);
+}
+
+.mypage .userGroup .nextGradeWrap ul li:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:calc(100% - 5px);
+    height:6px;
+    left:10px;
+    top:7px;
+    background:#dbdbdb;
+    z-index:-1;
+}
+
+.mypage .userGroup .nextGradeWrap ul li:last-child{
+    width:20px;
+}
+
+.mypage .userGroup .nextGradeWrap ul li:last-child:after{
+    display:none;
+}
+
+.mypage .userGroup .nextGradeWrap ul li span{
+    display:block;
+    width:20px;
+    height:20px;
+    font-size:12px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    background:#dbdbdb;
+    border-radius:15px;
+}
+
+.mypage .userGroup .nextGradeWrap .levelupPoint {
+    width: 150px;
+    margin:35px auto 0;
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.15);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.mypage .userGroup .nextGradeWrap .levelupPoint span {
+    display: block;
+    font-size: 12px;
+    color: #b2b2b2;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.mypage .userGroup .nextGradeWrap .levelupPoint strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.mypage .userGroup .grp{
+    text-align:center;
+}
+
+.mypage .userGroup .grp .userGroupName{
+    padding:15px 0 33px;
+    font-size:24px;
+    line-height:35px;
+    font-weight:900;
+}
+
+.mypage .userGroup .grp .userGroupName strong{
+    font-weight:900;
+    color:#767676;
+}
+
+.mypage .userGroup .grp .moreViewBenefit{
+    font-size:12px;
+    font-weight:900;
+}
+
+.mypage .userGroup.open .grp .moreViewBenefit{
+    display:none;
+}
+
+.mypage .userGroup .grp .moreViewBenefit img{
+    width:5px;
+    vertical-align:middle;
+    margin-top:-3px;
+    margin-left:5px;
+}
+
+
+
+
+/*회원 그룹 등급별 색지정*/
+/*초승달*/
+.mypage .userGroup.rank01 .grp .userGroupName strong.userRank{
+    color:#CCC1B2;
+}
+.mypage .userGroup.rank01 .nextGradeWrap ul.userRank li:nth-child(1) span{
+    background:#CCC1B2;
+}
+/*반달*/
+.mypage .userGroup.rank02 .grp .userGroupName strong.userRank{
+    color:#FCA729;
+}
+.mypage .userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(1) span,
+.mypage .userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(1):after,
+.mypage .userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(2) span{
+    background:#FCA729;
+}
+/*상현달*/
+.mypage .userGroup.rank03 .grp .userGroupName strong.userRank{
+    color:#AA4743;
+}
+.mypage .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(1) span,
+.mypage .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(1):after,
+.mypage .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(2) span,
+.mypage .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(2):after,
+.mypage .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(3) span{
+    background:#AA4743;
+}
+/*보름달*/
+.mypage .userGroup.rank04 .grp .userGroupName strong.userRank{
+    color:#2957FF;
+}
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(1) span,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(1):after,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(2) span,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(2):after,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(3) span,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(3):after,
+.mypage .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(4) span{
+    background:#2957FF;
+}
+
+/*회원 쿠폰 적립금 보유 현황*/
+.mypage .info{
+    padding:20px;
+    background:#F1F1F5;
+}
+
+.mypage .info .userBenefitBox{
+    padding:0 18px;
+    background:#fff;
+    border-radius:12px;
+}
+
+.mypage .info .userBenefitBox dl{
+    padding:12px 0;
+    border-bottom:1px solid #EDEDED;
+}
+
+.mypage .info .userBenefitBox dl:last-child{
+    border-bottom:0;
+}
+
+.mypage .info .userBenefitBox dl dt{
+    width:40px;
+}
+
+.mypage .info .userBenefitBox dl dd{
+    width:calc(100% - 60px);
+    padding-left:20px;
+    padding-top:2px;
+}
+
+.mypage .info .userBenefitBox dl dd > span,
+.mypage .info .userBenefitBox dl dd > a > span{
+    display:block;
+    font-size:12px;
+}
+
+.mypage .info .userBenefitBox dl dd > strong,
+.mypage .info .userBenefitBox dl dd > a > strong{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    
+}
+
+.mypage .lnb-wrap{
+    padding-top:12px;
+}
+
+.mypage .lnb-wrap .lnb-bx{
+    padding:28px 20px 0;
+}
+
+.mypage .lnb-wrap .lnb-bx .txt{
+    font-size:16px;
+    font-weight:bold;
+    line-height:24px;
+    padding-bottom:12px;
+    border-bottom:2px solid #0097e6;
+}
+
+.mypage .lnb-wrap .lnb-bx .lnb ul li{
+    border-bottom:1px solid #EDEDED
+}
+
+.mypage .lnb-wrap .lnb-bx .lnb ul li a{
+    position:relative;
+    display:block;
+    padding-right:15px;
+    font-size:14px;
+    line-height:44px;
+}
+
+.mypage .lnb-wrap .lnb-bx .lnb ul li a img{
+    position:absolute;
+    width:8px;
+    top:15.5px;
+    right:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

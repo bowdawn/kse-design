@@ -1,0 +1,18 @@
+#login .login #keyboard {margin-top:20px; padding:0 15px;}
+#login .tab {padding:0 15px; margin-top:30px;}
+#login .tab a {width:50%; height:34px; border:1px solid #bdbdbd; border-top:3px solid #bdbdbd; border-bottom:1px solid #ab3e41; display: inline-block; text-align: center; line-height: 30px; box-sizing: border-box; background-color:#fbfbfb; }
+#login .tab a.act {color:#ab3e41; background-color:#fff; border:1px solid #ab3e41;  border-top:3px solid #ab3e41; border-bottom:0px none; font-weight:bold;}
+#login .login .loginInput {margin-top: 10px;}
+#login .nonmember {margin-top:20px; display:none;}
+#login .nonmember fieldset {padding:0 15px;}
+
+#inquiryOrder { display:none; }
+#inquiryOrder .txt { margin:15px 15px 0; padding:0; }
+#inquiryOrder .frm { overflow:hidden; width:200px; margin:35px auto 0; }
+#inquiryOrder .frm dt, 
+#inquiryOrder .frm dd { float:left; }
+#inquiryOrder .frm dt { width:60px; margin-top:5px; line-height:32px; font-weight:bold; letter-spacing:-1px; }
+#inquiryOrder .frm dd { width:140px; }
+#inquiryOrder .frm input[type=text] { width:100%; height:32px; line-height:32px; margin-top:5px; padding:0 5px; border:1px solid #c6c6c6; background:#fbfbfb; border-radius:0; }
+#inquiryOrder .btns { margin:40px 10px 20px; }
+#inquiryOrder .btns a { margin-top:10px; }

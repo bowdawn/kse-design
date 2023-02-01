@@ -1,0 +1,72 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="board-view">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>1:1 문의</h3>
+            </div>
+            <!--/if_link_faq/-->
+            <div class="pd10">
+                <a href="<!--/link_faq/-->" class="btn_Grey">FAQ 바로가기</a>
+            </div>
+            <!--/end_if/-->
+            <table>
+                <thead>
+                    <tr>
+                        <th><!--/subject/--></th>
+                        <td>
+                            <!--/if_is_reply/-->
+                            <span class="rep_com">답변완료</span>
+                            <!--/else/-->
+                            <span class="rep_ready">답변대기</span>
+                            <!--/end_if/-->
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <!--/if_attach_file/-->
+                            <img src="<!--/attach_file/-->" alt="첨부파일 이미지" title="첨부파일 이미지" width="100%" style="margin-bottom:10px;"/><br />
+                            <!--/end_if/-->
+                            <!--/content/-->
+                        </td>
+                    </tr>
+                </tbody>
+                <!--/if_is_reply/-->
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            [답변]<br/>
+                            <!--/reply_content/-->
+                        </td>
+                    </tr>
+                </tfoot>
+                <!--/end_if/-->
+            </table>
+            <div class="btns clearFix">
+                <div>
+                    <a href="<!--/link_update/-->" class="btn_White"><strong>수정</strong></a>
+                </div>
+                <div>
+                    <a href="<!--/link_delete/-->" class="btn_White"><strong>삭제</strong></a>
+                </div>
+            </div>
+            <div class="pd10">
+                <a href="<!--/link_m2m_list/-->" class="btn_Red">목록</a>
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

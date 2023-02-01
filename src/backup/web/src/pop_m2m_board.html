@@ -1,0 +1,86 @@
+<div id="consult1v1">
+    <div class="tit-pop">
+        <h1>1:1 고객문의 서비스 (<!--/number/pager_m2m_list::count/-->)</h1>
+        <span class="txt">고객님의 질문에 대하여 운영자가 1:1 답변을 드립니다.</span>
+    </div>
+    <div class="table-1v1-list">
+        <table summary="번호, 제목, 날짜, 답변여부">
+            <caption>1:1 고객 게시판</caption> 
+            <colgroup>
+                <col width="60" />
+                <col width="30" />
+                <col width="*" />
+                <col width="100" />
+                <col width="80" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col"><div class="tb-center">NO.</div></th>
+                    <th scope="col" colspan="2"><div class="tb-center">SUBJECT</div></th>
+                    <th scope="col"><div class="tb-center">DATE</div></th>
+                    <th scope="col"><div class="tb-center">STATE</div></th>
+                </tr>
+            </thead>
+            <tbody>
+            <!--/if_m2m_notice/-->
+                <!--/loop_m2m_notice/-->
+                <tr>
+                    <td><div class="tb-center tb-bold fc-ong">[공지]</div></td>
+                    <td colspan="4"><div class="tb-left tb-bold"><a href="<!--/m2m_notice@link/-->"><!--/m2m_notice@subject/--></a></div></td>
+                </tr>
+                <!--/end_loop/-->
+            <!--/end_if/-->
+            <!--/if_m2m_list/-->
+                <!--/loop_m2m_list/-->
+                <tr>
+                    <td><div class="tb-center"><!--/m2m_list@num/--></div></td>
+                    <td><div class="tb-center"><img src="<!--/m2m_list@attach_icon/-->" alt="" /></div></td>
+                    <td><div class="tb-left"><a href="<!--/m2m_list@link/-->"><!--/m2m_list@subject/--></a></div></td>
+                    <td><div class="tb-center"><!--/date(%Y.%M.%D)/m2m_list@date/--></div></td>
+                    <td>
+                        <div class="tb-center">
+        <!--/if_m2m_list@is_reply/-->
+                            <p class="stateBlack">답변완료</p>
+        <!--/else/-->
+                            <p class="stateWhite">답변대기</p>
+        <!--/end_if/-->
+                        </div>
+                    </td>
+                </tr>
+    <!--/end_loop/-->
+<!--/else/-->
+                <tr>
+                    <td colspan="5"><div class="tb-center">작성된 게시글이 없습니다.</div></td>
+                </tr>
+<!--/end_if/-->
+
+            </tbody>
+        </table>
+    </div><!-- .1v1-list -->
+    <div class="paging">
+        <!--/if_pager_m2m_list::first/-->
+        <a href="<!--/pager_m2m_list::first@link/-->" class="first">&lt;&lt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::prev/-->
+        <a href="<!--/pager_m2m_list::prev@link/-->" class="prev">&lt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list/-->
+        <!--/loop_pager_m2m_list::page/-->
+        <!--/if_pager_m2m_list::page@current/-->
+        <a href="<!--/pager_m2m_list::page@link/-->" class="now"><!--/pager_m2m_list::page/--></a>
+        <!--/else/-->
+        <a href="<!--/pager_m2m_list::page@link/-->"><!--/pager_m2m_list::page/--></a>
+        <!--/end_if/-->
+        <!--/end_loop/-->
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::next/-->
+        <a href="<!--/pager_m2m_list::next@link/-->" class="next">&gt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::last/-->
+        <a href="<!--/pager_m2m_list::last@link/-->" class="last">&gt;&gt;</a>
+        <!--/end_if/-->
+    </div>
+    <div class="btn-foot">
+        <a href="<!--/link_m2m_write/-->" class="CSSbuttonWhite">1:1 질문하기</a>
+    </div>      
+</div><!-- #consult1v1 -->

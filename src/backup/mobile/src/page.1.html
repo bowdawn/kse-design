@@ -1,0 +1,482 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <link rel="stylesheet" type="text/css" href="/design/ksilverex/supermarket/css/slick.css"/>
+    <script src="/design/ksilverex/supermarket/js/slick.min.js"></script>
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+              <div class="slickmdbest">
+                  <div class="item-wrap best">
+                    <div class="cateTit">
+                        <h3>은 추천상품</h3>
+                        <p class="line"></p>
+                    </div>
+                    <div class="item-cont recmdlist">
+                        <!--/loop_category_product_008/-->                                    
+                        <dl class="item-list loop<!--/idx/-->">
+                            <dt class="thumb">
+                                <p id="s_price" style="display:none"> <!--/if_category_product_008@price_consumer(+1)/--><!--/category_product_008@price_consumer/--><!--/else/--><!--/category_product_008@price_sell/--><!--/end_if/--></p>
+                                <p id="s_dc" style="display:none"><!--/if_category_product_008@price_discount/--><!--/category_product_008@price_discount/--><!--/else/--><!--/category_product_008@price_sell/--><!--/end_if/--></p>
+                                <script>
+                                  var no<!--/idx/-->sp = $(".recmdlist .loop<!--/idx/--> #s_price").text();
+                                  var no<!--/idx/-->s_dc = $(".recmdlist .loop<!--/idx/--> #s_dc").text();     
+                                  var no<!--/idx/-->sM = 100-[(no<!--/idx/-->s_dc/no<!--/idx/-->sp)*100];
+                                  var no<!--/idx/-->Olim = Math.round(no<!--/idx/-->sM);
+                                  var no<!--/idx/-->goInt = "<em class='num'>" + no<!--/idx/-->Olim + "</em><em class='percent'>%</em>";
+                                </script>
+                                <!--/if_category_product_008@is_term_discount/-->
+                                    <p class="dc term"><script> $(".recmdlist .loop<!--/idx/--> .term").append(no<!--/idx/-->goInt);
+                                    if(no<!--/idx/-->Olim == 0){
+                                        $(".recmdlist .loop<!--/idx/--> .dc.term").hide();
+                                    }
+                                    </script></p>
+                                <!--/else/-->
+                                    <!--/if_category_product_008@discount_info/--><p class="dc"><!--/category_product_008@discount_info/--><em>%</em></p><!--/end_if/-->
+                                    <!--/if_category_product_008@discount_percent/--><p class="dc"><!--/category_product_008@discount_percent/--><em>%</em></p><!--/end_if/-->
+                                <!--/end_if/-->
+                                <a href="<!--/category_product_008@link/-->"><img src="<!--/category_product_008@image_m/-->" <!--/category_product_008@rollover/--> /></a>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li class="prd-name"><!--/notag/category_product_008@name/--></li>                
+                                    <!--/if_category_product_008@subname/--><li class="prd-subname"><!--/notag/category_product_008@subname/--></li><!--/end_if/-->
+
+                                    <!--/if_category_product_008@is_soldout/-->
+                                        <li class="prd-soldout">Sold out</li>
+                                    <!--/else/-->
+                                        <!--/if_category_product_008@price_replace/-->
+                                            <li class="prd-replace"><!--/category_product_008@price_replace/--></li>
+                                        <!--/else/-->
+                                        <!--/if_category_product_008@price_consumer(+1)/-->
+                                        <!--/if_category_product_008@price_discount/-->
+                                        <li class="prd-consumer <!--/if_category_product_008@discount_percent/--><!--/else_if_category_product_008@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_008@price_consumer/--></strike></li>
+                                        <li class="prd-price"><!--/number/category_product_008@price_discount/--><em> 원</em></li>
+
+                                        <!--/else/-->
+                                        <li class="prd-consumer <!--/if_category_product_008@discount_percent/--><!--/else_if_category_product_008@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_008@price_consumer/--></strike></li>
+                                        <li class="prd-price"><!--/number/category_product_008@price_sell/--><em> 원</em></li>
+
+
+                                        <!--/end_if/-->
+                                        <!--/else/-->
+                                        <!--/if_category_product_008@price_discount/-->
+                                        <li class="prd-consumer <!--/if_category_product_008@discount_percent/--><!--/else_if_category_product_008@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_008@price_sell/--></strike></li>
+                                        <li class="prd-price"><!--/number/category_product_008@price_discount/--><em> 원</em></li>
+                                        <!--/else/-->
+                                        <li class="prd-price"><!--/number/category_product_008@price_sell/--><em> 원</em></li>
+                                        <!--/end_if/-->
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    <!--/end_if/-->
+
+                                </ul>
+                            </dd>
+                        </dl>
+                        <!--/end_loop/-->
+                    </div>
+                  </div>
+                  <!-- .best-item -->
+              </div>
+
+              <head>
+                  <title>실시간 국제 은시세 및 금은비, 환율 그래프</title>
+                  <meta property="og:title" content="은시세">
+              </head>
+              <br><br><br><br>
+
+              <center>
+                  <div class="title_group1 nomgin">
+                      <h3 class="title1"><span designelement="text">실시간 국제 은시세(USD/1ozt.)</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_a73e8"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                          "width": "100%",
+                          "height": "400",
+                          "symbol": "CURRENCYCOM:SILVER",
+                          "timezone": "Asia/Seoul",
+                          "theme": "light",
+                          "style": "1",
+                          "locale": "kr",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "hide_top_toolbar": true,
+                          "hide_legend": true,
+                          "range": "YTD",
+                          "save_image": false,
+ "studies": [
+    "RSI@tv-basicstudies"
+  ],
+                          "container_id": "tradingview_a73e8"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+             <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "CURRENCYCOM:SILVER",
+  "width": "100%",
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "kr"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+              <br>
+
+              <center>
+                  <p class="text2" designelement="text">
+                      은 1ozt.(31.1g)의 국제시세를 미국달러로 표기<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <br><br>
+
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 국제 은시세(KRW/1ozt.)</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_2ef72"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                          "width": "100%",
+                          "height": "300",
+                          "symbol": "SILVER*FX_IDC:USDKRW",
+                          "timezone": "Asia/Seoul",
+                          "theme": "light",
+                          "style": "1",
+                          "locale": "kr",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "hide_top_toolbar": true,
+                          "hide_legend": true,
+                          "range": "YTD",
+                          "save_image": false,
+                          "container_id": "tradingview_2ef72"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  {
+  "symbol": "SILVER*USDKRW",
+  "width": "100%",
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "kr"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+              <br>
+
+              <center>
+                  <p class="text2" designelement="text">
+                      실시간 환율이 적용된 은 1ozt.(31.1g)의 시세를 원화로 환산<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <br><br>
+
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 국제 은시세(1g)</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_d73a6"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                          "width": "100%",
+                          "height": 300,
+                          "symbol": "SILVER*USDKRW/31.1035",
+                          "timezone": "Asia/Seoul",
+                          "theme": "light",
+                          "style": "1",
+                          "locale": "kr",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "hide_top_toolbar": true,
+                          "hide_legend": true,
+                          "range": "YTD",
+                          "save_image": false,
+                          "container_id": "tradingview_d73a6"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                      {
+                          "symbol": "(SILVER*USDKRW)/31.1035",
+                          "width": "100%",
+                          "colorTheme": "light",
+                          "isTransparent": false,
+                          "locale": "kr"
+                      }
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+              <br>
+
+              <center>
+                  <p cAlass="text2" designelement="text">
+                      실시간 환율이 적용된 국제 은값을 은 1g 당 원화로 환산<br>
+                      (VT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <br><br>
+
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 국제 은시세(1돈)</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_89c07"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                        "width": "100%",
+                        "height": 300,
+                        "symbol": "SILVER*USDKRW/31.1035*3.75",
+                        "timezone": "Asia/Seoul",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "kr",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "hide_top_toolbar": true,
+                        "hide_legend": true,
+                        "range": "YTD",
+                        "save_image": false,
+                        "container_id": "tradingview_89c07"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                      {
+                          "symbol": "SILVER*USDKRW/31.1035*3.75",
+                          "width": "100%",
+                          "colorTheme": "light",
+                          "isTransparent": false,
+                          "locale": "kr"
+                      }
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+              <br>
+
+              <center>
+                  <p class="text2" designelement="text">
+                      실시간 환율이 적용된 국제 은값을 은 한돈(3.75g)당 원화로 환산<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <br><br>
+
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 금은비율</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_0a1c9"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                          "width": "100%",
+                          "height": 300,
+                          "symbol": "TVC:GOLDSILVER",
+                          "timezone": "Asia/Seoul",
+                          "theme": "light",
+                          "style": "1",
+                          "locale": "kr",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "hide_top_toolbar": true,
+                          "hide_legend": true,
+                          "range": "YTD",
+                          "save_image": false,
+                          "container_id": "tradingview_0a1c9"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                      {
+                        "symbol": "TVC:GOLDSILVER",
+                        "width": "100%",
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "kr"
+                      }
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+              <br>
+
+              <center>
+                  <p class="text2" designelement="text">
+                      금 1ozt.(31.1g)를 동일 중량의 은으로 바꿀 때 필요한 은의 양(개수)
+                  </p>
+              </center>
+              <br><br>
+
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 원 달러 환율</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div id="tradingview_3eae6"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget({
+                        "width": "100%",
+                        "height": 300,
+                        "symbol": "FX_IDC:USDKRW",
+                        "timezone": "Asia/Seoul",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "kr",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "hide_top_toolbar": true,
+                        "hide_legend": true,
+                        "range": "YTD",
+                        "save_image": false,
+                        "container_id": "tradingview_3eae6"
+                      });
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "FX_IDC:USDKRW",
+                        "width": "100%",
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "kr"
+                      }
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+              <br>
+
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                      {
+                        "symbols": [
+                          {
+                            "description": "원달러환율",
+                            "proName": "FX_IDC:USDKRW"
+                          },
+                          {
+                            "description": "은 1ozt. (달러)",
+                            "proName": "TVC:SILVER"
+                          },
+                          {
+                            "description": "은 1ozt. (원)",
+                            "proName": "SILVER*USDKRW"
+                          },
+                          {
+                            "description": "은 1g (원)",
+                            "proName": "(SILVER*USDKRW)/31.1035"
+                          },
+                          {
+                            "description": "은 1돈 (원)",
+                            "proName": "(SILVER*USDKRW/31.1035)*3.75"
+                          },
+                          {
+                            "description": "금 1ozt. (달러)",
+                            "proName": "TVC:GOLD"
+                          },
+                          {
+                            "description": "금 1ozt. (원)",
+                            "proName": "GOLD*USDKRW"
+                          },
+                          {
+                            "description": "금 1g (원)",
+                            "proName": "(GOLD*USDKRW)/31.1035"
+                          },
+                          {
+                            "description": "금 1돈 (원)",
+                            "proName": "(GOLD*USDKRW/31.1035)*3.75"
+                          }
+                        ],
+                        "showSymbolLogo": true,
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "displayMode": "adaptive",
+                        "locale": "kr"
+                      }
+                  </script>
+              </div>
+              <!-- TradingView Widget END -->
+            </div>
+            <!-- #content -->
+            <hr/>
+        </div>
+        <!-- #contentWrap -->
+    </div>
+    <!-- #contentWrapper -->
+    <hr/>
+    <!--/include_footer(1)/-->
+</div>
+<!-- #wrap -->

@@ -1,0 +1,240 @@
+#join .MK_ok_confirm {color: #1984f1;}
+#join .MK_no_confirm {color: #f1191f;}
+#join .join { padding:0 20px 20px;}
+#join .sequence {height:100px; text-align:center;}
+#join .sequence li {display: inline-block; margin: 0 12px;}
+#join .sequence li .fa-stack {display:block; margin:20px auto 0;}
+#join .sequence li .fa-circle {color: #858585;}
+#join .sequence li.now {color:#ab3e41;}
+#join .sequence li.now .fa-circle {color:#ab3e41;}
+#join .join .tableBox {background-color: #fff; margin-bottom:10px;}
+#join .join .tableBox:last-child {margin-bottom:0;}
+#join .join .tableBox table {width:100%; }
+#join .join .tableBox table:first-child {margin-top:0;}
+#join .join .tableBox table th {text-align:left; vertical-align: top; padding:17px 0 17px 10px;}
+#join .join .tableBox table td dl dd p {font-size:0.917em; margin-top: 5px; color:#707070;line-height:18px;font-size:12px;}
+#join .join .tableBox table td.birth select {margin:0 5px 10px 0; width: 29%;}
+#join .join .tableBox table td.birth select:last-child{margin-right:0;}
+#join .join .tableBox table td.birth .MS_input_txt {width: 27%;}
+#join .join .tableBox table .txt-input {width:100%; box-sizing: border-box;}
+#join .join .tableBox table .txt-input[name=haddress1] {margin-bottom:10px;}
+#join .join .tableBox table #hphone1,
+#join .join .tableBox table #hphone2,
+#join .join .tableBox table #hphone3,
+#join .join .tableBox table #etcphone1,
+#join .join .tableBox table #etcphone2,
+#join .join .tableBox table #etcphone3 {width: 29% !important;}
+#join .pd10 {margin-top: 20px;}
+#join .step-comm {display:none;}
+#join .layer {position: absolute;}
+#join .layer .keyword input {width:45%;}
+#join .layer .msg01 {text-align: center;}
+#join .layer .MS_addr_type_area {text-align: center; margin:10px 0;}
+#join .layer .search-form .btn_Grey {width:105px; display:inline; margin-left: 10px;}
+#join .layer .addr-list {width:100%;}
+#join .layer .msg-wrap {background-color: #fbfbfb; padding:10px 0; text-align: center;}
+#join .layer .msg-wrap .msg01-highlight {color:#1984f1;}
+#join .layer #searchStep02 {margin-top:10px;}
+#join .layer #searchStep02 h4 {font-weight: bold;}
+#join .layer #searchStep02 .btn_Black {margin-top:10px;}
+#join .layer #searchStep03 table {width:100%;}
+#join .layer #searchStep03 table th {width:20%; text-align: left;}
+#join .layer #searchStep03 table td {padding:10px 0;}
+#join .layer #searchStep03 table .detail-addrPost input {width:50px;}
+#join .layer #searchStep03 table .detail-addrAddress input {width:90%; margin-bottom: 5px;}
+#join .user_age_wrap {margin:10px 0px;}
+#addrSearch .addr_type {text-align:center; font-weight: bold;}
+#addrSearch .addr_type label {margin:0 5px;}
+
+/* 추천인 아이디 검색 alert대체 메시지 사용 시 버튼 미노출 */
+#join #MS_recommand_search {display: none !important;}
+
+
+/*SNS 로그인 연동*/
+.snsLoginWrap{
+    padding:0 20px;
+}
+
+.snsLoginWrap h3{
+    margin-bottom:10px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.snsLoginWrap ul li{
+    width:50%;
+}
+
+.snsLoginWrap ul li dl dt{
+    width:40px;
+    font-size:14px;
+    line-height:67px;
+}
+
+.snsLoginWrap ul li dl dd{
+    width:100px;
+}
+
+.snsLoginWrap ul li dl dd a{
+    display:block;
+    width:100%;
+}
+
+.snsLoginWrap ul li dl dd a img{
+    width:100%;
+}
+
+
+.empha {
+    display: inline-block;
+    margin: -2px 0 0 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background: #0097E6;
+    vertical-align: middle;
+}
+
+#join .join .tableBox table td dl{
+    margin-bottom:25px;
+}
+
+#join .join .tableBox table td dl dt{
+    font-size:16px;
+    line-height:24px;
+    margin-bottom:5px;
+}
+
+#join .join .tableBox table td dl dd{
+    position:relative;
+    line-height:40px;
+    color:#999;
+    background:#fff;
+    font-size:16px;
+}
+
+#join .join .tableBox table td dl dd input{
+    height:40px;
+    padding:0 10px;
+    color:#999;
+    font-size:16px;
+    background:#fff;
+    border:none;
+    border-bottom:1px solid #EDEDED;
+}
+
+#join .join .tableBox table td dl dd input:disabled{
+    background:#ededed;
+}
+
+#join .join .tableBox table td dl dd select{
+    height:40px;
+    padding:0 10px;
+    color:#999;
+    font-size:16px;
+    background:#fff;
+    border:none;
+    border-bottom:1px solid #EDEDED;
+}
+
+#join .join .tableBox table td dl dd select:disabled{
+    background:#ededed;
+}
+/*
+#join .join .tableBox table td dl dd span{
+    line-height:40px;
+}*/
+
+#join .join .tableBox table td dl dd.border-b{
+    border-bottom:1px solid #EDEDED;
+    background:#EDEDED;
+    padding:0 10px;
+}
+
+#join .join .tableBox table td dl dd.border-b p{
+    display:none;
+}
+
+#join .join .tableBox table td dl dd .flexBox{
+    display:flex;
+}
+
+#join .join .tableBox table td dl dd .flexBox *{
+    flex-grow:1;
+}
+
+#join .join .tableBox table td dl dd #email1{
+    width:calc(50% - 8px) !important;;
+}
+
+#join .join .tableBox table td dl dd #direct_email{
+    width:calc(50% - 15px);
+}
+
+#join .join .tableBox table td dl dd #direct_email input{
+    width:100% !important;
+}
+
+#join .join .tableBox table td dl dd #email2{
+    width:100%;
+    margin-top:10px;
+}
+
+#join .join .tableBox table td dl dd.radioBtn a.dp_no{
+    display:none;
+}
+
+#join .join .tableBox table td dl dd.radioBtn .radioWrap{
+    display:none;
+}
+
+#join .join .tableBox table td dl dd.radioBtn .radioSwitch {
+    display:block;
+    width:108px;
+    margin-top:-3px;
+}
+
+#join .join .tableBox table td dl dd.radioBtn .radioSwitch img{
+    width:100%;
+}
+
+#join .join .tableBox table td dl dd a.showPassword{
+    position:absolute;
+    display:block;
+    top:0;
+    right:0;
+    width:40px;
+    line-height:40px;
+    text-align:center;
+}
+
+#join .join .tableBox table td dl dd a.showPassword img{
+    vertical-align:middle;
+}
+
+#join .join .tableBox table td dl.clearfix dt.fl{
+    margin-right:35px;
+}
+
+#join .btnWrap{
+    padding:20px 20px 0;
+}
+
+#join .btnWrap .myBlueBtn{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    background: #0097E6;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+

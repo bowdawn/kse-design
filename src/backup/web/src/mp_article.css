@@ -1,0 +1,20 @@
+#myHistory .table-d2-list { margin-top: 5px; }
+#myHistory .tb-btns a { display: block; margin-bottom: 3px; }
+
+#myHistory .my-board-list { margin-top:35px; padding:15px 0; border-bottom:1px solid #ececec; overflow:hidden }
+
+#myHistory .my-board-list ul { *zoom:1 }
+#myHistory .my-board-list ul:after { display:block; clear:both; content:'' }
+#myHistory .my-board-list ul li { padding:0 16px; float:left; background:url(//image.makeshop.co.kr/makeshop/d3/basic_simple/common/bu_2x8.gif) 0 4px no-repeat }
+#myHistory .my-board-list ul li.first { padding-left:0; background:none }
+#myHistory .my-board-list ul li a { display:block; font-size:16px; word-break:break-all }
+
+
+.table-d2-list tbody td a.boardTitleLink{
+    word-break: break-all;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}

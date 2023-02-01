@@ -1,0 +1,55 @@
+body * {  }
+#terms .page-body { width: 680px; margin: 50px auto 0 }
+#terms .new-privercy-contract h3 { position:relative; font-weight: bold; margin:30px 0 5px 0; text-align: left; }
+#terms .new-privercy-contract h3 span { color:#0f6efc; }
+#terms .new-privercy-contract h3 .check { position:absolute; top:0; right:0; width:70px; }
+#terms .new-privercy-contract h3 .check input { width:12px; height:12px; vertical-align:top; }
+#terms .new-privercy-contract h3.w-normal { font-weight: normal }
+#terms .privercy-contract-tap { height:35px; }
+#terms .privercy-contract textarea { height: 150px; width: 650px;  }
+#terms .privercy-agree { margin-bottom: 20px; }
+#terms .tbl { width:100%; padding:0; margin:0; border-spacing:0; border-collapse:collapse; border-top: 1px solid #dadada; border-left: 1px solid #dadada; }
+#terms .tbl caption { display:none; }
+#terms .tbl th { line-height:32px; color: #3b3b3b; font-size:12px; font-weight:bold; background: #f0f0f0; text-align:center; }
+#terms .tbl th,
+#terms .tbl td { height:32px; padding:0; margin:0; border-right: 1px solid #dadada; border-bottom: 1px solid #dadada; letter-spacing:-1px; }
+#terms .new-privercy-contract .tbl td { background:#ffffff; }
+#terms .tbl td ul,
+#terms .tbl td ul li { padding:0; margin:0; list-style:none; }
+#terms .tbl td ul { width:70px; margin:5px auto; }
+#terms .tbl td .txt-l { padding:5px 3px; margin:0; text-align:left; }
+#terms .tbl td .mr15 { margin-right:15px; }
+#terms .btn-foot { margin-top: 20px; text-align: center; font-size: 0; line-height: 0; }
+#terms .btn-foot a { margin-left: 10px; }
+
+/* 약관 동의 */
+#chkwrap { border:1px solid #dedede; background: #ffffff }
+#chkwrap .all-chk { height:43px; line-height:45px; padding-left:20px; font-size:14px; font-weight:bold; color:#000; border-bottom:1px solid #dedede; }
+#chkwrap .all-chk .input-cbox { width:14px; height:14px; *margin-top:0; } 
+#chkwrap .cont ul:after { clear: both; content: ""; display: block; }
+#chkwrap .cont ul { padding-bottom:15px; }
+#chkwrap .cont ul li { float:left; width:270px; line-height:18px; }
+#chkwrap .cont ul li a { display:inline-block; width:60px; height:16px; line-height:21px !important; margin-top:-2px; font-weight:normal; font-size:11px; border:1px solid #bdbec7; background:#fafafa; text-align:center; }
+#chkwrap .cont strong { color:#000; }
+#chkwrap .cont label { font-weight:bold; }
+#chkwrap .cont .marketing { padding-left:30px; border-top:1px dashed #dadada; line-height:18px; }
+#chkwrap .cont .marketing .mk-wrap { height:44px; line-height:46px; }
+#chkwrap .cont .marketing .mk-wrap input { margin-top:-1px; *margin-top:0; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #chkwrap .cont ul li a { line-height:17px !important }
+}
+
+h4.tit { margin-top: 50px; margin-bottom: 5px; padding-left:5px; font-size: 14px; font-weight: bold }
+
+/* 이용 약관 */
+.privercy-contract textarea { width:97%; height:165px }
+/* 개인정보 수집이용, 제3제공, 취급위탁 테이블 */
+#terms .contract-tbl { width:100%; border-spacing:0; border-collapse:collapse }
+#terms .contract-tbl th,
+#terms .contract-tbl td { border:1px solid #e0e0e0; text-align:center; }
+#terms .contract-tbl th { background: #fcfcfc; }
+#terms .contract-tbl th div { height:41px; line-height:43px; }
+#terms .contract-tbl tbody th { font-weight:normal; }
+
+.btm-msg { padding-top:30px; line-height:18px; }

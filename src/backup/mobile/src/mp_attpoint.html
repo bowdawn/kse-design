@@ -1,0 +1,43 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="reserve-list">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>출석체크 적립금내역</h3>
+            </div>
+            <div class="notice-info">
+                <p>총 보유 적립금액 <em><!--/number/user_reserve/--></em> ⓟ</p>
+                <p>출석체크 누적 적립금액 <!--/number/attendance_reserve/--> ⓟ</p>
+            </div>
+            <table class="list">
+            <!--/if_attendance/-->
+                <!--/loop_attendance/-->
+                <tr>
+                    <th>
+                        출석체크 적립금
+                        <span class="reserve_date"><!--/attendance@date/--></span>
+                    </th>
+                    <td><span class="reserve-price"><!--/number/attendance@price/--></span> ⓟ</td>
+                </tr>
+                <!--/end_loop/-->
+            <!--/else/-->
+                <tr>
+                    <th class="no_data"> 적립금 내역이 없습니다.</th>
+                </tr>
+            <!--/end_if/-->
+            </table>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

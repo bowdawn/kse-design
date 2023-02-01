@@ -1,0 +1,10 @@
+#board1v1 .page-body table textarea { width:99%; min-height:280px; border:1px solid #ddd }
+#board1v1 .page-body table select { width:287px; height:33px }
+#board1v1 .page-body table input[type=text] { padding-left:5px; height:31px; line-height:31px; border:1px solid #ddd }
+#board1v1 .page-body table .txt-input2 { width:280px }
+#board1v1 .page-body table .txt-input3 { width:99% }
+#board1v1 .page-body table .MS_input_file { width:280px; padding-left:5px; height:31px; border:1px solid #ddd }
+#board1v1 .page-body table .MS_input_file_button { padding:5px 10px }
+
+#board1v1 .btn-foot { margin-top:40px; text-align:center }
+#board1v1 .btn-foot a { margin:0 3px; width:228px; height:58px; font-size:16px; line-height:58px }

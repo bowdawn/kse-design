@@ -1,0 +1,119 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="faqWrap">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="page-body">
+                            <div class="tit-page-4">
+                                <h2 class="faq-tit">자주묻는 질문</h2>
+                            </div>
+                                <div class="faq-search">
+                                    <!--/form_search_faq/-->
+                                    <div class="search-wrap">
+                                        <fieldset>
+                                            <legend>FAQ 검색 폼</legend>
+                                            <!--/select_category/-->
+                                            <span class="keyword">
+                                            <!--/input_keyword/-->
+                                            </span>
+                                            <a href="<!--/link_search_faq/-->" class="searchBtn"><img src="/design/ksilverex/22_renew/img/faq_search.png"></a>
+                                        </fieldset>
+                                        <dl class="best-keyword">
+                                            <dd>
+                                                <ul class="list">
+                                                    <!--/loop_best_keyword/-->
+                                                    <li><a href="<!--/best_keyword@link/-->"><!--/best_keyword@keyword/--></a></li>
+                                                    <!--/end_loop/-->
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div><!-- .search-wrap -->
+                                    <!--/end_form/-->
+                                </div><!-- .faq-search-->
+                                <div id="faq-category">
+                                    <ul class="faq-menu">
+                                        <!--/loop_category/-->
+                                        <li class="<!--/if_idx(1)/-->first<!--/end_if/--> <!--/if_category@is_now/-->now<!--/end_if/-->"><a href="<!--/category@link/-->"><!--/category@name/--></a></li>
+                                        <!--/end_loop/-->
+                                    </ul><!-- .faq-menu-->
+                                </div><!-- .faq-category-->
+                                
+                                <div class="qnaCnt">
+                                    <span><!--/loop_category/--><!--/if_category@is_now/--><!--/category@name/--> <span class="c-blue"><!--/pager_faq::count/--></span><!--/end_if/--><!--/end_loop/--> <span class="c-blue totalCnt"></span></span>
+                                </div>
+                                <div id="faqTable" class="table-d5-list">
+                                    <table summary="분류 제목">
+                                        <caption>질문/답변</caption>
+                                        <colgroup>
+                                            <col width="50" />
+                                            <col width="50" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <!--/loop_faq/-->
+                                            <tr uid="<!--/faq@uid/-->">
+                                                <td>
+                                                    <div class="tb-left"><strong><!--/faq@num/--></strong></div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-center"><span class="question">Q</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-left"><!--/faq@subject/--></div>
+                                                </td>
+                                            </tr>
+                                            <tr class="slide-hide">
+                                                <td colspan="3">
+                                                    <div class="tb-slide">
+                                                        <dl class="adv">
+                                                            <dt><span class="answer">A</span></dt>
+                                                            <dd><!--/faq@answer/--></dd>
+                                                        </dl>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!-- .page-body -->
+                            <div class="paging2">
+
+                                <!--/if_pager_faq::first/-->
+                                <a href="<!--/pager_faq::first@link/-->" class="first">&lt;&lt;</a>
+                                <!--/end_if/-->
+                                <!--/if_pager_faq::prev/-->
+                                <a href="<!--/pager_faq::prev@link/-->" class="prev">&lt;</a>
+                                <!--/end_if/-->
+                                <!--/if_pager_faq/-->
+                                    <!--/loop_pager_faq::page/-->
+                                        <!--/if_pager_faq::page@current/-->
+                                        <a href="<!--/pager_faq::page@link/-->" class="now"><!--/pager_faq::page/--></a>
+                                        <!--/else/-->
+                                        <a href="<!--/pager_faq::page@link/-->"><!--/pager_faq::page/--></a>
+                                        <!--/end_if/-->
+                                    <!--/end_loop/-->
+                                <!--/end_if/-->
+                                <!--/if_pager_faq::next/-->
+                                <a href="<!--/pager_faq::next@link/-->" class="next">&gt;</a>
+                                <!--/end_if/-->
+                                <!--/if_pager_faq::last/-->
+                                <a href="<!--/pager_faq::last@link/-->" class="last">&gt;&gt;</a>
+                                <!--/end_if/-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- #faqWrap -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

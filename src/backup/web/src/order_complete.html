@@ -1,0 +1,319 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="order">
+                    <dl class="loc-navi">
+                        <dt class="blind">현재 위치</dt>
+                        <dd>
+                            <a href="/">HOME</a> 
+                            &gt; 주문완료
+                        </dd>
+                    </dl>
+                    <div class="page-body">
+                        <h2 class="tit-page">주문상품</h2>
+                        <div class="table-cart table-order-prd">
+                            <table summary="구입 상품명, 수량, 가격, 적립">
+                                <caption>주문 상품</caption>
+                                <colgroup>
+                                    <col width="120" />
+                                    <col width="*" />
+                                    <col width="100" />
+                                    <col width="110" />
+                                    <col width="120" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><div class="tb-center"></div></th>
+                                        <th scope="col"><div class="tb-center">상품명</div></th>
+                                        <th scope="col"><div class="tb-center">수 량</div></th>
+                                        <th scope="col"><div class="tb-center">적립예정 멤버십포인트</div></th>
+                                        <th scope="col"><div class="tb-center">주문금액</div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--/loop_order_product/-->
+<!-- Tracking Script Start 2.0 -->
+<script type="text/javascript" async="true">
+var dspu = "BB0a3NpbHZlcmV4";      // === (필수)광고주key (변경하지마세요) ===
+
+var dspt = "1";         // === (필수)전환구분( 1:구매 ) (변경하지마세요) === 
+var dspo = "<!--/order_num/-->";    // === (선택)주문번호( 미입력시 - 중복체크 안함. ) ===
+var dspom = "<!--/pay_price/-->";       // === (선택)구매금액( 구매전환시 사용 ) ===
+
+var dspu,dspt,dspo,dspom; 
+function loadanalJS_dsp(b,c){var d=document.getElementsByTagName("head")[0],a=document.createElement("sc"+"ript");a.type="text/javasc"+"ript";null!=c&&(a.charset="UTF-8");
+a.src=b;a.async="true";d.appendChild(a)}function loadanal_dsp(b){loadanalJS_dsp(("https:"==document.location.protocol?"https://":"http://")+b,"UTF-8");document.write('<span id=dsp_spn style=display:none;></span>');}
+loadanal_dsp("tk.realclick.co.kr/tk_comm.js?dspu="+dspu+"&dspt="+dspt+"&dspo="+dspo+"&dspom="+dspom);
+</script>
+<!-- Tracking Script End 2.0 -->
+                                    <!--/if_idx(1)/-->
+                                    <tr class="nbg">
+                                    <!--/else/-->
+                                    <tr>
+                                    <!--/end_if/-->
+                                        <td>
+                                            <div class="tb-center">
+                                                <!--/if_order_product@image_s/-->
+                                                <img src="<!--/order_product@image_s/-->" width="70" />
+                                                <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-left">
+                                                <!--/if_order_product@provider_icon/--><img src ="<!--/order_product@provider_icon/-->" alt="" title="" ><!--/end_if/-->
+                                                <!--/if_order_product@link/-->
+                                                <a href="<!--/order_product@link/-->" class="tb-bold"><!--/order_product@name/--></a>
+                                                <!--/else/-->
+                                                    <!--/order_product@name/-->
+                                                <!--/end_if/-->
+                                                <!--/if_order_product@option/-->
+                                                <div class="tb-opt">
+                                                    <!--/order_product@option/-->
+                                                </div>
+                                                <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-center"><!--/order_product@amount/-->개</div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-center">
+                                            <!--/if_order_product@reserve/-->
+                                                <!--/number/order_product@reserve/-->
+                                            <!--/end_if/-->
+                                            <!--/if_order_product@point/-->
+                                                <!--/order_product@point/-->
+                                            <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-center tb-bold"><!--/number/order_product@price/-->원</div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!--/end_loop/-->
+
+                                    <!--/if_group_dc_message/-->
+                                    <tr>
+                                        <td><div class="tb-left"></div></td>
+                                        <td>
+                                            <div class="tb-left">
+                                            <!--/if_group_icon/--><img src="<!--/group_icon/-->" /><!--/end_if/-->
+                                            <!--/group_name/-->
+                                            </div>
+                                        </td>
+                                        <td colspan="3"><div class="tb-right"><!--/group_dc_message/--></div></td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                    <!--/if_extension_sum/-->
+                                    <tr>
+                                        <td colspan="5" class="tb-ext">
+                                        <!--/loop_extension_sum/-->
+                                            <dl>
+                                                <dt><!--/extension_sum@title/--></dt>
+                                                <!--/if_extension_sum@price/-->
+                                                <dd>                                                    
+                                                    <!--/number/extension_sum@price/-->원
+                                                </dd>                                                        
+                                                <!--/end_if/-->
+                                                <!--/if_extension_sum@reserve/-->
+                                                <dd>                                                    
+                                                    <!--/number/extension_sum@reserve/-->원(적립)
+                                                </dd>                                                        
+                                                <!--/end_if/-->
+                                            </dl>
+                                        <!--/end_loop/-->
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><div class="tb-left tb-totalTit">총 결제금액</div></td>
+                                        <td colspan="4">
+                                            <div class="tb-right tb-totalPrice">
+                                                <strong><!--/total_price/--></strong>
+                                                <!--/if_total_reserve(+1)/-->(멤버십포인트 <!--/number/total_reserve/-->P)<!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div><!-- .table-order-prd -->
+                        
+                        <div class="cnt-box">
+                            <div class="left-cnt">
+                                <h3 class="stit">결제방법</h3>
+                                <div class="table-order-info pay-info">
+                                    <table summary="">
+                                        <caption>결제방법</caption>
+                                        <colgroup>
+                                            <col width="130" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th scope="row"><div class="tb-center">결제내역</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <p><!--/pay_method/--><br /><!--/pay_info/--></p>
+                                                        <!--/if_bank_name/-->
+                                                        <p>입금자명 : <span class="bank_name"><!--/bank_name/--></span></p>
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="right-cnt">
+                                <h3 class="stit">주문자 정보</h3>
+                                <div class="table-order-info">
+                                    <table summary="">
+                                        <caption>주문자 정보</caption>
+                                        <colgroup>
+                                            <col width="130" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th scope="row"><div class="tb-left">이 름</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/sender/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">이메일</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/sender_email/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">연락처</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/sender_tel/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- //cnt-box -->
+
+                        <div class="cnt-box">
+                            <h3 class="stit">배송지 정보</h3>
+                            <div class="table-order-info">
+                                <table summary="이름, 연락처1, 연락처2, 주소, 주문메세지">
+                                    <caption>배송지 정보</caption>
+                                    <colgroup>
+                                        <col width="130" />
+                                        <col width="*" />
+                                        <col width="130" />
+                                        <col width="*" />
+                                        <col width="130" />
+                                        <col width="*" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="nbg">
+                                            <th scope="row"><div class="tb-left">이 름</div></th>
+                                            <td>
+                                                <div class="tb-left">
+                                                    <!--/receiver/-->
+                                                </div>
+                                            </td>
+                                            <th scope="row"><div class="tb-left">연락처1</div></th>
+                                            <td>
+                                                <div class="tb-left">
+                                                    <!--/receiver_tel/-->
+                                                </div>
+                                            </td>
+                                            <th scope="row"><div class="tb-left">연락처2</div></th>
+                                            <td>
+                                                <div class="tb-left">
+                                                    <!--/receiver_mobile/-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><div class="tb-left">주소</div></th>
+                                            <td colspan="5">
+                                                <div class="tb-left">
+                                                     <!--/receiver_addr/-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="tb-left">
+                                                    주문메시지
+                                                    <em class="d-block">(100자내외)</em>
+                                                </div>
+                                            </th>
+                                            <td colspan="5">
+                                                <div class="tb-left">
+                                                    <!--/order_message/-->
+                                                    <!--/if_add_info/-->
+                                                        <!--/loop_add_info/-->
+                                                        <div><!--/add_info@title/--> : <!--/add_info@value/--></div>
+                                                        <!--/end_loop/-->
+                                                    <!--/end_if/-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- //cnt-box -->
+
+                        <div class="admin-msg"><!--/admin_message/--></div>
+                        <div class="btn-foot">
+                            <a href="<!--/link_print/-->" class="CSSbuttonWhite">인쇄하기</a>
+                            <a href="https://www.koreasilverex.co.kr/shop/mypage.html?mypage_type=myorder" class="CSSbuttonWhite">주문확인</a>
+                            <!--/if_link_gift/-->
+                            <a href="<!--/link_gift/-->" class="CSSbuttonWhite">사은품선택</a>
+                            <!--/end_if/-->
+                        </div>
+
+                    </div><!-- .page-body -->
+                </div><!-- #order -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+
+<!-- Enliple Tracker Start -->
+<script type="text/javascript">
+    (function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_makeshop_d4.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
+    enp('create', 'conversion', 'ksilverex', { device: 'W' });
+    enp('send', 'conversion', 'ksilverex');
+</script>
+<!-- Enliple Tracker End -->
+
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->
+
+<head>
+
+ <script type="text/javascript"> 
+ //<![CDATA[ 
+ var DaumConversionDctSv="type=P,orderID=[ORDERNUM],amount=[SUMPRICE]"; 
+ var DaumConversionAccountID="yDm2hVhBeFrrJOd5NpyIbQ00"; 
+ if(typeof DaumConversionScriptLoaded=="undefined"&&location.protocol!="file:"){ 
+         var DaumConversionScriptLoaded=true; 
+         document.write(unescape("%3Cscript%20type%3D%22text/javas"+"cript%22%20src%3D%22"+(location.protocol=="https:"?"https":"http")+"%3A//t1.daumcdn.net/cssjs/common/cts/vr200/dcts.js%22%3E%3C/script%3E")); 
+ } 
+ //]]> 
+ </script> 
+
+<head>

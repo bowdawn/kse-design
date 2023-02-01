@@ -1,0 +1,58 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div class="prd-reviewBoard">
+                <div class="postLeft">
+                    <div class="connect_product">
+                        <a href="<!--/link_product/-->" class="prd_img"><img src="<!--/image_m/-->" alt="상품이미지"></a>
+                        <div class="prd_info">
+                            <p class="name"><!--/notag/product_name/--></p>
+                            <p class="price"><!--/number/product_price/--> 원</p>
+                        </div>
+                    </div>
+                    <!--/if_count_multi_score(+2)/-->
+                    <div class="img-score">
+                        <!--/loop_score_list/-->
+                        <p>
+                            <span class="score-name"><!--/score_list@subject/--></span>
+                            <span class="star-icon">
+                            <span class="star"><!--/loop_score_list@score_icon/--><img src="<!--/score_list@score_icon@image/-->" /><!--/end_loop/--></span>
+                            </span>
+                        </p>
+                        <!--/end_loop/-->
+                    </div>
+                    <!--/end_if/-->
+                    <div class="counter">
+                        <div class="score">평점 <em><!--/product_review_score/--></em></div>
+                        <div class="review">REVIEW <em>(<!--/number/product_review_count/-->)</em></div>
+                    </div>
+                    <div class="btn">
+                        <a href="<!--/link_product/-->" class="btn-prd-view">상품상세보기</a>
+                    </div>
+                </div>
+                <div class="postRight">
+                    <!--/if_power_review_best/-->
+                    <div class="best-phpotoReview">
+                        <div class="tit">
+                            <p>BEST<br>포토리뷰</p>
+                        </div>
+                        <div class="img-list">
+                            <ul>
+                                <!--/loop_power_review_best(7)/-->
+                                <li><a href="<!--/power_review_best@link_view_popup/-->"><img src="<!--/power_review_best@attach_square/-->" alt=""></a></li>
+                                <!--/end_loop/-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/end_if/-->
+                    <!--/power_review_list_goods/-->
+                </div>
+            </div>
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <p style="clear:both;"></p>
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

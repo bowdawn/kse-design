@@ -1,0 +1,71 @@
+.userGrade{
+    padding:0 20px;
+}
+
+.userGrade p.userGroupName{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #191919;
+}
+
+.userGrade p.userGroupName strong{
+    font-weight:900;
+    color:#191919;
+}
+
+.userGrade p.userGroupBenefit{
+    display:none;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 18px;
+    color: #191919;
+}
+
+.userGrade p.userGroupBenefit strong{
+    font-weight:900;
+}
+
+.userGrade p.userGroupBenefit .reservePer{
+    display:none;
+}
+
+.userGrade.rank02 p.userGroupBenefit,
+.userGrade.rank03 p.userGroupBenefit,
+.userGrade.rank04 p.userGroupBenefit,
+.userGrade.rank02 p.userGroupBenefit .reservePer.rank02,
+.userGrade.rank03 p.userGroupBenefit .reservePer.rank03,
+.userGrade.rank04 p.userGroupBenefit .reservePer.rank04{
+    display:inline-block;
+}
+
+.userGrade.rank01 p.userGroupName .userRank,
+.userGrade.rank01 p.userGroupBenefit .userRank{
+    color:#CCC1B2;
+}
+
+.userGrade.rank02 p.userGroupName .userRank,
+.userGrade.rank02 p.userGroupBenefit .userRank{
+    color:#FCA729;
+}
+
+.userGrade.rank03 p.userGroupName .userRank,
+.userGrade.rank03 p.userGroupBenefit .userRank{
+    color:#AA4743;
+}
+
+.userGrade.rank04 p.userGroupName .userRank,
+.userGrade.rank04 p.userGroupBenefit .userRank{
+    color:#2857FA;
+}
+
+.userGrade p.nextGrade{
+    font-size:12px;
+    color:#767676;
+}
+
+.userGrade p.nextGrade strong{
+    font-weight:900;
+}

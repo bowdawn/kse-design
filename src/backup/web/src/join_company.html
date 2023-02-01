@@ -1,0 +1,590 @@
+<!--/script_scroll(1)/--><!--/input_app_recommend/--> 
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="join">
+					<div class="cateTit_v2 join">
+						<em class="title">기업고객 정보입력</em>
+						<div class="right">
+							<p class="subTxt">
+								
+							</p>
+						</div>
+					</div>
+                    <!--/form_join/-->
+                    <!-- 기업회원 일 경우만 노출 -->
+                    <div id="companyInfo">
+                        <p class="tb-tit">사업자 정보 입력<span class="font-n"> (세금계산서 발급에 이용됩니다.)</span></p>
+                        <table class="person-tb company">
+							<colgroup>
+                                <col style="width:155px;" /><col style="width:auto;" />
+                            </colgroup>
+                            <!--/if_input_company_name/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>회사명</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_name(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_owner/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>대표자명</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_owner(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_num/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>사업자등록번호</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell company-num">
+										<!--/input_company_num/-->
+										<a href="<!--/link_ssn_check/-->" class="cbtn form">중복확인</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_corp/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell">법인등록번호</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell corp-num">
+                                        <!--/input_company_corp/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_biz/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>업태</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_biz(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_item/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>업종</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_item(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_company_addr/-->
+                            <tr>
+                                <th rowspan="2">
+                                    <div class="head-cell"><span class="empha">*</span>회사 주소</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_zip(small-input)/-->
+										<a href="<!--/link_search_company_zip/-->" class="cbtn form">우편번호검색</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_company_addr(large-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                        </table>
+                    </div> <!-- #companyInfo -->
+                    <!-- 기업회원 일 경우만 노출 -->
+
+                    <!-- 일반회원 기본 노출 -->
+                    <div id="personInfo">
+                        <div class="tb-tit">담당자 정보 입력</div>
+                        <table class="person-tb">
+                            <colgroup>
+                                <col style="width:155px;" /><col style="width:auto;" />
+                            </colgroup>
+                            <!--/if_use_lifetime/-->
+                            <!--/if_input_lifetime/-->
+                            <tr>
+                                <th rowspan="2">
+                                    <div class="head-cell"><span class="empha">*</span>회원종류</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <div class="lifetime">
+                                             <!--/input_lifetime/-->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-cell">
+                                        <dl class="lifetime">
+                                            <dt>평생회원 서비스란?</dt>
+         		                    <dd>
+         		                    평생 회원 서비스란 개인 정보 유효기간을 "회원 탈퇴 시까지" <br/>
+         		                    연장하는 서비스로 고객님이 가지고 계신 할인 혜택을 보호하면서, <br/>
+         		                    다양한 혜택도 제공 받을 수 있습니다.
+         		                    <p class="withdraw"> * 평생 회원 신청 이후에 철회를 원하실 경우에는 회원 정보 수정에서 철회할 수 있습니다.</p>
+        		                    </dd>
+                                            <!--/if_use_benefit/-->
+                                            <dt>평생 회원 혜택?</dt>
+                                            <dd>
+                                                평생 회원 가입 시, <!--/if_benefit/-->평생 회원 가입 감사 <span><!--/benefit/--></span> 제공<br /><!--/end_if/-->
+                                                <!--/if_season_benefit/-->
+												가입 후 <span><!--/season_benefit/--></span> 마다 평생 회원 가입 감사 <span><!--/benefit_unit/--></span> 제공
+												<!--/end_if/-->
+                                            </dd>
+                                            <!--/end_if/-->
+                                            <!--/if_withdraw_state/-->
+                                            <dt>철회 회원 재신청</dt>
+                                            <dd>
+                                                재신청의 경우에는 평생 회원의 즉시 혜택은 지급되지 않으며,<br/>
+                                                정기 혜택은 재신청일 기준으로 지급일을 재계산하여 지급합니다.
+                                            </dd>
+                                            <!--/end_if/-->
+                                        </dl>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/end_if/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>이름</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_user_name(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>아이디</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_user_id(normal-input)/-->
+                                        <!--/if_not_login/-->
+                                        <a href="<!--/link_check_id/-->" class="cbtn form">중복확인</a> 
+                                        <!--/end_if/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/if_input_user_nickname/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>회원 닉네임</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_user_nickname(normal-input)/-->
+                                        <!--/if_link_check_nickname/-->
+										<a href="<!--/link_check_nickname/-->" class="cbtn form">중복확인</a> 
+                                        <!--/end_if/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>비밀번호</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_password1(normal-input)/-->
+                                        <span class="idpw-info">
+                                        <!--/if_passwd_limit/-->
+                                            * 영문 대소문자/숫자/특수문자를 혼용하여 2종류 10~16자 또는 3종류 8~16자
+                                        <!--/else/-->
+                                            * 비밀번호는 4~16자로 입력해 주세요.
+                                        <!--/end_if/-->
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>비밀번호 확인</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_password2(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/if_input_social/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>생년월일</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell social">
+                                         <!--/input_social/--> * 기념일 쿠폰이 지급됩니다.
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_user_greeting/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell">회원인사말</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                         <!--/input_user_greeting(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+
+                            <!--/if_file_user_image/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell">회원 이미지</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <div id="userImageArea">
+											<span class="file-upload"><!--/file_user_image/--></span>
+										</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_addr1/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>우편번호</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_zip(small-input)/-->
+                                        <a href="<!--/link_search_zip/-->" class="cbtn form">우편번호검색</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>집주소</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_addr1(large-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>상세주소</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_addr2(large-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_tel/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>연락처</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_tel(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><span class="empha">*</span>이메일</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell email-area">
+                                        <!--/input_email(normal-input)/-->
+                                        <!--/if_link_check_email/-->
+											<a href="<!--/link_check_email/-->" class="cbtn form">이메일 중복확인</a>                                             
+                                        <!--/end_if/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/if_input_mobile/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell">휴대폰</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_mobile(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_recommend/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell">추천인</div>
+                                </th>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/input_recommend(normal-input)/-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_use_privacy/-->
+                                <!--/if_login/-->
+                                    <tr>
+                                        <th>
+                                            <div class="head-cell">뉴스메일</div>
+                                        </th>
+                                        <td>
+                                            <div class="col-cell">
+                                                <label style="margin-right:20px;"><!--/radio_email_ok/--> 받습니다.</label>
+                                                <label><!--/radio_email_no/--> 받지 않습니다.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/if_radio_sms_ok/-->
+                                    <tr>
+                                        <th>
+                                            <div class="head-cell">SMS안내</div>
+                                        </th>
+                                        <td>
+                                            <div class="col-cell">
+                                                <label style="margin-right:20px;"><!--/radio_sms_ok/--> 받습니다.</label>
+                                                <label><!--/radio_sms_no/--> 받지 않습니다.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                    <!--/if_radio_push_ok/-->
+                                    <tr>
+                                        <th>
+                                            <div class="head-cell">앱Push알림</div>
+                                        </th>
+                                        <td>
+                                            <div class="col-cell">
+                                                <label style="margin-right:20px;"><!--/radio_push_ok/--> 받습니다.</label>
+                                                <label><!--/radio_push_no/--> 받지 않습니다.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                    <!--/if_use_lifetime/-->
+                                    <tr>
+                                        <th>
+                                            <div class="head-cell">평생회원 가입<br/>신청현황</div>
+                                        </th>
+                                        <td>
+                                            <div class="col-cell">
+                                              <!--/if_use_withdraw/-->
+                                                <!--/if_lifetime_withdraw/-->
+                                                <!--/lifetime_withdraw/--><br/><br/>
+                                                <dd>평생 회원은 신청을 철회 할 수 있습니다.<br/>
+                                                    철회 시, 평생 회원으로 재신청을 진행할 수 있습니다.<br/>
+                                                    재신청 시, 즉시 혜택은 지급되지 않으며 정기 혜택은 재신청일 기준으로 다시 계산됩니다.<br/>
+                                                 </dd>
+                                                 <!--/else/-->
+                                                  미신청
+                                                 <!--/end_if/-->
+                                               <!--/else/-->
+                                                 <!--/if_lifetime_msg/-->
+                                                   신청완료
+                                                 <!--/else/-->
+                                                   미신청
+                                                 <!--/end_if/-->
+                                              <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                <!--/end_if/-->
+                            <!--/else/-->
+                                <tr>
+                                    <th>
+                                        <div class="head-cell">뉴스메일</div>
+                                    </th>
+                                    <td>
+                                        <div class="col-cell">
+                                            <label style="margin-right:20px;"><!--/radio_email_ok/--> 받습니다.</label>
+                                            <label><!--/radio_email_no/--> 받지 않습니다.</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--/if_radio_sms_ok/-->
+                                <tr>
+                                    <th>
+                                        <div class="head-cell">SMS안내</div>
+                                    </th>
+                                    <td>
+                                        <div class="col-cell">
+                                            <label style="margin-right:20px;"><!--/radio_sms_ok/--> 받습니다.</label>
+                                            <label><!--/radio_sms_no/--> 받지 않습니다.</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--/end_if/-->
+                                <!--/if_radio_push_ok/-->
+                                    <tr>
+                                        <th>
+                                            <div class="head-cell">앱Push알림</div>
+                                        </th>
+                                        <td>
+                                            <div class="col-cell">
+                                                <label style="margin-right:20px;"><!--/radio_push_ok/--> 받습니다.</label>
+                                                <label><!--/radio_push_no/--> 받지 않습니다.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                            <!--/end_if/-->
+                        </table>
+                    </div> <!-- #personInfo -->
+
+                    <!--/if_etc_info/-->
+                    <!-- 추가정보입력 -->
+					<div id="addInfo">
+                        <table class="addinfo-tb">
+							<colgroup>
+								<col style="width:auto;" />
+							</colgroup>
+                        <!--/loop_etc_info/-->
+                            <tr>
+                                <th>
+                                    <div class="head-cell"><!--/etc_info@input_title/--></div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="col-cell">
+                                        <!--/etc_info@input_value/-->
+                                    </div>
+                                </td>
+                            </tr>
+                         <!--/end_loop/-->
+                        </table>
+                    </div> <!-- #addInfo -->
+                    <!-- 추가정보입력 -->
+                    <!--/end_if/-->
+                    <!--/if_use_contract/-->
+                    <fieldset>
+                        <legend>약관 동의 폼</legend>
+                        <div class="new-privercy-contract">
+                        <!--/if_use_privacy/-->
+                            <!--/new_privacy_agree/-->
+                            <div class="new-btn-area">
+                                <a href="<!--/link_join/-->">동의하고 가입완료</a>
+                            </div>
+                            <h4 class="tit" id="chk_cont1">이용약관</h4>
+                            <div class="privercy-contract">
+                                <textarea cols="80" wrap="off" rows="10" readonly ><!--/contract_terms/--></textarea>
+                            </div>
+                            <!--/new_privacy_terms2/-->
+                        <!--/else/-->
+                            <!--/if_new_privercy_type/-->
+                                <h3 class="w-normal">회원 가입을 하기에 앞서 <strong>회원약관</strong>을 읽어보시기 바랍니다.</h3>
+                                <div class="privercy-contract">
+                                    <textarea cols="80" rows="10" readonly ><!--/contract_terms/--></textarea>
+                                </div>
+                                <div class="privercy-agree">
+                                    <label><!--/checkbox_contract_ok/--> 위의 <strong>‘회원약관’</strong> 내용에 동의합니다.</label>
+                                </div>
+                                <h3>개인정보 수집, 이용 안내</h3>
+                                <div  class="privercy-contract-tap">
+                                    <ul>
+                                        <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                        <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                        <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/privercy_terms1/--></textarea></div>
+                                    <div class="privercy-contract" style="display: none;"><textarea cols="70" rows="10" readonly><!--/privercy_terms2/--></textarea></div>
+                                    <div class="privercy-contract" style="display: none;"><textarea cols="70" rows="10" readonly><!--/privercy_terms3/--></textarea></div>
+                                </div>
+                                <div class="privercy-agree">
+                                    <label><!--/checkbox_privercy_ok/--> 위의 <strong>‘개인정보 수집,이용’</strong>에 동의합니다. </label>
+                                </div>
+                                <!--/if_third_party/-->
+                                    <h3>개인정보의 제3자 제공</h3>
+                                    <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/third_party_terms/--></textarea></div>
+                                    <div class="privercy-agree">
+                                        <label><!--/checkbox_third_party_ok/--> 위의 <strong>‘개인정보의 제 3자 제공’</strong>에 동의합니다.</label>
+                                    </div>
+                                <!--/end_if/-->
+                                <!--/if_trust/-->
+                                    <h3>개인정보 처리위탁안내</h3>
+                                    <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/trust_terms/--></textarea></div>
+                                    <div class="privercy-agree">
+                                        <label><!--/checkbox_trust_ok/--> 위의 <strong>‘개인정보 처리위탁안내’</strong>에 동의합니다.</label>
+                                    </div>
+                                <!--/end_if/-->
+                            <!--/else/-->
+                                <h3>회원 가입을 하기에 앞서 <strong>회원약관</strong>을 읽어보시기 바랍니다.</h3>
+                                <div class="privercy-contract">
+                                    <textarea cols="80" wrap="off" rows="10" readonly ><!--/contract_terms/--></textarea>
+                                </div>
+                                <div class="privercy-agree">
+                                    <label><!--/radio_contract_ok/--> 약관에 동의합니다.</label>
+                                    <label><!--/radio_contract_no/--> 약관에 동의 하지 않습니다.</label>
+                                </div>
+                                <h3>개인정보 수집에 대한 동의</h3>
+                                <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/privercy_terms/--></textarea></div>
+                                <div class="privercy-agree">
+                                    <label><!--/radio_privercy_ok/--> 약관에 동의합니다.</label>
+                                    <label><!--/radio_privercy_no/--> 약관에 동의 하지 않습니다.</label>
+                                </div>
+                            <!--/end_if/-->
+                            <div class="btnArea join-footer">
+								<a href="<!--/link_join/-->" class="cbtn form action">
+									<!--/if_login/-->수정하기<!--/else/-->저장하기<!--/end_if/-->
+								</a>
+								<a href="Javascript:history.back()" class="cbtn form">취소하기</a>
+                            </div>
+                        <!--/end_if/-->
+                        </div>
+                    </fieldset>
+                    <!--/else/-->
+					<div class="btnArea join-footer">
+						<a href="<!--/link_join/-->" class="cbtn form action">
+							<!--/if_login/-->수정하기<!--/else/-->저장하기<!--/end_if/-->
+						</a>
+						<a href="Javascript:history.back()" class="cbtn form">취소하기</a>
+					</div>
+                    <!--/end_if/--><!-- use_contract -->
+                    <!--/end_form/-->
+                </div><!-- #join -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

@@ -1,0 +1,73 @@
+#board-list .pd10 {margin:10px 0;}
+#board-list table {width:100%; border-top:2px solid #464646;}
+#board-list table thead {background-color: #fefbe3;}
+#board-list table thead th em {color:#fff; background-color: #464644; padding:2px 5px;}
+#board-list table tr {border-bottom:1px solid #d7d7d7;}
+#board-list table th {padding:10px; text-align: left;  font-weight: normal;}
+#board-list table td {padding:10px; width: 60px;}
+#board-list table td .rep_com {display:block;color:#fff; background-color: #464644; padding:0; line-height:23px;text-align:center;}
+#board-list table td .rep_ready {display:block;color:#fff; background-color: #949492; padding:0; line-height:23px;text-align:center;}
+
+#board-list .faqLinkWrap{
+    padding:0 20px 50px;
+    border-bottom:1px solid #EDEDED;
+}
+
+#board-list .faqLinkWrap strong{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+#board-list .faqLinkWrap .myBlueBtn{
+    display:block;
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    line-height:48px;
+    color:#fff;
+    background:#0097E6;
+    border-radius:25px;
+}
+
+#board-list .pageTit{
+    padding:15px 20px 5px;
+}
+
+#board-list .pageTit strong{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    line-height:24px;
+    margin-bottom:14px;
+}
+
+#board-list .pageTit span{
+    font-size:12px;
+    font-weight:bold;
+}
+
+#board-list .pageTit span em{
+    display:inline-block;
+    margin-left:10px;
+    color:#0097E6;
+}
+
+#board-list .mtmList{
+    padding:0 20px;
+}
+
+#board-list .myBlueBorderBtn{
+    display:block;
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    line-height:46px;
+    color:#0097E6;
+    background:#fff;
+    border-radius:25px;
+    border:1px solid #0097E6;
+}

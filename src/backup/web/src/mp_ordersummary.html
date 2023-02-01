@@ -1,0 +1,392 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(2)/-->
+            <div id="content">
+                <div id="orderSt">
+                    <div class="tit-pop">
+                        <h1>주문정보</h1>
+                        <span class="txt"><em class="order_name">[<!--/order_name1/-->]</em>님께서 <em class="order_date"><!--/order_date1/--></em>에 주문하신 내역입니다.</span>
+                    </div>
+                    <!-- 후기등록 탭 -->
+                    <ul class="tab">
+                        <li>
+                        <!--/if_link_review/-->
+                            <a href="<!--/link_review/-->">평점후기등록</a>
+                        <!--/end_if/-->
+                        </li>
+                        <li>
+                        <!--/if_link_review_board/-->
+                            <a href="<!--/link_review_board/-->">상품후기등록</a>
+                        <!--/end_if/-->
+                        </li>
+                    </ul>
+                    <!-- //후기등록 탭 -->
+                    <div id="orderInfo">
+                        <h2>주문자정보</h2>
+                        <div class="table-w table-orderinfo">
+                            <table summary="">
+                                <caption>주문자정보</caption>
+                                <colgroup>
+                                    <col width="120" />
+                                    <col width="*" />
+                                    <col width="120" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">주문번호</div></th>
+                                        <td><div class="tb-left"><!--/order_num/--></div></td>
+                                        <th scope="row"><div class="tb-left">주문일자</div></th>
+                                        <td><div class="tb-left"><!--/order_date2/--></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">주문자</div></th>
+                                        <td><div class="tb-left"><!--/order_name2/--></div></td>
+                                        <th scope="row"><div class="tb-left">주문서 입금현황 </div></th>
+                                        <td><div class="tb-left"><!--/pay_status/--></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">주문 메모</div></th>
+                                        <td colspan="3"><div class="tb-left"><!--/order_memo/--></div></td>
+                                    </tr>
+                                    <!--/if_send_memo/-->
+                                    <tr>
+                                        <th scope="row"><div class="tb-center">상점 메모</div></th>
+                                        <td colspan="3">
+                                            <div class="tb-left">
+                                                <!--/send_memo/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/if_delivery_info/-->
+                        <h2>배송지정보</h2>
+                        <div class="table-w table-region">
+                            <table summary="">
+                                <caption>배송지정보</caption>
+                                <colgroup>
+                                    <col width="120" />
+                                    <col width="*" />
+                                    <col width="120" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                <!--/loop_delivery_info/-->
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">배송번호</div></th>
+                                        <td>
+                                            <div class="tb-left">
+                                                <!--/delivery_info@deli_num/-->
+                                                <!--/if_delivery_info@link_buy_ok/-->
+                                                    <a href="<!--/delivery_info@link_buy_ok/-->"><img src="/images/common/orderpop_btn_orderok.gif" alt="거래완료" title="거래완료" /></a>
+                                                <!--/end_if/-->
+                                                <!--/if_delivery_info@link_change_address/--><a href="<!--/delivery_info@link_change_address/-->" class="CSSbuttonWhite pt-5 pr-5 pb-5 pl-5">배송정보 변경</a><!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <th scope="row"><div class="tb-left">송장번호</div></th>
+                                        <td>
+                                            <div class="tb-left">
+                                                <!--/delivery_info@company/-->
+                                                <!--/delivery_info@num/-->
+                                                <!--/if_delivery_info@link_delivery/-->
+                                                    <a href="<!--/delivery_info@link_delivery/-->"><img src="/images/common/orderpop_btn_delivery.gif" alt="배송추적" title="배송추적" /></a>
+                                                <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">수취인</div></th>
+                                        <td><div class="tb-left"><!--/delivery_info@receiver/--></div></td>
+                                        <th scope="row"><div class="tb-left">연락처</div></th>
+                                        <td><div class="tb-left"><!--/delivery_info@receiver_phone/--></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">주소</div></th>
+                                        <td colspan="3"><div class="tb-left"><!--/delivery_info@post/--> : <!--/delivery_info@address/--></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><div class="tb-left">배송메세지</div></th>
+                                        <td colspan="3"><div class="tb-left"><!--/delivery_info@message/--></div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/end_if/-->
+                        <h2>주문상품</h2>
+                        <div class="table-w table-prdinfo">
+                            <table summary="">
+                                <caption>주문상품정보</caption>
+                                <colgroup>
+                                    <col width="84" />
+                                    <col width="*" />
+                                    <col width="150" />
+                                    <col width="70" />
+                                    <col width="100" />
+                                    <col width="80" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="row" colspan="2"><div class="tb-center">주문상품정보</div></th>
+                                    <th scope="row"><div class="tb-center">상품별주문번호</div></th>
+                                    <th scope="row"><div class="tb-center">수량</div></th>
+                                    <th scope="row"><div class="tb-center">가격</div></th>
+                                    <th scope="row"><div class="tb-center">멤버십포인트</div></th>
+                                    <th scope="row"><div class="tb-center">처리상태</div></th>
+                                    <th scope="row"><div class="tb-center">배송번호</div></th>
+                                </thead>
+                                <tfoot>
+                                    <td colspan="8">
+                                        <div class="tb-right">
+                                            <!--/number/total_price/-->(상품구매금액)
+                                            <!--/if_delivery_price/-->
+                                                + <!--/number/delivery_price/-->(배송료)
+                                            <!--/end_if/-->
+                                            <!--/if_use_deposit/-->
+                                                - <!--/number/use_deposit/-->(예치금)
+                                            <!--/end_if/-->
+                                            <!--/if_use_reserve/-->
+                                                - <!--/number/use_reserve/-->(멤버십포인트)
+                                            <!--/end_if/-->
+                                            <!--/if_discount_price(+1)/-->
+                                                + <!--/number/discount_price/-->(할인/추가금액)
+                                            <!--/else/-->
+                                                <!--/number/discount_price/-->(할인/추가금액)
+                                            <!--/end_if/-->
+                                            = <!--/number/pay_price/-->원
+                                        </div>
+                                    </td>
+                                </tfoot>
+                                <tbody>
+                                <!--/loop_order_product/-->
+                                    <tr>
+                                        <td>
+                                            <div class="tb-center">
+                                                <!--/if_order_product@image_s/-->
+                                                <img src="<!--/order_product@image_s/-->" style="width:82px; height:82px" />
+                                                <!--/else/-->
+                                                &nbsp;
+                                                <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-center">
+                                                <a href="<!--/order_product@link/-->"><!--/order_product@name/--><br /></a>
+                                                <span class="quantity order_table_Td style4"><!--/if_order_product@option/--><img src="/images/common/order1_optionicon.gif" /> <!--/order_product@option/--><!--/end_if/--></span>
+                                                      <!--/order_product@link_trade/-->
+                                                      <!--/order_product@link_return/-->
+                                                      <!--/order_product@link_cancel/-->
+
+                                             </div>
+                                        </td>
+                                        <td><div class="tb-center"><!--/order_product@product_order_num/--></div></td>
+                                        <td><div class="tb-center"><!--/order_product@amount/--></div></td>
+                                        <td><div class="tb-center tb-price"><strong><!--/number/order_product@price/-->원</strong></div></td>
+                                        <td><div class="tb-center"><span class="style4"><!--/order_product@reserve/--><!--/order_product@point/--></span></div></td>
+                                        <td><div class="tb-center"><!--/order_product@order_status/--></div></td>
+                                        <td><div class="tb-center"><!--/order_product@delivery_num/--></div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <h2>결제정보</h2>
+                        <div class="table-w table-payinfo">
+                            <table summary="">
+                                <caption>결제정보</caption>
+                                <colgroup>
+                                    <col width="180" />
+                                    <col width="250" />
+                                    <col width="*" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="row"><div class="tb-center">결제방법</div></th>
+                                    <th scope="row"><div class="tb-center">결제금액</div></th>
+                                    <th scope="row"><div class="tb-center">세부내역</div></th>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td><div class="tb-center tb-nbold"><!--/pay_method/--></div></td>
+                                        <td><div class="tb-center"><!--/number/pay_price/-->원 (<!--/pay_status/-->)</div></td>
+                                        <td><div class="tb-center tb-nbold"><!--/pay_info/-->
+                                        <!--/if_link_card_receipt/--><a href="<!--/link_card_receipt/-->"><img src="/images/common/print_cardtax.gif" /></a><!--/end_if/-->
+                                        <!--/if_link_bank_receipt/--><a href="<!--/link_bank_receipt/-->"><img src="/images/common/print_cardtax2.gif" /></a><!--/end_if/-->
+                                        </div></td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="tb-center">사용한 멤버십포인트</div></td>
+                                        <td><div class="tb-center"><!--/use_reserve/-->&#169;</div></td>
+                                        <td><div class="tb-center"> </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">사용한 예치금</div></td>
+                                        <td><div class="tb-center"><!--/use_deposit/-->원</div></td>
+                                        <td><div class="tb-center"> </div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/if_extension_info/-->
+                        <h2>쿠폰사용·할인</h2>
+                        <div class="table-w table-dc">
+                            <table summary="">
+                                <caption>쿠폰사용/할인내역</caption>
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                    <col width="*" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="row"><div class="tb-center">종류</div></th>
+                                    <th scope="row"><div class="tb-center">금액</div></th>
+                                    <th scope="row"><div class="tb-center">멤버십포인트</div></th>
+                                    <th scope="row"><div class="tb-center">세부내역</div></th>
+                                </thead>
+                                <tbody>
+                                <!--/loop_extension_info/-->
+                                    <tr>
+                                        <td><div class="tb-center"><!--/extension_info@type/--></div></td>
+                                        <td><div class="tb-center tb-bold tb-price"><!--/number/extension_info@price/-->원</div></td>
+                                        <td><div class="tb-center"><!--/number/extension_info@reserve/-->원</div></td>
+                                        <td><div class="tb-center"><!--/extension_info@title/--></div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/end_if/-->
+                        <!--/if_refund_info/-->
+                        <h2>환불정보</h2>
+                        <div class="table-w table-dc">
+                            <table summary="">
+                                <caption>환불정보</caption>
+                                <colgroup>
+                                    <col width="120" />
+                                    <col width="100" />
+                                    <col width="*" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="row"><div class="tb-center">환불방법</div></th>
+                                    <th scope="row"><div class="tb-center">환불금액</div></th>
+                                    <th scope="row"><div class="tb-center">세부내역</div></th>
+                                </thead>
+                                <tbody>
+                                <!--/loop_refund_info/-->
+                                    <tr>
+                                        <td><div class="tb-center"><!--/refund_info@method/--></div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@cash/-->원</div></td>
+                                        <td>
+                                            <div class="tb-center">
+                                                <!--/if_refund_info@bank_accounter/-->예금주 : <!--/refund_info@bank_accounter/--><!--/end_if/--> / 
+                                                [<!--/if_refund_info@bank_name/--><!--/refund_info@bank_name/--><!--/end_if/-->]<!--/if_refund_info@bank_account/--><!--/refund_info@bank_account/--><!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">멤버십포인트 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@use_reserve/-->P</div></td>
+                                        <td><div class="tb-center">사용한 멤버십포인트 환원 </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">예치금 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@use_deposit/-->원</div></td>
+                                        <td><div class="tb-center">사용한 예치금 환원 </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">네이버 마일리지 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@use_navermileage/-->원</div></td>
+                                        <td><div class="tb-center">사용한 네이버마일리지 환원 </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">OK캐쉬백 포인트 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@use_okcashbag/-->원</div></td>
+                                        <td><div class="tb-center">OK캐쉬백 포인트로 환원 </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">멤버십 포인트 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@reserve/-->P</div></td>
+                                        <td><div class="tb-center">멤버십포인트로 환불 </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">예치금 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@deposit/-->원</div></td>
+                                        <td><div class="tb-center">예치금으로 환불</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">재결제 환불금액 </div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@return_price/-->원</div></td>
+                                        <td><div class="tb-center">반송비</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="tb-center">재결제 배송금액</div></td>
+                                        <td><div class="tb-center"><!--/number/refund_info@return_delivery_price/-->원</div></td>
+                                        <td><div class="tb-center">재발송 배송비</div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/end_if/-->
+                        <!--/if_add_info/-->
+                        <h2>추가정보</h2>
+                        <div class="table-w table-dc">
+                            <table summary="">
+                                <caption>추가정보</caption>
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="*" />
+                                </colgroup>
+                                <thead>
+                                    <th scope="row"><div class="tb-center"></div></th>
+                                    <th scope="row"><div class="tb-center"></div></th>
+                                </thead>
+                                <tbody>
+                                <!--/loop_add_info/-->
+                                    <tr>
+                                        <td><div class="tb-center"><!--/add_info@title/--></div></td>
+                                        <td><div class="tb-center"><!--/add_info@value/--></div></td>
+                                    </tr>
+                                <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/end_if/-->
+                        
+                        <div id="pop_order_btn_group">
+                        <!--/if_link_cancel/-->
+                            <a href="<!--/link_cancel/-->" class="CSSbuttonWhite">주문취소</a>
+                        <!--/end_if/-->
+                        <!--/if_link_escrow_ok/-->
+                            <a href="<!--/link_escrow_ok/-->" class="CSSbuttonWhite">구매확정</a>
+                        <!--/end_if/-->
+                        <!--/if_link_escrow_cancel/-->
+                            <a href="<!--/link_escrow_cancel/-->" class="CSSbuttonWhite">구매취소</a>
+                        <!--/end_if/--> 
+                        <!--/if_link_cash_receipt/-->
+                            <a href="<!--/link_cash_receipt/-->" class="CSSbuttonWhite">현금영수증 요청</a>
+                        <!--/end_if/-->
+                        <!--/if_link_gift/-->
+                            <a href="<!--/link_gift/-->" class="CSSbuttonWhite">사은품 선택</a>
+                        <!--/end_if/-->
+                        </div>
+                        <div class="pop_order_btn_close">
+                            <a href="<!--/link_list/-->" class="CSSbuttonWhite">목록보기</a>
+                        </div>
+                    </div><!-- #orderInfo-->
+                </div><!-- #orderSt -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

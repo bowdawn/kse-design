@@ -1,0 +1,247 @@
+<!--/form_product/-->
+<div class="cnt">
+    <div class="detail">
+        <div class="thumb-wrap">
+            <div class="thumb">
+                <a href="<!--/link_product_detail/-->">
+                    <!--/if_image_m/-->
+                    <img src="<!--/image_m/-->" alt="상품 섬네일"  class="detail_image"/>
+                    <!--/else/-->
+                    <img src="/images/mini.gif" alt="상품 섬네일"  class="detail_image"/>
+                    <!--/end_if/-->
+                </a>
+            </div>
+        </div><!-- .thumb-wrap -->
+        <div class="txt-wrap">
+            <p class="picon"><!--/icons/--></p>
+            <h3 class="ptit"><!--/name/--></h3>
+            <div class="table-opt">
+                <table summary="판매가격, 적립금, 주문수량, 옵션, 사이즈, 상품조르기, sns">
+                    <caption>상품 옵션</caption>
+                    <colgroup>
+                        <col width="100" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><div class="tb-left">판매가격</div></th>
+                            <td class="price sell_price">
+                            <!--/if_replace_price/-->
+                                <!--/replace_price/-->
+                            <!--/else/-->
+                                <!--/number/price_sell/-->원
+                            <!--/end_if/-->
+                            </td>
+                        </tr>
+                        <!--/if_price_consumer(+1)/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">소비자가격</div></th>
+                            <td class="price"><!--/number/price_consumer/-->원</td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_option_price_sell/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">옵션적용가격</div></th>
+                            <td class="price"><!--/number/option_price_sell/-->원</td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_link_benefit/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">쿠폰할인</div></th>
+                            <td class="price sell_benefit">
+                                <!--/if_coupon_discount_price(+1)/--><strong class="MS_option_price">-<!--/number/coupon_discount_price/-->원</strong><!--/end_if/-->
+                                <a href="<!--/link_benefit/-->" class="benefit_btn layer-open"><span>%</span> 혜택확인 <em>▼</em></a>
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_reserve(+1)/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">적립금</div></th>
+                            <td><!--/reserve/--><!--/reserve_unit/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_stock/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">재고수량</div></th>
+                            <td><!--/stock/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_addcode/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">특이사항</div></th>
+                            <td><!--/addcode/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_not_hybrid_option/-->
+                        <tr> 
+                            <td colspan="2">
+                                <div class="opt-wrap">
+                                <!--/if_option/-->
+                                    <div class="tit blind"><strong>기본옵션</strong></div>
+                                    <!--/loop_option/-->
+                                    <dl>
+                                        <dt><!--/option@title/--></dt>
+                                        <!--/if_option@oneclick_list/-->
+                                         <dd>
+                                             <!--/option@oneclick_value/-->
+                                             <!--/option@oneclick_list/-->
+                                         </dd>
+                                         <!--/else/-->
+                                             <dd><!--/option@select/--></dd>
+                                         <!--/end_if/-->
+                                    </dl>
+                                    <!--/end_loop/-->
+                                <!--/end_if/-->
+                                    <dl>
+                                        <dt>수량</dt>
+                                        <dd class="opt-btns">
+                                            <!--/input_quantity/-->
+                                            <a href="<!--/link_quantity_up/-->" class="btn-up">수량증가</a>
+                                            <a href="<!--/link_quantity_down/-->" class="btn-dw">수량감소</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_is_unify_option/-->
+                            <!--/if_hybrid_option/-->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="option-wrap">
+                                    <!--/loop_hybrid_option/-->
+                                        <div class="option-box"> 
+                                            <p class="tit"><strong><!--/hybrid_option@title/--></strong> <!--/if_hybrid_option@min_quantity/-->(최소 <!--/hybrid_option@min_quantity/-->개<!--/if_not_hybrid_option@max_quantity/-->선택가능)<!--/end_if/--><!--/end_if/--> 
+<!--/if_hybrid_option@max_quantity/--><!--/if_not_hybrid_option@min_quantity/-->(<!--/end_if/--> ~ 최대 <!--/hybrid_option@max_quantity/-->개 선택가능)<!--/end_if/--></p>
+                                            <ul class="list">        
+                                            <!--/loop_hybrid_option@option/-->                                                
+                                                <li class="<!--/if_hybrid_option@option@soldout/-->lst-soldout<!--/end_if/-->">
+                                                <dl>
+                                                    <dd class="prdchk"><label><!--/hybrid_option@option@checkbox/--></label></dd>
+                                                    <dd class="prdimg"><!--/hybrid_option@option@opt_s_img/--><!--/if_hybrid_option@option@soldout/--><span class="soldout-bg"></span><span class="soldout">품절</span><!--/end_if/--></dd>
+                                                    <dd class="prdname"><!--/hybrid_option@option@title/--></dd>
+                                                    <dd class="prdprice"><strong><!--/hybrid_option@option@opt_price/--></strong></dd>
+                                                    <dd class="prdnote"><!--/hybrid_option@option@note/--></dd>
+                                                    <dd class="prdqty">
+                                                    <!--/hybrid_option@option@quantity_input/-->
+                                                    <span class="btn-up-down">
+                                                        <a href="<!--/hybrid_option@option@link_quantity_up/-->" class="btn-up"><img src="/makeshop/newmanager/neoimages/btn/h12_top.gif" alt="" /></a>
+                                                        <a href="<!--/hybrid_option@option@link_quantity_down/-->" class="btn-down"><img src="/makeshop/newmanager/neoimages/btn/h12_btm.gif" alt="" /></a>
+                                                    </span>
+                                                    </dd>
+                                                </dl>
+                                            <!--/if_step(5)/-->
+                                                </li>
+                                            </ul>
+                                            <ul class="list">
+                                            <!--/else/-->
+                                            </li>
+                                            <!--/end_if/-->
+                                        <!--/end_loop/-->  
+                                        </ul>
+                                    </div>
+                                <!--/end_loop/-->     
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_option_add/-->
+                        <tr>
+                            <td colspan="2">
+                                <div class="opt-wrap">
+                                    <div class="tit"><strong>추가옵션</strong> (추가 구매를 원하시면 선택하세요)</div>
+                                    <!--/loop_option_add/-->
+                                    <dl>
+                                        <dt><!--/option_add@title/--></dt>
+                                        <dd class="opt-count">
+                                            <!--/option_add@select/-->
+                                            <div class="opt-btns">
+                                                <!--/option_add@input_quantity/-->
+                                                <a href="<!--/option_add@link_quantity_up/-->" class="btn-up">수량증가</a>
+                                                <a href="<!--/option_add@link_quantity_down/-->" class="btn-dw">수량감소</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <!--/end_loop/-->
+                                </div>
+                            </td>
+                        </tr>
+                            <!--/end_if/-->
+                        <!--/end_if/-->
+                        <!--/if_hybrid_option/-->
+                        <tr>
+                            <td colspan="2">
+                                <div class="MK_optAddWrap">
+                                    <div id="MK_innerOptWrap">
+                                        <div id="MK_innerOptScroll">
+                                            <ul id="MK_innerOpt_01" class="MK_inner-opt-cm">
+                                                <li>
+                                                    <strong class="MK_p-name"><!--/name/--></strong>
+                                                    <div class="MK_qty-ctrl">
+                                                        <!--/hybrid_input_quantity/-->
+                                                        <a href="<!--/hybrid_link_quantity_up/-->" class="MK_btn-up"><img class="MK_btn-up" src="/images/common/basket_up.gif" alt="수량증가" title="수량증가" /></a>
+                                                        <a href="<!--/hybrid_link_quantity_down/-->" class="MK_btn-dw"><img class="MK_btn-dw" src="/images/common/basket_down.gif" alt="수량감소" title="수량감소" /></a>
+                                                    </div>
+                                                    <strong class="MK_price">
+                                                        <em id="MK_p_price_basic_0">
+                                                            <!--/if_hybrid_price_replace/-->
+                                                                <!--/hybrid_price_replace/-->
+                                                            <!--/else/-->
+                                                                <!--/number/price_sell/-->원
+                                                            <!--/end_if/-->
+                                                        </em>
+                                                    </strong>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_nhn_mileage/-->
+                        <tr>
+                            <th scope="row"><div class="tb-left">네이버 마일리지</div></th>
+                            <td><!--/nhn_mileage/--><!--/btn_nhn_mileage_help/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/if_btn_importune/-->
+                        <tr> 
+                            <td colspan="2"><!--/btn_importune/--></td>
+                        </tr>
+                        <!--/end_if/-->
+                    </tbody>
+                </table>
+            </div><!-- .table-opt -->
+            <div class="sns-btns">
+                <!--/if_btn_scrap_fb/--><!--/btn_scrap_fb/--><!--/end_if/-->
+                <!--/if_btn_scrap_m2/--><!--/btn_scrap_m2/--><!--/end_if/-->
+                <!--/if_btn_scrap_tw/--><!--/btn_scrap_tw/--><!--/end_if/-->
+            </div>
+            <div class="f-btns">
+                <!--/if_soldout/-->
+                <div class="soldout">SOLD OUT</div>
+                <!--/else/-->
+                    <!--/if_cart_free/-->
+                        <a href="<!--/link_basket/-->" class="btn_cart">ADD TO CART</a>
+                    <!--/else/-->
+                        <a href="<!--/link_immediate/-->" class="btn_buy">구매하기</a>
+                        <a href="<!--/link_basket/-->" class="btn_cart">금고에 담기</a>
+                    <!--/end_if/-->
+                <!--/end_if/-->
+                <!--/if_not_cart_free/-->
+                <a href="<!--/link_wishlist/-->" class="btn_cart">관심상품</a>
+                <!--/end_if/-->
+            </div>
+        </div><!-- .txt-wrap -->
+    </div><!-- .detail -->
+</div><!-- .cnt -->
+<a class="close-layer" href="<!--/link_close/-->">닫기</a>
+<script>
+jQuery(document).ready(function(){
+    jQuery(".close-layer").click(function(){
+        jQuery("#mask").hide();
+    });
+});
+</script>
+<!--/end_form/-->

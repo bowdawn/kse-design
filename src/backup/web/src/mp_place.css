@@ -1,0 +1,12 @@
+#myPlace .hd { position: relative; margin-top:80px }
+#myPlace .hd h3 { font-size:18px; color:#2e2e2e; font-weight:bold; line-height:18px }
+#myPlace .hd .view { position: absolute; top:0; right:0; color:#8c8b8b }
+#myPlace .tbl { margin-top:10px }
+#myPlace .tbl th { padding:15px 0; font-size:15px; color:#000; font-weight:bold; border-top:1px solid #000; border-bottom:1px solid #e9e9e9 }
+#myPlace .tbl td { padding:15px 0; color:#343434; border-bottom:1px solid #e9e9e9 }
+#myPlace .tbl td a {line-height:24px; height:20px;}
+#myPlace .tbl td .basic { display: inline-block; padding: 0 5px; background: #68c40e; line-height: 20px; font-size: 14px; color: #ffffff; border-radius: 5px; margin-bottom: 5px;}
+#myPlace .tbl td .memo {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.5; }
+#myPlace .btn-area {text-align:center; margin-top:30px;}
+#myPlace .btn-area div {display:inline-block; text-align:center;}
+#myPlace .btn-area div a {width:160px; line-height:48px; text-align:center; font-size:15px;}

@@ -1,0 +1,59 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="myTodayView">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="tit-page-4">
+                                <h2>오늘 본 상품</h2>
+                            </div>
+                            <div class="page-body">
+                            <!-- 오늘 본 상품 리스트 -->
+                                <div class="goodsCnt">
+                                    <span>전체 <span class="c-blue totalCnt"></span></span>
+                                </div>
+                                <!--/form_today_product/-->
+                                <div class="goodsList">
+                                    <!--/if_today_product/-->
+                                    <ul class="clearfix">
+                                        <!--/loop_today_product/-->
+                                        <li class="fl">
+                                            <div class="imgWrap">
+                                                <a href="<!--/today_product@link/-->" class="goodsImgLinkBox">
+                                                    <img src="<!--/today_product@image_m/-->" alt="<!--/today_product@name/-->" class="goodsImg">
+                                                </a>
+                                            </div>
+                                            <div class="textWrap">
+                                                <a href="<!--/today_product@link/-->">
+                                                    <p class="goodsName"><!--/today_product@name/--></p>
+                                                    <div class="goodsPrice">
+                                                        <strong class="sellPrice"><span class="roboto"><!--/number/today_product@price_sell/--></span>원</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    <!--/if_step(3)/-->
+                                    </ul>
+                                    <ul class="clearfix">
+                                    <!--/end_if/-->
+                                        <!--/end_loop/-->
+                                    </ul>
+                                    <!--/else/-->
+                                    <div class="noData">오늘 본 상품 내역이 없습니다.</div>
+                                    <!--/end_if/-->
+                                </div>
+                                <!--/end_form/-->
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #myTodayView -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

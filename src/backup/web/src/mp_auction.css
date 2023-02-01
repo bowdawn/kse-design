@@ -1,0 +1,11 @@
+#myAuction .page-hd { width: 100%; margin: 20px 0; overflow: hidden; }
+#myAuction .page-hd .hd { float: left; padding-left: 25px; background: url(/images/d3/modern_simple/common/bull_w20_h21_arrow.gif) no-repeat 0 50%; }
+#myAuction .page-hd .link { float: right; }
+#myAuction .page-hd .link li { float: left; margin-left: 20px; padding-left: 25px; background: url(/images/d3/modern_simple/common/bull_w21_h20_plus.gif) no-repeat 0 50%; }
+#myAuction .page-hd .hd span, 
+#myAuction .page-hd .link li a { font-size: 18px; font-weight: bold; letter-spacing: -1px; } 
+#myAuction .page-wrap { width: 100%; }
+#myAuction .page-wrap .list th { border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; background-color: #eee; }
+#myAuction .page-wrap .list th,
+#myAuction .page-wrap .list td { padding: 5px 0; }
+#myAuction .page-wrap .list td { border-bottom: 1px dotted #aaa; text-align: center; }

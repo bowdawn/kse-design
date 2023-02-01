@@ -1,0 +1,47 @@
+#cartWrap .wish-opt { color: #FFA500; }
+#cartWrap .tit-space { margin-top:100px }
+/* 회원 등급 표시 */
+
+/* 배송 메세지 */
+#cartWrap .delivery { margin-top:30px; font-size:16px; color:#2e2e2e; text-align: center }
+/* 주문 컨트롤 버튼 */
+#cartWrap .btn-order-ctrl { margin:40px 0 50px; text-align: center }
+#cartWrap .btn-order-ctrl a { width:178px; height:58px; font-size:16px; line-height:58px }
+/*합계*/
+#cartWrap .basket-totalprice { height:78px; padding:0 10px 0 25px; font-size:16px; color:#000; font-weight:bold; text-align: right; border-top:1px solid #000; border-bottom:1px solid #000 }
+#cartWrap .basket-totalprice .totalprice-img { float:left; line-height:78px }
+#cartWrap .basket-totalprice .totalprice-txt{ float:right; line-height:78px }
+
+#cartWrap .txt-spin { line-height:21px }
+
+/*본사,업체배송아이콘*/
+#cartWrap .prov-icons { padding-left:15px; display:inline;}
+#cartWrap .prov-icons .ico { float:left; width:52px; height:18px; font-size:16px; color:#000; font-weight:normal; text-align:center; letter-spacing:-1px; line-height:19px; border:1px solid #000 }
+#cartWrap .prov-icons .ico1 { color:#fff; background:#000 }
+#cartWrap .prov-icons .ico2 { color:#000; background:#fff }
+
+.tb-normal { font-weight:normal }
+
+.cart-ft2 { margin-top: 20px; text-align: center; }
+#nhn_btn { display: inline; }
+#payco_order_btn { display: inline; }
+#kakaopay_order_btn { display:inline; vertical-align:top; }
+
+/* 하이브리드 옵션 */
+.opt_dd img { vertical-align:top; }
+.opt_dd .basket-option-detail { display:inline-block; vertical-align:top; }
+.opt_dd .basket-option-detail .basket-option-dlist li { margin-bottom:7px; word-break:break-all; word-wrap:break-word; }
+.opt_dd .basket-option-detail .basket-option-dlist li img { width:23px; height:23px; margin-right:8px; vertical-align:middle; }
+
+
+.MS_tb_delivery { z-index:10 }
+
+
+/* 정기배송 탭 */
+#cartWrap .cart-tab:after { clear: both; content: ""; display: block; }
+#cartWrap .cart-tab { height:68px; margin:50px 0 0 3px; border-bottom:2px solid #000; }
+#cartWrap .cart-tab li { float:left; width:50%; height:67px; margin-left:-6px; *margin-left:-7px; border:1px solid #d5d5d5; border-bottom:none; background:#f9f9f9; }
+#cartWrap .cart-tab li:first-child { margin-left:0; }
+#cartWrap .cart-tab li a { display:block; line-height:70px; font-weight:bold; color:#898989; font-size:18px; text-align:center; text-decoration:none; background:none; }
+#cartWrap .cart-tab li.now { position:relative; z-index:1; height:68px; border:2px solid #000; border-bottom:none; background:#fff; }
+#cartWrap .cart-tab li.now a { line-height:68px; color:#000; }

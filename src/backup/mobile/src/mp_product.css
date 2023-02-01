@@ -1,0 +1,77 @@
+.recentList {
+    margin-top:-24px;
+}
+
+.recentList ul li{
+    position:relative;
+    padding:24px 60px 24px 120px;
+    min-height:100px;
+    border-bottom:1px solid #DBDBDB;
+}
+
+.recentList ul li:last-child{
+    border-bottom:none;
+}
+
+.recentList ul li .basketLeft{
+    position:absolute;
+    width:100px;
+    height:100px;
+    top:24px;
+    left:20px;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.recentList ul li .basketLeft a{
+    display:block;
+}
+
+.recentList ul li .basketLeft a img{
+    display:block;
+    width:100%;
+}
+
+.recentList ul li .basketRight{
+    padding-left:10px;
+}
+
+.recentList ul li .basketRight{
+    padding-left:10px;
+}
+
+.recentList ul li .basketRight .pname a{
+    margin-bottom:6px;
+    font-size:12px;
+    line-height:17px;
+}
+
+.recentList ul li .basketRight .price{
+    font-size:16px;
+    font-weight:bold;
+    line-height:21px;
+}
+
+.recentList ul li .delBtn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.recentList ul li .delBtn img{
+    margin-top:8.5px;
+}
+
+
+
+
+
+
+
+
+
+
+

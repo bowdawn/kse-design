@@ -1,0 +1,90 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="board1v1">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="tit-page-2">
+                                <h2>상담내역</h2>
+                                <p class="dsc"><span class="fc-blue">[<!--/user_name/-->]</span>님께서 문의하신 1:1문의에 대한 답변입니다.</p>
+                            </div>
+                            <div class="page-body">
+                                <!-- 내역 보기 -->
+                                <div class="table-d2-view">
+                                    <table summary="제목, 파일, 이메일, 핸드폰, 답변, 질문내용, 질문답변">
+                                        <caption>상담내역</caption>
+                                        <colgroup>
+                                            <col width="155" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">제목</div></th>
+                                                <td><div class="tb-left tb-bold"><!--/subject/--></div></td>
+                                            </tr>
+        <!--/if_download_file/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">첨부</div></th>
+                                                <td><div class="tb-left tb-bold fc-blue"><!--/download_file/--></div></td>
+                                            </tr>
+        <!--/end_if/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">이메일</div></th>
+                                                <td><div class="tb-left"><!--/email/--></div></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">핸드폰</div></th>
+                                                <td><div class="tb-left"><!--/phone/--></div></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">답변</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+        <!--/if_is_reply/-->
+                                                        <span class="replyYes">답변완료</span>
+        <!--/else/-->
+                                                        <span class="replyNo">답변대기</span>
+        <!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">질문내용</div></th>
+                                                <td>
+                                                    <div class="tb-left tb-cont">
+                                                        <!--/if_attach_file/-->
+                                                        <img src="<!--/attach_file/-->" alt="첨부파일 이미지" /><br />
+                                                        <!--/end_if/-->
+                                                        <!--/content/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+        <!--/if_is_reply/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-center">질문답변</div></th>
+                                                <td><div class="tb-left tb-cont"><!--/reply_content/--></div></td>
+                                            </tr>
+        <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //내역 보기 -->
+                                <!-- 하단 버튼 -->
+                                <div class="btn-foot">
+                                    <a href="<!--/link_m2m_list/-->" class="CSSbuttonWhite">목록보기</a>
+                                </div>
+                                <!-- //하단 버튼 -->
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #board1v1 -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

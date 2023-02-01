@@ -1,0 +1,169 @@
+body { color:#000; }
+#join .page-body {width:682px; margin:0 auto;}
+#join .form-wrap {width:100%; margin-top:30px; border:1px solid #aaa; border-radius:8px; padding-bottom:21px; box-sizing: border-box;}
+#join .form-wrap h3.form-title {padding:21px 25px 0; font-size: 18px; font-family: 'Malgun Gothic'; cursor: pointer;}
+#join .form-wrap h3.form-title strong {display:block; background: url(/images/common/ico_arrow_up.png) no-repeat right center; letter-spacing:-1px;}
+#join .form-wrap h3.form-title.off strong {background: url(/images/common/ico_arrow_down.png) no-repeat right center;}
+#join h4.tit { margin-top:30px; margin-bottom: 5px; font-size: 14px; font-weight: bold; font-family: 'Malgun Gothic'; letter-spacing:-1px;}
+#join .form-wrap .inner {padding:0 60px;}
+
+/* 회원 정보 수정 탭 */
+#join .page-body .member-tab-wrap {margin-top:30px;}
+#join .page-body .member-tab-wrap ul li {float:left; width:33.33%; padding:15px 0; border:1px solid #e4e4e4; box-sizing: border-box; margin-left:-1px;}
+#join .page-body .member-tab-wrap ul li.on {border-bottom:3px solid #000;}
+#join .page-body .member-tab-wrap ul li a {display:block; font-size: 14px; font-family: 'Malgun Gothic'; text-align:center; letter-spacing:-1px;}
+
+/* 본인인증 서비스 영역 */
+.auth-confirm .auth-info {margin-top:30px; font-size: 14px; font-family: 'Malgun Gothic'; line-height:1.6; letter-spacing:-1px;}
+.auth-confirm .btnArea:after {content: ""; display: block; clear: both;}
+.auth-confirm .btnArea a {float:left; width: 98px; height: 108px; font-size: 12px; margin: 25px 15px 8px 0; border:1px solid #dedede; color:#000; text-align:center; letter-spacing:-1px; }
+.auth-confirm .btnArea a:nth-child(5) {margin-right:0;}
+.auth-confirm .btnArea a span {height:35px; line-height:35px; margin:20px 0 16px; vertical-align:middle;}
+.auth-confirm .btnArea a:hover { border:1px solid #000; }
+.auth-confirm .btnArea a.on { border:1px solid #000; }
+
+/* 폼 리스트 공통 */
+#join .form-wrap ul.form-list li {margin-top:30px; font-size:14px; font-family:'Malgun Gothic'; letter-spacing:-1px;}
+#join .form-wrap ul.form-list li label:first-child {display:block; margin-bottom:7px; font-weight:700; font-size: 18px; letter-spacing: 0.5px;}
+#join .form-wrap ul.form-list li label span {color:#f50000; vertical-align:middle;}
+#join .form-wrap ul.form-list li .normal-input,
+#join .form-wrap ul.form-list li .MS_select,
+#join .form-wrap ul.form-list li .MS_textarea {border-radius:4px; border:1px solid #c7c7c7; border-radius:4px; font-size:14px; font-family:'Malgun Gothic'; letter-spacing:-1px;}
+#join .form-wrap ul.form-list li .normal-input {display:inline-block; width:100%; height:46px; line-height:46px; padding:0 15px; box-sizing: border-box;}
+#join .form-wrap ul.form-list li .normal-input:focus {border-color:#000;}
+#join .form-wrap ul.form-list li .normal-input.error {border-color:#f50000;}
+#join .form-wrap ul.form-list li .normal-input::-webkit-input-placeholder {color:#999;}
+#join .form-wrap ul.form-list li .normal-input:-ms-input-placeholder {color:#999;}
+#join .form-wrap ul.form-list li .normal-input::placeholder {color:#999;}
+#join .form-wrap ul.form-list li .MS_select {width:100%; height:46px; line-height:46px; padding:0 15px; background:url(/images/common/ico_arrow_down.png) no-repeat 97% 50%; -webkit-appearance: none; -moz-appearance: none; appearance:none;}
+#join .form-wrap ul.form-list li .MS_select::-ms-expand {display: none;}
+#join .form-wrap ul.form-list li .MS_textarea {width:528px; height:50px; padding:15px;}
+#join .form-wrap ul.form-list li .MS_radio,
+#join .form-wrap ul.form-list li .MS_radio:checked,
+#join .form-wrap ul.form-list li .MS_checkbox,
+#join .form-wrap ul.form-list li .MS_checkbox:checked {-webkit-appearance: none; -moz-appearance: none; appearance:none;}
+#join .form-wrap ul.form-list li .MS_radio {background:#fff; width:24px; height:24px; border-radius:100%; border:1px solid #c7c7c7;}
+#join .form-wrap ul.form-list li .MS_radio:checked {background:url(/images/common/join_radio_on.png) no-repeat center center; border:0;}
+#join .form-wrap ul.form-list li .MS_checkbox {background:url(/images/common/join_checkbox_off.png) no-repeat center center; width:24px; height:24px; border-radius:100%; border:1px solid #c7c7c7;}
+#join .form-wrap ul.form-list li .MS_checkbox:checked {background:url(/images/common/join_checkbox_on.png) no-repeat center center; border:0;}
+#join .form-wrap ul.form-list li .MS_tel { width:165px}
+#join .form-wrap ul.form-list li .MS_post { width:160px}
+#join .form-wrap ul.form-list li .MS_input_email { width:177px}
+#join .form-wrap ul.form-list li .w350 {width:350px;}
+#join .form-wrap ul.form-list li .w116 {width:116px;}
+#join .form-wrap ul.form-list li .w140 {width:140px;}
+#join .form-wrap ul.form-list li .w160 {width:160px;}
+#join .form-wrap ul.form-list li .w170 {width:170px;}
+#join .form-wrap ul.form-list li .w240 {width:240px;}
+#join .form-wrap ul.form-list li .input-box {overflow:hidden; border:1px solid #c7c7c7; border-radius:4px; width:350px;}
+#join .form-wrap ul.form-list li .input-box span input {float:left; margin-right:0; border:0; border-left:1px solid #c7c7c7; border-radius:0px; text-align:center;}
+#join .form-wrap ul.form-list li .input-box span:first-child input {border-left:0;}
+#join .form-wrap ul.form-list li .input-box span input:focus {border-color:#c7c7c7;}
+#join .form-wrap ul.form-list li .input-wrap span {display:inline-block; margin:7px 30px 0 0;}
+#join .form-wrap ul.form-list li .input-wrap label {display:inline-block; margin-bottom:0; vertical-align:middle; cursor:pointer;}
+#join .form-wrap ul.form-list li p.error-msg {margin-top:7px; font-size:13px; color:#f50000;}
+#join .form-wrap ul.form-list li p.msg {margin-top:7px; font-size:13px; color:#666;}
+#join .form-wrap ul.form-list li .check {display:table; width:100%; margin-bottom:10px;}
+#join .form-wrap ul.form-list li .check input,
+#join .form-wrap ul.form-list li .check .btn-check {display:table-cell;}
+#join .form-wrap ul.form-list li .check .btn-check {width:140px;}
+#join .form-wrap ul.form-list li .check .btn-check a {display:inline-block; width:128px; height:44px; line-height:44px; margin-left:10px; border:1px solid #000; border-radius:4px; font-size:16px; font-family:'Malgun Gothic'; letter-spacing:0px; font-weight:700; text-align:center;}
+#join .form-wrap ul.form-list li .check .w102 {width:102px;}
+#join .form-wrap ul.form-list li .check .w102 a {width:92px;}
+#join .form-wrap ul.form-list li label.label-gender {display:inline-block; width:120px; }
+#join .form-wrap ul.form-list .MK_ok_confirm { color : #1984F1}
+
+/* sns 연동 */
+#join .form-wrap ul.form-list.sns-wrap {margin-top:30px;}
+#join .form-wrap ul.form-list.sns-wrap li {position:relative; padding:17px 40px; margin-top:10px; border:1px solid #a8b0c2; border-radius:8px; box-shadow:3px 1px 8px 0px #d7dee6;}
+#join .form-wrap ul.form-list.sns-wrap li span {display:inline-block; width:108px; color:#a7afc1;}
+#join .form-wrap ul.form-list.sns-wrap li span em {margin-left:12px; vertical-align:middle;}
+#join .form-wrap ul.form-list.sns-wrap li strong {margin-left:30px;}
+#join .form-wrap ul.form-list.sns-wrap li a {font-size:14px; font-family:'Malgun Gothic'; letter-spacing:-1px; color:#0075ff; text-decoration:underline;}
+#join .form-wrap ul.form-list.sns-wrap li .cut {position:absolute; right:16px; top:17px; background:transparent;}
+
+#join .btn-join {margin-top:30px;}
+#join .btn-join a {display:block; padding:25px 0; background:#0097e6; border-radius:8px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-size:25px; font-weight:700; letter-spacing:0.5px;}
+
+#terms .page-body { width: 682px; margin:0 auto;}
+/* s 약관수정 220705 */
+#terms h4.tit { margin-top:30px; margin-bottom: 5px; font-size: 14px; font-weight: bold; font-family: 'Malgun Gothic'; letter-spacing:-1px;}
+#terms .form-wrap {width:100%; margin-top:30px; border:1px solid #aaa; border-radius:8px; padding-bottom:21px;}
+#terms .form-wrap h3.form-title {padding:21px 25px 0; font-size: 18px; font-family: 'Malgun Gothic'; cursor: pointer;}
+#terms .form-wrap h3.form-title strong {display:block; background: url(/images/common/ico_arrow_up.png) no-repeat right center; letter-spacing:-1px;}
+#terms .form-wrap h3.form-title.off strong {background: url(/images/common/ico_arrow_down.png) no-repeat right center;}
+
+#terms .new-privercy-contract {width:560px; margin:0 auto;}
+#terms .new-privercy-contract h3 { position:relative; font-weight: bold; margin:30px 0 5px 0; text-align: left; }
+#terms .new-privercy-contract h3 span { color:#0f6efc; }
+#terms .new-privercy-contract h3 .check { position:absolute; top:0; right:0; width:70px; }
+#terms .new-privercy-contract h3 .check input { width:12px; height:12px; vertical-align:top; }
+#terms .new-privercy-contract h3.w-normal { font-weight: normal }
+#terms .new-privercy-contract .p10 {padding:10px;}
+#terms .new-privercy-contract .period {font-size:13px; font-weight:700;}
+#terms .new-privercy-contract p.txt-desc {margin-top:10px; color:#666; font-weight:normal;}
+#terms .privercy-contract-tap { height:35px; }
+#terms .privercy-contract textarea { width:538px; height:150px; color:#666; }
+#terms .page-body .btn-agree {margin-top:30px;}
+#terms .page-body .btn-agree a {display:block; padding:25px 0; background:#000; border-radius:8px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-size:20px; font-weight:700; letter-spacing:-1px;}
+/* e 약관수정 220705 */
+
+#terms .privercy-agree { margin-bottom: 20px; }
+#terms .tbl { width:100%; padding:0; margin:0; border-spacing:0; border-collapse:collapse; border-top: 1px solid #dadada; border-left: 1px solid #dadada; }
+#terms .tbl caption { display:none; }
+#terms .tbl th { line-height:32px; color: #3b3b3b; font-size:12px; font-weight:bold; background: #f0f0f0; text-align:center; }
+#terms .tbl th,
+#terms .tbl td { height:32px; padding:0; margin:0; border-right: 1px solid #dadada; border-bottom: 1px solid #dadada; letter-spacing:-1px; }
+#terms .new-privercy-contract .tbl td { background:#ffffff; }
+#terms .tbl td ul,
+#terms .tbl td ul li { padding:0; margin:0; list-style:none; }
+#terms .tbl td ul { width:70px; margin:5px auto; }
+#terms .tbl td .txt-l { padding:5px 3px; margin:0; text-align:left; }
+#terms .tbl td .mr15 { margin-right:15px; }
+#terms .btn-foot { margin-top: 20px; text-align: center; font-size: 0; line-height: 0; }
+#terms .btn-foot a { margin-left: 10px; }
+
+/* 약관 동의 */
+#chkwrap { border:1px solid #dedede; background: #ffffff }
+#chkwrap .all-chk { height:43px; line-height:45px; padding-left:20px; font-size:14px; font-weight:bold; color:#000; border-bottom:1px solid #dedede; }
+#chkwrap .all-chk .input-cbox { width:14px; height:14px; *margin-top:0; } 
+#chkwrap .cont ul:after { clear: both; content: ""; display: block; }
+#chkwrap .cont ul { padding-bottom:15px; }
+#chkwrap .cont ul li { float:left; width:270px; line-height:18px; }
+#chkwrap .cont ul li a { display:inline-block; width:60px; height:16px; line-height:21px !important; margin-top:-2px; font-weight:normal; font-size:11px; border:1px solid #bdbec7; background:#fafafa; text-align:center; }
+#chkwrap .cont strong { color:#000; }
+#chkwrap .cont label { font-weight:bold; }
+#chkwrap .cont .marketing { padding-left:30px; border-top:1px dashed #dadada; line-height:18px; }
+#chkwrap .cont .marketing .mk-wrap { height:44px; line-height:46px; }
+#chkwrap .cont .marketing .mk-wrap input { margin-top:-1px; *margin-top:0; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #chkwrap .cont ul li a { line-height:17px !important }
+}
+#join .user_age_wrap { width: 100%; margin-top: 30px; }
+#join .user_age_wrap .label {display: inline-block; padding: 21px 25px 21px; font-size: 15px; font-family: 'Malgun Gothic'; cursor: pointer;}
+
+/* 이용 약관 */
+/* 개인정보 수집이용, 제3제공, 취급위탁 테이블 */
+#terms .contract-tbl { width:100%; border-spacing:0; border-collapse:collapse }
+#terms .contract-tbl th,
+#terms .contract-tbl td { border:1px solid #e0e0e0; text-align:center; }
+#terms .contract-tbl th { padding:15px 0; background: #f6f6f6; font-weight:normal; color:#666; }
+#terms .contract-tbl th label {vertical-align:middle;}
+#terms .contract-tbl td {color:#000;}
+.btm-msg { padding-top:30px; line-height:18px; }
+
+/* 레이어 팝업 */
+.pop-layer-agree {position:fixed; left:0; top:0; width:100%; height:100%; background-color:rgba( 0, 0, 0, 0.40 ); z-index: 999; font-family:Dotum;}
+.pop-layer-agree .layer-wrap {position:absolute; left:50%; top:50%; width:562px; padding:0 30px; background: #fff; transform:translate(-50%, -50%); overflow:scroll; height:80%;}
+.pop-layer-agree .layer-wrap h3 {padding:23px 0 22px; font-size:24px; color:#000; border-bottom:1px solid #dfdfdf; font-weight:700; letter-spacing:-1px;}
+.pop-layer-agree .layer-wrap p {padding:20px 0; color:#333; font-size:14px; line-height:24px;}
+.pop-layer-agree .layer-wrap .contract-tbl { width:100%; border-spacing:0; border-collapse:collapse }
+.pop-layer-agree .layer-wrap .contract-tbl th,
+.pop-layer-agree .layer-wrap .contract-tbl td { padding:13px 0; border:1px solid #e0e0e0; font-size:12px; text-align:center; }
+.pop-layer-agree .layer-wrap .contract-tbl th { background: #f6f6f6; font-weight:normal; color:#666; }
+.pop-layer-agree .layer-wrap .contract-tbl th label {vertical-align:top;}
+.pop-layer-agree .layer-wrap .contract-tbl td {color:#000;}
+.pop-layer-agree .layer-wrap .agree-chk {padding:20px 0 30px;}
+.pop-layer-agree .layer-wrap .agree-chk label {font-family:'Malgun Gothic'; font-size:14px; color:#000; letter-spacing:-1px;}
+.pop-layer-agree .layer-wrap .agree-chk input {display:inline-block; margin-right:5px;}

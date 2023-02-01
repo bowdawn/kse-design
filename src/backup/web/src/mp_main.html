@@ -1,0 +1,248 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="mypage">
+                    <div class="page-body">
+                        <div class="myPageMainWrap clearfix">
+                            <!--/include_menu(2)/-->
+                            <div class="rightBox fr">
+                                
+                                <!-- 회원 그룹 정보 -->
+                                <!--/if_group/-->
+                                <div class="userGroup clearfix <!--/if_group_name(초승달)/-->rank01<!--/else_if_group_name(반달)/-->rank02<!--/else_if_group_name(상현달)/-->rank03<!--/else_if_group_name(보름달)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
+                                    <div class="lvl-img fl">
+                                        <img src="/design/ksilverex/22_renew/img/rank01.png" class="rank01" />
+                                        <img src="/design/ksilverex/22_renew/img/rank02.png" class="rank02" />
+                                        <img src="/design/ksilverex/22_renew/img/rank03.png" class="rank03" />
+                                        <img src="/design/ksilverex/22_renew/img/rank04.png" class="rank04" />
+                                    </div>
+                                    
+                                    <div class="grp fl">
+                                        <div class="box1">
+                                            <p class="userGroupName">
+                                            <!--/user_name/--> 고객님의<br>
+                                            회원등급은
+                                            <strong class="userRank">
+                                                <!--/group_name/-->
+                                            </strong>
+                                            입니다.
+                                            </p>
+                                            <p class="userGroupBenefit">
+                                                <strong class="userRank">
+                                                    <!--/group_name/-->
+                                                </strong>
+                                                회원은 구매금액의 
+                                                <strong class="rank02 reservePer">0.1</strong>
+                                                <strong class="rank03 reservePer">0.2</strong>
+                                                <strong class="rank04 reservePer">0.3</strong>
+                                                %를 <strong>추가 적립</strong>해 드립니다.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="nextGradeWrap box2">
+                                            <ul class="clearfix userRank">
+                                                <li class="fl"><span>C</span></li>
+                                                <li class="fl"><span>H</span></li>
+                                                <li class="fl"><span>G</span></li>
+                                                <li class="fl"><span>F</span></li>
+                                            </ul>
+                                        </div>
+                                        <a href="/shop/page.html?id=7" class="moreViewBenefit">등급혜택 보러가기<img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></a>
+                                    </div>
+                                </div>
+                                <!--/end_if/-->
+                                <!-- //회원 그룹 정보 -->
+                                
+                                
+                                <div class="myPageConWrap">
+                                    <div class="info">
+                                        <dl>
+                                            <dt>
+                                                <img src="/design/ksilverex/22_renew/img/icon_mypage_01.png" class="infoIcon">
+                                                <span>우수고객 선정 총 구매금액 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></span>
+                                            </dt>
+                                            <dd><!--/number/order_total_price/--> <span class="unit">원</span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="<!--/link_coupon/-->">
+                                                    <img src="/design/ksilverex/22_renew/img/icon_mypage_02.png" class="infoIcon">
+                                                    <span>보유중인 쿠폰 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></span>
+                                                </a>
+                                            </dt>
+                                            <dd><a href="<!--/link_coupon/-->"><!--/number/coupon_count/--></a></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>
+                                                <a href="<!--/link_reserve/-->">
+                                                    <img src="/design/ksilverex/22_renew/img/icon_mypage_03.png" class="infoIcon">
+                                                    <span>사용가능 멤버십 포인트 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></span>
+                                                </a>
+                                            </dt>
+                                            <dd><a href="<!--/link_reserve/-->"><!--/number/user_reserve/--> <span class="unit">P</span></a></dd>
+                                        </dl>
+                                    </div>
+                                    
+                                    <!-- 최근 주문 정보 -->
+                                    <div class="hd">
+                                        <h3>주문/배송 조회</h3>
+                                        <a class="view fe" href="<!--/link_order/-->">자세히 보기 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></a>
+                                    </div>
+                                    <div class="osl">
+                                        <ul class="orderStepList clearfix">
+                                            <li class="fl <!--/if_three_month_order_ready(+1)/-->active<!--/end_if/-->">
+                                                <div class="cnt">
+                                                    <strong><!--/three_month_order_ready/--></strong>
+                                                    <span>주문접수</span>
+                                                </div>
+                                            </li>
+                                            <li class="fl <!--/if_three_month_order_ok(+1)/-->active<!--/end_if/-->">
+                                                <div class="cnt">
+                                                    <strong><!--/three_month_order_ok/--></strong>
+                                                    <span>결제완료</span>
+                                                </div>
+                                            </li>
+                                            <li class="fl <!--/if_three_month_delivery_ready(+1)/-->active<!--/end_if/-->">
+                                                <div class="cnt">
+                                                    <strong><!--/three_month_delivery_ready/--></strong>
+                                                    <span>상품준비중</span>
+                                                </div>
+                                            </li>
+                                            <li class="fl <!--/if_three_month_delivery_ing(+1)/-->active<!--/end_if/-->">
+                                                <div class="cnt">
+                                                    <strong><!--/three_month_delivery_ing/--></strong>
+                                                    <span>배송중</span>
+                                                </div>
+                                            </li>
+                                            <li class="fl <!--/if_three_month_delivery_ok(+1)/-->active<!--/end_if/-->">
+                                                <div class="cnt">
+                                                    <strong><!--/three_month_delivery_ok/--></strong>
+                                                    <span>배송완료</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 최근 주문 정보 -->
+                                    <div class="hd">
+                                        <h3>주문 내역</h3>
+                                        <a class="view fe" href="<!--/link_order/-->">자세히 보기 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></a>
+                                    </div>
+                                    <div class="tbl">
+                                        <table summary="주문일자, 상품명, 결제금액, 주문상세">
+                                            <caption>최근 주문 정보 목록</caption>
+                                            <colgroup>
+                                                <col width="150">
+                                                <col width="*">
+                                                <col width="140">
+                                                <col width="140">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="tb-center">주문일</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="tb-center">상품명</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="tb-center">결제금액</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="tb-center">주문상세</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!--/if_order_list/-->
+                                                <!--/loop_order_list(10)/-->
+                                                <tr>
+                                                    <td>
+                                                        <div class="tb-center">
+                                                            <!--/order_list@order_date/-->
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="tb-left">
+                                                            <!--/order_list@brand_name/-->
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="tb-center">
+                                                            <!--/number/order_list@order_price/-->원
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="tb-center"><a href="<!--/order_list@link_order/-->" class="CSSbuttonWhite CSSbuttonMin">주문정보</a></div>
+                                                    </td>
+                                                </tr>
+                                                <!--/end_loop/-->
+                                                <!--/else/-->
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <div class="tb-center">주문 내역이 없습니다.</div>
+                                                    </td>
+                                                </tr>
+                                                <!--/end_if/-->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //최근 주문 정보 -->
+
+                                    <!-- 관심 상품 정보 -->
+                                    <div class="hd">
+                                        <h3>관심 상품</h3>
+                                        <a class="view fe" href="<!--/link_wish/-->">자세히 보기 <img src="/design/ksilverex/22_renew/img/icon_mypage_more.png"></a>
+                                    </div>
+                                    <div class="lst">
+                                        <div class="wishListWrap item-wrap">
+                                            <div class="item-cont">
+                                            <!--/loop_wishlist_product(5)/-->
+                                                <dl class="item-list">
+                                                    <dt class="thumb"><a href="<!--/wishlist_product@link/-->"><img src="<!--/wishlist_product@image_m/-->" alt="상품 섬네일" title="상품 섬네일" /></a></dt>
+                                                    <dd class="prd-info">
+                                                        <ul> 
+                                                            <li class="prd-ico"><!--/wishlist_product@icons/--></li>
+                                                            <li class="prd-name"><a href="<!--/wishlist_product@link/-->"><!--/wishlist_product@name/--></a></li>
+                                                            <li class="prd-price">
+                                                            <!--/if_wishlist_product@price_replace/-->
+                                                                <!--/wishlist_product@price_replace/-->
+                                                            <!--/else_if_wishlist_product@is_soldout/-->
+                                                                품절
+                                                            <!--/else/-->
+                                                                <!--/if_wishlist_product@price_discount/-->
+                                                                    <span class="price"><!--/number/wishlist_product@price_discount/-->원</span>
+                                                                <!--/else/-->
+                                                                    <span class="price"><!--/number/wishlist_product@price_sell/-->원</span>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            <!--/end_loop/-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //관심 상품 정보 -->
+                                
+                                </div>
+                                
+
+
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div><!-- .page-body -->
+                </div><!-- #mypage -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

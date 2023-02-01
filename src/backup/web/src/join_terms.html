@@ -1,0 +1,101 @@
+<!--/script_scroll(1)/-->
+    <div id="wrap">
+        <!--/include_header(1)/-->
+        <div id="contentWrapper">
+            <div id="contentWrap">
+                <!--/include_menu(1)/-->
+                <div id="content">
+                    <div id="terms">
+                        <div class="cateTit_v2 join">
+                            <em class="title">멤버십고객 신규가입</em>
+                        </div>
+                        <div class="page-body">
+                            <!--/form_agree/-->
+                                <fieldset>
+                                    <legend>약관 동의 폼</legend>
+                                    <div class="new-privercy-contract">
+                                    <!--/if_use_privacy/-->
+                                        <!--/new_privacy_agree/-->
+                                        <div class="new-btn-area">
+                                            <a href="<!--/link_agree/-->">동의하고 가입하기</a>
+                                        </div>
+                                        <h4 class="tit" id="chk_cont1">이용약관</h4>
+                                        <div class="privercy-contract">
+                                            <textarea cols="80" wrap="off" rows="10" readonly ><!--/contract_terms/--></textarea>
+                                        </div>
+                                        <!--/new_privacy_terms2/-->
+                                    <!--/else/-->
+                                        <!--/if_new_privercy_type/-->
+                                            <h3 class="w-normal">회원 가입을 하기에 앞서 <strong>회원약관</strong>을 읽어보시기 바랍니다.</h3>
+                                            <div class="privercy-contract">
+                                                <textarea cols="80" rows="10" readonly ><!--/contract_terms/--></textarea>
+                                            </div>
+                                            <div class="privercy-agree">
+                                                <label><!--/checkbox_contract_ok/--> 위의 <strong>‘회원약관’</strong> 내용에 동의합니다.</label>
+                                            </div>
+                                            <h3>개인정보 수집, 이용 안내</h3>
+                                            <div  class="privercy-contract-tap">
+                                                <ul>
+                                                    <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                                    <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                                    <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/privercy_terms1/--></textarea></div>
+                                                <div class="privercy-contract" style="display: none;"><textarea cols="70" rows="10" readonly><!--/privercy_terms2/--></textarea></div>
+                                                <div class="privercy-contract" style="display: none;"><textarea cols="70" rows="10" readonly><!--/privercy_terms3/--></textarea></div>
+                                            </div>
+                                            <div class="privercy-agree">
+                                                <label><!--/checkbox_privercy_ok/--> 위의 <strong>‘개인정보 수집,이용’</strong>에 동의합니다. </label>
+                                            </div>
+                                            <!--/if_third_party/-->
+                                                <h3>개인정보의 제3자 제공</h3>
+                                                <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/third_party_terms/--></textarea></div>
+                                                <div class="privercy-agree">
+                                                    <label><!--/checkbox_third_party_ok/--> 위의 <strong>‘개인정보의 제 3자 제공’</strong>에 동의합니다.</label>
+                                                </div>
+                                            <!--/end_if/-->
+                                            <!--/if_trust/-->
+                                                <h3>개인정보 처리위탁안내</h3>
+                                                <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/trust_terms/--></textarea></div>
+                                                <div class="privercy-agree">
+                                                    <label><!--/checkbox_trust_ok/--> 위의 <strong>‘개인정보 처리위탁안내’</strong>에 동의합니다.</label>
+                                                </div>
+                                            <!--/end_if/-->
+                                        <!--/else/-->
+                                            <h3>회원 가입을 하기에 앞서 <strong>회원약관</strong>을 읽어보시기 바랍니다.</h3>
+                                            <div class="privercy-contract">
+                                                <textarea cols="80" wrap="off" rows="10" readonly ><!--/contract_terms/--></textarea>
+                                            </div>
+                                            <div class="privercy-agree">
+                                                <label><!--/radio_contract_ok/--> 약관에 동의합니다.</label>
+                                                <label><!--/radio_contract_no/--> 약관에 동의 하지 않습니다.</label>
+                                            </div>
+                                            <h3>개인정보 수집에 대한 동의</h3>
+                                            <div class="privercy-contract"><textarea cols="70" rows="10" readonly><!--/privercy_terms/--></textarea></div>
+                                            <div class="privercy-agree">
+                                                <label><!--/radio_privercy_ok/--> 약관에 동의합니다.</label>
+                                                <label><!--/radio_privercy_no/--> 약관에 동의 하지 않습니다.</label>
+                                            </div>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    </div>
+                                    <!--/if_use_privacy/-->
+                                        <!-- 버튼상단으로이동 -->
+                                    <!--/else/-->
+                                    <div class="btn-foot">
+                                        <a href="<!--/link_agree/-->"><img src="/images/d3/modern_simple/btn/btn_h36_join_agree.gif" alt="동의합니다." title="동의합니다." /></a>
+                                        <a href="<!--/link_reject/-->"><img src="/images/d3/modern_simple/btn/btn_h36_join_reject.gif" alt="거부합니다." title="거부합니다." onclick="Javascript:history.back();" /></a>
+                                    </div>
+                                    <!--/end_if/-->
+                                </fieldset>
+                            <!--/end_form/-->
+                        </div><!-- .page-body -->
+                    </div><!-- #terms -->
+                </div><!-- #content -->
+            </div><!-- #contentWrap -->
+        </div><!-- #contentWrapper-->
+        <hr />
+        <!--/include_footer(1)/-->
+    </div><!-- #wrap -->

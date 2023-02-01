@@ -1,0 +1,104 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="board1v1">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="tit-page-4">
+                                <h2>1:1 문의</h2>
+                            </div>
+                            <div class="page-body">
+                                <h3 class="tit-tb-list-d4">나의 문의내역<span class="c-blue"><!--/number/pager_m2m_list::count/--></span></h3>
+                                <p class="subTit"> 1:1 문의 서비스를 이용하시면 더욱 정확한 상담이 가능합니다.</p>
+                                <!-- 게시판 리스트 -->
+                                <div class="table-d5-list">
+                                    <table summary="번호, 제목, 날짜, 답변여부">
+                                        <caption>1:1 상담내역</caption>
+                                        <colgroup>
+                                            <col width="50" />
+                                            <col width="50" />
+                                            <col width="*" />
+                                            <col width="130" />
+                                            <col width="90" />
+                                        </colgroup>
+                                        <tbody>
+                                        <!--/if_m2m_notice/-->
+                                            <!--/loop_m2m_notice/-->
+                                            <tr>
+                                                <td><div class="tb-center">[공지]</div></td>
+                                                <td></td>
+                                                <td colspan="3"><div class="tb-left"><a href="<!--/m2m_notice@link/-->"><!--/m2m_notice@subject/--></a></div></td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                        <!--/end_if/-->
+                                        <!--/if_m2m_list/-->
+                                            <!--/loop_m2m_list/-->
+                                            <tr>
+                                                <td><div class="tb-left"><strong class="roboto"><!--/m2m_list@num/--></strong></div></td>
+                                                <td><div class="tb-center"><span class="question">Q</span></div></td>
+                                                <td><div class="tb-left"><a href="<!--/m2m_list@link/-->"><!--/m2m_list@subject/--></a></div></td>
+                                                <td><div class="tb-center"><!--/date(%Y. %M. %D)/m2m_list@date/--></div></td>
+                                                <td>
+                                                    <div class="tb-right">
+                                                    <!--/if_m2m_list@is_reply/-->
+                                                        <span class="replyYes">답변완료</span>
+                                                    <!--/else/-->
+                                                        <span class="replyNo">답변대기</span>
+                                                    <!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                        <!--/else/-->
+                                            <tr>
+                                                <td colspan="5"><div class="tb-center">작성된 문의글이 없습니다.</div></td>
+                                            </tr>
+                                        <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 게시판 리스트 -->
+                                <!-- 페이징 -->
+                                <div class="paging2">
+        <!--/if_pager_m2m_list::first/-->
+                                    <a href="<!--/pager_m2m_list::first@link/-->" class="first">&lt;&lt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::prev/-->
+                                    <a href="<!--/pager_m2m_list::prev@link/-->" class="prev">&lt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list/-->
+            <!--/loop_pager_m2m_list::page/-->
+                <!--/if_pager_m2m_list::page@current/-->
+                                    <a href="<!--/pager_m2m_list::page@link/-->" class="now"><!--/pager_m2m_list::page/--></a>
+                <!--/else/-->
+                                    <a href="<!--/pager_m2m_list::page@link/-->"><!--/pager_m2m_list::page/--></a>
+                <!--/end_if/-->
+            <!--/end_loop/-->
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::next/-->
+                                    <a href="<!--/pager_m2m_list::next@link/-->" class="next">&gt;</a>
+        <!--/end_if/-->
+        <!--/if_pager_m2m_list::last/-->
+                                    <a href="<!--/pager_m2m_list::last@link/-->" class="last">&gt;&gt;</a>
+        <!--/end_if/-->
+                                </div>
+                                <!-- //페이징 -->
+                                <!-- 하단버튼 -->
+                                <div class="btn-foot">
+                                    <a href="<!--/link_m2m_write/-->" class="CSSbuttonWhite">문의하기</a>
+                                </div>
+                                <!-- //하단버튼 -->
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #board1v1 -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

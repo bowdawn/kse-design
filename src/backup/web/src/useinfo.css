@@ -1,0 +1,8 @@
+/* t-msg */
+#guide .t-msg { margin-top:20px; font-size:14px; color:#7b7b7b }
+#guide .t-msg a { font-size:14px; color:#7b7b7b; vertical-align:top }
+/* gd-dsc */
+#guide .gd-dsc { margin-top:70px }
+#guide .gd-dsc dt { padding:0 0 10px 10px; position:relative; font-size:16px; color:#000; border-bottom:1px dashed #e9e9e9; background:url(/design/open9/common/bu_4x4.gif) 0 7px no-repeat }
+#guide .gd-dsc dt a { font-size:16px; color:#000; vertical-align:top }
+#guide .gd-dsc dd { padding:15px 0 0 10px; font-size:14px; color:#7b7b7b; line-height:27px }

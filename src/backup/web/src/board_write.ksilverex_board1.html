@@ -1,0 +1,187 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="bbsData">
+                    <div class="page-body">
+                        <!-- 게시판 리스트 -->
+                        <div class="bbs-hd">
+                            <ul class="link">
+                            <!--/loop_top_board_list/-->
+                                <!--/if_idx(1)/-->
+                                <li class="last">
+                                <!--/else/-->
+                                <li>
+                                <!--/end_if/-->
+                                    <a href="<!--/top_board_list@link/-->"><!--/top_board_list@name/--></a>
+                                </li>
+                            <!--/end_loop/-->
+                            </ul>
+                        </div><!-- .bbs-hd -->
+                        <!-- //게시판 리스트 -->
+                        <div class="bbs-tit">
+                            <h3><!--/now_board_name/--></h3>
+                        </div>
+                        <!--/if_link/-->
+                        <dl class="prd-tinfo">
+                            <dt>
+                                <a href="<!--/link/-->"><img src="<!--/image_s/-->" /></a>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li class="name"><span class="tit">상품명 :</span> <a href="<!--/link/-->"><!--/name(100)/--></a> <!--/icons/--><!--/if_free_delivery_icon/--><img src="<!--/free_delivery_icon/-->"/><!--/end_if/--></li>
+                                    <li class="price"><span class="tit">상품가 :</span> <!--/number/price_sell/-->원</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <!--/end_if/-->
+                        <div class="bbs-table-write">
+<!--/form_write/-->
+                            <fieldset>
+                                <legend>일반게시판 쓰기</legend>
+                                <table summary="">
+                                    <caption>게시판 글쓰기</caption>
+                                    <colgroup>
+                                        <col width="135" />
+                                        <col width="395" />
+                                        <col width="155" />
+                                        <col width="*" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><div>이름</div></th>
+                                            <td><div><!--/input_name(input_style1)/--></div></td>
+                                            <th><div><!--/if_input_password/-->비밀번호<!--/end_if/--></div></th>
+                                            <td>
+                                                <div>
+                                                    <!--/input_password(input_style)/-->
+                                                    <!--/if_is_auto_lock/--><font color="red">자동 잠금 기능</font><!--/end_if/-->
+                                                    <!--/if_input_lock_checkbox/--><!--/input_lock_checkbox/--> 잠금 사용<!--/end_if/-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--/if_input_email/-->
+                                        <tr>
+                                            <th><div>이메일</div></th>
+                                            <td colspan="3"><div><!--/input_email(input_style1)/--></div></td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                        <tr>
+                                            <th><div>제목</div></th>
+                                            <td colspan="3">
+                                                <div class="title">
+                                                    <!--/if_select_header/--><!--/select_header/--><br /><!--/end_if/-->
+                                                    <!--/if_input_subject/--><!--/input_subject(input_style2)/--><!--/end_if/-->
+                                                    <!--/if_input_htmluse_checkbox/--><!--/input_htmluse_checkbox/--> HTML태그 허용<!--/end_if/-->
+                                                    <div class="title_select">
+                                                        <!--/if_select_font_color/--><!--/select_font_color/--><!--/end_if/-->
+                                                        <!--/if_select_font_size/--><!--/select_font_size/--><!--/end_if/-->
+                                                        <!--/if_input_font_weight_checkbox/--><!--/input_font_weight_checkbox/--><!--/end_if/-->
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><div>내용</div></th>
+                                            <td colspan="3" class="text_content">
+                                                <div>
+                                                    <!--/if_add_info_html/--><!--/add_info_html/--><br /><!--/end_if/-->
+                                                    <!--/text_content/-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><div>파일</div></th>
+                                            <td colspan="3">
+                                                <div>
+                                                    <!--/file_attach(input_style2)/--> <a href="<!--/link_file_upload/-->" class="btn_file">찾아보기...</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--/if_not_login/-->
+                                        <!--/if_privercy_terms/-->
+                                        <tr>
+                                            <td colspan="4">
+                                            <!--/if_use_privacy/-->
+                                                <div class="new-privercy-contract">
+                                                    <!--/new_privacy_terms/-->
+                                                </div>
+                                            <!--/else/-->
+                                                <!--/if_new_privercy_type/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div  class="privercy-contract-tap">
+                                                            <ul>
+                                                                <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                                                <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                                                <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="privercy-contract"><textarea readonly><!--/privercy_terms1/--></textarea></div>
+                                                            <div class="privercy-contract" style="display: none;"><textarea readonly><!--/privercy_terms2/--></textarea></div>
+                                                            <div class="privercy-contract" style="display: none;"><textarea readonly><!--/privercy_terms3/--></textarea></div>
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_ok/--> 정보수집에 동의합니다.</label>
+                                                            <label><!--/radio_privercy_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/if_third_party/-->
+                                                        <p>개인정보의 제3자 제공</p>
+                                                        <div class="privercy-contract"><textarea readonly><!--/third_party_terms/--></textarea></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_third_party_ok/--> 제3자 제공에 동의합니다.</label>
+                                                            <label><!--/radio_third_party_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                        <!--/if_trust/-->
+                                                        <p>개인정보 처리위탁안내</p>
+                                                        <div class="privercy-contract"><textarea readonly><!--/trust_terms/--></textarea></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_trust_ok/--> 처리위탁에 동의합니다.</label>
+                                                            <label><!--/radio_trust_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                <!--/else/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div class="privercy-contract"><textarea readonly><!--/privercy_terms/--></textarea></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_ok/--> 정보수집에 동의합니다.</label>
+                                                            <label><!--/radio_privercy_no/-->동의하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                <!--/end_if/-->
+                                            <!--/end_if/-->
+                                            </td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                        <!--/end_if/-->
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                            <!-- //게시판 글쓰기 -->
+                            
+                            <!-- 하단 버튼 -->
+                            <dl class="bbs-link bbs-link-btm">
+                                <dt></dt>
+                                <dd>
+                                    <a href="<!--/link_write_ok/-->" class="CSSbuttonBlack">등록하기</a>
+                                    <a href="<!--/link_list/-->" class="CSSbuttonWhite">목록보기</a>
+                                </dd>
+                            </dl>
+                            <!-- //하단 버튼 -->
+<!--/end_form/-->
+                        </div>
+                    </div><!-- .page-body -->
+                </div><!-- #bbsData -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

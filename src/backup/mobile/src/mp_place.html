@@ -1,0 +1,121 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="place">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>배송지 주소록 관리</h3>
+            </div>
+
+            <div id="section1" class="section">
+                <div class="h_title">
+                    <h3>배송지 주소록 <a href="#" class="btn_toggle btn1">상세보기 <span class="fa fa-caret-down"></span></a></h3>
+                </div>
+                <div class="address-list list1">
+                    <div class="btn-area">
+                        <!--/if_link_multi_delete_addrbook/--><a href="<!--/link_multi_delete_addrbook/-->" class="btn-white">선택삭제</a><!--/end_if/-->
+                        <!--/if_link_all_delete_addrbook/--><a href="<!--/link_all_delete_addrbook/-->" class="btn-gray">전체삭제</a><!--/end_if/-->
+                    </div>
+                    <div class="list-area">
+                        <div class="all">
+                            <label><!--/checkbox_all_addrbook/--> 전체 선택/해제</label>
+                        </div>
+                        <ul>
+                        <!--/if_addrbook_list/-->
+                            <!--/loop_addrbook_list/-->
+                            <li>
+                                <!--/addrbook_list@checkbox/-->
+                                <div class="text-area">
+                                    <p class="name">
+                                        <!--/if_addrbook_list@title/-->[<!--/addrbook_list@title/-->] <!--/end_if/--><!--/addrbook_list@receiver/-->
+                                        <!--/if_addrbook_list@is_standard/--><span class="basic">기본 배송지</span><!--/end_if/-->
+                                    </p>
+                                    <p class="address">
+                                        <!--/addrbook_list@addr1/--> <!--/addrbook_list@addr2/--><br>
+                                    </p>
+                                    <p class="tell">
+                                        <!--/addrbook_list@tel/--> / <!--/addrbook_list@mobile/-->
+                                    </p>
+				    <!--/if_addrbook_message_title/-->
+                                    <p class="memo">
+                                        <!--/if_addrbook_list@user_message/--><span><!--/addrbook_list@user_message/--></span><!--/end_if/-->
+                                        <!--/if_addrbook_list@delivery_message/--><span><!--/addrbook_list@delivery_message/--></span><!--/end_if/-->
+                                    </p>
+				    <!--/end_if/-->
+                                </div>
+                                <div class="btns">
+                                    <p>
+                                        <!--/if_addrbook_list@link_modify/--><a href="<!--/addrbook_list@link_modify/-->" class="btn-black">수정</a><!--/end_if/-->
+                                        <!--/if_addrbook_list@link_delete/--><a href="<!--/addrbook_list@link_delete/-->" class="btn-gray">삭제</a><!--/end_if/-->
+                                    </p>
+                                </div>
+                            </li>
+			    <!--/end_loop/-->
+                        <!--/else/-->
+                            <li>자주 사용하는 배송지를 주소록에 추가해주세요.</li>
+                        <!--/end_if/-->
+                        </ul>
+                    </div>
+                    <div class="btn-area">
+                        <!--/if_link_new_addrbook/--><a href="<!--/link_new_addrbook/-->" class="btn-black" style="width:100%;">+ 배송지 추가</a><!--/end_if/-->
+                    </div>
+                </div>                
+            </div>
+
+           <div id="section2" class="section">
+                <div class="h_title">
+                    <h3>최근 배송지 <a href="#" class="btn_toggle btn2">상세보기 <span class="fa fa-caret-down"></span></a></h3>
+                </div>
+                <div class="address-list list2">
+                    <div class="btn-area">
+                        <!--/if_link_multi_delete_past/--><a href="<!--/link_multi_delete_past/-->" class="btn-white">선택삭제</a><!--/end_if/-->
+                        <!--/if_link_all_delete_past/--><a href="<!--/link_all_delete_past/-->" class="btn-gray">전체삭제</a><!--/end_if/-->
+                    </div>
+                    <div class="list-area">
+                        <div class="all">
+                            <label><!--/checkbox_all_past/--> 전체 선택/해제</label>
+                        </div>
+                        <ul>
+                        <!--/if_past_list/-->
+                            <!--/loop_past_list/-->
+                            <li>
+                                <!--/past_list@checkbox/-->
+                                <div class="text-area">
+                                    <p class="name"><!--/past_list@receiver/--></p>
+                                    <p class="address">
+                                        <!--/past_list@addr1/--> <!--/past_list@addr2/--><br>
+                                    </p>
+                                    <p class="tell">
+                                        <!--/past_list@tel/--> / <!--/past_list@mobile/-->
+                                    </p>
+                                </div>
+                                <div class="btns">
+                                    <p>
+                                         <!--/if_past_list@link_go_addrbook/--><a href="<!--/past_list@link_go_addrbook/-->" class="btn-black">+ 주소록</a><!--/end_if/-->
+                                         <!--/if_past_list@link_delete/--><a href="<!--/past_list@link_delete/-->" class="btn-gray">삭제</a><!--/end_if/-->
+                                    </p>
+                                </div>
+                            </li>
+                            <!--/end_loop/-->
+                        <!--/else/-->
+                            <li>최근 배송지 내역이 없습니다.</li>
+                        <!--/end_if/-->
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </main>
+        <!-- //main -->
+
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

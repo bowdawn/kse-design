@@ -1,0 +1,67 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="mySecede">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="page-body">
+                                <!-- 상단 내용 -->
+                                <div class="d-box-wrap">
+                                    <h3>회원정보 탈퇴신청</h3>
+                                    <div class="d-box">
+                                        <ul>
+                                            <li class="t1">
+                                                저희 쇼핑몰의 부족했던 점과 아쉬웠던 점을 적어주십시오. 더 좋은 모습으로 발전하도록 최선을 다하겠습니다.<br />
+                                                앞으로 더 나은 모습으로 고객님을 다시 만날 수 있도록 노력하겠습니다. 그동안 이용해주신 것을 진심으로 감사드립니다.
+                                            </li>
+                                            <li class="t2">
+                                                탈퇴 사유를 적어주시면 쇼핑몰 운영에 적극 반영하겠습니다.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- .dbox-wrap -->
+                                <!-- //상단 내용 -->
+
+                                <!-- 사유 입력 폼 -->
+                                <!--/if_user_withdraw_use/-->
+                                <dl class="scede-radio">
+                                    <dt>탈퇴 사유</dt>
+                                    <dd>
+                                        <ul class="clearfix">
+                                            <!--/user_withdraw_reason/-->
+                                        </ul>
+                                    </dd>
+                                </dl><!-- .scede-radio -->
+                                <!--/end_if/-->
+                                <div class="scede-frm">
+                                    <fieldset>
+                                        <div id='reason_div_view'>
+                                            <!--/if_user_withdraw_use/-->
+                                                <!--/text_withdraw_reason(txt-area1)/-->
+                                                <p class="count"><span>0</span>/200</p>
+                                            <!--/else/-->
+                                                <!--/text_withdraw_reason/-->
+                                            <!--/end_if/-->
+                                        </div>
+                                        <div class="btn-foot">
+                                            <a href="<!--/link_withdraw_ok/-->" class="CSSbuttonBlack">회원탈퇴</a>
+                                            <a href="<!--/link_withdraw_cancel/-->" class="CSSbuttonWhite">취소하기</a>
+                                        </div>
+                                    </fieldset>
+                                </div><!-- .scede-frm -->
+                                <!-- //사유 입력 폼 -->
+
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #mySecede -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

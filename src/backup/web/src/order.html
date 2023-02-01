@@ -1,0 +1,594 @@
+<!--/script_scroll(1)/-->
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="order">
+                    <dl class="loc-navi">
+                        <dt class="blind">현재 위치</dt>
+                        <dd>
+                            <a href="/">home</a> > 주문서 작성
+                        </dd>
+                    </dl>
+                    <h2 class="tit-page">
+                        <img src="/images/d3/modern_simple/order_page_tit.gif" alt="order sheet" title="order sheet" />
+                        <span class="dsc">주문정보를 작성하신 후, <em>주문하기</em>를 눌러주세요</span>
+                    </h2>
+                    <div class="page-body">
+                    <!--/form_order/-->
+                        <h3 class="stit"><img src="/images/d3/modern_simple/order_prd_tit.gif" alt="주문할 상품" title="주문할 상품" /></h3>
+                        <div class="table-cart table-order-prd">
+                            <table summary="구입 상품명, 수량, 가격, 적립" class="order-table">
+                                <caption>주문할 상품</caption>
+                                <colgroup>
+                                    <col width="70" />
+                                    <col width="*" />
+                                    <col width="70" />
+                                    <!--/if_weightdeli_use/--><col width="90" /><!--/end_if/-->
+                                    <col width="90" />
+                                    <col width="90" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><div class="tb-center"></div></th>
+                                        <th scope="col"><div class="tb-center">상품명</div></th>
+                                        <th scope="col"><div class="tb-right">수량</div></th>
+                                        <!--/if_weightdeli_use/--><th scope="col"><div class="tb-right">상품무게</div></th><!--/end_if/-->
+                                        <th scope="col"><div class="tb-right">가격</div></th>
+                                        <th scope="col"><div class="tb-right">적립</div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <!--/loop_order_product/-->
+                                <!--/if_idx(1)/-->
+                                    <tr class="nbg">
+                                <!--/else/-->
+                                    <tr>
+                                <!--/end_if/-->
+                                        <td>
+                                            <div class="tb-center"><img src="<!--/order_product@image_s/-->" width="40"></div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-left tb-bold">
+                                                <!--/if_order_product@provider_icon/--><img src ="<!--/order_product@provider_icon/-->"><!--/end_if/-->
+                                                <a href="<!--/order_product@link/-->"><!--/order_product@name(50)/-->
+                                                <!--/if_order_product@icon_bankonly/--><img src="<!--/order_product@icon_bankonly/-->" /><!--/end_if/--> 
+                                                <!--/if_order_product@icon_cardonly/--><img src="<!--/order_product@icon_cardonly/-->" /><!--/end_if/-->
+                                                <!--/if_order_product@icon_card_free/--><img src="<!--/order_product@icon_card_free/-->" /><!--/order_product@card_free_month_min/-->~<!--/order_product@card_free_month_max/--><!--/end_if/-->
+</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-right"><!--/number/order_product@amount/-->개</div>
+                                        </td>
+                                        <!--/if_weightdeli_use/-->
+                                        <td>
+                                            <div class="tb-right"><!--/order_product@weight/--></div>
+                                        </td>
+                                        <!--/end_if/-->
+                                        <td>
+                                            <div class="tb-right tb-bold">
+                                                <!--/number/order_product@total_price/-->원
+                                                <!--/if_order_product@is_term_discount/-->
+                                                    <br />- <!--/order_product@dc_price_sub/-->원
+                                                    <br />= <!--/order_product@dc_price_all/-->원
+                                                <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-right"><!--/number/order_product@reserve/--><!--/order_product@point/--></div>
+                                        </td>
+                                    </tr>
+                                    <!--/if_order_product@option/-->
+                                    <tr class="nbg">
+                                        <td <!--/if_weightdeli_use/-->colspan="6"<!--/else/-->colspan="5"<!--/end_if/-->>
+                                            <div class="tb-left">
+                                            <!--/order_product@option/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                <!--/end_loop/-->
+                                <!--/if_group_sale_price(+1)/-->
+                                    <tr>
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="tb-left">
+                                           회원 그룹 할인 금액 </div>
+                                        </td>
+                                        <!--/if_weightdeli_use/-->
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                        <!--/end_if/-->
+                                        <td>
+                                            <div class="tb-right">
+                                            - <!--/group_sale_price/--> 원
+                                            </div>
+                                        </td>
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+
+                                <!--/end_if/-->
+                                <!--/if_group_sale_reserve(+1)/-->
+                                    <tr >
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="3">
+                                            <div class="tb-left">
+                                           예상 적립금 </div>
+                                        </td>
+                                        <!--/if_weightdeli_use/-->
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                        <!--/end_if/-->
+                                        <td>
+                                            <div class="tb-right">
+                                            <!--/group_sale_reserve/-->원
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                <!--/end_if/-->
+                                <!--/if_is_beecon_info/-->
+                                    <tr >
+                                        <td >
+                                            &nbsp;
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="tb-left">
+                                            비콘 바로 가기 할인 내용 
+                                            </div>
+                                        </td>
+                                        <td >
+                                            <div class="tb-right">
+                                            <!--/if_beecon_sale_price/-->
+                                               - <!--/beecon_sale_price/-->원
+                                             <!--/end_if/-->
+                                             </div>
+                                         </td>
+
+                                        <td >
+                                            <div class="tb-right">
+                                            <!--/if_beecon_sale_reserve/-->
+                                            <!--/beecon_sale_reserve/-->원
+                                            <!--/end_if/-->
+                                             </div>
+                                         </td>
+                                    </tr>
+
+                                <!--/end_if/-->
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="<!--/if_weightdeli_use/-->6<!--/else/-->5<!--/end_if/-->">
+                                            <div class="tb-right">
+                                            <!--/if_select_after_delivery/-->
+                                                결제금액 :
+                                                <!--/number/total_price_sell/-->원 
+                                                <!--/if_total_vat/--> + 부가세 <!--/total_vat/-->원<!--/end_if/-->
+                                                <!--/block_none_delivery_price/-->
+                                                <!--/if_total_delivery/--> + 배송료 <!--/number/total_delivery/-->원<!--/end_if/-->
+                                                <!--/if_total_delivery_add/--> + 추가 배송료 <!--/number/total_delivery_add/-->원<!--/end_if/-->
+                                                <!--/end_block/-->
+                                                <!--/if_beecon_sale_delivery/--> - 비콘배송비 할인 <!--/beecon_sale_delivery/--> 원 <!--/end_if/-->
+                                                <!--/if_group_sale_price(+1)/--> - 그룹할인 <!--/number/group_sale_price/-->원<!--/end_if/-->
+                                                = <!--/block_none_delivery_total_price/--><strong><!--/number/none_delivery_total_price/-->원</strong><!--/end_block/-->
+                                                  <!--/block_total_price/--><strong><!--/number/total_price/-->원</strong><!--/end_block/-->
+                                                <!--/if_login/--><!--/if_total_reserve/-->(적립금 <!--/number/total_reserve/-->원)<!--/end_if/--><!--/end_if/-->
+
+                                            <!--/else/-->
+                                                결제금액 :
+                                                <!--/number/total_price_sell/-->원 
+                                                <!--/if_total_vat/--> + 부가세 <!--/total_vat/-->원<!--/end_if/-->
+                                                <!--/if_total_delivery/--> + 배송료 <!--/number/total_delivery/-->원<!--/end_if/-->
+                                                <!--/if_total_delivery_add/--> + 추가 배송료 <!--/number/total_delivery_add/-->원<!--/end_if/-->
+                                                <!--/if_beecon_sale_delivery/--> - 비콘배송비 할인 <!--/beecon_sale_delivery/--> 원 <!--/end_if/-->
+
+                                                <!--/if_group_sale_price(+1)/--> - 그룹할인 <!--/number/group_sale_price/-->원<!--/end_if/-->
+                                                = <strong><!--/number/total_price/-->원</strong>
+                                                <!--/if_login/--><!--/if_total_reserve/-->(적립금 <!--/number/total_reserve/-->원)<!--/end_if/--><!--/end_if/-->
+                                            <!--/end_if/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div><!-- .table-order-prd -->
+                        <!--/if_select_reserve_discount/-->
+                            <div class="reserve-select">상품 적립금 할인 : <!--/select_reserve_discount/--></div>
+                        <!--/end_if/-->
+                        <!--/if_select_after_delivery/-->
+                            <div class="delivery-select">배송비 결제여부 : <!--/select_after_delivery/--></div>
+                        <!--/end_if/-->   
+                        <!--/if_group_name/-->
+                        <div class="mem-lvl">
+                            <div class="lvl-img"><!--/if_group_image/--><img src="<!--/group_image/-->" /><!--/end_if/--></div>
+                            <p>
+                                <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em>회원입니다.<br />
+                                <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                <!--/group_message/-->
+                            </p>
+                        </div><!-- .mem-lvl -->
+                        <!--/end_if/-->
+                            <fieldset>
+                                <legend>주문 폼</legend>
+                                <h3 class="stit"><img src="/images/d3/modern_simple/order_user_info_tit.gif" alt="주문자 정보" title="주문자 정보" /></h3>
+                                <div class="table-order-info table-user">
+                                    <table summary="이름, E-mail, 연락처" class="order-table">
+                                        <caption>주문자 정보</caption>
+                                        <colgroup>
+                                            <col width="90" />
+                                            <col width="*" />
+                                            <col width="70" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th scope="row"><div class="tb-right">이 름</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/input_user_name(txt-input2 width100)/-->
+                                                    </div>
+                                                </td>
+                                                <th scope="row"><div class="tb-right">연락처</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/input_user_tel/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">E-mail</div></th>
+                                                <td colspan="3">
+                                                    <div class="tb-left">
+                                                        <!--/input_user_email(txt-input2 width150)/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h3 class="stit">
+                                    <img src="/images/d3/modern_simple/order_delivery_info_tit.gif" alt="배송지 정보" title="배송지 정보" />
+                                    <label><!--/checkbox_same_data/--> 주문자 정보 입력</label>
+                                </h3>
+                                <div class="table-order-info">
+                                    <table summary="이름, 연락처1, 연락처2, 주소, 주문메세지" class="order-table">
+                                        <caption>배송지 정보</caption>
+                                        <colgroup>
+                                            <col width="90" />
+                                            <col width="135" />
+                                            <col width="70" />
+                                            <col width="*" />
+                                            <col width="70" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th scope="row"><div class="tb-right">이 름</div></th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/input_receiver(txt-input2 width100)/-->
+                                                    </div>
+                                                </td>
+                                                <th scope="row"><div class="tb-right">연락처1</div></th>
+                                                <td>
+                                                    <div class="tb-left2">
+                                                        <!--/input_receiver_tel/-->
+                                                    </div>
+                                                </td>
+                                                <th scope="row"><div class="tb-right">연락처2</div></th>
+                                                <td>
+                                                    <div class="tb-left2">
+                                                        <!--/input_receiver_mobile/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+					<!--/if_checkbox_safe_use/-->
+					<tr>
+					    <th scope="row"><div class="tb-right">안심번호</div></th>
+					    <td colspan="5"><div class="tb-left"><!--/checkbox_safe_use/-->안심번호 사용(무료) <!--/tooltip_safe/--></div></td>
+					</tr>
+					<!--/end_if/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">주소</div></th>
+                                                <td colspan="5">
+                                                    <div class="tb-left tb-label-r10">
+                                                        <ul>
+                                                            <li>
+                                                                <!--/radio_delivery_addr/-->
+                                                            </li>
+                                                            <li>
+                                                                <!--/input_receiver_zip/-->
+                                                                <a href="<!--/link_search_zip/-->"><img src="/images/d3/modern_simple/btn/btn_h20_zipcode_sch.gif" alt="우편번호 검색" title="우편번호 검색" /></a>
+                                                            </li>
+                                                            <li>
+                                                                <!--/input_receiver_addr1(txt-input2 width350)/-->[기본주소]
+                                                            </li>
+                                                            <li>
+                                                                <!--/input_receiver_addr2(txt-input2 width350)/-->[나머지주소]
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="tb-right">
+                                                        주문메시지
+                                                        <em class="d-block">(100자내외)</em>
+                                                    </div>
+                                                </th>
+                                                <td colspan="5">
+                                                    <div class="tb-left">
+                                                        <!--/text_user_message/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/if_input_calendar_date/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">희망배송일</div></th>
+                                                <td colspan="5">
+                                                <div class="tb-left">
+                                                <!--/if_smartcalendar_page/-->
+                                                    <!--/smartcalendar_page/-->
+                                                    <!--/if_select_delivery_time/-->
+                                                    <div class="select-delivery-time">희망배송시간 : <!--/select_delivery_time/--></div>
+                                                    <!--/end_if/-->
+                                                <!--/else/-->
+                                                    <!--/if_input_calendar_date/-->
+                                                        <div><label><!--/checkbox_first_delivery_date/--> 가능한 빨리 배송</label></div>
+                                                        <div>
+                                                            <!--/input_calendar_date/-->
+                                                            <!--/if_link_calendar_open/-->
+                                                                <a href="#none" onclick="<!--/link_calendar_open/-->"><img src="/images/d3/modern_simple/smart_calendar.png"/></a>
+                                                            <!--/end_if/-->
+                                                            <!--/if_select_delivery_time/-->
+                                                                <!--/select_delivery_time/-->
+                                                            <!--/end_if/-->
+                                                        </div>
+                                                    <!--/end_if/-->
+                                                <!--/end_if/-->
+                                                </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                <!--/if_not_login/-->
+                                    <!--/if_use_simple_join/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h3 class="stit"><img src="/images/d3/modern_simple/order_paym_info_tit.gif" alt="간단가입 할인" title="간단가입 할인" /></h3>
+                                <div class="table-order-info">
+                                    <table summary="간단가입 정보" class="order-table">
+                                        <caption>간단가입 정보</caption>
+                                        <colgroup>
+                                            <col width="90" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th>간단가입<br />할인</th>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/block_simple_join/-->
+                                                        <!--/if_radio_mem_person/-->
+                                                        <div class="paym-radio">
+                                                            <label><!--/radio_mem_person/--> 일반회원</label>
+                                                            <label><!--/radio_mem_company/--> 기업회원</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                        <div class="paym-input">
+                                                            <!--/input_user_id/--> <!--/input_password/--> <!--/input_email/-->
+                                                            <!--/if_link_apply_join/--><a href="<!--/link_apply_join/-->" class="paym-btn-confirm">할인받기</a><!--/end_if/-->
+                                                        </div>
+                                                        <ul class="paym-msg">
+                                                            <li>아이디만 입력하면 주문과 가입이 동시에!</li>
+                                                            <li>간단가입하면 <strong class="fc-red txt-line"><!--/simple_sale_message/--></strong>을 받을 수 있습니다!</li>
+                                                        </ul>
+                                                        <!--/end_block/-->
+                                                        <!--/block_simple_apply/-->
+                                                        <div class="paym-input">
+                                                            <!--/input_join_benefit/-->
+                                                            <!--/if_link_cancel_join/--><a href="<!--/link_cancel_join/-->" class="paym-btn-cancel">할인취소</a><!--/end_if/-->
+                                                        </div>
+                                                        <ul class="paym-msg">
+                                                            <li><strong class="fc-red">주문과 동시에 회원가입이 완료됩니다.</strong></li>
+                                                        </ul>
+                                                        <!--/end_block/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                       </table>
+                                    </div>
+                                <h3 class="stit"><img src="/images/d3/modern_simple/order_agree_info_tit.gif" alt="주문자 동의" title="주문자 동의" /></h3>
+                                <div class="table-order-info">
+                                    <table summary="주문자 동의" class="order-table">
+                                        <caption>주문자 동의</caption>
+                                        <colgroup>
+                                            <col width="90" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="nbg">
+                                                <th>약관 동의</th>
+                                                <td>
+                                                     <div id="chkwrap" class="tb-left">
+                                                         <!--/new_privacy_agree/-->
+                                                         <!--/new_privacy_terms/-->
+                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                    <!--/else/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">안내메세지</div></th>
+                                                <td colspan="5">
+                                                <div class="new-privercy-contract">
+                                                    <p>이용약관</p>
+                                                    <div class="privercy-contract">
+                                                         <textarea cols="80" wrap="off" rows="10" readonly ><!--/text_contract_terms/--></textarea>
+                                                    </div>
+                                                    <div class="privercy-agree">
+                                                        <label><!--/radio_contract_ok/--> 약관에 동의합니다.</label>
+                                                        <label><!--/radio_contract_no/--> 약관에 동의 하지 않습니다.</label>
+                                                    </div>
+                                                </div>
+                                                <!--/if_use_privacy/-->
+                                                <div class="new-privercy-contract">
+                                                    <!--/new_privacy_terms/-->
+                                                </div>
+                                                <!--/else/-->
+                                                    <!--/if_new_privercy_type/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div  class="privercy-contract-tap">
+                                                            <ul>
+                                                                <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                                                <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                                                <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="privercy-contract"><!--/text_privercy_policy1/--></div>
+                                                            <div class="privercy-contract" style="display: none;"><!--/text_privercy_policy2/--></div>
+                                                            <div class="privercy-contract" style="display: none;"><!--/text_privercy_policy3/--></div>
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_policy_ok/--> 정보수집에 동의합니다.</label>
+                                                            <label><!--/radio_privercy_policy_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/if_third_party/-->
+                                                        <p>개인정보의 제3자 제공</p>
+                                                        <div class="privercy-contract"><!--/text_third_party_terms/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_third_party_ok/--> 제3자 제공에 동의합니다.</label>
+                                                            <label><!--/radio_third_party_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                        <!--/if_trust/-->
+                                                        <p>개인정보 처리위탁안내</p>
+                                                        <div class="privercy-contract"><!--/text_trust_terms/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_trust_ok/--> 처리위탁에 동의합니다.</label>
+                                                            <label><!--/radio_trust_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                    <!--/else/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div class="privercy-contract"><!--/text_privercy_policy/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_policy_ok/--> 약관에 동의합니다.</label>
+                                                            <label><!--/radio_privercy_policy_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                    <!--/end_if/-->
+                                                <!--/end_if/-->
+                                                </td>
+                                            </tr>
+                                            <!--/if_provider_privacy_agree/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">개인정보 공급자<br/>제공 동의</div></th>
+                                                <td colspan="5"> 
+                                                    <div class="new-privercy-contract">
+                                                        <div class="privercy-contract"><!--/provider_privacy_agree/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_provider_agree_ok/--> 공급자 정보 제공에 동의합니다.</label>
+                                                            <label><!--/radio_provider_agree_no/--> 공급자 정보 제공에 동의하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                    <!--/end_if/-->
+                               <!--/else/-->
+                                            <!--/if_provider_privacy_agree/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-right">개인정보 공급자<br/>제공 동의</div></th>
+                                                <td colspan="5"> 
+                                                    <div class="new-privercy-contract">
+                                                        <div class="privercy-contract"><!--/provider_privacy_agree/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_provider_agree_ok/--> 공급자 정보 제공에 동의합니다.</label>
+                                                            <label><!--/radio_provider_agree_no/--> 공급자 정보 제공에 동의하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                               <!--/end_if/-->
+ <br/><!--/gift_choice_order/--><br/>
+
+                                <!--/if_login/-->
+                                    <!--/if_input_user_reserve/-->
+                                        <h3 class="stit"><img src="/images/d3/modern_simple/order_mileage_use_tit.gif" alt="적립금 사용" title="적립금 사용" /></h3>
+                                        <div class="cnt-box">
+                                            <!--/input_user_reserve(txt-input2 txt-right width50)/-->원
+                                            <img src="/images/d3/modern_simple/common/icon_h4_arow_left.gif" alt="" title="" />
+                                            <!--/input_possible_reserve(txt-input2 txt-right width50)/-->원(<!--/user_reserve_message/-->)
+                                            <!--/if_input_remain_reserve/--><!--/input_remain_reserve(txt-input2 txt-right width50)/-->
+                                            <div class="cnt-box-desc"> * 사용준비 적립금 : 1회 사용한도를 초과하는 적립금 </div> <!--/end_if/-->
+                                        </div><!-- .cnt-box -->
+                                    <!--/end_if/-->  
+                                    <!--/if_input_user_deposit/-->
+                                <h3 class="stit"><img src="/images/d3/modern_simple/order_save_money_use_tit.gif" alt="예치금 사용" title="예치금 사용" /></h3>
+                                <div class="cnt-box">
+                                    <!--/input_user_deposit(txt-input2 txt-right width50)/-->원
+                                    <img src="/images/d3/modern_simple/common/icon_h4_arow_left.gif" alt="" title="" />
+                                    <!--/input_possible_deposit(txt-input2 txt-right width50)/-->원(사용가능 예치금)
+                                </div><!-- .cnt-box -->
+                                    <!--/end_if/-->
+                                    <!--/if_link_coupon/-->
+                                <h3 class="stit"><img src="/images/d3/modern_simple/order_coupon_use_tit.gif" alt="쿠폰 사용" title="쿠폰 사용" /></h3>
+                                <div class="cnt-box">
+                                    <div class="box-l">
+                                        <!--/input_coupon_number(txt-input2 txt-right width100)/-->
+                                        <a href="<!--/link_coupon/-->"><img src="/images/d3/modern_simple/btn/btn_h22_coupon_select.gif" alt="쿠폰선택" title="쿠폰선택" /></a>
+                                    </div>
+                                    <div class="box-r">
+                                        보유하신 쿠폰을 적용하시면 할인 또는 추가적립 혜택을 받으실 수 있습니다.
+                                    </div>
+                                </div><!-- .cnt-box -->
+                                    <!--/end_if/-->
+                                <!--/end_if/-->
+                                <!--/if_okcashbag_set/-->
+                                    <!--/okcashbag_set/-->
+                                <!--/end_if/-->
+                                <div class="btn-foot">
+                                    <a href="<!--/link_payment/-->"><img src="/images/d3/modern_simple/btn/btn_h36_order.gif" alt="주문하기" title="주문하기" /></a>
+                                    <a href="<!--/link_cancel/-->"><img src="/images/d3/modern_simple/btn/btn_h36_order_cancel.gif" alt="주문취소" title="주문취소" /></a>
+                                </div>
+                            </fieldset>
+                        <!--/end_form/-->
+                    </div><!-- .page-body -->
+                </div><!-- #order -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

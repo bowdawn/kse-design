@@ -1,0 +1,300 @@
+/*회원 그룹 정보*/
+#mypage .myPageMainWrap .rightBox .userGroup{
+    padding-top:43px;
+    margin-bottom:50px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .lvl-img{
+    width:206px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .lvl-img img{
+    display:none;
+    width:100%;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup.rank01 .lvl-img img.rank01,
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .lvl-img img.rank02,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .lvl-img img.rank03,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .lvl-img img.rank04{
+    display:block;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp{
+    width:617px;
+    padding-left:68px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupName{
+    padding:10px 0 15px;
+    font-size:31px;
+    font-weight:900;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupName strong{
+    font-weight:900;
+    color:#767676;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupBenefit{
+    display:none;
+    font-size:21px;
+    color:#767676;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupBenefit strong{
+    font-weight:900;
+    color:#767676;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupBenefit .reservePer{
+    display:none;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .userGroupBenefit,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .userGroupBenefit,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .userGroupBenefit,
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .userGroupBenefit .reservePer.rank02,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .userGroupBenefit .reservePer.rank03,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .userGroupBenefit .reservePer.rank04{
+    display:inline-block;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap{
+    position:relative;
+    padding:15px 0;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap ul li{
+    position:relative;
+    width:calc((100% - 20px)/3);
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap ul li:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:calc(100% - 5px);
+    height:6px;
+    left:10px;
+    top:7px;
+    background:#dbdbdb;
+    z-index:-1;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap ul li:last-child{
+    width:20px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap ul li:last-child:after{
+    display:none;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .nextGradeWrap ul li span{
+    display:block;
+    width:20px;
+    height:20px;
+    font-size:12px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    background:#dbdbdb;
+    border-radius:15px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .moreViewBenefit{
+    font-size:15px;
+    font-weight:900;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup.open .grp .moreViewBenefit{
+    display:none;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup .grp .moreViewBenefit img{
+    vertical-align:middle;
+    margin-top:-3px;
+    margin-left:5px;
+}
+
+
+
+
+/*회원 그룹 등급별 색지정*/
+/*초승달*/
+#mypage .myPageMainWrap .rightBox .userGroup.rank01 .grp .userGroupName strong.userRank,
+#mypage .myPageMainWrap .rightBox .userGroup.rank01 .grp .userGroupBenefit strong.userRank{
+    color:#CCC1B2;
+}
+#mypage .myPageMainWrap .rightBox .userGroup.rank01 .grp .nextGradeWrap ul.userRank li:nth-child(1) span{
+    background:#CCC1B2;
+}
+/*반달*/
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .userGroupName strong.userRank,
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .userGroupBenefit strong.userRank{
+    color:#FCA729;
+}
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .nextGradeWrap ul.userRank li:nth-child(1) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .nextGradeWrap ul.userRank li:nth-child(1):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .nextGradeWrap ul.userRank li:nth-child(2) span{
+    background:#FCA729;
+}
+/*상현달*/
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .userGroupName strong.userRank,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .userGroupBenefit strong.userRank{
+    color:#AA4743;
+}
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap ul.userRank li:nth-child(1) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap ul.userRank li:nth-child(1):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap ul.userRank li:nth-child(2) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap ul.userRank li:nth-child(2):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap ul.userRank li:nth-child(3) span{
+    background:#AA4743;
+}
+/*보름달*/
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .userGroupName strong.userRank,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .userGroupBenefit strong.userRank{
+    color:#2957FF;
+}
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(1) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(1):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(2) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(2):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(3) span,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(3):after,
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap ul.userRank li:nth-child(4) span{
+    background:#2957FF;
+}
+
+/*구매금액 포인트 쿠폰*/
+#mypage .myPageMainWrap .info{
+    padding:50px 70px;
+    border-radius:20px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+#mypage .myPageMainWrap .info dl{
+    padding:25px 0;
+    border-bottom:1px solid #f6f6f6;
+}
+
+#mypage .myPageMainWrap .info dl:last-child{
+    border-bottom:0;
+}
+
+#mypage .myPageMainWrap .info dl dt img.infoIcon{
+    width:30px;
+    margin-top:-7px;
+    margin-right:5px;
+    vertical-align:middle;
+}
+
+#mypage .myPageMainWrap .info dl dt span{
+    font-size:18px;
+    font-weight:900;
+}
+
+#mypage .myPageMainWrap .info dl dt span img{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+#mypage .myPageMainWrap .info dl dd,
+#mypage .myPageMainWrap .info dl dd a{
+    text-align:right;
+    font-size:40px;
+    font-weight:900;
+    font-family: roboto;
+}
+
+#mypage .myPageMainWrap .info dl dd .unit{
+    display: inline-block;
+    margin-top: -15px;
+    vertical-align: middle;
+}
+
+
+/* 타이틀 */
+#mypage .hd { position: relative; margin-top:80px }
+#mypage .hd h3 { font-size:24px; font-weight:900; line-height:35px }
+#mypage .hd .view { position: absolute; top: 15px; right: 0; color: #767676; font-weight: bold; }
+#mypage .hd .view img{ width: 5px; vertical-align: middle; margin-top: -3px; margin-left: 3px;}
+
+/*주문/배송 조회*/
+#mypage .osl{
+    margin-top:10px;
+    border-top:2px solid #000;
+}
+
+#mypage .osl ul.orderStepList{
+    margin:150px 0 0;
+    padding:0 45.5px;
+    width:850px;
+    height:2px;
+    background:#0097E6;
+}
+
+#mypage .osl ul.orderStepList li{
+    position:relative;
+    width:160px;
+    height:2px;
+    overflow:visible;
+}
+
+#mypage .osl ul.orderStepList li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -3px;
+    left: 50%;
+    margin-left: -4px;
+    border-radius: 4px;
+    background: #0097E6;
+}
+
+#mypage .osl ul.orderStepList li .cnt{
+    position:absolute;
+    width:170px;
+    bottom:40px;
+    left:0;
+}
+
+#mypage .osl ul.orderStepList li .cnt strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:40px;
+    color:#767676;
+    font-weight:bold;
+    text-align:center;
+    font-family:roboto;
+}
+
+#mypage .osl ul.orderStepList li .cnt span{
+    display:block;
+    font-size:17px;
+    color:#767676;
+    font-weight:bold;
+    text-align:center;
+}
+
+#mypage .osl ul.orderStepList li.active .cnt strong,
+#mypage .osl ul.orderStepList li.active .cnt span{
+    color:#0097E6;
+}
+
+/* 주문정보 & 등록 게시글 */
+#mypage .tbl { margin-top:10px }
+#mypage .tbl th { padding:15px 0; font-size: 15px; font-weight: 900; border-top: 2px solid #000; border-bottom: 1px solid #eaeaea; }
+#mypage .tbl td { padding:15px 0; font-size: 15px; font-weight: 900; border-bottom:1px solid #eaeaea; }
+
+/* 관심상품 정보 */
+#mypage .lst { margin-top:10px; padding-top:28px; border-top:2px solid #000 }
+#mypage .lst .wishListWrap .item-cont:after{display:block; content:''; clear:both;}
+#mypage .lst .wishListWrap .item-cont .item-list { float:left; margin-right:20px; width:162px; border-radius:10px; overflow:hidden; }
+#mypage .lst .wishListWrap .item-cont .item-list:nth-child(5n){margin-right:0;}
+#mypage .lst .wishListWrap .item-cont .item-list a { display:block; width:100%; }
+#mypage .lst .wishListWrap .item-cont .item-list a img { width:100%;}
+#mypage .lst .wishListWrap .item-cont .item-list .prd-price{font-size:14px;}

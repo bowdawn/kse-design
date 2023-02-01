@@ -1,0 +1,27 @@
+/* 카트프리 팝업 CSS */
+.cf-page, .cf-page *, .cf-page *:before, .cf-page *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cart-free-wrap { overflow: hidden; }
+.cart-free-wrap .cf-desc { margin: 20px 0; text-align: center; font-size: 1.125em; color: #000; }
+.cart-free-wrap .cf-desc span { color: #f1191f; }
+
+.cart-free-wrap .cf-items { display: flex; flex-wrap: wrap; align-items: stretch; padding: 0 10px 45px 10px; margin-right: -10px; }
+.cart-free-wrap .cf-items li { flex: 0 50%; text-align: center; margin-bottom: 5px; padding-right: 10px; }
+.cart-free-wrap .cf-thumb {}
+.cart-free-wrap .cf-thumb img { width: 100%; height: auto; }
+.cart-free-wrap .cf-name { margin-top: 5px; font-size: .938em; line-height: 25px; }
+.cart-free-wrap .cf-price { font-size: .938em; line-height: 25px; }
+.cart-free-wrap .cf-btn-more { position: fixed; bottom: 0; width: 100%; display: block; font-size: .938em; color: #fff; height: 40px; line-height: 40px; text-align: center; background-color: #bbb; }
+.cart-free-wrap .cf-btn-more span { display: inline-block; padding-right: 20px; background: url(../images/bull_arrow_down.gif) no-repeat 100% 50%; background-size: 10px auto; }
+
+.cart-free-wrap .cf-none { display:none; position: absolute; left: 0; top: 50%; width: 100%; padding-bottom: 85px; text-align: center; background: url('/images/basket/ico_cart_free.gif') no-repeat 50% 100%; background-size: 62px 64px; -webkit-transform: translate3d(0, -50%, 0); -moz-transform: translate3d(0, -50%, 0); transform: translate3d(0, -50%, 0); }
+.cart-free-wrap .cf-none p { color: #666; font-size: .938em; line-height: 1.5; }
+.cart-free-wrap .cf-none strong { color: #000; font-size: larger; }
+
+.cart-free-wrap .cf-ok { display:none; position: absolute; left: 0; top: 50%; width: 100%; padding-bottom: 65px; text-align: center; background: url('/images/basket/ico_cart_free_ok.gif') no-repeat 50% 100%; background-size: 65px 44px; -webkit-transform: translate3d(0, -50%, 0); -moz-transform: translate3d(0, -50%, 0); transform: translate3d(0, -50%, 0); }
+.cart-free-wrap .cf-ok p { color: #666; font-size: .938em; line-height: 1.5; }
+.cart-free-wrap .cf-ok strong { color: #000; font-size: larger; }
+
+.cart-free-wrap .cf-no-use { display:none; position: absolute; left: 0; top: 50%; width: 100%; padding-bottom: 85px; text-align: center; background: url('/images/basket/ico_cart_free.gif') no-repeat 50% 100%; background-size: 62px 64px; -webkit-transform: translate3d(0, -50%, 0); -moz-transform: translate3d(0, -50%, 0); transform: translate3d(0, -50%, 0); }
+.cart-free-wrap .cf-no-use p { color: #666; font-size: .938em; line-height: 1.5; }
+.cart-free-wrap .cf-no-use strong { color: #000; font-size: larger; }
+

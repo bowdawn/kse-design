@@ -1,0 +1,13 @@
+#reserve-list  .notice-info {padding:0 10px; text-align:center;}
+#reserve-list  .notice-info p {padding:10px 0;}
+#reserve-list  .notice-info p:first-child {font-weight:bold; font-size:1.167em; border-bottom:1px solid #dedede; margin-top:10px;}
+#reserve-list  .notice-info p:first-child em {color:#ab3e41; font-size:1.500em;}
+#reserve-list .cautionBox {padding: 15px 10px; background-color:#eaeaea; color:#707070;}
+#reserve-list .list {width:100%; border-top:2px solid #464646; margin-top:20px;}
+#reserve-list .list tr {border-bottom: 1px solid #bebebe;}
+#reserve-list .list th, #reserve-list .list td {height :35px; padding: 5px 0px;  }
+#reserve-list .list th {width : 75%; text-align: left; padding-left : 10px; color:#707070; font-weight:normal;}
+#reserve-list .list td {text-align: right; padding-right:10px;}
+#reserve-list .list .reserve-price {font-weight:bold; font-size:1.333em;}
+#reserve-list .list .reserve_date { display:block;}
+#reserve-list .list .no_data {text-align:center;}

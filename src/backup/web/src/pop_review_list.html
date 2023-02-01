@@ -1,0 +1,134 @@
+<div id="orderSt">
+    <div class="tit-pop">
+        <h1>주문정보</h1>
+        <span class="txt"><em class="order_name">[<!--/order_name/-->]</em>님께서 <em class="order_date"><!--/date(%Y년 %M월 %D일)/order_date/--></em>에 주문하신 내역입니다.</span>
+    </div>
+   
+    <ul class="tab">
+        <li><a href="<!--/link_order/-->">주문상세내역</a></li>
+        <!--/if_link_review/-->
+        <li>
+            <a href="<!--/link_review/-->" class="active">평점후기등록</a>
+        </li>
+        <!--/end_if/-->
+        <!--/if_link_review_board/-->
+        <li>
+            <a href="<!--/link_review_board/-->">상품후기등록</a> 
+        </li>
+        <!--/end_if/-->
+    </ul>
+
+    <!-- 평점 후기 등록 시작 -->
+    <div id="tabRatingReview" class="tab-cnt-cm">
+        <div class="table-order">
+            <table summary="상품명, 선택사항, 선택사항2, 수량, 가격">
+                <caption>주문상세내역</caption>
+                <colgroup>
+                    <col width="110" />
+                    <col width="*" />
+                    <col width="180" />
+                    <col width="170" />
+                </colgroup>
+                <tbody>
+                <!--/if_review_list/-->
+                    <!--/loop_review_list/-->
+                    <tr>
+                        <td>
+                            <!--/if_review_list@image_s/-->
+                            <div class="tb-center">
+                                <a href="<!--/review_list@link/-->"><img src="<!--/review_list@image_s/-->" width="70" height="70" alt="상품 섬네일" title="상품 섬네일" /></a>
+                            </div>
+                            <!--/end_if/-->
+                        </td>
+                        <td>
+                            <div class="tb-left">
+                                <a href="<!--/review_list@link/-->" class="tb-bold"><!--/review_list@name/--></a>
+                                <p><!--/review_list@option1/--></p>
+                                <p><!--/review_list@option2/--></p>
+                            </div>
+                        </td>
+                        <td><div class="tb-center  tb-bold">수량 : <!--/review_list@amount/--></div></td>
+                        <td><div class="tb-center tb-bold fc-ong">금액 : <!--/number/review_list@price/-->원</div></td>
+                    </tr>
+                        <!--/if_review_list@option/-->
+                    <tr>
+                        <td colspan="4"><div class="tb-left"><img src="/images/common/order1_optionicon.gif" border="0" align="absmiddle" /> <!--/review_list@option/--></div></td>
+                    </tr>
+                        <!--/end_if/-->
+                    <tr class="tr-rating">
+                        <td colspan="4" style="text-align: center;">
+                            <div class="tb-rating">
+                                <!--/review_list@form/-->
+                                <fieldset>
+                                    <legend></legend>
+                                    <table summary="이름, 첨부파일, 후기, 가격, 배송">
+                                        <caption>평점후기 등록 폼</caption>
+                                        <colgroup>
+                                            <col width="70" />
+                                            <col width="*" />
+                                            <col width="70" />
+                                            <col width="*" />
+                                            <col width="100" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">이름</div></th>
+                                                <!--/if_not_review_list@file_attach/-->
+                                                <td colspan="3">
+                                                <!--/else/-->
+                                                <td>
+                                                <!--/end_if/-->
+                                                    <div class="tb-left">
+                                                        <!--/review_list@input_name(txt-input2)/-->
+                                                    </div>
+                                                </td>
+                                                <!--/if_review_list@file_attach/-->
+                                                <th scope="row"><div class="tb-left">첨부</div></th>
+                                                <td>
+                                                    <div class="tb-left tb-file">
+                                                        <!--/review_list@file_attach/--> <a href="<!--/review_list@link_attach/-->" class="btn_file">찾아보기...</a>
+                                                    </div>
+                                                </td>
+                                                <!--/end_if/-->
+                                                <td rowspan="2" class="tb-request">
+                                                    <div class="tb-left">
+                                                        <a href="<!--/review_list@link_write/-->" class="CSSbuttonBlack">등록</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><div class="tb-left">후기내용</div></th>
+                                                <td colspan="3">
+                                                    <div class="tb-left">
+                                                        <!--/review_list@text_content/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/loop_review_list@score_list/-->
+                                            <tr>
+                                                <th scope="row"><div class="tb-left"><!--/review_list@score_list@title/--></div></th>
+                                                <td colspan="4">
+                                                    <div class="tb-left tb-label-r10 fc-red">
+                                                        <!--/review_list@score_list@radio_score/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                                <!--/end_form/-->
+                            </div>
+                        </td>
+                    </tr>
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-foot">
+            <a href="<!--/link_close/-->" class="CSSbuttonWhite">닫기</a>
+        </div>
+    </div><!-- #tabRatingReview-->
+    <!-- // 평점 후기 등록 끝 -->
+</div><!-- #orderSt -->

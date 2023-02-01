@@ -1,0 +1,25 @@
+#auction .page-hd { width: 100%; margin-top: 20px; padding-bottom: 5px; overflow: hidden; }
+#auction .page-hd .hd { float: left; padding-left: 25px; padding-right:10px; background: url(/images/d3/modern_simple/common/bull_w20_h21_arrow.gif) no-repeat 0 50%; }
+#auction .page-hd .link { float: right; }
+#auction .page-hd .link li { float: left; margin-left: 20px; padding-left: 25px; background: url(/images/d3/modern_simple/common/bull_w21_h20_plus.gif) no-repeat 0 50%; }
+#auction .page-hd .hd span, 
+#auction .page-hd .link li a { font-size: 18px; font-weight: bold; letter-spacing: -1px; } 
+#auction .page-wrap { width: 100%; }
+#auction .page-wrap .info { margin-bottom: 40px; }
+#auction .page-wrap .info th,
+#auction .page-wrap .info td { padding: 5px; }
+#auction .page-wrap .info th { border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; background-color: #eee; }
+#auction .page-wrap .info td { border-bottom: 1px dotted #aaa; }
+#auction .page-wrap .info tr.no-bd td { border-bottom: 0 none; }
+#auction .page-wrap .info td.title { padding-left: 15px; background: url(/auction/images/auction02_icon01.gif) no-repeat 0 50%; }
+#auction .page-wrap .list .stit { font-weight:bold; margin-bottom:7px; padding-left: 25px; padding-right:10px; background: url(/images/d3/modern_simple/common/bull_w20_h21_arrow.gif) no-repeat 0 50%; }
+#auction .page-wrap .list th,
+#auction .page-wrap .list td { padding: 5px 0; }
+#auction .page-wrap .list th { border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; background-color: #eee; }
+#auction .page-wrap .list td { border-bottom: 1px dotted #aaa; text-align: center; }
+#auction .page-wrap #bidWrap {width:100%; position:relative; }
+#auction .page-wrap #bidWrap li { height:25px;  }
+#auction .page-wrap #bidWrap input { width:145px; }
+#auction .page-wrap #bidWrap .btn { margin-left:20px; position:absolute; top : 6px; left : 200px; }
+#auction .page-wrap #bidWrap .desc { padding:20px 0; }
+#auction .page-wrap #bidWrap .desc li{ padding-left:10px; line-height:20px; background:url(/images/d3/modern_simple/common/bull_h2_sqr_gray.gif) no-repeat 0 50%; }

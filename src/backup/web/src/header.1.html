@@ -1,0 +1,205 @@
+<link
+  href="//fonts.googleapis.com/css?family=Noto+Sans"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<!-- Add the slick-theme.css if you want default styling -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/design/ksilverex/supermarket/css/slick.css"
+/>
+<!-- Add the slick-theme.css if you want default styling -->
+<script src="/design/ksilverex/supermarket/js/slick.min.js"></script>
+
+<!--/head_banner/-->
+
+<div id="topBnr">
+  <div class="topWrap">
+    <a href="/shop/page.html?id=2" id="txt"
+      >한국은거래소는 건전한 투자와 수집문화 발전에 앞장서고 있습니다.</a
+    >
+    <ul>
+      <!--/if_login/-->
+      <li><a href="<!--/link_logout/-->"> 로그아웃 </a></li>
+      <li><a href="<!--/link_join/-->"> 정보수정 </a></li>
+      <!--/else/-->
+      <li><a href="<!--/link_login/-->"> 로그인 </a></li>
+      <li><a href="<!--/link_join/-->"> 회원가입 </a></li>
+      <!--/end_if/-->
+      <li><a href="<!--/link_mypage/-->"> 라운지 </a></li>
+      <li><a href="/shop/confirm_login.html?type=myorder"> 주문조회 </a></li>
+      <li>
+        <a href="<!--/link_basket/-->">
+          나의 금고 (<!--/user_basket_quantity/-->)
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header_wrap">
+  <div class="logo_wrap" style="padding-top: 10px">
+    <div class="logo">
+      <a href="/"
+        ><img
+          src="//ksilverex.img15.kr/koreasilverexchangelogo.png"
+          style="width: 310px"
+      /></a>
+    </div>
+  </div>
+  <div id="gnb" class="menu_wrap">
+    <div id="gnbMenu" class="menu_content gnb_kurly">
+      <div class="inner_gnbkurly">
+        <div class="gnb_main">
+          <ul class="gnb">
+            <li class="menu1">
+              <a href="#none"
+                ><span class="ico"></span
+                ><span class="txt link-hover"><b>상품보기</b></span></a
+              >
+            </li>
+            <li>
+              <a class="" href="/shop/page.html?id=1"
+                ><span class="txt link-hover">은시세</span></a
+              >
+            </li>
+            <li>
+              <a class="" href="/shop/page.html?id=3"
+                ><span class="txt link-hover">금시세</span></a
+              >
+            </li>
+
+            <li>
+              <a class="" href="/board/board.html?code=ksilverex_image1"
+                ><span class="txt link-hover">매거진</span></a
+              >
+            </li>
+            <li>
+              <a class="" href="/board/board.html?code=ksilverex_image2"
+                ><span class="txt link-hover">이벤트</span></a
+              >
+            </li>
+            <li>
+              <a class="" href="/shop/shopbrand.html?xcode=011&type=X"
+                ><span class="txt link-hover">위탁판매</span></a
+              >
+            </li>
+          </ul>
+          <div class="cart_count">
+            <div class="inner_cartcount">
+              <a href="/shop/basket.html" class="btn_cart">
+                <img
+                  src="/design/ksilverex/supermarket/img/cart.png"
+                  alt="나의 금고"
+                /><!--/user_basket_quantity/--></a
+              >
+            </div>
+          </div>
+          <div id="side_search" class="gnb_search">
+            <!--/form_search/-->
+            <!--/input_search_word(input-keyword)/-->
+            <input
+              onclick="<!--/link_search_button/-->"
+              type="image"
+              src="/design/ksilverex/supermarket/img/ico_search_x2.png"
+              class="btn_search"
+            />
+            <!--/end_form/-->
+          </div>
+        </div>
+        <div class="gnb_sub">
+          <div class="inner_sub">
+            <div class="subxbtn">
+              <img src="/design/ksilverex/supermarket/img/xbtn.png" alt="" />
+            </div>
+            <!--/loop_category1(6)/-->
+            <ul class="gnb_menu" style="height: auto">
+              <li class="">
+                <a href="<!--/category1@link/-->" class="menu"
+                  ><span class="tit"
+                    ><span class="txt"><!--/category1@name/--></span></span
+                  ></a
+                >
+                <!--/if_category1@category2/-->
+                <ul class="sub_menu">
+                  <!--/loop_category1@category2/-->
+                  <li class="">
+                    <a href="<!--/category1@category2@link/-->" class="sub"
+                      ><span class="name link-hover"
+                        ><!--/category1@category2@name/--></span
+                      ></a
+                    >
+                  </li>
+                  <!--/end_loop/-->
+                </ul>
+                <!--/end_if/-->
+              </li>
+            </ul>
+            <!--/end_loop/-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  (function ($) {
+    $(function () {
+      $(".today-cont").appendTo(".today_wrap_c");
+      $(window).on("scroll", function () {
+        var _rWigngWrapOffsetTop = $(".r_wing_wrap").offset().top;
+        var _windowScrollTop = $(window).scrollTop();
+        if (_rWigngWrapOffsetTop < _windowScrollTop) {
+          $(".r_wing_content").css({
+            position: "fixed",
+            top: 100,
+            "z-index": 9999,
+          });
+        } else {
+          $(".r_wing_content").css({
+            position: "relative",
+            top: 0,
+            "z-index": 9999,
+          });
+        }
+      });
+    });
+  })(jQuery);
+</script>
+<!--주석 ~ 스크롤배너-->
+<div class="r_wing_wrap">
+  <div class="r_wing_content">
+    <div class="bnr_wrap">
+      <a href="https://smartstore.naver.com/koreasilverex" class="scroll_event"
+        ><img src="//ksilverex.img15.kr/naver_smartstore.jpg"
+      /></a>
+      <ul>
+        <li>
+          <a
+            href="https://www.koreasilverex.co.kr/board/board.html?code=ksilverex_image2&page=1&type=v&board_cate=&num1=999970&num2=00000&number=11&lock=N"
+            ><img src="//ksilverex.img15.kr/Cosignment_guide.png"
+          /></a>
+        </li>
+        <li><a href="/board/board.html?code=ksilverex_image2">이벤트</a></li>
+        <li><a href="/shop/page.html?id=6">VIP CLUB</a></li>
+      </ul>
+      <div class="today_wrap_c">
+        <h3>최근 본 상품</h3>
+      </div>
+      <div class="btn">
+        <a href="#none" id="go_top"
+          ><img src="/design/ksilverex/supermarket/img/view_up.gif" alt=""
+        /></a>
+        <a href="#none" id="go_bottom"
+          ><img src="/design/ksilverex/supermarket/img/view_dw.gif" alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>

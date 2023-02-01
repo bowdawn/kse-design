@@ -1,0 +1,257 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/design/ksilverex/supermarket/font/NanumGothic-Regular.woff2) format('woff2'),
+  url(/design/ksilverex/supermarket/font/NanumGothic-Regular.woff) format('woff'),
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 200;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+
+#login .tab a{
+    border-bottom: 1px solid #0097e6 !important;
+}
+    
+    
+#login .tab a.act{
+    color: #0097e6 !important;
+    border: 1px solid #0097e6 !important;
+    border-top: 3px solid #0097e6 !important;
+}
+    
+
+
+
+.prd-soldout{
+    font-size: 13px;
+    padding-top: 10px;
+    color: #94223e;
+    font-weight: normal;}
+
+.t-menu{display: table; width: 100%;text-align: center;}
+.t-menu div{width:20%;display:inline-block;}
+.t-menu div a{display:block;}
+
+.prd-name{
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;}
+.prd-subname{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 100;
+    padding-top: 3px;}
+.prd-replace{
+    padding-top: 3px;
+    color: #b00;}
+.prd-consumer{font-size: 11px !important;}
+.dn{display:none !important;}
+html{overflow-x: hidden;}
+#topBnr{display: none;width:100%; background:#0097e6}
+#topBnr a#txt{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    color: #fff;}
+#topBnr p#xbtn{position:absolute; top:10px; right: 10px;}
+
+
+p.join{position:relative; display: inline-block;}
+
+#m_preview_wrap,.displaynone{display:none !important}
+
+#point{
+    position: absolute;
+    background-image: url(/design/ksilverex/supermarket/mimg/joinpoint.png);
+    background-repeat: no-repeat;
+    background-size: 97%;
+    width: 58px;
+    left: -7px;
+    z-index: 9;
+    top: 26px;
+    color: #000;
+    text-align: center;
+    height: 36px;
+    line-height: 32px;
+    font-size: 10px !important;
+    font-family: roboto;
+    font-weight: 500;}
+
+.search_box{
+    position: relative;
+    text-align: center;
+}    
+
+.search_box input{
+    border: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-indent: 15px;
+    padding-left: 0 !important;
+    line-height: 32px;
+    height: 32px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    position: relative;
+    background: #fff;}
+*:focus{outline:none;}
+
+.search_box a{}
+
+.search_box a img{
+    width: 22px;
+    position: absolute;
+    right: 35px;
+    top: 5px;}
+
+.menu_on {height:100%; overflow:hidden;}
+.menu_off {height:auto; overflow:initial;}
+#header {width:100%;}
+#header .top-pt-01 {position:fixed; top:0; left:0; right:0; z-index:100;}
+#header .top-pt-02 {position:fixed; top:0; left:0; right:0; z-index:100; margin-top: 0 !IMPORTANT; background-color: #fff;}
+#header .headerTop {min-width:275px; text-align:center; background-color:#000; }
+#header .headerTop a {font-size: 14px; font-family: roboto; font-weight: 300; width: 20%; height: 44px; line-height: 44px; color: #fff; display: inline-block;  margin-left: -4px;}
+
+#header #menu {}
+#header #menu img{width: 23px;}
+#header .headerBottom {}
+#header .headerBottom h1{margin: 0 auto;margin-top: 15px;text-align: center;}
+#header .headerBottom h1 a{/*display: block; text-align: center; font-size: 26px; font-family: roboto; letter-spacing: 2px;*/}
+#header .headerBottom h1 a img{width: 160px;vertical-align: top;}
+#header .headerBottom .headerBottomLeft {float:left; margin: 22px 6px;}
+#header .headerBottom .headerBottomRight {float:right;margin: 18px 6px 0 0;}
+#header .headerBottom .headerBottomRight a {}
+#header .headerBottom .headerBottomRight a img{}
+
+#header .headerBottom .headerBottomRight .cart {position:relative;}
+#header .headerBottom .headerBottomRight .cart .user_basket_quantity{
+    width: 15px;
+    height: 15px;
+    background-color: #0097e6;
+    border-radius: 100%;
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-weight: 100;
+    font-size: 10px !important;
+}
+#header .headerBottom .headerBottomRight .cart img{width:24px; position: absolute; right: 10px;}
+#header .headerBottom .headerBottomRight a#search{width: 37px !important; display: inline-block;}
+#header .headerBottom .headerBottomRight a#search img{width:67%; margin-left: 8px; margin-top: 2px;}
+
+
+#header .search {height:42px; position:relative; left:0; right:0; background-color:#ab3e41; padding-right:45px; text-align:center; display:none; z-index:10;}
+#header .search .searchBox {width:100%;}
+#header .search .searchBox input {width:90%; height:30px; border:0px none; margin-top: 6px; padding: 0 5px;}
+#header .search .btn_search {width:45px; height:42px; line-height:50px; background-color:#822023; position:absolute; top:0; right:0;  text-align:center;}
+
+#header .top_slide{
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 10px;}
+
+#header .top_slide a{
+    display:inline-block;
+    border-bottom: 3px solid #fff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0px;
+    padding: 10px 7px;
+    color: #000 !important;}
+#header .top_slide a.now{border-bottom: 3px solid #6b3590 ;color: #6b3590  !important;}
+#header .top_slide .swiper-slide:nth-child(1){padding-left:7px;}
+#header .top_slide .swiper-slide{ width: initial !important; padding-right: 25px;}
+.fa-angle-down:before{color: #b6b6b6;font-size: 16px;}
+
+/* 카테고리 */
+
+#close_btn{padding: 8px;width: 20px;height: 20px; position: absolute; top: 9px; right: 7px;}
+#close_btn img {width:95%}
+
+aside {position:fixed; width:100%; height:100%; left:0; bottom:0;overflow-y:auto; -webkit-overflow-scrolling: touch; z-index:999999; display:none; background: #fff;}
+aside .asideTop {position:relative; text-align:right; background: #0097e6;}
+
+aside .search {height:35px; position:relative; left:0; right:0; padding-right:45px; text-align:center; border-bottom: 1px solid #fff; padding: 20px;}
+aside .search .searchBox {width:100%;}
+aside .search .searchBox input {width: 100%; height: 37px; border: 0px none; margin-top: 6px; font-size: 15px; padding: 0; font-family: roboto;border-radius: 50px; text-indent: 15px;line-height: 37px;}
+aside .search .btn_search {width: 45px; height: 42px; line-height: 50px;   position: absolute; bottom: 7px;  right: 23px; color: #fff; text-align: center;;}
+aside .search .btn_search img{width: 23px; vertical-align: inherit;}
+
+aside nav li {border-bottom:1px solid #ededed; position:relative;}
+aside nav li a {display: block; height: 45px; line-height:45px; padding:0 0 0 20px; margin-right: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; color: #000;}
+aside nav li .fa {position: absolute; top:0; right: 0; width: 40px; text-align: center; height: 45px; line-height:45px;}
+aside nav li > ul {background-color:#fafafa; display:none; border-top:1px solid #ededed;}
+aside nav li > ul > li {border-bottom:0px none; border-top:1px solid #ededed;}
+aside nav li > ul > li:first-child {border-top:0px none;}
+aside nav li > ul > li a {padding:0 40px 0 30px; margin: 0;font-size: 14px;color: #787878 !important;}
+aside nav li > ul > li > ul {border-top:0px none; border-top:1px solid #ccc;}
+aside nav li > ul > li > ul > li {border-bottom:0px none;}
+aside nav li > ul > li > ul > li a {padding:0 0 0 40px; margin: 0; background-color: #DDDDDD;}
+aside nav li.no-line{margin-top:0 !important; border-bottom:0 !important;}
+aside nav li.plan{text-align: center; padding-top: 25px; display: table; padding: 25px 10px;}
+aside nav li.plan a{ margin-bottom: 10px !important;display:inline-block; width:48.5%; height: inherit; line-height: inherit; padding: 0 !important; margin: 0; border: 1px solid #ededed;}
+aside nav li.plan a:nth-child(odd){float: left;}
+aside nav li.plan a:nth-child(even){float:right;}
+
+aside nav li.plan a img{width:100%;}
+aside nav li.plan a em{display: block;text-align: center; padding: 13px;font-size: 15px; color: #646464;}
+
+aside .asideBottom {text-align: center;padding: 12px; background: #fafafa; }
+aside .asideBottom ul{margin-top: -5px;display: inline-block; width: 100%; }
+aside .asideBottom ul li{ text-align: center; width: 22%; display: inline-block; }
+aside .asideBottom ul li a{display: block; height: 45px; }
+aside .asideBottom ul li p{font-size: 12px; }
+aside .asideBottom ul li img{}
+aside .asideBottom ul li{}
+aside .asideBottom ul li.ico01 a{background:url('/design/ksilverex/supermarket/mimg/ham_ico01.png') no-repeat;background-position: center;background-size: 23px;}
+aside .asideBottom ul li.ico02 a{background:url('/design/ksilverex/supermarket/mimg/ham_ico02.png') no-repeat;background-position: center;background-size: 25px;}
+aside .asideBottom ul li.ico03 a{background:url('/design/ksilverex/supermarket/mimg/ham_ico03.png') no-repeat;background-position: center;background-size: 23px;}
+aside .asideBottom ul li.ico04 a{background:url('/design/ksilverex/supermarket/mimg/ham_ico04.png') no-repeat;background-position: center 13px; background-size: 33px;}
+
+aside h1 {padding: 20px 20px 13px;}    
+aside h1 a{color:#fff !important; display: block; text-align: center; font-size: 26px;  font-family: roboto; font-weight: 900; letter-spacing: 5px;line-height: 7px;}
+aside h1 a img{width: 150px;}
+/* //카테고리 */

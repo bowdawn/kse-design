@@ -1,0 +1,13 @@
+#emoney-list  .notice-info {padding:0 10px; text-align:center;}
+#emoney-list  .notice-info p {padding:10px 0;}
+#emoney-list  .notice-info p:first-child {font-weight:bold; font-size:1.167em; margin-top:10px;}
+#emoney-list  .notice-info p:first-child em {color:#ab3e41; font-size:1.500em;}
+#emoney-list .cautionBox {padding: 15px 10px; background-color:#eaeaea; color:#707070; text-align: center;}
+#emoney-list .list {width:100%; border-top:2px solid #464646; margin-top:20px;}
+#emoney-list .list tr {border-bottom: 1px solid #bebebe;}
+#emoney-list .list th, #emoney-list .list td {height :35px; padding: 5px 0px;  }
+#emoney-list .list th {width : 75%; text-align: left; padding-left : 10px; color:#707070; font-weight:normal; word-break: break-all;}
+#emoney-list .list td {text-align: right; padding-top: 5px; padding-right:10px;}
+#emoney-list .list .deposit-price {font-weight:bold; font-size:1.333em;}
+#emoney-list .list .deposit_date { display:block;}
+#emoney-list .list .no_data {text-align:center;}

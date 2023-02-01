@@ -1,0 +1,18 @@
+#board1v1 .tit-tb-list-d4{margin-top:0;}
+#board1v1 .tit-tb-list-d4 span.c-blue{font-weight:400; color:#0097e6;}
+#board1v1 .subTit{font-size:17px; color:#767676; margin:10px 0 30px;}
+
+#board1v1 .table-d2-list { margin-top:10px }
+#board1v1 .table-d2-list .tb-icon { padding:0 }
+#board1v1 .btn-foot { text-align:right }
+#board1v1 .btn-foot a { display: inline-block;
+    width: 142px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+    background: #0097e6;
+    border: 1px solid #0097e6;
+    border-radius: 30px; }
+
+.table-d5-list tbody td .question{font-weight: 900;font-family: roboto; margin-right: 20px; font-family: Proxima Nova;}

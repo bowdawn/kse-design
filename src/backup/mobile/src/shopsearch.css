@@ -1,0 +1,201 @@
+#search .form-wrap {position: relative; background-color:#e0e0e0; padding: 10px;}
+#search .form-wrap .searchForm {width:80%;}
+#search .form-wrap .searchForm input {border:0px none;}
+#search .form-wrap .searchButton {width:20%; height:68px; background-color:#0097e6; color:#fff;position: absolute; top: 10px; right: 10px; height: 68px; line-height: 68px; text-align: center; }
+#search .form-wrap .searchForm #keyword_search {width:90%; margin-bottom: 10px;}
+#search .form-wrap .searchPrice {}
+#search .form-wrap .searchPrice input {width:30%;}
+#search h2 {border-bottom:1px solid #4a4a4a; text-align:center; font-weight:bold; padding:5px 0;}
+#search .MK_product_list .items {background-color:#f9f9f9; padding: 10px 0;}
+#search .MK_product_list .items #MK_best_product li {width:33.33%;}
+#search .MK_product_list .items .paging-num {text-align: center; clear: both; margin:20px 0;}
+#search .MK_product_list .items .paging-num a {background-color:#fff; border:1px solid #393939; padding:5px 10px; margin:0 10px;}
+#search .list_group {padding:12px 1%; text-align:center;}
+#search .list_group select {width:49%; height:28px;}
+#search .more .more-title {
+    color: #6f3447 !important;
+    font-size: 13px;}
+
+#search .list_shopping1x li {box-sizing: border-box; padding: 18px 4px;}
+#search .list_shopping1x li:first-child {padding:0 4px 18px 4px;}
+#search .list_shopping1x li a {display: inline; padding: 0;}
+#search .list_shopping1x li figcaption p.hashtag {margin-top: 5px;}
+#search .list_shopping1x li figcaption p.hashtag a {background-color: #f3f3f3; white-space: nowrap; margin-right:5px;}
+#search .list_shopping2x li {box-sizing: border-box; /*padding:0 2px 18px 2px;*/}
+#search .list_shopping2x li a {display: inline; padding: 0;}
+#search .list_shopping2x li figcaption p.hashtag {margin-top: 5px;}
+#search .list_shopping2x li figcaption p.hashtag a {background-color: #f3f3f3; white-space: nowrap; margin-right:5px;}
+#search .list_array .list_arrayRight img {width: 23px; height: auto;}
+.top_img {
+}
+.top_img a {
+	display: block;
+}
+/* class-list */
+.cate-wrap {padding: 20px 0 0;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.cate-wrap .bcate {
+    padding-bottom: 15px;
+    color: #202020;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: normal;
+    background: url(/design/ksilverex/supermarket/mimg/cate_arrow.png) no-repeat;
+    background-position: left 5px;
+    text-indent: 15px;
+}
+
+
+.cate-wrap .class-list{}
+
+.cate-wrap .class-list ul {
+    padding-left: 10px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.cate-wrap .class-list ul:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+.cate-wrap .class-list ul li {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 10px;
+}
+
+
+.cate-wrap .class-list ul li.on {
+    margin-bottom: -1px;
+    border-bottom: 3px solid #8134b6;
+}
+.cate-wrap .class-list ul li.on a {
+	font-weight: bold;
+    color: #8134b6;
+}
+.cate-wrap .class-list ul li a {
+    display: block;
+    color: #888888;
+    font-size: 15px;
+    padding: 11px 0;
+}
+
+#list ul.items{
+    padding: 0 15px;}
+    
+.sort {
+	display: block;
+	padding: 5px 10px 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.sort .total {
+	float: left;
+	margin-top: -6px;
+	color: #a4a4a4;
+}
+.sort select {color: #bfbebe;
+    float: right;
+    height: 18px;
+    line-height: 17px;
+    padding: 0;
+    font-size: 13px;
+    border: 0;
+    font-weight: 100;
+}
+
+.shopbrand h2 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.shopbrand .MK_product_list {
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #4a4a4a;
+	border-top: 1px solid #4a4a4a;
+}
+.shopbrand .MK_product_list .items {
+	padding: 10px 0;
+}
+.shopbrand .MK_product_list .items #MK_best_product li {
+	width: 33.33%;
+}
+.shopbrand .MK_product_list .items .paging-num {
+	text-align: center;
+	clear: both;
+	margin: 20px 0;
+}
+.shopbrand .MK_product_list .items .paging-num a {
+	background-color: #fff;
+	border: 1px solid #393939;
+	padding: 5px 10px;
+	margin: 0 10px;
+}
+.shopbrand .list_group {
+	padding: 12px 1%;
+	text-align: center;
+}
+.shopbrand .list_group select {
+	width: 49%;
+	height: 28px;
+}
+.shopbrand .more .more-title {
+	color: #3b3b3b;
+}
+.shopbrand .more .more-num {
+	color: #aaaaaa;
+}
+.shopbrand .shopbrandTitle img {
+	max-width: 100%;
+}
+.shopbrand .list_array .list_arrayRight img {
+	width: 23px;
+	height: auto;
+}
+#list ul li {
+    position:relative;
+    width: 49%;
+	margin-bottom: 10px;
+}
+
+#list ul li:nth-child(odd){margin-right:2%}
+
+
+
+
+
+#list ul li a p.listName {
+    color: #222!important;
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+#list ul li a p.listsubName {
+	padding-bottom: 8px !important;
+	color: #ababab;
+	line-height: 1.2;
+}
+#list ul li a p.listPrice em {
+	font-size: 13px
+}
+#list ul li a p.listDiscount em {
+    display: none;}
+
+
+.dc {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background: #0097e6;
+    color: #fff;
+    font-size: 14px;
+}

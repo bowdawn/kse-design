@@ -1,0 +1,76 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="myCoupon">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="tit-page-4">
+                                <h2>쿠폰</h2>
+                                <p class="dsc"><a href="<!--/link_coupon_reg/-->" class="CSSbuttonWhite">쿠폰번호 등록하기</a></p>
+                            </div>
+                            <div class="page-body">
+                            <!--/if_coupon/-->
+                                <ul class="couponListWrap clearfix">
+                                <!--/loop_coupon/-->
+                                    <li class="fl">
+                                        <div class="couponCon">
+                                            <p class="discountPer"><strong><!--/coupon@sale/--></strong></p>
+                                            <p class="couponName"><!--/if_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /> <!--/end_if/--><!--/if_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/--><!--/coupon@name/--></p>
+                                            <p class="couponDate"><!--/date(%Y.%M.%D)/coupon@use_start_date/-->~<!--/date(%Y.%M.%D)/coupon@use_end_date/--></p>
+                                            <p><!--/coupon@valid_price/--> 구매시 사용 가능</p>
+                                            <p><!--/coupon@item/--></p>
+                                        </div>
+                                    </li>
+                                <!--/end_loop/-->
+                                </ul>
+                            <!--/else/-->
+                                <div class="noData">
+                                    <p>쿠폰 내역이 없습니다.</p>
+                                </div>
+                            <!--/end_if/-->                                
+
+                            
+                                <!-- 쿠폰 적용 방법 및 유의사항 -->
+                                <ul class="use-dsc">
+                                    <li class="lv-1">
+                                        <dl>    
+                                            <dt>주문 할인쿠폰 적용방법</dt>
+                                            <dd>
+                                                <ol>
+                                                    <li>ㆍ주문서 쿠폰 선택에서 고객님이 보유하신 [쿠폰번호]를 선택하시면 할인금액(또는 적립금액)이 나타납니다.</li>
+                                                    <li>ㆍ정률할인(적립)의 경우, 할인율(적립률)이 나타납니다.</li>
+                                                </ol>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="lv-1">
+                                        <dl>    
+                                            <dt>쿠폰 사용시 유의사항</dt>
+                                            <dd>
+                                                <ol>
+                                                    <li>ㆍ쿠폰마다 사용 가능 금액과 사용기한이 정해져 있으며, 1개 주문서에 1개의 쿠폰만을 사용하실 수 있습니다.</li>
+                                                    <li>ㆍ쿠폰을 사용한 주문 후 반품/환불/취소의 경우 한번 사용하신 쿠폰은 다시 사용하실 수 없습니다.</li>
+                                                    <li>ㆍ쿠폰 적용 품목 및 카테고리가 제한된 경우 해당 품목 또는 카테고리에서만 쿠폰을 사용하실 수 있습니다.</li>
+                                                    <li>ㆍ할인/멤버십포인트 쿠폰은 실제 결제금액에 적용됩니다.</li>
+                                                    <li>ㆍ<img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /> 모바일 아이콘 표시 쿠폰은 모바일에서만 사용이 가능합니다.</li>
+                                                </ol>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <!-- //쿠폰 적용 방법 및 유의사항 -->
+
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #myCoupon -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

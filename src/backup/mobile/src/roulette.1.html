@@ -1,0 +1,134 @@
+<!--/include_header(1)/-->
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <div id="R_roulette_event_wrap">
+            <div class="R_cont-wrap">
+                <div class="R_title">
+                    <h3><!--/roulette_name/--></h3>
+                    <p><!--/roulette_start_date/--> ~ <!--/roulette_end_date/--></p>
+<IMG SRC="http://ksilverex.img15.kr/2022_12_event/roulette_detail_mob8.png" style="
+    width: 100%;
+"><BR>
+</div>
+
+                <!-- 룰렛 이미지 -->
+                <div class="R_roulette-wrap">
+                  <!--/roulette_canvas/-->
+                  <a href="<!--/link_start_roulette/-->" class="event-wheel-start"><span><img src="/images/common/start_text.png" alt="START"></span></a>
+                  <img src="/images/common/pointer_01.png" alt="" class="event-wheel-pointer">
+                </div>
+                <!-- // 룰렛 이미지 -->
+            </div>
+    
+            <!-- 유의 사항 -->
+            <!--/if_use_roulette_notice/-->
+            <dl class="R_notice">
+              <dt>유의사항</dt>
+              <!--/roulette_notice_txt/-->
+            </dl>
+            <!--/end_if/-->
+            <!-- // 유의 사항 -->
+    
+            <!-- 댓글 리스트 영역 -->
+            <!--/if_use_roulette_comment/-->
+            <div class="R_comment-wrap">
+                <div class="inner">
+                    <div class="input-box">
+                        <!--/form_comment/-->
+                        <!--/input_comment(input-text txt-byte)/--> 
+                        <a href="<!--/link_comment_insert/-->" class="btn-apply">등록</a>
+                        <!--/end_form/-->  
+                    </div>
+                    <div class="comment-table-list">
+                    <!--/block_comment_list/-->
+                    <!--/if_roulette_comment_list/-->
+                    <table summary="날짜, 작성자, 지급혜택, 내용">
+                        <caption>댓글 리스트</caption>
+                        <tbody>                  
+                            <!--/loop_roulette_comment_list(10)/-->
+                            <tr>                    
+                                <td>
+                                    <div class="td-left">
+                                        <!--/if_use_benefits_setting/-->
+                                        <span class="benefit"><!--/roulette_comment_list@benefit/--></span>
+                                        <!--/end_if/-->
+                                        <!--/if_roulette_comment_list@link_del/--> 
+                                        <span class="btn-del"><a href="<!--/roulette_comment_list@link_del/-->">삭제</a></span>
+                                        <!--/end_if/-->
+                                    </div>
+                                    <div class="td-left">
+                                        <span class="content"><!--/roulette_comment_list@comment/--></span>                                    
+                                    </div>
+                                    <div class="td-left txt-info">
+                                        <span class="name"><!--/roulette_comment_list@id/--></span>
+                                        <span class="line">｜</span>
+                                        <span class="date"><!--/roulette_comment_list@date/--></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!--/end_loop/-->
+                        </tbody>
+                    </table>
+                    <div class="paging">
+                        <!--/if_pager_roulette_comment_list::first/-->
+                        <a href="<!--/pager_roulette_comment_list::first@link/-->" class="first">&lt;&lt;</a>
+                        <!--/end_if/-->
+                        <!--/if_pager_roulette_comment_list::prev/-->
+                        <a href="<!--/pager_roulette_comment_list::prev@link/-->" class="prev">&lt;</a>
+                        <!--/end_if/-->
+                        <!--/if_pager_roulette_comment_list/-->
+                        <!--/loop_pager_roulette_comment_list::page/-->
+                        <!--/if_pager_roulette_comment_list::page@current/-->
+                        <a href="<!--/pager_roulette_comment_list::page@link/-->" class="now"><!--/pager_roulette_comment_list::page/--></a>
+                        <!--/else/-->
+                        <a href="<!--/pager_roulette_comment_list::page@link/-->"><!--/pager_roulette_comment_list::page/--></a>
+                        <!--/end_if/-->
+                        <!--/end_loop/-->
+                        <!--/end_if/-->
+                        <!--/if_pager_roulette_comment_list::next/-->
+                        <a href="<!--/pager_roulette_comment_list::next@link/-->" class="next">&gt;</a>
+                        <!--/end_if/-->
+                        <!--/if_pager_roulette_comment_list::last/-->
+                        <a href="<!--/pager_roulette_comment_list::last@link/-->" class="last">&gt;&gt;</a>
+                        <!--/end_if/-->                                 
+                    </div> <!-- paging end-->            
+                    <!--/else/-->
+                    <div class="no-data">작성된 댓글이 없습니다.</div>
+                    <!--/end_if/-->
+                    <!--/end_block/-->
+                    </div> <!-- comment-table-list -->          
+                </div> <!-- inner -->
+            </div> <!-- comment-wrap -->
+            <!--/end_if/--> 
+            <!-- // 댓글 리스트 영역 -->
+        </div> <!-- roulette_event_wrap -->
+        <!-- 당첨 팝업창 -->
+        <!--/block_roulette_layer/-->
+        <div class="R_pop-roulette-layer">
+            <div class="R_pop-layer">
+                <a href="#pop-roulette-layer-img" class="btn-close"><img src="/images/common/coupon_order_h28_close.gif" alt="팝업 닫기"></a>
+                <div class="R_title">
+                    <span>짝짝짝~!</span>
+                    <p>당첨을 축하드립니다.</p>
+                </div>
+                <p class="img"><img src="/images/common/pc_pop_layer_img.png" alt=""></p>
+                <div class="R_pop-benefit"><!--/block_layer_benefit/--><!--/end_block/--></div>
+                <!--/if_use_layer_comment/-->
+                    <div class="R_txt">행운의 당첨소감을 남겨주세요!</div>
+                    <!--/form_layer_comment/-->
+                    <!--/textarea_comment(txt-byte)/--> 
+                    <a href="<!--/link_layer_comment_insert/-->" class="btn-write">확인</a>  
+                    <!--/end_form/-->
+                <!--/end_if/-->
+            </div> <!-- R_pop-layer -->
+        </div> <!-- R_pop-roulette_layer -->
+        <!--/end_block/-->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+<!--/include_footer(1)/-->

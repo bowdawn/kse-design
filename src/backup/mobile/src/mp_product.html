@@ -1,0 +1,60 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="wish">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>관심상품</h3>
+            </div>
+            <!--/if_product/-->
+            <!--/form_product/-->
+            <!--/block_product/-->
+            <div class="recentList">
+                <ul class="items clearfix" data-type="vertical" data-open="on" data-checkbok="on">
+                    <!--/loop_product(10)/-->
+                    <li>
+                        <figure>
+                            <div class="basketLeft">
+                                <a href="<!--/product@link_detail/-->"><img src="<!--/product@mobile_image/-->" alt="상품명" class="response100" /></a>
+                            </div>
+                            <figcaption class="basketRight">
+                                <p class="pname">
+                                    <a href="<!--/product@link_detail/-->"><!--/notag/product@name/--></a>
+                                </p>
+                                <p class="price"><!--/number/product@price/-->원</p>
+                                
+                                <a href="<!--/product@link_delete/-->" class="delBtn"><img src="/design/ksilverex/22_renew/img/icon_close.png"></a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!--/end_loop/-->
+                </ul>
+            </div>
+            <!--/end_block/-->
+            <!--/end_form/-->
+            <!--/else/-->
+            <div class="none-data">
+                <i class="fa fa-exclamation-triangle fa-2x"></i>
+                <p>관심상품이 없습니다.</p>
+            </div>
+            <!--/end_if/-->
+
+            <!--/block_product_more/-->
+            <div class="more">
+                <a href="<!--/link_more_product_list/-->" class="btn_moreGray"><span class="more-title">더보기 ▼</span></a>
+            </div>
+            <!--/end_block/-->
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

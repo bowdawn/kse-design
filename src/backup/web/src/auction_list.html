@@ -1,0 +1,108 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="auction">
+                    <div class="loc-navi">
+                        <p><a href="/">Home</a> &gt; 경매</p>
+                    </div>
+                    <div class="page-hd">
+                        <h2 class="hd"><span>진행중인 경매</span></h2>
+                        <ul class="link">
+                            <li><a href="<!--/link_my_auction/-->">나의 경매</a></li>
+                            <li><a href="<!--/link_auction_close/-->">마감 경매</a></li>
+                        </ul>
+                    </div><!-- .page-hd -->
+                    <div class="page-wrap">
+                        <div class="info">
+                            <table summary="현재가격, 참여인원, 마감시간, 남은시간">
+                                <legend>경매 상품 정보</legend>
+                                <colgroup>
+                                    <col width="200" />
+                                    <col width="100" />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                            <!--/if_auction/-->
+                                <!--/loop_auction/-->
+                                    <tr>
+                                        <td class="bg-line bg-under-line" rowspan="6">
+                                            <div class="thumbnail">
+                                                <img src="<!--/auction@image/-->" alt="" title="" />
+                                            </div>
+                                        </td>
+                                        <th colspan="2">
+                                            <!--/auction@subject(50,..)/--> 
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>현재가격 :</td>
+                                        <td><!--/number/auction@current_price/-->원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>참여인원 :</td>
+                                        <td><!--/number/auction@apply_count/-->명</td>
+                                    </tr>
+                                    <tr>
+                                        <td>마감시간 :</td>
+                                        <td><!--/date(%Y/%M/%D (%H:%i))/auction@end_date/--></td>
+                                    </tr>
+                                    <tr class="no-pb">
+                                        <td>남은시간 :</td>
+                                        <td><!--/auction@remain_term/--></td>
+                                    </tr>
+                                    <tr class="no-pb">
+                                        <td colspan="2" class="bg-under-line">
+                                            <div class="tb-right">
+                                                <a href="<!--/auction@link/-->"><img src="/auction/images/auction_bn03.gif"  /></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <!--/end_loop/-->
+                            <!--/else/-->
+                                <tr>
+                                    <td colspan="3"><div class="tb-center">진행중인 경매가 없습니다.</div></td>
+                                </tr>
+                            <!--/end_if/-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!-- .page-wrap -->
+                    <div class="page-ft">
+                        <img src="/auction/images/auction_icon02.gif" alt="" title="" />
+                        <strong>기준시각</strong> : <!--/date(%Y년 %M월 %D일 (%H시 %i분 %s초))/current_time/-->
+                    </div><!-- .page-ft -->
+
+                    <ol class="paging">
+                    <!--/if_pager_auction::first@link/-->
+                        <li class="first"><a href="<!--/pager_auction::first@link/-->">[처음]</a></li>
+                    <!--/end_if/-->
+                    <!--/if_pager_auction::prev@link/-->
+                        <li class="prev"><a href="<!--/pager_auction::prev@link/-->">[이전]</a></li>
+                    <!--/end_if/-->
+
+                    <!--/loop_pager_auction::page/-->
+                        <!--/if_pager_auction::page@current/-->
+                        <li class="now"><a href="<!--/pager_auction::current@link/-->"><!--/pager_auction::current/--></a></li>
+                        <!--/else/-->
+                        <li><a href="<!--/pager_auction::page@link/-->"><!--/pager_auction::page/--></a></li>
+                        <!--/end_if/-->
+                    <!--/end_loop/-->
+
+                    <!--/if_pager_auction::next@link/-->
+                        <li class="next"><a href="<!--/pager_auction::next@link/-->">[다음]</a></li>
+                    <!--/end_if/-->
+                    <!--/if_pager_auction::last@link/-->
+                        <li class="last"><a href="<!--/pager_auction::last@link/-->">[끝]</a></li>
+                    <!--/end_if/-->
+                    </ol>
+                </div>
+            </div>
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

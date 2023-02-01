@@ -1,0 +1,92 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="board-list">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>1:1 문의</h3>
+            </div>
+            <!--/if_link_faq/-->
+            <div class="faqLinkWrap">
+                <strong>자주 묻는 질문</strong>
+                <a href="<!--/link_faq/-->" class="myBlueBtn">바로가기</a>
+            </div>
+            <!--/end_if/-->
+            
+            
+            <div class="pageTit">
+                <strong>1:1 문의</strong>
+                <span>나의 문의내역<em><!--/pager_m2m_list::count/--></em></span>
+            </div>
+            <div class="mtmList">
+                <table>
+                    <!--/if_m2m_notice/-->
+                    <thead>
+                        <!--/loop_m2m_notice/-->
+                        <tr>
+                            <th colspan="2"><a href="<!--/m2m_notice@link/-->"><em>공지</em> <!--/m2m_notice@subject/--></a></th>
+                        </tr>
+                        <!--/end_loop/-->
+                    </thead>
+                    <!--/end_if/-->
+                    <tbody>
+                        <!--/if_m2m_list/-->
+                        <!--/loop_m2m_list(5)/-->
+                        <tr>
+                            <th>
+                                <a href="<!--/m2m_list@link/-->"><!--/m2m_list@subject/--></a>
+                                <!--/if_m2m_list@is_mobile_write/--><span class="fa fa-mobile fa-lg"></span><!--/end_if/-->
+                                <!--/if_m2m_list@attach_icon/--><img src="<!--/m2m_list@attach_icon/-->" /><!--/end_if/-->
+                                <br/><!--/date(%Y-%M-%D)/m2m_list@date/-->
+                            </th>
+                            <td>
+                                <!--/if_m2m_list@is_reply/-->
+                                <span class="rep_com">답변완료</span>
+                                <!--/else/-->
+                                <span class="rep_ready">답변대기</span>
+                                <!--/end_if/-->
+                            </td>
+                        </tr>
+                        <!--/end_loop/-->
+                        <!--/else/-->
+                        <tr style="text-align: center;">
+                            <td colspan="2">작성된 문의글이 없습니다.</td>
+                        </tr>
+                        <!--/end_if/-->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pd10">
+                <a href="<!--/link_m2m_write/-->" class="myBlueBorderBtn">문의하기</a>
+            </div>
+            <div class="paging">
+                <!--/if_pager_m2m_list::prev/-->
+                <a href="<!--/pager_m2m_list::prev@link/-->"><span class="fa fa-angle-left"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_m2m_list/-->
+                    <!--/loop_pager_m2m_list::page(5)/-->
+                        <!--/if_pager_m2m_list::page@current/-->
+                            <a href="javascript:return false;" class="now"><!--/pager_m2m_list::page/--></a>
+                        <!--/else/-->
+                            <a href="<!--/pager_m2m_list::page@link/-->"><!--/pager_m2m_list::page/--></a>
+                        <!--/end_if/-->
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+                <!--/if_pager_m2m_list::next/-->
+                <a href="<!--/pager_m2m_list::next@link/-->"><span class="fa fa-angle-right"></span></a>
+                <!--/end_if/-->
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

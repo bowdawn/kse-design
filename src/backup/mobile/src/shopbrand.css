@@ -1,0 +1,129 @@
+.shopbrand h2 {text-align:center; font-size: 1.25em; font-weight:bold; padding-top:10px;}
+.shopbrand .MK_product_list {background-color:#fff; border-bottom:1px solid #4a4a4a; border-top: 1px solid #4a4a4a;}
+.shopbrand .MK_product_list .items {padding: 10px 5;}
+.shopbrand .MK_product_list .items #MK_best_product li {width:33.33%;}
+.shopbrand .MK_product_list .items .paging-num {text-align: center; clear: both; margin:20px 0;}
+.shopbrand .MK_product_list .items .paging-num a {background-color:#fff; border:1px solid #393939; padding:5px 10px; margin:0 10px;}
+.shopbrand .list_group {padding:12px 1%; text-align:left;}
+.shopbrand .list_group select {width:49%; height:28px;}
+.shopbrand .more .more-title {color: #3b3b3b;}
+.shopbrand .more .more-num {color: #aaaaaa;}
+.shopbrand .shopbrandTitle img {max-width: 100%;}
+.shopbrand .list_array .list_arrayRight img {width: 23px; height: auto;}
+.page_location {padding:10px 10px; text-align: left; }
+
+.recomdGoodsWrap{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+.recomdGoodsWrap div.goods img{width:100%}
+
+
+.recomdGoodsWrap .slick-track {
+	margin-top: 25px;
+}
+.recomdGoodsWrap .swiper-pagination-bullet:last-child {
+	margin-right: 0;
+}
+.recomdGoodsWrap .swiper-pagination-bullet-active {
+	background: #94223e !important
+}
+.recomdGoodsWrap .slick-dots li button:before {
+	content: none !important;
+}
+.recomdGoodsWrap .item-list {
+}
+.recomdGoodsWrap .slick-list {
+	padding-left: 27px;
+}
+.recomdGoodsWrap .slick-slide:nth-child(1) {
+	margin-left: -28px;
+}
+.recomdGoodsWrap .slick-slide {
+	padding-right: 11px;
+}
+.recomdGoodsWrap .item-list .thumb {
+	position: relative;
+}
+.recomdGoodsWrap .item-list .thumb .dc {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	background: #0097e6;
+	color: #fff;
+	font-size: 17px;
+}
+.recomdGoodsWrap .item-list .thumb .dc em {
+	font-size: 10px !important;
+}
+.recomdGoodsWrap .item-list .thumb .dc.term {
+}
+.recomdGoodsWrap .item-list .thumb .dc em:nth-child(3), .recomdGoodsWrap .item-list .thumb .dc em:nth-child(4) {
+	display: none !important
+}
+.recomdGoodsWrap .item-list .thumb .dc em.num {
+	font-size: 14px !important;
+	display: inline-block;
+}
+
+.recomdGoodsWrap .item-list .thumb .dc em.percent {
+	font-size: 10px !important;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+}
+.recomdGoodsWrap .item-list img {
+	width: 100%;
+}
+.recomdGoodsWrap .slick-prev, .recomdGoodsWrap .slick-next {
+	width: 35px !important;
+	height: 35px !Important;
+}
+.recomdGoodsWrap .slick-next {
+	right: -50px !important;
+}
+.recomdGoodsWrap .slick-prev {
+	left: -35px !important;
+}
+.recomdGoodsWrap .slick-prev:before, .recomdGoodsWrap .slick-next:before {
+	color: #aaa !important;
+	font-size: 35px;
+}
+.recomdGoodsWrap .slick-dots {
+	height: 30px;
+	top: 0;
+	text-align: right;
+}
+.recomdGoodsWrap .slick-prev:before {
+	content: '£¼' !important;
+}
+.recomdGoodsWrap .slick-next:before {
+	content: '£¾' !important;
+}
+.recomdGoodsWrap .item-list dd ul li.prd-consumer {
+	display: inline-block;
+	color: #919191;
+	font-size: 15px !important;
+	margin-right: 4px;
+	font-weight: 100;
+}
+.recomdGoodsWrap .item-list dd ul li.dc {
+	color: #94223e;
+	display: inline-block;
+	font-size: 22px;
+	letter-spacing: -1px;
+	font-weight: 800;
+	margin-left: 5px;
+}
+.recomdGoodsWrap .item-list dd ul li.dc em.num {
+}
+.recomdGoodsWrap .item-list dd ul li.dc em.percent {
+	font-size: 16px !important;
+	font-weight: bold !important;
+	margin-left: 2px;
+}
+

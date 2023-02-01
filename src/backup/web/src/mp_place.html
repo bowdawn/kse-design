@@ -1,0 +1,190 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="myPlace">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="page-body">
+
+                                <!-- 주소록 관리 -->
+                                <div class="hd">
+                                    <h3>주소록 관리</h3>
+                                </div>
+                                <div class="tbl">
+                                    <table class="addrbook-list">
+                                        <caption>주소록 관리</caption>
+                                        <colgroup>
+                                            <col width="35">
+                                            <col width="60">
+                                            <col width="180">
+                                            <col width="auto">
+                                            <col width="120">
+                                            <!--/if_addrbook_message_title/--><col width="250"><!--/end_if/-->
+                                            <col width="110">
+                                        </colgroup>
+                                        <thead>
+                                            <th><div class="tb-center"><!--/checkbox_all_addrbook/--></div></th>
+                                            <th><div class="tb-center">이동</div></th>
+                                            <th><div class="tb-center">[배송지명] 받는 사람</div></th>
+                                            <th><div class="tb-center">주소</div></th>
+                                            <th><div class="tb-center">연락처</div></th>
+                                            <!--/if_addrbook_message_title/--><th><div class="tb-center"><!--/addrbook_message_title/--></div></th><!--/end_if/-->
+                                            <th><div class="tb-center">관리</div></th>
+                                        </thead>
+                                        <tbody>
+                                        <!--/if_addrbook_list/-->
+                                        <!--/loop_addrbook_list/-->
+                                            <tr class="ui-sortable">
+                                                <td>
+                                                    <div class="tb-center"><!--/addrbook_list@checkbox/--></div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-center">
+                                                        <a href="#self"  class="moving-grap"><img src="/images/btn_h18_change.jpg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-center">
+                                <!--/if_addrbook_list@is_standard/--><span class="basic">기본 배송지</span><br><!--/end_if/-->
+                                <!--/if_addrbook_list@title/-->[<!--/addrbook_list@title/-->] <!--/end_if/--><!--/addrbook_list@receiver/-->
+                                </div>
+                                                </td>
+                                                <td><div class="tb-left"><!--/addrbook_list@addr1/--> <!--/addrbook_list@addr2/--></div></td>
+                                                <td>
+                                                    <div class="tb-center">
+                                                        <!--/if_addrbook_list@tel/--><div><!--/addrbook_list@tel/--></div><!--/end_if/-->
+                                                        <!--/if_addrbook_list@mobile/--><div><!--/addrbook_list@mobile/--></div><!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                                <!--/if_addrbook_message_title/-->
+                                                <td>
+                                                    <div class="tb-left">
+                                                        <!--/if_addrbook_list@user_message/--><p class="memo"><!--/addrbook_list@user_message/--></p><!--/end_if/-->
+                                                        <!--/if_addrbook_list@delivery_message/--><p class="memo"><!--/addrbook_list@delivery_message/--></p><!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                                <!--/end_if/-->
+                                                <td>
+                                                    <div class="tb-center">
+                                                        <!--/if_addrbook_list@link_modify/--><a href="<!--/addrbook_list@link_modify/-->" class="CSSbuttonWhite" style="width:55px;">수정</a><!--/end_if/-->
+                                                        <!--/if_addrbook_list@link_delete/--><a href="<!--/addrbook_list@link_delete/-->" class="CSSbuttonWhite" style="width:55px; margin-top:5px;">삭제</a><!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                            <!--/else/-->
+                                            <tr>
+                                                <td colspan="<!--/if_addrbook_message_title/-->7<!--/else/-->6<!--/end_if/-->">
+                                                    <div class="tb-center">
+                                                        자주 사용하는 배송지를 주소록에 추가해주세요.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="btn-area">
+                                    <div>
+                                        <!--/if_link_new_addrbook/--><a href="<!--/link_new_addrbook/-->" class="CSSbuttonBlack">배송지 추가</a><!--/end_if/-->
+                                        <!--/if_link_sort_addrbook/--><a href="<!--/link_sort_addrbook/-->" class="CSSbuttonWhite">순서 저장</a><!--/end_if/-->
+                                        <!--/if_link_multi_delete_addrbook/--><a href="<!--/link_multi_delete_addrbook/-->" class="CSSbuttonWhite">선택 삭제</a><!--/end_if/-->
+                                    </div>
+                                </div>
+
+                                <!-- 최근 배송지 -->
+                                <div class="hd">
+                                    <h3>최근 배송지</h3>
+                                </div>
+                                <div class="tbl">
+                                    <table class="past-list">
+                                        <caption>최근 배송지</caption>
+                                            <colgroup>
+                                            <col width="35">
+                                            <col width="260">
+                                            <col width="auto">
+                                            <col width="220">
+                                            <col width="73">
+                                            <col width="110">
+                                        </colgroup>
+                                        <thead>
+                                            <th><div class="tb-center"><!--/checkbox_all_past/--></div></th>
+                                            <th><div class="tb-center">받는 사람</div></th>
+                                            <th><div class="tb-center">주소</div></th>
+                                            <th><div class="tb-center">연락처</div></th>
+                                            <th><div class="tb-center"></div></th>
+                                            <th><div class="tb-center">관리</div></th>
+                                        </thead>
+                                        <tbody>
+                                            <!--/if_past_list/-->
+                                            <!--/loop_past_list/-->
+                                            <tr>
+                                                <td>
+                                                    <div class="tb-center"><!--/past_list@checkbox/--></div>
+                                                </td>
+                                                <td><div class="tb-center"><!--/past_list@receiver/--></div></td>
+                                                <td><div class="tb-left"><!--/past_list@addr1/--> <!--/past_list@addr2/--></div></td>
+                                                <td>
+                                                    <div class="tb-center">
+                                                        <!--/if_past_list@tel/--><div><!--/past_list@tel/--></div><!--/end_if/-->
+                                                        <!--/if_past_list@mobile/--><div><!--/past_list@mobile/--></div><!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-center">
+
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-center">
+                                                        <!--/if_past_list@link_go_addrbook/--><a href="<!--/past_list@link_go_addrbook/-->" class="CSSbuttonWhite" style="width:55px;">+주소록</a><!--/end_if/-->
+                                                        <!--/if_past_list@link_delete/--><a href="<!--/past_list@link_delete/-->" class="CSSbuttonWhite" style="width:55px; margin-top:5px;">삭제</a><!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                            <!--/else/-->
+                                            <tr>
+                                                <td colspan="6">
+                                                    <div class="tb-center">
+                                                        최근 배송지 내역이 없습니다.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="paging-wrap">
+                                    <div class="paging">
+                         <!--/if_pager_past/-->
+                         <!--/loop_pager_past::page/-->
+                                        <!--/if_pager_past::page@current/-->
+                                        <a href="<!--/pager_past::page@link/-->" class="now"><!--/pager_past::page/--></a>
+                                        <!--/else/-->
+                                        <a href="<!--/pager_past::page@link/-->"><!--/pager_past::page/--></a>
+                                        <!--/end_if/-->
+                         <!--/end_loop/-->
+                         <!--/end_if/-->
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <div>
+                                        <!--/if_link_multi_delete_past/--><a href="<!--/link_multi_delete_past/-->" class="CSSbuttonWhite">선택 삭제</a><!--/end_if/-->
+                                    </div>
+                                </div>
+
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #myPlace -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

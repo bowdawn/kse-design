@@ -1,0 +1,222 @@
+.vipClubWrap *{
+    color:#191919;
+}
+
+.vipClubWrap{
+    padding-top:85px;
+}
+
+.vipClubWrap .pageTit{
+    padding-bottom: 15px;
+    margin-bottom:15px;
+    font-size: 34px;
+    font-weight: 900;
+    border-bottom: 2px solid #000;
+}
+
+.vipClubWrap .pageSubTit p{
+    font-size:20px;
+    line-height:32px;
+}
+
+.vipClubWrap .conTit strong{
+    display:block;
+    padding:50px 0 17px;
+    font-size:24px;
+    font-weight:900;
+    line-height:35px;
+}
+
+.vipClubWrap .conTit strong img{
+    width:34px;
+    margin-top:-5px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+.vipClubWrap .conBox1{
+    padding-top:70px;
+}
+
+.vipClubWrap .conBox1 ul li{
+    width:300px;
+}
+
+.vipClubWrap .conBox1 ul li .imgWrap img{
+    display:block;
+    width:170px;
+    margin:0 auto 20px;
+}
+
+.vipClubWrap .conBox1 ul li .nameWrap{
+    padding-bottom:15px;
+}
+
+.vipClubWrap .conBox1 ul li.rank01 .nameWrap{
+    border-bottom:17px solid #CCC1B2;
+}
+
+.vipClubWrap .conBox1 ul li.rank02 .nameWrap{
+    border-bottom:17px solid #FCA729;
+}
+
+.vipClubWrap .conBox1 ul li.rank03 .nameWrap{
+    border-bottom:17px solid #AA4743;
+}
+
+.vipClubWrap .conBox1 ul li.rank04 .nameWrap{
+    border-bottom:17px solid #2857FA;
+}
+
+.vipClubWrap .conBox1 ul li .nameWrap strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:40px;
+    font-weight:900;
+    text-align:center;
+}
+
+.vipClubWrap .conBox1 ul li .nameWrap span{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.vipClubWrap .conBox1 ul li.rank01 .nameWrap strong,
+.vipClubWrap .conBox1 ul li.rank01 .nameWrap span{
+    color:#CCC1B2;
+}
+
+.vipClubWrap .conBox1 ul li.rank02 .nameWrap strong,
+.vipClubWrap .conBox1 ul li.rank02 .nameWrap span{
+    color:#FCA729;
+}
+
+.vipClubWrap .conBox1 ul li.rank03 .nameWrap strong,
+.vipClubWrap .conBox1 ul li.rank03 .nameWrap span{
+    color:#AA4743;
+}
+
+.vipClubWrap .conBox1 ul li.rank04 .nameWrap strong,
+.vipClubWrap .conBox1 ul li.rank04 .nameWrap span{
+    color:#2857FA;
+}
+
+.vipClubWrap .conBox1 ul li .textWrap span{
+    display:block;
+    padding-top:20px;
+    font-size:20px;
+    color:#999;
+    line-height:32px;
+    text-align:center;
+}
+
+.vipClubWrap .conBox2 dl{
+    min-height:155px;
+}
+
+.vipClubWrap .conBox2 dl dt{
+    width:220px;
+    padding-top:12px;
+    margin-right:35px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt{
+    border-top:3px solid #CCC1B2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt{
+    border-top:3px solid #FCA729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt{
+    border-top:3px solid #AA4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt{
+    border-top:3px solid #2857FA;
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap{
+    width:68px;
+    margin-right:34px;
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap img{
+    display:block;
+    width:100%;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap strong{
+    display:block;
+    font-size:34px;
+    font-weight:bold;
+    line-height:48px;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap span{
+    display:block;
+    font-size:17px;
+    font-weight:500;
+    line-height:20px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap span{
+    color:#CCC1B2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap span{
+    color:#FCA729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap span{
+    color:#AA4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap span{
+    color:#2857FA;
+}
+
+.vipClubWrap .conBox2 dl dd{
+    width:945px;
+    padding-top:10px;
+    border-top:1px solid #DBDBDB;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit strong{
+    display:inline-block;
+    width:206px;
+    margin-bottom:8px;
+    font-size:16px;
+    line-height:23px;
+    color:#999;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit span{
+    display:inline-block;
+    width:206px;
+    margin-bottom:8px;
+    font-size:16px;
+    line-height:23px;
+    font-weight:900;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li{
+    padding-left: 100px;
+    font-size: 15px;
+    color: #999;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li > ul > li{
+    padding-left: 20px;
+    font-size: 15px;
+    color: #999;
+    line-height: 23px;
+}

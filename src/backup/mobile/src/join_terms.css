@@ -1,0 +1,61 @@
+#join {}
+
+/* 구버전 이용약관 등 style 모음 */
+#join .desc-3 {border: 1px solid #909090;}
+#join .desc {position: relative; background-color: #fff; padding: 20px 10px 10px 10px; margin: 0 5px;}
+#join .desc .open-pop {position: absolute; right: 10px; top: 18px; border: 1px solid #c7c7c7; padding: 2px 10px; float: right;}
+#join .desc h3 {font-weight: bold; padding: 3px 0;}
+#join .agree-2 {padding-left: 10px; background-color: #fff; margin: 0 5px;}
+
+/* s 220819 수정 */
+/* 이용 약관 */
+/* 개인정보 수집이용, 제3제공, 취급위탁 테이블 */
+hr, caption, legend {display: none;}
+#container {font-size:16px;}
+.btn-agree a {display:block; margin:0 20px; padding:16px 0; background:#000; border-radius:6px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-weight:700; letter-spacing:-1px;}
+/* e 220819 신규 */
+
+/* 이용약관 */
+#layerTermsWrap, #layerPrivercyWrap, #layerThirdPartyWrap, #layerTrustWrap { display: none; }
+#layerTermsWrap .txt, #layerPrivercyWrap .txt, #layerThirdPartyWrap .txt, #layerTrustWrap .txt {padding: 15px 10px; }
+/* 개인정보 수집 이용안내 */
+#join .desc h3.none-line {border-bottom: none; }
+#join .privercy-contract-tap {position: relative; border-left: 1px solid #cacaca; }
+#join .privercy-contract-tap li {list-style-type: none; border-top: 1px solid #cacaca;  border-right: 1px solid #CACACA; background-color: #f4f4f4; display: block; float: left; line-height: 27px; text-align: center; width: 33%; height: 28px; margin-bottom: -1px; }
+#join .privercy-contract-tap li.sel{background-color: #fff; border-bottom: 1px solid #fff; }
+#join .privercy-contract-tap li:last-child {border-right: 1px solid #cacaca;; }
+#join .privercy-contract-tap li a {text-align: center; padding: 0; display: block; color: #787878; width: 100%; height: 100%; }
+#join .tab-content {border: 1px solid #cacaca;}
+#join .tab-content .privercy-contract {padding: 10px; }
+#join .tab-content .privercy-contract p {line-height: 1.5em; width: 100%; height: 55px; margin: 0; padding: 0; border: none; overflow-y: hidden;}
+
+/* 약관 팝업 관련 */
+.layer-pop-join { position: absolute; left:0; top: 0; z-index: 101; width: 100%; min-height: 100%; background-color: #fff; }
+.layer-pop-join h3 { white-space: nowrap; padding-left: 15px; padding-right: 10%; overflow: hidden; text-overflow: ellipsis; background-color: #efefef; margin: 0; min-height: 30px; line-height: 1.5em; padding-top: 7px; font-weight: bold;}
+.layer-pop-join .btns { margin: 25px 0; padding: 0 15px; }
+.layer-pop-join .btns .btn-type-03,
+.layer-pop-join .btns .btn-type-04 { padding: 7px 20px; }
+.layer-pop-join .btns .f-right { float: right; }
+#join .privercy .sequence {height:100px; text-align:center;}
+#join .privercy .sequence li {display: inline-block; margin: 0 12px;}
+#join .privercy .sequence li .fa-stack {display:block; margin:20px auto 0;}
+#join .privercy .sequence li .fa-circle {color: #858585;}
+#join .privercy .sequence li.now {color:#ab3e41;}
+#join .privercy .sequence li.now .fa-circle {color:#ab3e41;}
+#join .privercy .desc-2 {background-color: #fff; padding:20px 10px; margin: 0 5px;}
+#join .privercy .desc-2 dl {margin-bottom:20px;}
+#join .privercy .btn-txt-view {border:1px solid #c7c7c7; padding:4px 10px; float: right;}
+#join .privercy .every-agree {padding: 10px 0 10px 0; background-color: #fff; font-weight: bold; color: #BD3D3D;}
+#join .pd10 {background-color: #fff; padding-top: 20px; margin-top:20px;}
+#join .pd10 .btn_Red {margin-bottom:10px;}
+#join .layer .layer-pop {display: block;}
+#join .layer-pop  {width: 100%; min-height: 100%; z-index: 3; position: absolute; left: 0; top: 0; background:rgba(60,60,60,0.8); display:none;}
+#join .layer-pop table {width:100%;}
+#join .layer-pop #layerTerms, #join .layer-pop #layerTerms-A, .layer-pop #layerTerms-B, .layer-pop #layerTerms-C, .layer-pop #layerTerms-D {width:90%; background-color: #fff; position: relative; box-shadow: 0px 1px 10px #494949; margin:80px auto;}
+#join .layer-pop h3  {background-color: #efefef; height: 36px; line-height: 36px; font-weight: bold; padding: 0 10px; }
+#join .layer-pop .txt {max-height: 300px; overflow-y: auto; padding:10px;}
+#join .layer-pop .close,
+#join .layer-pop-join .close {width:45px; height:36px; color:#fff; line-height: 42px; position:absolute; top:0; right:0;  background-color: #4f4f4f; text-align: center; background:url("/images/d3/m_04/btn_del_gray@2x.gif") no-repeat center center; background-size: 45px 36px; text-indent: -9999px; font-size: 0;}
+@media screen and (max-width: 767px) and (min-width: 420px) {
+ #join .layer-pop .txt {max-height: 150px;}
+}

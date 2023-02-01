@@ -1,0 +1,23 @@
+#place .h_title .btn_toggle {font-weight: normal; float:right;}
+#place .address-list {padding: 0 10px; display:none;}
+#place .address-list .btn-area {padding:15px 0; overflow: hidden;}
+#place .address-list .btn-area a {display: block; width: 48.2125%; line-height: 33px; text-align: center; font-size: 12px;}
+#place .address-list .btn-area a.btn-white {float: left; border: 1px solid #c6c6c6; color: #3b3b3b;}
+#place .address-list .btn-area a.btn-gray {float: right; border: 1px solid #858585; background: #858585; color: #ffffff;}
+#place .address-list .btn-area a.btn-black {border: 1px solid #393939; background: #393939; color: #ffffff;}
+#place .address-list .list-area .all {padding: 10px; background: #f1f1f1; border-top: 1px solid #000; border-bottom: 1px solid #dedede;}
+#place .address-list .list-area .all label {font-size: 13px; font-weight:bold; color: #333333;}
+#place .address-list .list-area ul li {padding: 15px 0 10px 30px; border-bottom: 1px solid #d5d5d5; position: relative;}
+#place .address-list .list-area ul li input[type=checkbox] {position: absolute; top: 17px; left: 10px;}
+#place .address-list .list-area ul li .text-area .name {margin-bottom:5px; font-weight: bold; font-size: 13px; color: #4c4c4c;}
+#place .address-list .list-area ul li .text-area .name .basic {display: inline-block; padding: 0 5px; background: #68c40e; line-height:17px; font-size: 10px; color: #ffffff; border-radius:5px;}
+#place .address-list .list-area ul li .text-area .address {line-height: 20px; font-size: 11px; color: #4c4c4c;}
+#place .address-list .list-area ul li .text-area .tell {line-height: 15px; font-size: 11px; color: #4c4c4c;}
+#place .address-list .list-area ul li .text-area .memo span {display:block; line-height: 15px; font-size: 11px; color: #4c4c4c; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+#place .address-list .list-area ul li .btns {margin-top: 5px; text-align: right;}
+#place .address-list .list-area ul li .btns p {display: inline-block;}
+#place .address-list .list-area ul li .btns p a {display: inline-block; float: left; margin-left: 4px; width: 50px; line-height: 24px; text-align: center; font-size: 11px; color: #ffffff;}
+#place .address-list .list-area ul li .btns p a.btn-black {background: #393939;}
+#place .address-list .list-area ul li .btns p a.btn-gray {background: #858585;}
+#place .section.on .h_title {border-bottom:none;}
+#place .section.on .address-list {border-top:1px solid #cbcbcb;}

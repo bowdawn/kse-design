@@ -1,0 +1,72 @@
+#myCoupon .tit-page-2 a { padding:4px 10px 3px; font-size:14px }
+
+#myCoupon .table-d2-list { margin-top:10px }
+
+/* 쿠폰 유의사항 */
+#myCoupon .use-dsc { border-top:1px solid #ddd;}
+#myCoupon .use-dsc li { margin-top: 40px }
+#myCoupon .use-dsc li li { margin-top: 3px; font-size:18px; color:#9c9c9c; line-height:30px; }
+#myCoupon .use-dsc li.lv-1 {  } 
+#myCoupon .use-dsc dt { margin-bottom:10px; font-weight:900; font-size:24px; }
+#myCoupon .use-dsc dd { font-size:18px; line-height:20px }
+
+#myCoupon .couponListWrap li{
+    width:280px;
+    margin-right:25px;
+    margin-bottom:35px;
+}
+
+#myCoupon .couponListWrap li:nth-child(3n){
+    margin-right:0;
+}
+
+#myCoupon .couponListWrap li .couponCon{
+    position:relative;
+    padding:25px 15px 20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow: 3px 4px 10px rgb(0, 0, 0, 0.15);
+}
+
+#myCoupon .couponListWrap li .couponCon .discountPer{
+    margin-bottom:15px;
+    font-size:22px;
+    font-weight:900;
+}
+
+#myCoupon .couponListWrap li .couponCon .discountPer strong{
+    font-size:34px;
+    font-weight:900;
+}
+
+#myCoupon .couponListWrap li .couponCon p{
+    margin-bottom:5px;
+    color:#999;
+    font-size:14px;
+}
+
+#myCoupon .couponListWrap li .couponCon p:last-child{
+    margin-bottom:0;
+}
+
+#myCoupon .couponListWrap li .couponCon .couponName{
+    margin-bottom:15px;
+    font-size:16px;
+    font-weight:500;
+    color:#767676;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#myCoupon .noData{
+    padding:100px 0;
+    margin-bottom:80px;
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+    background:#f9f9f9;
+}

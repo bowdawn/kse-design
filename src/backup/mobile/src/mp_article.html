@@ -1,0 +1,58 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="my-board">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>내 게시물 보기</h3>
+            </div>
+            <div class="notice-bar">
+                <p>[<!--/user_name/-->]님이 게시판에 작성한 게시글 내역입니다.</p>
+            </div>
+            <div class="lists">
+                <ul>
+                    <!--/if_my_list/-->
+                    <!--/loop_my_list/-->
+                    <li>
+                        <div class="th"><a href="<!--/my_list@link/-->"><p class="board_name">[<!--/my_list@board_name/-->]</p><p class="board_tit"><!--/if_my_list@subject/--><!--/my_list@subject/--><!--/else/-->제목없음<!--/end_if/--></p></a></div>
+                        <div class="td date"><a href="<!--/my_list@link/-->"><!--/my_list@date/--></a></div>
+                    </li>
+                    <!--/end_loop/-->
+                    <!--/else/-->
+                    <li class="no-data">
+                        <div class="td">작성된 게시글이 없습니다.</div>
+                    </li>
+                    <!--/end_if/-->
+                </ul>
+            </div>
+            <div class="paging">
+                <!--/if_pager_my_list::first/-->
+                <a href="<!--/pager_my_list::first@link/-->"><span class="fa fa-angle-left"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_my_list/-->
+                    <!--/loop_pager_my_list::page(5)/-->
+                        <!--/if_pager_my_list::page@current/-->
+                        <a href="javascript:return false;" class="now"><!--/pager_my_list::page/--></a>
+                        <!--/else/-->
+                        <a href="<!--/pager_my_list::page@link/-->"><!--/pager_my_list::page/--></a>
+                        <!--/end_if/-->
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+                <!--/if_pager_my_list::next/-->
+                    <a href="<!--/pager_my_list::next@link/-->"><span class="fa fa-angle-right"></span></a>
+                <!--/end_if/-->
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

@@ -1,0 +1,15 @@
+.brand-select { padding-top:30px; text-align:center }
+.brand-select select { width:462px; height:40px; font-size:15px; color:#555 }
+.brand-select a { display:inline-block; margin-left:3px; width:118px; height:38px; font-size:15px; color:#fff; text-align:center; line-height:38px; border:1px solid #101010; background: #101010; vertical-align:top; -webkit-transition:all 0.3s ease; transition:all 0.3s ease }
+.brand-select a:hover { color:#101010; background:#fff }
+.brand-select a:active { position:relative; top:1px }
+
+.brand-banner { padding-top:30px; text-align:center }
+
+.page-body { padding-top:30px }
+
+.prd-sort:after { clear:both; display:block; content:''; }
+.prd-sort { height:22px; padding:15px 0 0 0; }
+.prd-sort .sort-count { float:left; color:#6b6b6b; }
+.prd-sort .sort-list { float:right; color:#464646; }
+.prd-sort .sort-list span { display:inline-block; padding:0 5px; color:#464646; }

@@ -1,0 +1,20 @@
+#review-board-write table {width:100%; background-color:#eaeaea; border-top:2px solid #464646;}
+#review-board-write table thead {background-color: #fefbe3;}
+#review-board-write table thead tr {border-bottom:1px solid #d7d7d7;}
+#review-board-write table thead th em {color:#fff; background-color: #464644; padding:2px 5px;}
+#review-board-write table tr {height:45px;} 
+#review-board-write table th {width:85px; text-align:left; padding-left:10px;}
+#review-board-write table td {padding:0 10px;}
+#review-board-write table .comm {width:100%;}
+#review-board-write .MS_input_textarea {width:100%;}
+#review-board-write table .file .MS_input_file {width:100%; height: 35px; border: 1px solid #bbb; vertical-align: middle; padding-left: 10px; box-sizing: border-box;}
+#review-board-write table .file .MS_input_file_button {width: 115px; height: 35px; line-height: 35px; display: inline-block; position: absolute; top: 0; right: 0; background-color: #858585; color: #fff; text-align: center; border: 1px solid #858585; box-sizing: border-box; vertical-align: middle;}
+#review-board-write .pd10 {line-height: 1.7; margin:20px 0;}
+#review-board-write .write-btn {padding:0 10px;}
+#review-board-write .agreeBox {padding:0 10px; margin:20px 0;}
+#review-board-write .agreeBox label {margin-right: 20px;}
+#review-board-write .agreeBox dl {position:relative; margin-bottom:20px;}
+#review-board-write .agreeBox dl dt {margin-bottom:10px;}
+#review-board-write .agreeBox dl .btn_total {width: 60px; position:absolute; top:0; right:0;}
+#review-board-write .agreeBox dl .btn_total .btn_White {height:26px; line-height:26px;}
+#review-board-write .btn-txt-view {float:right; padding:5px 10px; border:1px solid #c7c7c7;}

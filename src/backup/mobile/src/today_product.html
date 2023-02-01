@@ -1,0 +1,54 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="wish">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>오늘 본 상품</h3>
+            </div>
+            <!--/if_today_product/-->
+            <!--/form_today_product/-->
+            <!--/block_today_product/-->
+            <div class="recentList">
+                <ul class="items clearfix" data-type="vertical" data-open="on" data-checkbok="on">
+                    <!--/loop_today_product(10)/-->
+                    <li>
+                        <figure>
+                            <div class="basketLeft">
+                                <a href="<!--/today_product@link/-->"><img src="<!--/today_product@mobile_image/-->" alt="상품명" class="response100" /></a>
+                            </div>
+                            <figcaption class="basketRight">
+                                <p class="pname">
+                                    <a href="<!--/today_product@link/-->"><!--/notag/today_product@name/--></a>
+                                </p>
+                                <p class="price"><!--/number/today_product@price_sell/-->원</p>
+                                
+                                <a href="<!--/today_product@link_delete/-->" class="delBtn"><img src="/design/ksilverex/22_renew/img/icon_close.png"></a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <!--/end_loop/-->
+                </ul>
+            </div>
+            <!--/end_block/-->
+            <!--/end_form/-->
+            <!--/else/-->
+            <div class="none-data">
+                <i class="fa fa-exclamation-triangle fa-2x"></i>
+                <p>오늘 본 상품이 없습니다.</p>
+            </div>
+            <!--/end_if/-->
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

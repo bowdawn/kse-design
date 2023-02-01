@@ -1,0 +1,10 @@
+#join .join {background-color: #eaeaea; padding: 0 5px 20px 0; }
+#join .sequence {height:100px; text-align:center;}
+#join .sequence li {display: inline-block; margin: 0 12px;}
+#join .sequence li .fa-stack {display:block; margin:20px auto 0;}
+#join .sequence li .fa-circle {color: #858585;}
+#join .sequence li.now {color:#ab3e41;}
+#join .sequence li.now .fa-circle {color:#ab3e41;}
+#join .conts {background-color: #fff; text-align:center; padding:50px 0;}
+#join .conts p {font-weight:bold;}
+#join .pd10 {margin-top: 20px;}

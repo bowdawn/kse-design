@@ -1,0 +1,352 @@
+<meta property="og:title" content="한국은거래소 금시세">
+<meta property="og:description" content="실시간 국제 금시세 분석차트. 다양한 중량의 금을 환율이 적용된 가격으로 실시간 제공.">
+
+
+<!--/script_scroll(1)/-->
+<div id="wrap">
+  <!--/include_header(1)/-->
+  <div id="contentWrapper">
+      <div id="contentWrap">
+          <!--/include_menu(1)/-->
+          <div id="content">
+              
+              <div class="slickmdbest">  
+                  <div class="item-wrap best">
+                      <div class="cateTit">
+                          <h3>금 추천상품</h3>
+                          <p class="line"></p>
+                      </div>
+                      <div class="item-cont recmdlist">
+                          <!--/loop_category_product_003/-->                                    
+                          <dl class="item-list loop<!--/idx/-->">
+                              <dt class="thumb">
+                                  <p id="s_price" style="display:none"> <!--/if_category_product_003@price_consumer(+1)/--><!--/category_product_003@price_consumer/--><!--/else/--><!--/category_product_003@price_sell/--><!--/end_if/--></p>
+                                  <p id="s_dc" style="display:none"><!--/if_category_product_003@price_discount/--><!--/category_product_003@price_discount/--><!--/else/--><!--/category_product_003@price_sell/--><!--/end_if/--></p>
+                                  <script>
+                                    var no<!--/idx/-->sp = $(".recmdlist .loop<!--/idx/--> #s_price").text();
+                                    var no<!--/idx/-->s_dc = $(".recmdlist .loop<!--/idx/--> #s_dc").text();     
+                                    var no<!--/idx/-->sM = 100-[(no<!--/idx/-->s_dc/no<!--/idx/-->sp)*100];
+                                    var no<!--/idx/-->Olim = Math.round(no<!--/idx/-->sM);
+                                    var no<!--/idx/-->goInt = "<em class='num'>" + no<!--/idx/-->Olim + "</em><em class='percent'>%</em>";
+                                  </script>
+                                  <!--/if_category_product_003@is_term_discount/-->
+                                      <p class="dc term"><script> $(".recmdlist .loop<!--/idx/--> .term").append(no<!--/idx/-->goInt);
+                                      if(no<!--/idx/-->Olim == 0){
+                                          $(".recmdlist .loop<!--/idx/--> .dc.term").hide();
+                                      }
+                                      </script></p>
+                                  <!--/else/-->
+                                      <!--/if_category_product_003@discount_info/--><p class="dc"><!--/category_product_003@discount_info/--><em>%</em></p><!--/end_if/-->
+                                      <!--/if_category_product_003@discount_percent/--><p class="dc"><!--/category_product_003@discount_percent/--><em>%</em></p><!--/end_if/-->
+                                  <!--/end_if/-->
+                                  <a href="<!--/category_product_003@link/-->"><img src="<!--/category_product_003@image_m/-->" <!--/category_product_003@rollover/--> /></a>
+                                  <div class="cart"><a href="<!--/category_product_003@link_preview/-->"><img src="/design/ksilverex/supermarket/img/cart_icon.png"></a></div>
+
+                              </dt>
+                              <dd>
+                                  <ul>
+                                      <li class="prd-name"><!--/notag/category_product_003@name/--></li>                
+                                      <!--/if_category_product_003@subname/--><li class="prd-subname"><!--/notag/category_product_003@subname/--></li><!--/end_if/-->
+
+                                      <!--/if_category_product_003@is_soldout/-->
+                                          <li class="prd-soldout">Sold out</li>
+                                      <!--/else/-->
+                                          <!--/if_category_product_003@price_replace/-->
+                                              <li class="prd-replace"><!--/category_product_003@price_replace/--></li>
+                                          <!--/else/-->
+                                          <!--/if_category_product_003@price_consumer(+1)/-->
+                                          <!--/if_category_product_003@price_discount/-->
+                                          <li class="prd-consumer <!--/if_category_product_003@discount_percent/--><!--/else_if_category_product_003@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_003@price_consumer/--></strike></li>
+                                          <li class="prd-price"><!--/number/category_product_003@price_discount/--><em> 원</em></li>
+
+                                          <!--/else/-->
+                                          <li class="prd-consumer <!--/if_category_product_003@discount_percent/--><!--/else_if_category_product_003@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_003@price_consumer/--></strike></li>
+                                          <li class="prd-price"><!--/number/category_product_003@price_sell/--><em> 원</em></li>
+
+
+                                          <!--/end_if/-->
+                                          <!--/else/-->
+                                          <!--/if_category_product_003@price_discount/-->
+                                          <li class="prd-consumer <!--/if_category_product_003@discount_percent/--><!--/else_if_category_product_003@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/category_product_003@price_sell/--></strike></li>
+                                          <li class="prd-price"><!--/number/category_product_003@price_discount/--><em> 원</em></li>
+                                          <!--/else/-->
+                                          <li class="prd-price"><!--/number/category_product_003@price_sell/--><em> 원</em></li>
+                                          <!--/end_if/-->
+                                          <!--/end_if/-->
+                                      <!--/end_if/-->
+                                      <!--/end_if/-->
+
+                                  </ul>
+                              </dd>
+                          </dl>
+                          <!--/end_loop/-->
+                      </div>
+                  </div><!-- .best-item -->   
+              </div>
+
+              <head>
+                  <title>금시세</title>
+                  <meta property="og:title" content="금시세">
+              </head>
+              
+              <br><br><br><br>
+              <h2 class="tit-page">실시간 금시세 분석 차트</h2>
+              <br><br><br><br>
+              
+              <center>
+                  <div class="title_group1 nomgin">
+                      <h3 class="title1"><span designelement="text">실시간 국제 금시세(USD/1ozt.)</span></h3>
+                      <p class="text2" designelement="text">
+                      </p>
+                  </div>
+              </center>
+              <br>
+            
+<!-- TradingView Widget BEGIN -->
+<center>
+        
+<div class="tradingview-widget-container" style="max-width:1200px;">
+  <div id="tradingview_57b08" style="height:600px;"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "CURRENCYCOM:GOLD",
+  "interval": "D",
+  "timezone": "Asia/Seoul",
+  "theme": "light",
+  "style": "1",
+  "locale": "kr",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "save_image": false,
+  "details": true,
+  "studies": [
+    "RSI@tv-basicstudies"
+  ],
+  "container_id": "tradingview_57b08"
+}
+  );
+  </script>
+</div>
+ <br>
+                  <p class="text2" designelement="text">
+                      금 1ozt.(31.1g)의 국제시세를 미국달러로 표기<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+<!-- TradingView Widget END -->
+
+              <br><br>
+              
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 국제 금시세(KRW/1ozt.)</span></h3>
+                      <p class="text2" designelement="text">
+                      </p>
+                  </div>
+              </center>
+              <br>
+              <!-- TradingView Widget BEGIN -->
+
+              <center>
+                  <div class="tradingview-widget-container" style="max-width:1100px;">
+                      <div id="tradingview_dcdad" style="height:550px;">
+                      </div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                          new TradingView.widget({
+                              "autosize": true,
+                              "symbol": "GOLD*FX_IDC:USDKRW",
+                              "interval": "D",
+                              "timezone": "Asia/Seoul",
+                              "theme": "light",
+                              "style": "1",
+                              "locale": "kr",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "hide_legend": true,
+                              "withdateranges": true,
+                              "hide_side_toolbar": false,
+                              "save_image": false,
+                              "container_id": "tradingview_dcdad"
+                          });
+                      </script>
+                  </div>
+                  <br>
+                  <p class="text2" designelement="text">
+                      실시간 환율이 적용된 금 1ozt.(31.1g)의 시세를 원화로 환산<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <!-- TradingView Widget END -->
+              <br><br>
+              
+              <center>
+              <div class="title_group1">
+                  <h3 class="title1"><span designelement="text">실시간 국제 금시세(1g)</span></h3>
+                  <p class="text2" designelement="text"></p>
+              </div>
+              </center>
+              <br>
+              <!-- TradingView Widget BEGIN -->
+              
+              <center>
+              <div class="tradingview-widget-container" style="max-width:1100px;">
+                  <div id="tradingview_dbd3b" style="height:550px;"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                      new TradingView.widget(
+                      {
+                          "autosize": true,
+                          "symbol": "(GOLD*USDKRW)/31.1035",
+                          "interval": "D",
+                          "timezone": "Asia/Seoul",
+                          "theme": "light",
+                          "style": "1",
+                          "locale": "kr",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "hide_legend": true,
+                          "withdateranges": true,
+                          "hide_side_toolbar": false,
+                          "save_image": false,
+                          "container_id": "tradingview_dbd3b"
+                      });
+                  </script>
+              </div>
+              <br>
+              <p class="text2" designelement="text">
+                  실시간 환율이 적용된 국제 금값을 금 1g 당 원화로 환산<br>
+                  (VAT, 국내유통수수료 미포함)
+              </p>
+              </center>
+              <!-- TradingView Widget END -->
+              <br><br>
+              
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 국제 금시세(1돈)</span></h3>
+                      <p class="text2" designelement="text">
+                      </p>
+                  </div>
+              </center>
+              <br>
+              <!-- TradingView Widget BEGIN -->
+              
+              <center>
+                  <div class="tradingview-widget-container" style="max-width:1100px;">
+                      <div id="tradingview_347f6" style="height:550px;"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                          new TradingView.widget({
+                              "autosize": true,
+                              "symbol": "GOLD*USDKRW/31.1035*3.75",
+                              "interval": "D",
+                              "timezone": "Asia/Seoul",
+                              "theme": "light",
+                              "style": "1",
+                              "locale": "kr",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "hide_legend": true,
+                              "withdateranges": true,
+                              "hide_side_toolbar": false,
+                              "save_image": false,
+                              "container_id": "tradingview_347f6"
+                          });
+                      </script>
+                  </div>
+                  <br>
+                  <p class="text2" designelement="text">
+                      실시간 환율이 적용된 국제 금값을 금 한돈(3.75g)당 원화로 환산<br>
+                      (VAT, 국내유통수수료 미포함)
+                  </p>
+              </center>
+              <!-- TradingView Widget END -->
+              <br><br>
+              
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 금은비율</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+              <br>
+              <!-- TradingView Widget BEGIN -->
+              
+              <center>
+                  <div class="tradingview-widget-container" style="max-width:1100px;">
+                      <div id="tradingview_035cd" style="height:550px;"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                          new TradingView.widget({
+                              "autosize": true,
+                              "symbol": "FX_IDC:AUGUSD",
+                              "interval": "D",
+                              "timezone": "Asia/Seoul",
+                              "theme": "Light",
+                              "style": "2",
+                              "locale": "kr",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "hide_top_toolbar": true,
+                              "hide_legend": true,
+                              "save_image": false,
+                              "container_id": "tradingview_035cd"
+                          });
+                      </script>
+                  </div>
+                  <br>
+                  <p class="text2" designelement="text">
+                      금 1ozt.(31.1g)를 동일 중량의 은으로 바꿀 때 필요한 은의 양(개수)
+                  </p>
+              </center>
+              
+              <!-- TradingView Widget END -->
+              <br><br>
+              <center>
+                  <div class="title_group1">
+                      <h3 class="title1"><span designelement="text">실시간 원 달러 환율</span></h3>
+                      <p class="text2" designelement="text"></p>
+                  </div>
+              </center>
+              <!-- TradingView Widget BEGIN -->
+              
+              <center>
+                  <div class="tradingview-widget-container" style="max-width:1100px;">
+                      <div id="tradingview_51b13" style="height:550px;"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                      <script type="text/javascript">
+                          new TradingView.widget({
+                              "autosize": true,
+                              "symbol": "FX_IDC:USDKRW",
+                              "interval": "D",
+                              "timezone": "Asia/Seoul",
+                              "theme": "Light",
+                              "style": "1",
+                              "locale": "kr",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "hide_top_toolbar": true,
+                              "hide_legend": true,
+                              "save_image": false,
+                              "details": true,
+                              "container_id": "tradingview_51b13"
+                          });
+                      </script>
+                  </div>
+              </center>
+              <!-- TradingView Widget END -->
+              <br><br>
+
+          </div><!-- #content -->
+          <hr />
+      </div><!-- #contentWrap -->
+  </div><!-- #contentWrapper -->
+  <hr />
+  <!--/include_footer(1)/-->
+</div><!-- #wrap -->

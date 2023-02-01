@@ -1,0 +1,207 @@
+    <div id="orderSt">
+        <div class="tit-pop">
+            <h1>주문상품 리뷰등록</h1>
+            
+        </div>
+        <ul class="tab">
+            <li><a href="<!--/link_order/-->"><b>주문내역</b></a></li>
+            <!--/if_link_review/-->
+            <li>
+                <a href="<!--/link_review/-->">리뷰등록</a>
+            </li>
+            <!--/end_if/-->
+            <!--/if_link_review_board/-->
+            <li>
+                <a href="<!--/link_review_board/-->" class="active"><b>리뷰등록</b></a> 
+            </li>
+            <!--/end_if/-->
+        </ul>
+        <!-- 상품후기 등록 시작 -->
+        <div id="tabPrdReview" class="tab-cnt-cm">
+            <div class="table-order">
+                <table summary="상품명, 선택사항, 선택사항2, 수량, 가격, 후기작성">
+                    <caption>주문상세내역</caption>
+                    <colgroup>
+                        <col width="110" />
+                        <col width="*" />
+                        <col width="130" />
+                        <col width="135" />
+                        <col width="110" />
+                    </colgroup>
+                    <tbody>
+                    <!--/loop_review_list/-->
+                        <tr>
+                            <td>
+                                <div class="tb-center">
+                                    <!--/if_review_list@image_s/-->
+                                    <a href="<!--/review_list@link/-->"><img src="<!--/review_list@image_s/-->" width="70" height="70" alt="상품 섬네일" title="상품 섬네일" /></a>
+                                    <!--/end_if/-->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tb-left">
+                                    <a href="<!--/review_list@link/-->" class="tb-bold"><!--/review_list@name/--></a>
+                                    <p><!--/review_list@option1/--></p>
+                                    <p><!--/review_list@option2/--></p>
+                                </div>
+                            </td>
+                            <td><div class="tb-center tb-bold">수량 : <!--/review_list@amount/-->개</div></td>
+                            <td><div class="tb-center tb-bold fc-ong"><!--/number/review_list@price/-->원</div></td>
+                            <td>
+                                <div class="tb-center">
+                                    <a href="<!--/review_list@link_write_open/-->" class="CSSbuttonWhite btn_write">후기작성</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/if_review_list@option/-->
+                        <tr>
+                            <td colspan="5"><div class="tb-left"><img src="/images/common/order1_optionicon.gif" border="0" align="absmiddle" /> <!--/review_list@option/--></div></td>
+                        </tr>
+                        <!--/end_if/-->
+                        <tr class="tr-review-reg">
+                            <td colspan="5" style="text-align: center; display: none;" class="tb-rating" id="<!--/review_list@areabox_id/-->">
+                                <!--/review_list@form/-->
+                                <div class="tb-review">
+                                    <fieldset>
+                                        <legend>후기작성 폼</legend>
+                                        <table summary="닉네임, 비밀번호, e-mail, 파일첨부, 제목, 내용">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col width="60" />
+                                                <col width="*" />
+                                                <col width="70" />
+                                                <col width="*" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><div class="tb-left">닉네임</div></th>
+                                                    <td>
+                                                        <div class="tb-left nickname">
+                                                            <!--/review_list@user_name/-->
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row"><div class="tb-left">비밀번호</div></th>
+                                                    <td>
+                                                        <div class="tb-left">
+                                                            <!--/review_list@input_password/-->
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><div class="tb-left">이메일</div></th>
+                                                    <td>
+                                                        <div class="tb-left">
+                                                            <!--/review_list@input_email/-->
+                                                        </div>
+                                                    </td>
+                                                    <th scope="row"><div class="tb-left">파일첨부</div></th>
+                                                    <td>
+                                                        <div class="tb-left tb-file">
+                                                            <!--/review_list@file_attach/--> <a href="<!--/review_list@link_attach/-->" class="btn_file">찾아보기...</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><div class="tb-left">제목</div></th>
+                                                    <td colspan="3">
+                                                        <div class="tb-left">
+                                                            <!--/review_list@select_header/-->
+                                                            <!--/review_list@input_subject/-->
+                                                            <label>
+                                                                <!--/review_list@checkbox_html_use/-->HTML 태그허용
+                                                            </label>
+                                                            <!--/if_review_list@select_color/--><!--/review_list@select_color/--><!--/end_if/-->
+                                                            <!--/if_review_list@select_size/--><!--/review_list@select_size/--><!--/end_if/-->
+                                                            <!--/if_review_list@checkbox_bold/--><!--/review_list@checkbox_bold/--> 굵게<!--/end_if/-->
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><div class="tb-left">내용</div></th>
+                                                    <td colspan="3">
+                                                        <div class="tb-left">
+                                                            <!--/review_list@text_content/-->
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!--/if_not_login/-->
+                                                <!--/if_review_list@privercy_terms/-->
+                                                <tr>
+                                                    <td colspan="4">
+                                                    <!--/if_review_list@use_privacy/-->
+                                                        <div class="new-privercy-contract">
+                                                            <!--/review_list@new_privacy_terms/-->
+                                                        </div>
+                                                    <!--/else/-->
+                                                        <!--/if_review_list@new_privercy_type/-->
+                                                            <div class="new-privercy-contract">
+                                                                <p>개인정보 수집에 대한 동의</p>
+                                                                <div  class="privercy-contract-tap">
+                                                                    <ul>
+                                                                        <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                                                        <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                                                        <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-content">
+                                                                    <div class="privercy-contract"><textarea readonly><!--/review_list@privercy_terms1/--></textarea></div>
+                                                                    <div class="privercy-contract" style="display: none;"><textarea readonly><!--/review_list@privercy_terms2/--></textarea></div>
+                                                                    <div class="privercy-contract" style="display: none;"><textarea readonly><!--/review_list@privercy_terms3/--></textarea></div>
+                                                                </div>
+                                                                <div class="privercy-agree">
+                                                                    <label><!--/review_list@radio_privercy_ok/--> 정보수집에 동의합니다.</label>
+                                                                    <label><!--/review_list@radio_privercy_no/--> 정보수집에 동의하지 않습니다..</label>
+                                                                </div>
+                                                                <!--/if_review_list@third_party/-->
+                                                                <p>개인정보 제3자 제공</p>
+                                                                <div class="privercy-contract"><textarea readonly><!--/review_list@third_party_terms/--></textarea></div>
+                                                                <div class="privercy-agree">
+                                                                    <label><!--/review_list@radio_third_party_ok/--> 제3자 제공에 동의합니다.</label>
+                                                                    <label><!--/review_list@radio_third_party_no/--> 동의하지 않습니다.</label>
+                                                                </div>
+                                                                <!--/end_if/-->
+                                                                <!--/if_review_list@trust/-->
+                                                                <p>개인정보 처리위탁안내</p>
+                                                                <div class="privercy-contract"><textarea readonly><!--/review_list@trust_terms/--></textarea></div>
+                                                                <div class="privercy-agree">
+                                                                    <label><!--/review_list@radio_trust_ok/--> 처리위탁에 동의합니다.</label>
+                                                                    <label><!--/review_list@radio_trust_no/--> 동의하지 않습니다.</label>
+                                                                </div>
+                                                                <!--/end_if/-->
+                                                            </div>
+                                                        <!--/else/-->
+                                                            <div class="new-privercy-contract">
+                                                                <p>개인정보 수집에 대한 동의</p>
+                                                                <textarea readonly><!--/review_list@privercy_terms/--></textarea>
+                                                                <p><!--/review_list@radio_privercy_ok/--> 정보수집에 동의합니다. <!--/review_list@radio_privercy_no/-->동의하지 않습니다.</p>
+                                                            </div>
+                                                        <!--/end_if/-->
+                                                    <!--/end_if/-->
+                                                    </td>
+                                                </tr>
+                                                <!--/end_if/-->
+                                                <!--/end_if/-->
+                                            </tbody>
+                                        </table>
+                                        <div class="btn-reg">
+                                            <a href="<!--/review_list@link_write/-->" class="CSSbuttonBlack">등록</a>
+                                            <a href="<!--/review_list@link_cancel/-->" class="CSSbuttonWhite">취소</a>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <!--/end_form/-->
+                            </td>
+                        </tr>
+                    <!--/end_loop/-->
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-foot">
+                <a href="<!--/link_close/-->"  class="CSSbuttonWhite">닫기</a>
+            </div>
+        </div><!-- #tabPrdReview -->
+        <!-- // 상품후기 등록 끝 -->
+
+    </div><!-- #orderSt -->

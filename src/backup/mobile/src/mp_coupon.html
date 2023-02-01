@@ -1,0 +1,72 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="coupon-list">
+            <div class="h_title_2">
+                <a href="javascript:history.back();"><img src="/design/ksilverex/22_renew/img/icon_historyBack.png"></a>
+                <h3>쿠폰</h3>
+            </div>
+            
+            <div class="availableWrap">
+                <div class="imgWrap"><img src="/design/ksilverex/22_renew/img/icon_coupon.png"></div>
+                <div class="textWrap">
+                    <span>사용가능 쿠폰</span>
+                    <strong class="totalCoupon">0</strong>
+                </div>
+            </div>
+            
+            <!--/form_coupon/-->
+            <div class="addCouponWrap">
+                <div class="btnWrap openAddCoupon">
+                    <a href="#none" class="myBlueBtn">쿠폰 등록하기</a>
+                </div>
+                <div class="addCouponCon" style="display:none;">
+                    <div class="coupon-num">
+                        <h3>쿠폰등록</h3>
+                        <ul>
+                            <li><div class="input01"><!--/input_offcoupon1/--> - <!--/input_offcoupon2/--> - <!--/input_offcoupon3/--> - <!--/input_offcoupon4/--></div></li>
+                        </ul>
+                    </div>
+                    <div class="btnWrap">
+                        <a href="<!--/link_coupon_insert/-->" class="myBlueBtn">등록하기</a>
+                    </div>
+                </div>
+            </div>
+            <!--/end_form/-->
+            
+            <!--/if_coupon/-->
+            <section class="couponList">
+                <ul class="couponListWrap">
+                    <!--/loop_coupon/-->
+                    <li>
+                        <div class="couponCon">
+                            <p class="discountPer"><strong><!--/coupon@sale/--></strong></p>
+                            <p class="couponName"><!--/if_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /> <!--/end_if/--><!--/if_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/--><!--/coupon@name/--></p>
+                            <p class="couponDate"><!--/date(%Y.%M.%D)/coupon@use_start_date/-->~<!--/date(%Y.%M.%D)/coupon@use_end_date/--></p>
+                            <p class="minPrice"><!--/coupon@valid_price/--> 구매시 사용 가능</p>
+                            <p class="useAble"><!--/coupon@item/--></p>
+                        </div>
+                    </li>
+                    <!--/end_loop/-->
+                </ul>
+            </section>
+            <!--/end_if/-->
+            
+            
+            
+            
+            
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

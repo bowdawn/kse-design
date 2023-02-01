@@ -1,0 +1,27 @@
+#mySecede .page-body { padding:70px 90px 0 }
+
+/* »ó´Ü ³»¿ë */
+#mySecede .d-box-wrap { padding-bottom:30px; text-align:center }
+#mySecede .d-box-wrap h3 { font-size:44px; color:#000; font-weight:500; line-height:44px; letter-spacing:-2px }
+#mySecede .d-box-wrap .d-box { padding-top:15px }
+#mySecede .d-box-wrap li { padding-top:10px; line-height:20px }
+#mySecede .d-box-wrap li.t1 { font-size:14px; color:#7f7f7f }
+#mySecede .d-box-wrap li.t2 { font-size:15px; color:#000; font-weight:500 }
+
+/* Å»Åð »çÀ¯ */
+#mySecede .scede-radio { width:600px; margin:auto; padding-left:200px; padding-top:20px; color:#000; }
+#mySecede .scede-radio dt { padding-bottom:25px; font-size:16px; font-weight:bold; }
+#mySecede .scede-radio dd ul li { word-break:break-all; float:left; width:40%; padding-bottom:25px; font-size:14px; }
+#mySecede .scede-radio dd ul li input[type=radio] { margin:-3px 4px 0 0; vertical-align:middle; }
+
+/* ÀÔ·Â Æû */
+textarea::-webkit-input-placeholder { color:#ccc; }
+textarea::-moz-placeholder { color:#ccc; }
+textarea:-ms-input-placeholder { color:#ccc; }
+textarea:-moz-placeholder { color:#ccc; }
+#mySecede .scede-frm { clear:both; width:600px; margin:0 auto; }
+#mySecede .scede-frm textarea { overflow-x:hidden; overflow-y:auto; width:558px; height:150px; padding:20px; font-size:14px; border:1px solid #dcdcdc; outline:none; }
+#mySecede .count { padding-top:10px; color:#ccc; text-align:right; font-size:14px; }
+#mySecede .count span { color:#000; }
+#mySecede .btn-foot { margin-top:40px; text-align:center }
+#mySecede .btn-foot a { margin:0 3px; width:228px; height:58px; font-size:16px; line-height:58px }

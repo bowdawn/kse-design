@@ -1,0 +1,123 @@
+<!--/include_header(1)/-->
+
+<!-- 본문 -->
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main id="gallery-list">
+            <div class="h_title">
+                <h3><!--/now_board_name/--></h3>
+            </div>
+           
+            <!-- 공지글 -->
+            <div class="notice">
+                <!--/if_oneline_notice/-->
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span class="bgc464644">공지</span> <!--/oneline_notice/-->
+                        </dt>
+                    </dl>
+                </div>
+                <!--/end_if/-->
+                <!--/if_notice_list/-->
+                <!--/loop_notice_list/-->
+                <div class="notice-bar">
+                    <dl>
+                        <dt>
+                            <span class="bgc464644">공지</span>
+                            <a href="<!--/notice_list@link/-->">
+                                <!--/notag/notice_list@subject/-->
+                                <!--/if_notice_list@comment_cnt/-->
+                                (<!--/notice_list@comment_cnt/-->)
+                                <!--/end_if/-->
+                                <!--/if_notice_list@new_icon_image/-->
+                                <img src="<!--/notice_list@new_icon_image/-->"/>
+                                <!--/end_if/-->
+                            </a>
+                        </dt>
+                        <dd><!--/notice_list@writer/--> | <!--/date(%Y-%M-%D)/notice_list@date_write/--></dd>
+                    </dl>
+                </div>
+                <!--/end_loop/-->
+                <!--/end_if/-->
+            </div>
+            <!-- 공지글 -->
+            <div class="item">
+                <!-- 게시글 -->
+                <div class="list_shopping2x">
+                    <ul>
+                    <!--/if_list/-->
+                        <!--/loop_list(30)/-->
+                        <li>
+                            <a href="<!--/list@link/-->">
+                                <figure>
+                                    <!--/if_list@attach_image/-->
+                                        <img src="<!--/list@attach_image/-->" alt="" class="listPic" />
+                                    <!--/else/-->
+                                        <img src="/images/common/m_noimage.png" class="listPic" />
+                                    <!--/end_if/-->
+                                    <figcaption class="list_shoppingInfo">
+                                        <p>
+                                            <!--/if_list@is_mobile_write/--><span class="fa fa-mobile fa-lg"></span> <!--/end_if/-->
+                                            <!--/notag/list@subject(100,..)/--><!--/if_list@comment_cnt/-->(<!--/list@comment_cnt/-->)<!--/end_if/-->
+                                            <!--/if_list@new_icon_image/-->
+                                            <span class="ico_new">N</span>
+                                            <!--/end_if/-->
+                                        </p>
+                                        <p style="display:none">
+                                            <!--/if_list@img_admin_icon/-->
+                                            <img src="<!--/list@img_admin_icon/-->" />
+                                            <!--/else/-->
+                                            <!--/if_list@user_icon_image/-->
+                                            <img src="<!--/list@user_icon_image/-->" />
+                                            <!--/end_if/-->
+                                            <!--/list@writer/-->
+                                            <!--/end_if/-->
+                                            | <!--/date(%Y-%M-%d)/list@date_write/-->
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!--/end_loop/-->
+                    <!--/else/-->
+                        <li class="none-data-space">
+                                <div class="none-data">
+                                    <i class="fa fa-exclamation-triangle fa-2x"></i>
+                                    <p>등록/검색된 게시글이 없습니다.</p>
+                                </div>
+                         </li>
+                    <!--/end_if/-->
+                    </ul>
+                </div>
+                <!-- //게시글 -->
+                              <div class="paging">
+                    <!--/if_pager_list::prev/-->
+                    <a href="<!--/pager_list::prev@link/-->"><span class="fa fa-angle-left"></span></a>
+                    <!--/end_if/-->
+                    <!--/if_pager_list/-->
+                        <!--/loop_pager_list::page(6)/-->
+                            <!--/if_pager_list::page@current/-->
+                                <a href="javascript:return false;" class="now"><!--/pager_list::page/--></a>
+                            <!--/else/-->
+                                <a href="<!--/pager_list::page@link/-->"><!--/pager_list::page/--></a>
+                            <!--/end_if/-->
+                        <!--/end_loop/-->
+                    <!--/end_if/-->
+                    <!--/if_pager_list::next/-->
+                    <a href="<!--/pager_list::next@link/-->"><span class="fa fa-angle-right"></span></a>
+                    <!--/end_if/-->
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+<!-- //본문 -->
+
+<!--/include_footer(1)/-->

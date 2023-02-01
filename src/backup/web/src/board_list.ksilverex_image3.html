@@ -1,0 +1,104 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="bbsData">
+                    <div class="page-body">
+                        <div class="bbs-hd">
+                            <ul class="link">
+                                <!--/loop_top_board_list/-->
+                                <!--/if_idx(1)/-->
+                                <li class="last">
+                                <!--/else/-->
+                                <li>
+                                <!--/end_if/-->
+                                    <a href="<!--/top_board_list@link/-->"><!--/top_board_list@name/--></a>
+                                </li>
+                                <!--/end_loop/-->
+                            </ul>
+                        </div>
+                        <div class="bbs-tit">
+                            <h3><!--/now_board_name/--> PRESS RELEASE PAGE</h3>
+                            
+                        </div>
+                        <div class="bbs-table-list">
+                            <table summary="제목, 작성일, 조회수, 동영상">
+                                <caption>갤러리 게시글</caption>
+                                <colgroup>
+                                    <col width="40" />
+                                    <col width="40" />
+                                    <col width="*" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                </colgroup>
+                                <tbody>
+                                    <!--/if_oneline_notice/-->
+                                    <tr>
+                                        <td class="tb-center">
+                                            <div class="tb-center"><img src="/images/d3/modern_simple/common/icon_box_arrow.gif" /></div>
+                                        </td>
+                                        <td class="tb-center">
+                                            <div class="tb-center"><img src = "<!--/notice_image/-->"/></div>
+                                        </td>
+                                        <td colspan="3" class="tb-bold">
+                                            <div class="tb-left"><!--/oneline_notice/--></div>
+                                        </td>
+                                    </tr>
+                                 <!--/end_if/-->
+                                 <!--/if_notice_list/-->
+                                    <!--/loop_notice_list/-->
+                                    <tr>
+                                        <td>
+                                            <div class="tb-center"><img src="/images/d3/modern_simple/common/icon_box_arrow.gif" /></div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-center"><img src = "<!--/notice_image/-->"/></div>
+                                        </td>
+                                        <td>
+                                            <div class="tb-left">
+                                                <a href="<!--/notice_list@link/-->"><!--/notice_list@subject/--></a> 
+                                                <!--/if_notice_list@comment_cnt/-->(<!--/notice_list@comment_cnt/-->)<!--/end_if/--> 
+                                                <!--/if_notice_list@new_icon_image/--><img src="<!--/notice_list@new_icon_image/-->"/><!--/end_if/-->
+                                            </div>
+                                        </td>
+                                        <td><div class="tb-center"><!--/date(%Y.%M.%D)/notice_list@date_write/--></div></td>
+                                        <td><div class="tb-center">HITS : <!--/notice_list@cnt_read/--></div></td>
+                                    </tr>
+                                    <!--/end_loop/-->
+                                <!--/end_if/-->
+                                </tbody>
+                            </table>
+                            <div class="fixed-img-collist">
+                                <ul class="clear">
+                                <!--/loop_list(9)/-->
+                                    <li>
+                                        <a href="<!--/list@link/-->">
+                                        <!--/if_list@attach_image/-->
+                                            <span><img src="<!--/list@attach_image/-->"/></span>
+                                        <!--/else/-->
+                                            <span class="noimg">NO IMAGE</span>
+                                        <!--/end_if/-->
+                                            <strong><!--/list@subject/--><!--/if_list@comment_cnt/-->(<!--/list@comment_cnt/-->)<!--/end_if/-->
+                                            <!--/if_list@new_icon_image/--><img src="<!--/list@new_icon_image/-->"/><!--/end_if/-->
+                                            </strong>
+                                        </a>
+                                    <!--/if_step(3)/-->
+                                    </ul>
+                                    <ul class="clear">
+                                    <!--/end_if/-->
+                                    <!--/end_loop/-->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                                        </div><!-- .page-body -->
+                </div><!-- #bbsData -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+<!--/include_footer(1)/-->
+</div><!-- #wrap -->

@@ -1,0 +1,67 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap">
+            <div id="content">
+                <div id="myWish">
+                    <div class="myPageMainWrap clearfix">
+                        <!--/include_menu(2)/-->
+                        <div class="rightBox fr">
+                            <div class="tit-page-4">
+                                <h2>관심상품</h2>
+                            </div>
+                            <div class="page-body">
+                                <!-- 상품 리스트 -->
+                                <!--/form_product/-->
+                                <div class="goodsList">
+                                    <!--/if_product/-->
+                                    <ul class="clearfix">
+                                        <!--/loop_product/-->
+                                        <li class="fl">
+                                            <div class="imgWrap">
+                                                <a href="<!--/product@link_detail/-->" class="goodsImgLinkBox">
+                                                    <img src="<!--/product@image/-->" alt="<!--/product@name/-->" class="goodsImg">
+                                                    <div class="wishImg">
+                                                        <img src="/design/ksilverex/22_renew/img/pc_img_04.png">
+                                                    </div>
+                                                </a>
+                                                
+                                                <a href="<!--/product@link_delete/-->" class="wishBtn"></a>
+                                            </div>
+                                            <div class="textWrap">
+                                                <a href="<!--/product@link_detail/-->">
+                                                    <p class="goodsName"><!--/product@name/--></p>
+                                                    <div class="goodsPrice">
+                                                        <!--/if_product@price_option/--><strong class="d-block fc-blue"><!--/product@price_option/--></strong><!--/end_if/-->
+                                                        <strong class="sellPrice"><span class="roboto"><!--/number/product@price/--></span>원</strong>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        
+                                    <!--/if_step(3)/-->
+                                    </ul>
+                                    <ul class="clearfix">
+                                    <!--/end_if/-->
+                                        <!--/end_loop/-->
+                                    </ul>
+                                    <!--/else/-->
+                                    <div class="noData">관심상품 내역이 없습니다.</div>
+                                    <!--/end_if/-->
+                                </div>
+                                <!--/end_form/-->
+                                <!-- //상품 리스트 -->
+
+                                
+
+                            </div><!-- .page-body -->
+                        </div>
+                    </div>
+                </div><!-- #myWish -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

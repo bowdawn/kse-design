@@ -1,0 +1,11 @@
+#my-board .notice-bar {background-color: #f1f1f1; text-align:center; padding:12px 0; margin:10px 0;}
+#my-board .lists ul {  width:100%; border-top:2px solid #464646;}
+#my-board .lists li {display:flex; position:relative; border-bottom:1px solid #d7d7d7;}
+#my-board .lists .th {width:calc(100% - 80px); text-align:left; font-weight:normal; padding:10px 0 10px 10px;}
+#my-board .lists .th p {color:#7d7d7d;}
+#my-board .lists .th .board_name {margin-bottom:5px; color:#3b3b3b;}
+#my-board .lists .th .board_tit{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%;}
+#my-board .lists .td {width:80px; display: flex; justify-content:center; align-items:center;}
+#my-board .lists .td a {color:#7d7d7d;}
+#my-board .lists .no-data {text-align:center;}
+#my-board .lists .no-data .td {padding:10px 0;}

@@ -1,0 +1,13 @@
+#point-list  .notice-info {padding:0 10px; text-align:center;}
+#point-list  .notice-info p {padding:10px 0;}
+#point-list  .notice-info p:first-child {font-weight:bold; font-size:1.167em; margin-top:10px;}
+#point-list  .notice-info p:first-child em {color:#ab3e41; font-size:1.500em;}
+#point-list .cautionBox {padding: 15px 10px; background-color:#eaeaea; color:#707070;}
+#point-list .list {width:100%; border-top:2px solid #464646; margin-top:10px;}
+#point-list .list tr {border-bottom: 1px solid #bebebe;}
+#point-list .list th, #point-list .list td {height :35px; padding: 5px 0px;  }
+#point-list .list th {width : 75%; text-align: left; padding-left : 10px; color:#707070; font-weight:normal;}
+#point-list .list td {text-align: right; padding-right:10px;}
+#point-list .list .point-price {font-weight:bold; font-size:1.333em;}
+#point-list .list .point_date { display:block;}
+#point-list .list .no_data {text-align:center;}
