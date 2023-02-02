@@ -11,6 +11,13 @@ import UserPlusOutlined from "../../core/svg/user-plus-outlined.svg";
 import SquareEditOutlined from "../../core/svg/square-edit-outlined.svg";
 import TextboxSearchOutlined from "../../core/svg/textbox-search-outlined.svg";
 import TimerOutlined from "../../core/svg/timer-outlined.svg";
+import LogoutVariantOutlined from "../../core/svg/logout-variant-outlined.svg";
+import LoginVariantOutlined from "../../core/svg/login-variant-outlined.svg";
+import ShareVariantOutlined from "../../core/svg/share-variant-outlined.svg";
+import AlarmOutlined from "../../core/svg/alarm-outlined.svg";
+import ClipboardTextSearchOutlined from "../../core/svg/clipboard-text-search-outlined.svg";
+import KakaoTalkIcon from "../../core/svg/kakao-talk-icon.svg";
+import NaverIcon from "../../core/svg/naver-icon.svg";
 
 export const IconPage: React.FC = () => {
   return (
@@ -74,6 +81,34 @@ export const IconPage: React.FC = () => {
         <div>
           <div>Timer</div>
           <TimerOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Logout Variant</div>
+          <LogoutVariantOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Login Variant</div>
+          <LoginVariantOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Share Variant</div>
+          <ShareVariantOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Alarm</div>
+          <AlarmOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Clipboard Text Search</div>
+          <ClipboardTextSearchOutlined className="kse-icon" />
+        </div>
+        <div>
+          <div>Kakao Talk</div>
+          <KakaoTalkIcon className="kse-icon" />
+        </div>
+        <div>
+          <div>Naver</div>
+          <NaverIcon className="kse-icon" />
         </div>
       </div>
       <h1>Looking For More Icons?</h1>
