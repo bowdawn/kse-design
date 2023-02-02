@@ -345,27 +345,9 @@
 }
 
 /* Button */
-.kse-btn {
-  outline: none;
-  position: relative;
-  display: inline-block;
-  font-weight: 400;
-  white-space: nowrap;
-  text-align: center;
-  background-image: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  user-select: none;
-  touch-action: manipulation;
-  line-height: 1.5714285714285714;
-  color: rgba(0, 0, 0, 0.88);
-  font-size: 14px;
-  padding: 8px 15px;
-  border-radius: 4px;
-}
 
+/*  kse-btn  base style*/
+.kse-btn,
 .kse-btn-wrap .MS_input_file_button {
   outline: none;
   position: relative;
@@ -387,6 +369,7 @@
   border-radius: 4px;
 }
 
+.kse-btn:after,
 .kse-btn-wrap .MS_input_file_button:after {
   content: "";
   display: block;
@@ -400,18 +383,14 @@
   box-shadow: 0 0 4px 4px #0097e6;
 }
 
-.kse-btn-wrap .MS_input_file_button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.5s;
-  box-shadow: 0 0 4px 4px #0097e6;
+.kse-btn:active:after {
+  box-shadow: 0 0 0 0 #0097e6;
+  border-radius: 4px;
+  opacity: 1;
+  transition: 0s;
 }
+
+/*  kse-btn-primary*/
 
 .kse-btn-primary {
   color: #fff;
@@ -424,31 +403,17 @@
   background-color: #27b2f2 !important;
 }
 
+/* kse-btn-default */
+
 .kse-btn-default {
   background-color: #fff;
   border-color: #d9d9d9;
   box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
 }
 
-.kse-btn-danger {
-  background-color: #fff;
-  border-color: #d9d9d9;
-  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
-}
-
-.kse-btn-circle {
-  padding: 12px !important;
-  border-radius: 100% !important;
-}
-
 .kse-btn-default:not(:disabled):hover {
   color: #4096ff !important;
   border-color: #4096ff !important;
-}
-
-.kse-btn-danger:not(:disabled):hover {
-  color: #ff4d4f !important;
-  border-color: #ff4d4f !important;
 }
 
 .kse-btn-default:not(:disabled):hover * {
@@ -457,39 +422,23 @@
   fill: #4096ff;
 }
 
+/* kse-btn-danger */
+
+.kse-btn-danger {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+}
+
+.kse-btn-danger:not(:disabled):hover {
+  color: #ff4d4f !important;
+  border-color: #ff4d4f !important;
+}
+
 .kse-btn-danger:not(:disabled):hover * {
   color: #ff4d4f !important;
   border-color: #ff4d4f !important;
   fill: #ff4d4f !important;
-}
-
-.kse-btn-default-active {
-  background-color: #fff;
-  border-color: #d9d9d9;
-  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
-  color: #4096ff !important;
-  border-color: #4096ff !important;
-}
-
-.kse-btn:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.5s;
-  box-shadow: 0 0 4px 4px #0097e6;
-}
-
-.kse-btn-circle {
-  border-radius: 100% !important;
-}
-
-.kse-btn-circle:after {
-  border-radius: 100% !important;
 }
 
 .kse-btn-danger::after {
@@ -500,25 +449,44 @@
   box-shadow: 0 0 0 0 #ff4d4f;
 }
 
-.kse-btn:active:after {
-  box-shadow: 0 0 0 0 #0097e6;
-  border-radius: 4px;
-  opacity: 1;
-  transition: 0s;
+/* kse-btn-circle */
+
+.kse-btn-circle {
+  padding: 12px !important;
+  border-radius: 100% !important;
+}
+
+.kse-btn-circle:after {
+  border-radius: 100% !important;
 }
 
 .kse-btn-circle:active:after {
   border-radius: 100% !important;
 }
 
+/* kse-btn-default-active */
+
+.kse-btn-default-active {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+  color: #4096ff !important;
+  border-color: #4096ff !important;
+}
+
+/* kse-btn-large */
+
 .kse-btn-large {
   padding: 16px 30px;
 }
+
+/* kse-btn-compact */
 
 .kse-btn-compact {
   border-radius: 0px;
 }
 
+/* kse-btn-disabled */
 .kse-btn-disabled {
   cursor: not-allowed;
   border-color: #d9d9d9;
@@ -527,7 +495,7 @@
   box-shadow: none;
 }
 
-.kse-btn.kse-btn-disabled:hover {
+.kse-btn-disabled:hover {
   cursor: not-allowed !important;
   border-color: #d9d9d9 !important;
   color: rgba(0, 0, 0, 0.25) !important;
@@ -535,8 +503,8 @@
   box-shadow: none !important;
 }
 
-.kse-btn.kse-btn-disabled::after {
-  display: none;
+.kse-btn-disabled::after {
+  display: none !important;
 }
 
 /*Menu*/

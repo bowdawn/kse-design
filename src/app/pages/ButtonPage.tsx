@@ -3,6 +3,7 @@ import HeartPlusOutlined from "../../core/svg/heart-plus-outlined.svg";
 export const ButtonPage: React.FC = () => {
   return (
     <>
+      <h1>Styles</h1>
       <div>default button</div>
       <button className="kse-btn kse-btn-default">default</button>
       <div>compact default button (border-radius: 0px)</div>
