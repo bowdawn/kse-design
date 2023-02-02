@@ -937,10 +937,39 @@
 }
 
 .kse-collapse-primary-wrapper * {
-  border-color: #0097e6 !important;
+  border-color: #7adeff !important;
 }
 .kse-collapse-primary-wrapper .kse-collapse-header {
   background-color: #e6faff !important;
+}
+
+/* info */
+.kse-collapse-info-wrapper * {
+  border-color: #91caff !important;
+}
+.kse-collapse-info-wrapper .kse-collapse-header {
+  background-color: #e6f4ff !important;
+}
+/*warning*/
+.kse-collapse-warning-wrapper * {
+  border-color: #ffe58f !important;
+}
+.kse-collapse-warning-wrapper .kse-collapse-header {
+  background-color: #fffbe6 !important;
+}
+/*success*/
+.kse-collapse-success-wrapper * {
+  border-color: #b7eb8f !important;
+}
+.kse-collapse-success-wrapper .kse-collapse-header {
+  background-color: #f6ffed !important;
+}
+/*danger*/
+.kse-collapse-danger-wrapper * {
+  border-color: #ffccc7 !important;
+}
+.kse-collapse-danger-wrapper .kse-collapse-header {
+  background-color: #fff2f0 !important;
 }
 
 /* List */
