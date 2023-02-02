@@ -910,6 +910,7 @@
 }
 
 .kse-collapse-panel {
+  overflow: hidden;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: column;
@@ -933,6 +934,13 @@
   padding-left: 48px;
   height: 40px;
   line-height: 40px;
+}
+
+.kse-collapse-primary-wrapper * {
+  border-color: #0097e6 !important;
+}
+.kse-collapse-primary-wrapper .kse-collapse-header {
+  background-color: #e6faff !important;
 }
 
 /* List */
