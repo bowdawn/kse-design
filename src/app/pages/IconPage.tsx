@@ -17,9 +17,13 @@ export const IconPage: React.FC = () => {
     <>
       <h1>Styles</h1>
       <div>Small Icon (size 16px)</div>
-      <SearchOutlined className="kse-icon-small" />
+      <SafeboxOutlined className="kse-icon-small" />
       <div>Default Icon (size 32px)</div>
-      <MenuOutlined className="kse-icon" />
+      <SafeboxOutlined className="kse-icon" />
+      <div>Icon Link</div>
+      <SafeboxOutlined className="kse-icon kse-icon-link" />
+      <div>Icon Bold Link</div>
+      <SafeboxOutlined className="kse-icon kse-icon-bold-link" />
       <h1>Current Assets</h1>
       <div className="kse-space kse-space-middle">
         <div>
