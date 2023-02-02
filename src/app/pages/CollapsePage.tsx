@@ -1,29 +1,131 @@
 import React from "react";
-import { Collapse } from "antd";
-
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
-
-const { Panel } = Collapse;
 
 export const CollapsePage = () => {
   return (
     <>
-      <div>Ant Collapse</div>
-      <Collapse defaultActiveKey={["1"]}>
-        <Panel header="This is panel header 1" key="1">
-          <p>{text}</p>
-        </Panel>
-        <Panel header="This is panel header 2" key="2">
-          <p>{text}</p>
-        </Panel>
-        <Panel header="This is panel header 3" key="3">
-          <p>{text}</p>
-        </Panel>
-      </Collapse>
+      <h1> Style </h1>
+      <div className="kse-collapse ">
+        <div className="kse-collapse-panel ">
+          <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+            <div
+              style={{ paddingLeft: 16 }}
+              className="kse-collapse-header-text kse-text-middle"
+            >
+              실버
+            </div>
+          </div>
+        </div>
+        <div className="kse-collapse-panel ">
+          <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+            <div
+              style={{ paddingLeft: 16 }}
+              className="kse-collapse-header-text kse-text-middle"
+            >
+              골드
+            </div>
+          </div>
+          <div className="kse-collapse-content" style={{ display: "block" }}>
+            <div className="kse-text-middle kse-link-hover kse-collapse-link-text">
+              금화
+            </div>
+            <div className="kse-text-middle kse-link-hover kse-collapse-link-text">
+              골드바
+            </div>
+          </div>
+        </div>
+        <div className="kse-collapse-panel ">
+          <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+            <div
+              style={{ paddingLeft: 16 }}
+              className="kse-collapse-header-text kse-text-middle"
+            >
+              공예품{" "}
+            </div>
+          </div>
+
+          <div className="kse-collapse-content" style={{ display: "block" }}>
+            <div className=" kse-collapse">
+              <div className="kse-collapse-panel">
+                <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                  <div
+                    style={{ paddingLeft: 16 }}
+                    className="kse-collapse-header-text"
+                  >
+                    은장식품{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" kse-collapse">
+              <div className="kse-collapse-panel">
+                <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                  <div
+                    style={{ paddingLeft: 16 }}
+                    className="kse-collapse-header-text"
+                  >
+                    은계급장{" "}
+                  </div>
+                </div>
+
+                <div
+                  className="kse-collapse-content kse-list "
+                  style={{ display: "block" }}
+                >
+                  <div className="kse-text-middle kse-link-hover kse-collapse-link-text">
+                    군인 계급장
+                  </div>
+
+                  <div className="kse-text-middle kse-link-hover kse-collapse-link-text">
+                    경찰 계급장
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" kse-collapse">
+              <div className="kse-collapse-panel">
+                <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                  <div
+                    style={{ paddingLeft: 16 }}
+                    className="kse-collapse-header-text"
+                  >
+                    그라폰 파버카스텔
+                  </div>
+                </div>
+
+                <div className="kse-collapse-content kse-list ">
+                  <div className="kse-text-middle kse-link-hover kse-collapse-link-text">
+                    필기구
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="kse-collapse-panel ">
+          <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+            <div
+              style={{ paddingLeft: 16 }}
+              className="kse-collapse-header-text kse-text-middle"
+            >
+              아트투자{" "}
+            </div>
+          </div>
+        </div>
+        <div className="kse-collapse-panel ">
+          <div className=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+            <div
+              style={{ paddingLeft: 16 }}
+              className="kse-collapse-header-text kse-text-middle"
+            >
+              수집용품
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Inspirations</h2>
+      <a href="https://ant.design/components/collapse">Antd Collapse </a>
     </>
   );
 };

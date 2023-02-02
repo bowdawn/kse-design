@@ -1,100 +1,274 @@
-<!--/include_header(1)/-->
+<!--/head_banner/-->
 
-<div id="container ">
-    <div id="findIdpw" class="kse-content">
-        <!--/form_lost_password/-->
-        <!-- 아이디 -->
+<link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css" />
 
-        <center>
+<!-- 상단 -->
 
-            <h3 class="kse-title-3">아이디 찾기</h3>
-        </center>
-        <br />
-        <div>
-            <p>아이디를 찾기 위한 방법을 선택하세요.</p>
-            <div class="radio-wrap">
-                <label><!--/radio_find_id_email/--> 이메일</label>
-                <label><!--/radio_find_id_mobile/--> 휴대폰</label>
-            </div>
-            <div class="loginInput kse-input-wrapper">
-                <!--/input_user_name/-->
-                <div class="div-idtype" id="<!--/find_id_email_wrap/-->"><!--/input_find_id_email/--></div>
-                <div class="div-idtype" id="<!--/find_id_mobile_wrap/-->" style="display:none;">
-                    <!--/input_find_id_mobile/--></div>
-            </div>
-            <br />
-            <div class="loginMiddle">
-                <div class="kse-row">
-                    <a href="<!--/link_find_id/-->" class="kse-btn kse-btn-primary kse-block">아이디 찾기</a>
-                </div>
-                <br />
-                <div class="kse-row">
-                    <a href="<!--/link_login/-->" class="kse-btn kse-btn-default kse-block">로그인</a>
-                </div>
+<header id="topBnr" class="kse-layout-header kse-block">
+    <div class="kse-layout-header kse-block">
+        <a class="kse-link-primary-bg-hover kse-text-middle" href="/m/page.html?id=3" id="txt">건전한 투자와 수집문화 발전에 앞장서고
+            있습니다.
+        </a>
+    </div>
+</header>
+<header id="header">
+    <div class="kse-row kse-row-space-between kse-row-align-center kse-layout-header-middle-mobile">
+        <a href="#none" id="menu"><svg class="kse-icon kse-icon-link" viewBox="64 64 896 896" focusable="false"
+                data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                <path
+                    d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+                </path>
+            </svg>
+        </a>
+        <div class="kse-card">
+            <div class="kse-card-body">
+                <a href="<!--/link_home/-->"><img src="//ksilverex.img15.kr/koreasilverexchangelogo.png" /></a>
             </div>
         </div>
-        <!-- 비밀번호 -->
-        <br />
-        <hr class="kse-divider" />
-        <br />
 
-        <center>
-
-            <h3 class="kse-title-3">임시 비밀번호 발급</h3>
-        </center>
-        <div class="member">
-            <p>임시 비밀번호 발급을 위한 방법을 선택 하세요.</p>
-            <div class="radio-wrap">
-                <label><!--/radio_find_pw_email/--> 이메일</label>
-                <label><!--/radio_find_pw_mobile/--> 휴대폰</label>
-                <!--/if_radio_find_pw_auth/-->
-                <label><!--/radio_find_pw_auth/--> 본인인증</label>
-                <!--/end_if/-->
-            </div>
-            <!--/block_find_pw_input/-->
-            <div class="loginInput">
-                <!--/input_user_id/-->
-                <div class="div-pwtype" id="<!--/find_pw_email_wrap/-->"><!--/input_email(txt-input)/--></div>
-                <div class="div-pwtype" id="<!--/find_pw_mobile_wrap/-->" style="display:none;"><!--/input_mobile/-->
-                </div>
-            </div>
-
-            <div class="loginMiddle">
-
-                <br />
-                <div class="kse-row">
-                    <a href="<!--/link_find_pw/-->" class="kse-btn kse-btn-primary kse-block">임시 비밀번호 발급</a>
-                </div>
-                <br />
-                <div class="kse-row">
-                    <a href="<!--/link_login/-->" class="kse-btn kse-btn-default kse-block">로그인</a>
-                </div>
-            </div>
-            <!--/end_block/-->
-            <!--/if_use_auth/-->
-            <!--/block_find_pw_auth/-->
-            <div class="loginBottom">
-                <p>
-                    <!--/if_link_mobile_auth/-->
-                    휴대폰<!--/if_link_ipin_auth/--> 또는 <!--/end_if/-->
-                    <!--/end_if/-->
-                    <!--/if_link_ipin_auth/--> 아이핀 <!--/end_if/-->
-                    을 통해 임시 비밀번호를 발급 받을 수 있습니다.<br />
-                    아래 인증 버튼을 눌러 본인인증을 진행해 주세요.
-
-                    <!--/if_link_mobile_auth/-->
-                    <a href="<!--/link_mobile_auth/-->" class="btn_Red">휴대폰 인증</a>
-                    <!--/end_if/-->
-                    <!--/if_link_ipin_auth/-->
-                    <a href="<!--/link_ipin_auth/-->" class="btn_Red">아이핀 인증</a>
-                    <!--/end_if/-->
-                    <a href="<!--/link_login/-->" class="btn_White">로그인</a>
-                </p>
-            </div>
-            <!--/end_block/-->
-            <!--/end_if/-->
-            <!--/end_form/-->
-        </div><!-- #findIdpw -->
+        <a href="<!--/link_basket/-->" class="cart kse-link-hover kse-badge"><svg class="kse-icon kse-icon-link"
+                viewBox="0 0 30 31.5">
+                <g>
+                    <path
+                        d="M12,15c0-1.65,1.35-3,3-3s3,1.35,3,3-1.35,3-3,3-3-1.35-3-3m-3.3,8.55l-2.25-2.1,2.25-2.25c-.75-1.2-1.2-2.7-1.2-4.2s.45-3,1.2-4.05l-2.25-2.25,2.25-2.25,2.1,2.25c1.2-.75,2.7-1.2,4.2-1.2s3,.45,4.2,1.2l2.25-2.25,2.1,2.1-2.25,2.25c.75,1.2,1.2,2.7,1.2,4.2s-.45,3-1.2,4.2l2.25,2.25-2.1,2.1-2.25-2.25c-1.2,.75-2.7,1.2-4.2,1.2s-3-.45-4.05-1.2l-2.25,2.25m6.3-13.05c-2.55,0-4.5,1.95-4.5,4.5s1.95,4.5,4.5,4.5,4.5-1.95,4.5-4.5-1.95-4.5-4.5-4.5M27,0c1.65,0,3,1.35,3,3V27c0,1.65-1.35,3-3,3h-1.5v1.5h-6v-1.5H10.5v1.5H4.5v-1.5h-1.5c-1.65,0-3-1.35-3-3V3C0,1.35,1.35,0,3,0H27m0,27V3H3V27H27Z" />
+                </g>
+            </svg>
+            <sup class="kse-badge-count"><!--/user_basket_quantity/--></sup></a>
     </div>
 
-    <!--/include_footer(1)/-->
+    <link rel="stylesheet" href="/design/<!--/shop_id/-->/mshop_file/swiper5.min.css" />
+    <script src="/design/<!--/shop_id/-->/mshop_file/swiper5.min.js"></script>
+
+    <div class="top_slide kse-shadow kse-row kse-row-space-between kse-layout-header-bottom-mobile">
+        <div class="t-menu kse-row kse-menu">
+            <div class="kse-menu-item kse-link-hover kse-text-large kse-menu-item-silver">
+                <a href="/m/page.html?id=1" menu-name="은시세">은시세</a>
+            </div>
+            <div class="kse-menu-item kse-link-hover kse-text-large kse-menu-item-gold">
+                <a href="/m/page.html?id=3" menu-name="금시세">금시세</a>
+            </div>
+
+            <div class="kse-menu-item kse-link-hover kse-text-large kse-menu-item-magazine">
+                <a href="/m/board.html?code=ksilverex_image1" menu-name="매거진">매거진</a>
+            </div>
+            <div class="kse-menu-item kse-link-hover kse-text-large kse-menu-item-event">
+                <a href="/m/board.html?code=ksilverex_image2" menu-name="이벤트">이벤트</a>
+            </div>
+            <div class="kse-menu-item kse-link-hover kse-text-large kse-menu-item-consignment-dummy">
+                <a href="/m/product_list.html?xcode=011&type=X" menu-name="위탁판매">위탁판매</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- //상단 -->
+
+<!-- 카테고리 -->
+<aside>
+    <div>
+        <div class="kse-layout-header-content kse-layout-header-primary">
+            <div class="kse-row kse-row-center kse-relative">
+                <a href="<!--/link_home/-->" class="kse-row kse-row-center"><img style="width: 150px"
+                        src="/design/ksilverex/KSEnewlogoforKSE_BLACK1.png" alt="한국은거래소" tit="한국은거래소" /></a>
+                <a href="#" id="close_btn"><svg class="kse-icon-small kse-icon-bold-link" viewBox="64 64 896 896"
+                        focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor"
+                        aria-hidden="true">
+                        <path
+                            d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <br class="kse-break" />
+            <!--/form_search/-->
+            <div class="search_box kse-input-suffix-wrapper kse-input-wrapper">
+                <!--/input_search_word/-->
+
+                <a href="<!--/link_search_button/-->" id="search"><button type="button"
+                        class="kse-input-btn-suffix kse-btn kse-btn-default">
+                        <svg viewBox="64 64 896 896" class="kse-icon-small">
+                            <path
+                                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                            </path>
+                        </svg></button></a>
+            </div>
+            <script>
+                jQuery(".search_box input").attr("value", "검색어를 입력해주세요.");
+                jQuery(".search_box input").click(function () {
+                    jQuery(this).attr("value", "");
+                });
+            </script>
+            <!--/end_form/-->
+        </div>
+    </div>
+    <div style="height: 94px">
+        <div class="kse-shadow kse-row kse-row-space-between kse-layout-header-bottom-mobile kse-absolute">
+            <div class="kse-row kse-menu kse-row-space-between kse-block">
+                <!--/if_login/-->
+                <a href="<!--/link_logout/-->"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="logout-outlined" viewBox="0 0 27 30" class="kse-icon">
+                            <g>
+                                <path
+                                    d="M19.5,22.5v-4.5H9v-6h10.5V7.5l7.5,7.5-7.5,7.5M16.5,0c1.66,0,3,1.34,3,3v3h-3V3H3V27h13.5v-3h3v3c0,1.66-1.34,3-3,3H3c-1.66,0-3-1.34-3-3V3C0,1.34,1.34,0,3,0h13.5Z" />
+                            </g>
+                        </svg>
+                        <div class="kse-menu-item-text">로그아웃 </div>
+                    </center>
+                </a>
+
+                <a href="<!--/link_join/-->"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="square-edit-outlined" viewBox="0 0 27 27" class="kse-icon">
+                            <g>
+                                <path
+                                    d="M3,0C1.33,0,0,1.33,0,3V24c0,1.66,1.34,3,3,3H24c1.66,0,3-1.34,3-3V13.5h-3v10.5H3V3H13.5V0H3M22.17,1.5c-.27,0-.53,.11-.72,.3l-1.83,1.82,3.75,3.75,1.83-1.82c.39-.39,.39-1.05,0-1.42l-2.32-2.33c-.19-.2-.45-.3-.7-.3m-3.61,3.18L7.5,15.75v3.75h3.75l11.05-11.07-3.75-3.75Z" />
+                            </g>
+                        </svg>
+                        <div class="kse-menu-item-text">
+                            정보수정
+                        </div>
+                    </center>
+                </a>
+                <!--/else/-->
+                <a href="<!--/link_login/-->"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="login-outlined" viewBox="0 0 27 30" class="kse-icon">
+                            <g>
+                                <path
+                                    d="M10.5,22.5v-4.5H0v-6H10.5V7.5l7.5,7.5-7.5,7.5M10.5,0h13.5c1.66,0,3,1.34,3,3V27c0,1.66-1.34,3-3,3H10.5c-1.66,0-3-1.34-3-3v-3h3v3h13.5V3H10.5v3h-3V3c0-1.66,1.34-3,3-3Z" />
+                            </g>
+                        </svg>
+                        <div class="kse-menu-item-text">로그인</div>
+                    </center>
+                </a>
+
+                <a href="<!--/link_join/-->"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="user-plus-outlined" viewBox="64 64 896 896" class="kse-icon">
+                            <path
+                                d="M678.3 642.4c24.2-13 51.9-20.4 81.4-20.4h.1c3 0 4.4-3.6 2.2-5.6a371.67 371.67 0 00-103.7-65.8c-.4-.2-.8-.3-1.2-.5C719.2 505 759.6 431.7 759.6 349c0-137-110.8-248-247.5-248S264.7 212 264.7 349c0 82.7 40.4 156 102.6 201.1-.4.2-.8.3-1.2.5-44.7 18.9-84.8 46-119.3 80.6a373.42 373.42 0 00-80.4 119.5A373.6 373.6 0 00137 888.8a8 8 0 008 8.2h59.9c4.3 0 7.9-3.5 8-7.8 2-77.2 32.9-149.5 87.6-204.3C357 628.2 432.2 597 512.2 597c56.7 0 111.1 15.7 158 45.1a8.1 8.1 0 008.1.3zM512.2 521c-45.8 0-88.9-17.9-121.4-50.4A171.2 171.2 0 01340.5 349c0-45.9 17.9-89.1 50.3-121.6S466.3 177 512.2 177s88.9 17.9 121.4 50.4A171.2 171.2 0 01683.9 349c0 45.9-17.9 89.1-50.3 121.6C601.1 503.1 558 521 512.2 521zM880 759h-84v-84c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v84h-84c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h84v84c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-84h84c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z">
+                            </path>
+                        </svg>
+                        <div class="kse-menu-item-text"> 회원가입 </div>
+                    </center>
+                </a>
+
+                <!--/end_if/-->
+
+                <a href="<!--/link_mypage/-->"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="home-outlined" viewBox="64 64 896 896" class="kse-icon">
+                            <path
+                                d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z">
+                            </path>
+                        </svg>
+                        <div class="kse-menu-item-text"> 라운지</div>
+                    </center>
+                </a>
+
+                <a href="/m/order_list.html"
+                    class="kse-menu-item kse-link-hover kse-text-large kse-col-block kse-col-center">
+                    <center>
+                        <svg id="textbox-search-outline" viewBox="0 0 29.08 30.58" class="kse-icon">
+                            <g>
+                                <path
+                                    d="M18.75,13.5c3.75,0,6.75,3,6.75,6.75,0,1.32-.38,2.56-1.04,3.6l4.62,4.65-2.08,2.08-4.68-4.6c-1.04,.65-2.27,1.02-3.57,1.02-3.75,0-6.75-3-6.75-6.75s3-6.75,6.75-6.75m0,3c-2.07,0-3.75,1.68-3.75,3.75s1.68,3.75,3.75,3.75,3.75-1.68,3.75-3.75-1.68-3.75-3.75-3.75M3,0H24c1.67,0,3,1.33,3,3V15.04c-.75-1.2-1.79-2.23-3-3.04V3H3V24h6.75c.47,1.12,1.14,2.13,1.96,3H3c-1.67,0-3-1.33-3-3V3C0,1.33,1.33,0,3,0m3,6h15v3H6v-3m0,6h7.55c-1.2,.75-2.23,1.79-3.04,3H6v-3m0,6h3.26c-.16,.75-.26,1.5-.26,2.25v.75h-3v-3Z" />
+                            </g>
+                        </svg>
+
+                        <div class="kse-menu-item-text">주문조회</div>
+                    </center>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navCategory">
+        <nav>
+            <ul class="kse-collapse">
+                <!--/loop_category1(6)/-->
+                <li class="kse-collapse-panel ">
+                    <!--/if_not_category1@category2/-->
+                    <a class="kse-text-middle" href="<!--/category1@link/-->"><!--/category1@name/--></a>
+                    <!--/else/-->
+
+                    <a href="#none" class="categoryOpenBtn kse-collapse-header-large  kse-space kse-space-middle">
+
+                        <span class="fa fa-angle-down">
+                        </span>
+                        <div class="kse-collapse-header-text kse-text-middle">
+                            <!--/category1@name/-->
+                        </div>
+                    </a>
+
+
+                    <ul class="kse-collapse-content">
+                        <!--/loop_category1@category2/-->
+
+                        <!--/if_not_category1@category2@category3/-->
+                        <li>
+                            <ul class="kse-collapse-content kse-list">
+                                <li class="kse-list-item kse-text-middle">
+                                    <a href="<!--/category1@category2@link/-->"><!--/category1@category2@name/--></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--/else/-->
+                        <li>
+                            <ul class="kse-list kse-collapse">
+                                <li class="kse-collapse-panel">
+                                    <a href="#none"
+                                        class="categoryOpenBtn kse-collapse-header-large  kse-space kse-space-middle"><span
+                                            class="fa fa-angle-down "></span>
+                                        <div class="kse-collapse-header-text">
+                                            <!--/category1@category2@name/-->
+                                        </div>
+                                    </a>
+
+                                    <ul class="kse-collapse-content kse-list ">
+                                        <!--/loop_category1@category2@category3/-->
+                                        <li class="kse-list-item kse-text-middle">
+                                            <a
+                                                href="<!--/category1@category2@category3@link/-->"><!--/category1@category2@category3@name/--></a>
+                                        </li>
+                                        <!--/end_loop/-->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/end_if/-->
+
+
+
+                        <!--/end_loop/-->
+                    </ul>
+
+                    <!--/end_if/-->
+                </li>
+                <!--/end_loop/-->
+            </ul>
+            <ul>
+                <li class="no-line plan">
+                    <a class="kse-card-hoverable" href="/m/page.html?id=2"><img
+                            src="/design/ksilverex/corpbanner2.png" /><em>KSE 소개</em></a>
+                    <a class="kse-card-hoverable" href="/m/board.html?code=ksilverex_board2"><img
+                            src="/design/ksilverex/imformationbanner2.png" /><em>공지사항</em></a>
+                    <a class="kse-card-hoverable" href="/m/page.html?id=4"><img
+                            src="/design/ksilverex/VIPCLUBbanner2.png" /><em>VIP CLUB</em></a>
+                    <a class="kse-card-hoverable" href="/m/board.html?code=ksilverex_image2"><img
+                            src="/design/ksilverex/Eventbanner2.png" /><em>이벤트</em></a>
+                    <a class="kse-card-hoverable" href="/m/board.html?code=ksilverex_image1"><img
+                            src="/design/ksilverex/supermarket/mimg/mo_bottom4.png" /><em>매거진</em></a>
+                    <a class="kse-card-hoverable" href="/m/mypage.html?mypage_type=mym2mboard"><img
+                            src="/design/ksilverex/supermarket/mimg/mo_bottom3.png" /><em>매도문의</em></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- //카테고리 -->
