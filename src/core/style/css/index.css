@@ -93,6 +93,25 @@
   min-width: 0;
 }
 
+.kse-row-btn {
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 0;
+}
+.kse-row-btn > * {
+  margin-left: -1px;
+}
+.kse-row-btn > *:hover {
+  z-index: 10;
+}
+.kse-row-btn > *:active {
+  z-index: 10;
+}
+
+.kse-row-btn > .kse-btn-default-active {
+  z-index: 5;
+}
+
 .kse-row-lg {
   min-width: 1200px;
   width: 1200px;
@@ -494,6 +513,40 @@
   border-radius: 0px !important;
 }
 
+/* kse-btn-prefix */
+
+.kse-btn-prefix {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.kse-btn-prefix:after {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.kse-btn-prefix:active:after {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/* kse-btn-suffix */
+
+.kse-btn-suffix {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.kse-btn-suffix:after {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.kse-btn-suffix:active:after {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
 /* kse-btn-disabled */
 .kse-btn-disabled {
   cursor: not-allowed;
@@ -522,6 +575,7 @@
   width: fit-content;
   gap: 8px;
   line-height: unset;
+  padding: 9.4px 15px;
 }
 
 .kse-btn-kakao-talk * {
@@ -554,6 +608,7 @@
   width: fit-content;
   gap: 8px;
   line-height: unset;
+  padding: 9.4px 15px;
 }
 
 .kse-btn-naver * {
@@ -939,7 +994,7 @@
 
   border: 1px solid #d9d9d9;
   border-bottom: 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .kse-collapse-header {
   text-decoration: none;
@@ -981,13 +1036,13 @@
 }
 
 .kse-collapse-panel:last-child {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .kse-collapse-panel:first-child {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .kse-collapse-header-text {

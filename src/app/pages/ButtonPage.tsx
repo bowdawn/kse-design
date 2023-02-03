@@ -1,5 +1,6 @@
 import React from "react";
 import HeartPlusOutlined from "../../core/svg/heart-plus-outlined.svg";
+import ShareVariantOutlined from "../../core/svg/share-variant-outlined.svg";
 import KakaoTalkIcon from "../../core/svg/kakao-talk-icon.svg";
 import NaverIcon from "../../core/svg/naver-icon.svg";
 
@@ -15,11 +16,15 @@ export const ButtonPage: React.FC = () => {
       <button className="kse-btn kse-btn-danger">danger</button>
       <div>icon button</div>
       <div className="kse-space kse-space-middle">
-        <button className="kse-btn kse-btn-default kse-btn-large kse-btn-circle">
-          <HeartPlusOutlined style={{ display: "block", height: 18 }} />
-        </button>
         <button className="kse-btn  kse-btn-large kse-btn-circle kse-btn-danger">
-          <HeartPlusOutlined style={{ display: "block", height: 18 }} />
+          <HeartPlusOutlined
+            style={{ display: "block", height: 18, width: 18 }}
+          />
+        </button>
+        <button className="kse-btn kse-btn-default kse-btn-large kse-btn-circle">
+          <ShareVariantOutlined
+            style={{ display: "block", height: 18, width: 18 }}
+          />
         </button>
       </div>
       <div>default active button</div>
@@ -37,12 +42,25 @@ export const ButtonPage: React.FC = () => {
       <div>kakaotalk button</div>
       <div className="kse-btn kse-btn-default  kse-btn-kakao-talk">
         <KakaoTalkIcon className="kse-icon-small" />
-        네이버로 로그인
+        kakaotalk login
       </div>
       <div>naver button</div>
       <div className="kse-btn kse-btn-default  kse-btn-naver">
         <NaverIcon className="kse-icon-small" />
-        카카오톡으로 로그인
+        naver login
+      </div>
+      <div>row of buttons (size 2)</div>
+      <div className="kse-row-btn">
+        <div className="kse-btn kse-btn-default kse-btn-prefix">option 1</div>
+        <div className="kse-btn kse-btn-default kse-btn-suffix">option 2</div>
+      </div>
+      <div>row of buttons (size 2)</div>
+      <div className="kse-row-btn">
+        <div className="kse-btn kse-btn-default kse-btn-prefix">option 1</div>
+        <div className="kse-btn kse-btn-default kse-btn-compact">option 2</div>
+        <div className="kse-btn kse-btn-default kse-btn-default-active kse-btn-suffix ">
+          option 3
+        </div>
       </div>
     </>
   );
