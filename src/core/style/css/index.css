@@ -515,6 +515,70 @@
   display: none !important;
 }
 
+/* kse-btn-kakao-talk */
+.kse-btn-kakao-talk {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  gap: 8px;
+  line-height: unset;
+}
+
+.kse-btn-kakao-talk * {
+  fill: #fadf2d;
+}
+
+.kse-btn-default.kse-btn-kakao-talk:not(:disabled):hover {
+  color: #edc705 !important;
+  border-color: #edc705 !important;
+}
+
+.kse-btn-default.kse-btn-kakao-talk:not(:disabled):hover * {
+  color: #edc705 !important;
+  border-color: #edc705 !important;
+  fill: #edc705;
+}
+
+.kse-btn.kse-btn-kakao-talk:after {
+  box-shadow: 0 0 4px 4px #edc705;
+}
+
+.kse-btn.kse-btn-kakao-talk:active:after {
+  box-shadow: 0 0 0 0 #edc705;
+}
+
+/* kse-btn-naver */
+.kse-btn-naver {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  gap: 8px;
+  line-height: unset;
+}
+
+.kse-btn-naver * {
+  fill: #74e05c;
+}
+
+.kse-btn-default.kse-btn-naver:not(:disabled):hover {
+  color: #4ed436 !important;
+  border-color: #4ed436 !important;
+}
+
+.kse-btn-default.kse-btn-naver:not(:disabled):hover * {
+  color: #4ed436 !important;
+  border-color: #4ed436 !important;
+  fill: #4ed436;
+}
+
+.kse-btn.kse-btn-naver:after {
+  box-shadow: 0 0 4px 4px #4ed436;
+}
+
+.kse-btn.kse-btn-naver:active:after {
+  box-shadow: 0 0 0 0 #4ed436;
+}
+
 /*Menu*/
 .kse-menu {
   box-sizing: border-box;

@@ -1,5 +1,8 @@
 import React from "react";
 import HeartPlusOutlined from "../../core/svg/heart-plus-outlined.svg";
+import KakaoTalkIcon from "../../core/svg/kakao-talk-icon.svg";
+import NaverIcon from "../../core/svg/naver-icon.svg";
+
 export const ButtonPage: React.FC = () => {
   return (
     <>
@@ -31,6 +34,16 @@ export const ButtonPage: React.FC = () => {
       <button className="kse-btn kse-btn-default kse-btn-disabled">
         disabled
       </button>
+      <div>kakaotalk button</div>
+      <div className="kse-btn kse-btn-default  kse-btn-kakao-talk">
+        <KakaoTalkIcon className="kse-icon-small" />
+        네이버로 로그인
+      </div>
+      <div>naver button</div>
+      <div className="kse-btn kse-btn-default  kse-btn-naver">
+        <NaverIcon className="kse-icon-small" />
+        카카오톡으로 로그인
+      </div>
     </>
   );
 };
