@@ -267,6 +267,10 @@
 .kse-link-hover:hover {
   color: #0097e6;
 }
+.kse-link-hover:hover * {
+  color: #0097e6;
+  fill: #0097e6;
+}
 
 .kse-link-bold-hover {
   font-weight: bold;
