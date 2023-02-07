@@ -242,10 +242,10 @@ export const MenuPage: React.FC = () => {
               <li className="kse-menu-item">
                 <a href="/shop/mypage.html?mypage_type=myorder">주문내역</a>
               </li>
-              <li className="kse-menu-item">
+              <li className="kse-menu-item kse-menu-">
                 <a href="/shop/mypage.html?mypage_type=mycoupon">쿠폰</a>
               </li>
-              <li className="kse-menu-item">
+              <li className="kse-menu-item kse-menu-item-selected">
                 <a href="/shop/mypage.html?mypage_type=myreserve">
                   멤버십 포인트
                 </a>

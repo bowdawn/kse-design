@@ -804,7 +804,10 @@
 
 .kse-menu-item-group > ul > li {
   padding-left: 24px;
-  padding-inline: 20px 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   position: relative;
   display: flex;
   align-items: center;
@@ -821,6 +824,21 @@
   cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.kse-menu-item-group > ul > li.kse-menu-item-selected {
+  background-color: #e6f4ff !important;
+  color: #0097e6 !important;
+}
+.kse-menu-item-group > ul > li.kse-menu-item-selected:hover {
+  background-color: #e6f4ff !important;
+  color: #0097e6 !important;
+}
+.kse-menu-item-group > ul > li.kse-menu-item-selected > a {
+  color: #0097e6 !important;
+}
+.kse-menu-item-group > ul > li.kse-menu-item-selected:hover > a {
+  color: #0097e6 !important;
 }
 
 .kse-menu-item-group > ul > li:hover {
