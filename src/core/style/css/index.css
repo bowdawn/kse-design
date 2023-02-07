@@ -779,7 +779,7 @@
 
 .kse-menu-item-group-title {
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.45);
+  color: #00284d;
   padding: 8px 16px;
   padding-left: 0;
   padding-bottom: 0;
@@ -835,12 +835,17 @@
 
 /* Sider */
 .kse-layout-sider-children {
-  width: 250px;
+  width: 275px;
 }
 
 .kse-layout-sider-header {
   background-color: rgba(0, 0, 0, 0.06);
   padding: 24px;
+  font-size: 20px;
+}
+
+.kse-layout-sider-header-customer {
+  font-size: 24px;
 }
 
 /* Shadow */

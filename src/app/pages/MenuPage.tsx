@@ -222,10 +222,11 @@ export const MenuPage: React.FC = () => {
       <h3>Lounge (web)</h3>
       <div className="kse-layout-sider-children">
         <div className="kse-layout-sider-header">
-          오늘도 좋은 일이 가득할
-          <br />
-          <strong>홍길동</strong>
-          &nbsp;고객님!
+          <div>오늘도 좋은 일이 가득할</div>
+          <div className="kse-layout-sider-header-customer">
+            <strong>홍길동</strong>
+            &nbsp;고객님!
+          </div>
         </div>
         <ul className="kse-menu-horizontal">
           <li className="kse-menu-item-group kse-space-vertical-small">
