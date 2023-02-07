@@ -146,7 +146,7 @@
   flex: 1.75 !important;
 }
 
-.kse-col-block.kse-col-hp-no-stlye {
+.kse-col-block.kse-col-no-style-hp {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
@@ -229,6 +229,11 @@
 
 .kse-text {
   font-size: 14px !important;
+}
+
+.kse-text-primary,
+.kse-text-primary * {
+  color: #0097e6 !important;
 }
 
 .kse-text-small {
@@ -674,6 +679,7 @@
 /*MenuDepth1*/
 .kse-menu-item {
   list-style: none;
+  display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -685,7 +691,6 @@
   white-space: nowrap;
   cursor: pointer;
   position: relative;
-  display: inline-block;
   vertical-align: bottom;
   padding-right: 64px;
   top: 1px;
@@ -722,6 +727,9 @@
 .kse-layout-header-bottom-mobile .kse-menu-item:hover::before {
   width: 100%;
 }
+.kse-menu-horizontal .kse-menu-item:hover::before {
+  width: 0%;
+}
 
 .kse-menu-item:hover * {
   color: #0097e6 !important;
@@ -737,6 +745,95 @@
   margin-top: 4px;
   font-size: 16px;
   line-height: initial;
+}
+
+/* Menu-Horizontal */
+.kse-menu-horizontal {
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+  list-style: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.88);
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 24px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol, noto color emoji;
+
+  transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+
+.kse-menu-item-group {
+}
+
+.kse-menu-item-group-title {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.45);
+  padding: 8px 16px;
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 1.5714285714285714;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+.kse-menu-item-group > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  display: block;
+}
+
+.kse-menu-item-group > ul > li {
+  padding-left: 24px;
+  padding-inline: 20px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s, background 0.3s,
+    padding 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  height: 40px;
+  line-height: 40px;
+  list-style-position: inside;
+  list-style-type: disc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-inline: 4px;
+  margin-block: 4px;
+  width: calc(100% - 8px);
+  margin: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.kse-menu-item-group > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.88) !important;
+}
+
+.kse-menu-item-group > ul > li > a {
+  text-decoration: none;
+}
+
+.kse-menu-item-group > ul > li:hover > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.88) !important;
+}
+
+/* Sider */
+.kse-layout-sider-children {
+  width: 250px;
+}
+
+.kse-layout-sider-header {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 24px;
 }
 
 /* Shadow */
@@ -866,6 +963,8 @@
 /* Input */
 
 .kse-input,
+.MS_login_id.kse-input,
+.MS_login_pw.kse-input,
 .kse-input-wrapper input {
   height: unset;
   box-sizing: border-box;

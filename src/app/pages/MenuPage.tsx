@@ -64,8 +64,8 @@ export const MenuPage: React.FC = () => {
         </div>
       </header>
       <div>Menu Bottom Header</div>
-      <div className="kse-menu-dummy">
-        <div className="kse-shadow kse-layout-dummy kse-row kse-row-center kse-block kse-row-lg-min kse-affix">
+      <div className="kse-menu-dummy" style={{ height: 87.2 }}>
+        <div className="kse-shadow  kse-row kse-row-center kse-block kse-row-lg-min kse-affix">
           <div className="kse-row kse-row-lg kse-row-space-between">
             <div className="kse-menu">
               <div className="kse-menu-item">
@@ -86,10 +86,11 @@ export const MenuPage: React.FC = () => {
                 </a>
               </div>
               <div className="kse-menu-item">
-                <a className="" href="/shop/page.html?id=1">
-                  <span className="txt kse-link-hover kse-text-large">
-                    은시세
-                  </span>
+                <a
+                  className=" kse-link-hover kse-text-large"
+                  href="/shop/page.html?id=1"
+                >
+                  은시세
                 </a>
               </div>
               <div className="kse-menu-item">
@@ -217,6 +218,85 @@ export const MenuPage: React.FC = () => {
             </a>
           </div>
         </div>
+      </div>
+      <h3>Lounge (web)</h3>
+      <div className="kse-layout-sider-children">
+        <div className="kse-layout-sider-header">
+          오늘도 좋은 일이 가득할
+          <br />
+          <strong>홍길동</strong>
+          &nbsp;고객님!
+        </div>
+        <ul className="kse-menu-horizontal">
+          <li className="kse-menu-item-group">
+            <div
+              className="kse-menu-item-group-title"
+              style={{ paddingTop: 0 }}
+            >
+              쇼핑정보
+            </div>
+            <ul>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=myorder">주문내역</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=mycoupon">쿠폰</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=myreserve">
+                  멤버십 포인트
+                </a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=myemoney">예치금 내역</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/todaygoods.html">오늘 본 상품</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=mywishlist">관심상품</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/basket.html">나의 금고</a>
+              </li>
+
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=myplace">주소록 관리</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/page.html?id=6">VIP CLUB</a>
+              </li>
+            </ul>
+          </li>
+          <li className="kse-menu-item-group">
+            <div className="kse-menu-item-group-title">문의내역</div>
+            <ul>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=myarticle">
+                  내 게시글 보기
+                </a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/mypage.html?mypage_type=mym2mboard">1:1 문의</a>
+              </li>
+              <li className="kse-menu-item">
+                <a href="/shop/faq.html">자주묻는 질문</a>
+              </li>
+            </ul>
+            <li className="kse-menu-item-group">
+              <div className="kse-menu-item-group-title">고객정보</div>
+
+              <ul>
+                <li className="kse-menu-item">
+                  <a href="/shop/idinfo.html">회원정보 변경</a>
+                </li>
+                <li className="kse-menu-item">
+                  <a href="javascript:userexit();">회원탈퇴 신청</a>
+                </li>
+              </ul>
+            </li>
+          </li>
+        </ul>
       </div>
     </>
   );
