@@ -412,7 +412,7 @@ ul.tabs li a {
 	width: 100%;
 }
 .timesale ul.prd-list li {
-	display: inline;
+	display: flex;
 	margin-bottom: 23px;
 }
 .timesale ul.prd-list li a {
@@ -424,6 +424,7 @@ ul.tabs li a {
 	font-size: 11px;
 	font-weight: 300;
 	border-radius: 30px;
+        display: block;
 }
 .timesale ul.prd-list li.swiper-slide-thumb-active {
 }
@@ -557,7 +558,8 @@ ul.tabs li a {
 
 /*¸Å°ÅÁø*/
 #special {
-	background: #afe2ff;
+/* primary-1 */
+	background: #e6faff;
 	padding: 0 7px;
 }
 #special .main_ban_wrap {

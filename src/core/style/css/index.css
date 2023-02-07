@@ -141,6 +141,16 @@
 .kse-col-block {
   flex: 1 !important;
 }
+
+.kse-col-block-1-75 {
+  flex: 1.75 !important;
+}
+
+.kse-col-block.kse-col-hp-no-stlye {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .kse-col-center {
   text-align: center;
 }

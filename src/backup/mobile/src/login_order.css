@@ -1,7 +1,6 @@
 #login .login #keyboard {margin-top:20px; padding:0 15px;}
-#login .tab {padding:0 15px; margin-top:30px;}
-#login .tab a {width:50%; height:34px; border:1px solid #bdbdbd; border-top:3px solid #bdbdbd; border-bottom:1px solid #ab3e41; display: inline-block; text-align: center; line-height: 30px; box-sizing: border-box; background-color:#fbfbfb; }
-#login .tab a.act {color:#ab3e41; background-color:#fff; border:1px solid #ab3e41;  border-top:3px solid #ab3e41; border-bottom:0px none; font-weight:bold;}
+#login .tab {padding:0 15px; }
+
 #login .login .loginInput {margin-top: 10px;}
 #login .nonmember {margin-top:20px; display:none;}
 #login .nonmember fieldset {padding:0 15px;}

@@ -1,1 +1,8 @@
-.login .loginInput input{text-indent:10px}
+#footer {
+    margin-top: 0px !important;
+}
+
+.login .loginInput input {
+ 
+    margin-bottom: 0px;
+}

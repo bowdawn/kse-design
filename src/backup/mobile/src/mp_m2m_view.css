@@ -3,7 +3,7 @@
 #board-view table thead {background-color: #f1f1f1;}
 #board-view table tr {border-bottom:1px solid #d7d7d7;}
 #board-view table th {padding:10px; text-align: left;  font-weight: normal;}
-#board-view table td {padding:10px; width: 60px;}
+#board-view table td {padding:10px; width: 60px; word-break: break-word;}
 #board-view table td .rep_com {color:#fff; background-color: #464644; padding:2px 5px;}
 #board-view table td .rep_ready {color:#fff; background-color: #949492; padding:2px 5px;}
 #board-view .btns {padding:0 10px;}

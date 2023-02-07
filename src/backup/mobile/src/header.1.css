@@ -41,16 +41,7 @@
 }
 
 
-#login .tab a{
-    border-bottom: 1px solid #0097e6 !important;
-}
-    
-    
-#login .tab a.act{
-    color: #0097e6 !important;
-    border: 1px solid #0097e6 !important;
-    border-top: 3px solid #0097e6 !important;
-}
+
     
 
 
@@ -156,7 +147,7 @@ p.join{position:relative; display: inline-block;}
 #header .top_slide a.now{border-bottom: 3px solid #6b3590 ;color: #6b3590  !important;}
 #header .top_slide .swiper-slide:nth-child(1){padding-left:7px;}
 #header .top_slide .swiper-slide{ width: initial !important; padding-right: 25px;}
-.fa-angle-down:before{color: #b6b6b6;font-size: 16px;}
+.fa-angle-down:before{color: #b6b6b6;font-size: 16px; line-height: 32px;}
 
 /* 카테고리 */
 aside #close_btn {
@@ -177,22 +168,17 @@ aside .search .searchBox input {width: 100%; height: 37px; border: 0px none; mar
 aside .search .btn_search {width: 45px; height: 42px; line-height: 50px;   position: absolute; bottom: 7px;  right: 23px; color: #fff; text-align: center;;}
 aside .search .btn_search img{width: 23px; vertical-align: inherit;}
 
-aside nav { padding-top: 20px}
+
 aside nav li { position:relative;}
 aside nav li a {display: block; position: relative;    }
 aside nav li .fa {   }
 
 
 
-aside nav li > ul { display:none; }
-aside nav li > ul > li { }
-aside nav li > ul > li:first-child {}
-aside nav li > ul > li a {}
-aside nav li > ul > li > ul {}
-aside nav li > ul > li > ul > li {}
-aside nav li > ul > li > ul > li a {}
+
+
 aside nav li.no-line{margin-top:0 !important; border-bottom:0 !important;}
-aside nav li.plan{text-align: center; padding-top: 25px; display: table; padding: 20px 10px;}
+aside nav li.plan{text-align: center; padding-top: 25px; display: table;}
 aside nav li.plan a{ margin-bottom: 10px !important;display:inline-block; width:48.5%; height: inherit; line-height: inherit; padding: 0 !important; margin: 0; border: 1px solid #ededed;}
 aside nav li.plan a:nth-child(odd){float: left;}
 aside nav li.plan a:nth-child(even){float:right;}

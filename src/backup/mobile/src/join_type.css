@@ -1,18 +1,18 @@
-.join-type { margin:15px 15px 0; }
+
 .join-type .member-type { text-align:center; }
-.join-type .member-type dt { color:#333; font-size:1.25em; font-weight:bold; letter-spacing:-1px; }
+
 .join-type .member-type dd { color:#000; margin-top:5px; }
 .join-type .member-both { overflow:hidden; margin-top:15px; padding-bottom:20px; }
 .join-type .member-both li { float:left; width:50%; box-sizing:border-box; color:#000; text-align:center; }
 .join-type .member-both li:first-child { padding-right:15px; border-right:1px solid #dcdcdc; }
 .join-type .member-both li:last-child { padding-left:15px; }
 .join-type .member-both p em { font-size:1.375em; font-weight:bold; letter-spacing:-1px; }
-.join-type .member-both li:first-child p em { color:#ff6600; }
-.join-type .member-both li:last-child p em { color:#0087dd; }
+.join-type .member-both li:first-child p em { color:#0097e6; }
+.join-type .member-both li:last-child p em { color:#0097e6; }
 
-.sns-join { position: relative;  margin: 30px 0 20px 0;  }
-.sns-join .sns-title img { width: 300px; padding: 0 20px; }
-.sns-join ul { padding: 0 20px; padding-bottom: 20px; border-bottom: 1px solid #dadada; }
+.sns-join { position: relative;    }
+.sns-join .sns-title img { max-width: 300px; width: 100% padding: 0 20px; }
+
 .sns-join ul li { position: relative; margin-top: 10px; padding-left: 50px; height: 40px; line-height: 40px; border: 1px solid #dfdfdf; border-radius: 4px; list-style: none; }
 .sns-join ul li a{ display: block; padding-left: 10px; border-left: 1px solid #dfdfdf; color: #999; font-size: 1.25em; font-weight: bold; letter-spacing: -1px; }
 .sns-join ul li span { position: absolute; top: 0; left: 0; width: 50px; height: 40px; }

@@ -99,7 +99,8 @@ jQuery("#close_btn").click(function() {
 jQuery(".categoryOpenBtn").click(function() {
    
     jQuery(this).children(".fa-angle-down").toggleClass("fa-rotate-180");
-    jQuery(this).parent().children("ul").toggle();
+    jQuery(this).parent().children(".kse-collapse-content").toggle();
+  
 
    
     return false

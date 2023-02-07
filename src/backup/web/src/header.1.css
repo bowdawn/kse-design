@@ -51,10 +51,10 @@ body{min-width:1280px;}
     font-size: 18px;}
 .r_wing_wrap .r_wing_content .bnr_wrap a.heassal p{display: block; height: 100px; vertical-align: bottom; line-height: 165px; /*font-weight: bold;*/ color: #000;}
 
-.r_wing_wrap .r_wing_content .bnr_wrap .btn{display: table; width: 100%;margin-top: -1px; border-bottom: 1px solid #e7e7e7;}
+.r_wing_wrap .r_wing_content .bnr_wrap .btn{display: block; width: 100%;margin-top: -1px; border-bottom: 1px solid #e7e7e7;}
 .r_wing_wrap .r_wing_content .bnr_wrap .btn a{width: 50%;height: 40px;line-height: 40px;}
 .r_wing_wrap .r_wing_content .bnr_wrap .btn a img{ vertical-align: middle;}
-#go_top{float: left;}
+#go_top{}
 #go_bottom{float: right; border-left: 1px solid #e7e7e7; margin-right: -1px;}
 
 

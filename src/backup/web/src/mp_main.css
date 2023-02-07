@@ -210,7 +210,8 @@
 
 #mypage .myPageMainWrap .info dl dd .unit{
     display: inline-block;
-    margin-top: -15px;
+        margin-top: -5px;
+
     vertical-align: middle;
 }
 
@@ -298,3 +299,7 @@
 #mypage .lst .wishListWrap .item-cont .item-list a { display:block; width:100%; }
 #mypage .lst .wishListWrap .item-cont .item-list a img { width:100%;}
 #mypage .lst .wishListWrap .item-cont .item-list .prd-price{font-size:14px;}
+
+#mypage .myPageMainWrap .info {
+width: unset;
+}
