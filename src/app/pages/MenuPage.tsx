@@ -228,13 +228,15 @@ export const MenuPage: React.FC = () => {
           &nbsp;고객님!
         </div>
         <ul className="kse-menu-horizontal">
-          <li className="kse-menu-item-group">
+          <li className="kse-menu-item-group kse-space-vertical-small">
             <div
               className="kse-menu-item-group-title"
               style={{ paddingTop: 0 }}
             >
               쇼핑정보
             </div>
+            <hr className="kse-divider-no-style" />
+
             <ul>
               <li className="kse-menu-item">
                 <a href="/shop/mypage.html?mypage_type=myorder">주문내역</a>
@@ -268,8 +270,9 @@ export const MenuPage: React.FC = () => {
               </li>
             </ul>
           </li>
-          <li className="kse-menu-item-group">
+          <li className="kse-menu-item-group  kse-space-vertical-small">
             <div className="kse-menu-item-group-title">문의내역</div>
+            <hr className="kse-divider-no-style" />
             <ul>
               <li className="kse-menu-item">
                 <a href="/shop/mypage.html?mypage_type=myarticle">
@@ -283,9 +286,9 @@ export const MenuPage: React.FC = () => {
                 <a href="/shop/faq.html">자주묻는 질문</a>
               </li>
             </ul>
-            <li className="kse-menu-item-group">
+            <li className="kse-menu-item-group kse-space-vertical-small">
               <div className="kse-menu-item-group-title">고객정보</div>
-
+              <hr className="kse-divider-no-style" />
               <ul>
                 <li className="kse-menu-item">
                   <a href="/shop/idinfo.html">회원정보 변경</a>

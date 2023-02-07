@@ -168,10 +168,20 @@
 /* Divider */
 .kse-divider {
   display: block;
+
+  height: 1px;
+  border: 0;
+  border-top: 2px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-divider-no-style {
+  display: block;
   display: block;
   height: 1px;
   border: 0;
   border-top: 2px solid rgba(5, 5, 5, 0.06);
+  margin: 0;
+  padding: 0;
 }
 
 /* Required */
@@ -693,8 +703,7 @@
   position: relative;
   vertical-align: bottom;
   padding-right: 64px;
-  top: 1px;
-  margin-top: -1px;
+
   margin-bottom: 0;
   border-radius: 8px;
   background-color: transparent;
@@ -773,6 +782,7 @@
   color: rgba(0, 0, 0, 0.45);
   padding: 8px 16px;
   padding-left: 0;
+  padding-bottom: 0;
   font-size: 20px;
   line-height: 1.5714285714285714;
   transition: all 0.3s;
@@ -802,10 +812,7 @@
   list-style-type: disc;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-inline: 4px;
-  margin-block: 4px;
-  width: calc(100% - 8px);
-  margin: 0;
+
   white-space: nowrap;
   cursor: pointer;
   border-radius: 4px;
