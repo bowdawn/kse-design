@@ -236,7 +236,7 @@ export const MenuPage: React.FC = () => {
             >
               쇼핑정보
             </div>
-            <hr className="kse-divider-no-style" />
+            <hr className="kse-divider-no-style kse-divider-color-10" />
 
             <ul>
               <li className="kse-menu-item">
@@ -272,8 +272,8 @@ export const MenuPage: React.FC = () => {
             </ul>
           </li>
           <li className="kse-menu-item-group  kse-space-vertical-small">
-            <div className="kse-menu-item-group-title">문의내역</div>
-            <hr className="kse-divider-no-style" />
+            <div className="kse-menu-item-group-title ">문의내역</div>
+            <hr className="kse-divider-no-style kse-divider-color-10" />
             <ul>
               <li className="kse-menu-item">
                 <a href="/shop/mypage.html?mypage_type=myarticle">
@@ -289,7 +289,7 @@ export const MenuPage: React.FC = () => {
             </ul>
             <li className="kse-menu-item-group kse-space-vertical-small">
               <div className="kse-menu-item-group-title">고객정보</div>
-              <hr className="kse-divider-no-style" />
+              <hr className="kse-divider-no-style kse-divider-color-10" />
               <ul>
                 <li className="kse-menu-item">
                   <a href="/shop/idinfo.html">회원정보 변경</a>

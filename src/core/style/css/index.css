@@ -184,6 +184,10 @@
   padding: 0;
 }
 
+.kse-divider-color-10 {
+  border-top: 1px solid #00284d;
+}
+
 /* Required */
 .kse-required::before {
   display: inline-block;
