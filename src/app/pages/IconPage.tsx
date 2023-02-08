@@ -18,11 +18,15 @@ import AlarmOutlined from "../../core/svg/alarm-outlined.svg";
 import ClipboardTextSearchOutlined from "../../core/svg/clipboard-text-search-outlined.svg";
 import KakaoTalkIcon from "../../core/svg/kakao-talk-icon.svg";
 import NaverIcon from "../../core/svg/naver-icon.svg";
+import PointsTwoToned from "../../core/svg/points-two-toned.svg";
+import CrownTwoToned from "../../core/svg/crown-two-toned.svg";
 
 export const IconPage: React.FC = () => {
   return (
     <>
       <h1>Styles</h1>
+      <div>Mini Icon (size 8px)</div>
+      <SafeboxOutlined className="kse-icon-mini" />
       <div>Small Icon (size 16px)</div>
       <SafeboxOutlined className="kse-icon-small" />
       <div>Default Icon (size 32px)</div>
@@ -109,6 +113,14 @@ export const IconPage: React.FC = () => {
         <div>
           <div>Naver</div>
           <NaverIcon className="kse-icon" />
+        </div>
+        <div>
+          <div>Points</div>
+          <PointsTwoToned className="" />
+        </div>
+        <div>
+          <div>Crown</div>
+          <CrownTwoToned className="" />
         </div>
       </div>
       <h1>Looking For More Icons?</h1>
