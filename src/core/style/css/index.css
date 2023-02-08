@@ -228,7 +228,7 @@
 
 .kse-space-vertical-mini {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   flex-direction: column;
 }
 
