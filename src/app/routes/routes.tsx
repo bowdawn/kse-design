@@ -9,6 +9,7 @@ import { InputPage } from "../pages/InputPage";
 import { MenuPage } from "../pages/MenuPage";
 import { ScreenMobilePage } from "../pages/ScreenMobilePage";
 import { ScreenWebPage } from "../pages/ScreenWebPage";
+import { SelectPage } from "../pages/SelectPage";
 import { TagPage } from "../pages/TagPage";
 import { TypographyPage } from "../pages/TypographyPage";
 import {
@@ -22,6 +23,7 @@ import {
   tagPath,
   screenMobilePath,
   screenWebPath,
+  selectPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -62,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: screenWebPath,
     element: <ScreenWebPage />,
+  },
+  {
+    path: selectPath,
+    element: <SelectPage />,
   },
   {
     path: menuPath,

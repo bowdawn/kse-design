@@ -6,5 +6,6 @@ export const inputPath = "input";
 export const menuPath = "menu";
 export const screenMobilePath = "screens-mobile";
 export const screenWebPath = "screens-web";
+export const selectPath = "select";
 export const tagPath = "tag";
 export const typographyPath = "typography";

@@ -9,6 +9,7 @@ import {
   menuPath,
   screenMobilePath,
   screenWebPath,
+  selectPath,
   tagPath,
   typographyPath,
 } from "../routes/paths";
@@ -39,6 +40,9 @@ export const HomePage: React.FC = () => {
       </div>
       <div>
         <NavLink to={"/" + screenWebPath}>Screens (Web)</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + selectPath}>Select</NavLink>
       </div>
       <div>
         <NavLink to={"/" + tagPath}>Tag</NavLink>
