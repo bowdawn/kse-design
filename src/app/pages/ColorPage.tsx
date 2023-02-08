@@ -50,6 +50,11 @@ export const ColorPage: React.FC = () => {
           <Typography.Text copyable>#00284d</Typography.Text>
         </div>
       </Space>
+      <h1>Looking For More Information Related To Colors?</h1>
+      <h2>Go Check Out These Ant Design Resources :)!</h2>
+      <a href="https://ant.design/docs/spec/colors">
+        https://ant.design/docs/spec/colors
+      </a>
     </>
   );
 };
