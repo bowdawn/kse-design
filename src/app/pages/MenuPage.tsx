@@ -200,7 +200,7 @@ export const MenuPage: React.FC = () => {
       </div>
       <h3>Lounge (web)</h3>
       <div className="kse-layout-sider-children">
-        <div className="kse-layout-sider-header">
+        <div className="kse-layout-sider-header kse-space-vertical-mini">
           <div>오늘도 좋은 일이 가득할</div>
           <div className="kse-layout-sider-header-customer">
             <span
