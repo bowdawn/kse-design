@@ -162,7 +162,9 @@ export const AlertPage: React.FC = () => {
       <div className="kse-alert kse-alert-info" role="alert">
         <div className="kse-alert-content">
           <div className="kse-alert-description">
-            <InfoIcon className="kse-alert-icon" />
+            <div>
+              <InfoIcon className="kse-alert-icon" />
+            </div>
             금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
             금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
           </div>
@@ -172,7 +174,9 @@ export const AlertPage: React.FC = () => {
       <div className="kse-alert kse-alert-success" role="alert">
         <div className="kse-alert-content">
           <div className="kse-alert-description">
-            <SuccessIcon className="kse-alert-icon" />
+            <div>
+              <SuccessIcon className="kse-alert-icon" />
+            </div>
             금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
             금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
           </div>
@@ -182,7 +186,9 @@ export const AlertPage: React.FC = () => {
       <div className="kse-alert kse-alert-error" role="alert">
         <div className="kse-alert-content">
           <div className="kse-alert-description">
-            <ErrorIcon className="kse-alert-icon" />
+            <div>
+              <ErrorIcon className="kse-alert-icon" />
+            </div>
             금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
             금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
           </div>
@@ -192,7 +198,9 @@ export const AlertPage: React.FC = () => {
       <div className="kse-alert kse-alert-warning" role="alert">
         <div className="kse-alert-content">
           <div className="kse-alert-description">
-            <WarningIcon className="kse-alert-icon" />
+            <div>
+              <WarningIcon className="kse-alert-icon" />
+            </div>
             금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
             금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
           </div>
@@ -271,7 +279,7 @@ export const AlertPage: React.FC = () => {
           className="kse-row kse-row-space-between kse-block
         "
         >
-          <div className="kse-row">
+          <div className="kse-row kse-alert-closeable-block">
             <InfoIcon className="kse-alert-icon" />
             <div className="kse-alert-content">
               <div className="kse-alert-message">금융사기주의안내</div>
@@ -292,7 +300,9 @@ export const AlertPage: React.FC = () => {
         >
           <div className="kse-alert-content">
             <div className="kse-alert-description">
-              <InfoIcon className="kse-alert-icon" />
+              <div>
+                <InfoIcon className="kse-alert-icon" />
+              </div>
               금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
               금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
             </div>
@@ -339,7 +349,7 @@ export const AlertPage: React.FC = () => {
           className="kse-row kse-row-space-between kse-block
         "
         >
-          <div className="kse-row">
+          <div className="kse-row kse-alert-closeable-block">
             <SuccessIcon className="kse-alert-icon" />
             <div className="kse-alert-content">
               <div className="kse-alert-message">금융사기주의안내</div>
@@ -360,7 +370,9 @@ export const AlertPage: React.FC = () => {
         >
           <div className="kse-alert-content">
             <div className="kse-alert-description">
-              <SuccessIcon className="kse-alert-icon" />
+              <div>
+                <SuccessIcon className="kse-alert-icon" />
+              </div>
               금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
               금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
             </div>
@@ -407,7 +419,7 @@ export const AlertPage: React.FC = () => {
           className="kse-row kse-row-space-between kse-block
         "
         >
-          <div className="kse-row">
+          <div className="kse-row kse-alert-closeable-block">
             <ErrorIcon className="kse-alert-icon" />
             <div className="kse-alert-content">
               <div className="kse-alert-message">금융사기주의안내</div>
@@ -428,7 +440,9 @@ export const AlertPage: React.FC = () => {
         >
           <div className="kse-alert-content">
             <div className="kse-alert-description">
-              <ErrorIcon className="kse-alert-icon" />
+              <div>
+                <ErrorIcon className="kse-alert-icon" />
+              </div>
               금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
               금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
             </div>
@@ -475,7 +489,7 @@ export const AlertPage: React.FC = () => {
           className="kse-row kse-row-space-between kse-block
         "
         >
-          <div className="kse-row">
+          <div className="kse-row kse-alert-closeable-block">
             <WarningIcon className="kse-alert-icon" />
             <div className="kse-alert-content">
               <div className="kse-alert-message">금융사기주의안내</div>
@@ -496,7 +510,9 @@ export const AlertPage: React.FC = () => {
         >
           <div className="kse-alert-content">
             <div className="kse-alert-description">
-              <WarningIcon className="kse-alert-icon" />
+              <div>
+                <WarningIcon className="kse-alert-icon" />
+              </div>
               금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
               금융거래정보, 현금 입금을 요구하는 경우는 없습니다.
             </div>

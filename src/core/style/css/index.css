@@ -1534,10 +1534,16 @@
 .kse-alert-description .kse-alert-icon {
   font-size: 14px;
   height: 14px;
+  min-height: 14px;
   align-self: auto;
 }
 
 .kse-alert-close {
+  margin-left: 8px;
   font-size: 14px;
   height: 14px;
+}
+
+.kse-alert-closeable-block {
+  width: calc(100% - 22px);
 }
