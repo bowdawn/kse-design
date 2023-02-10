@@ -72,7 +72,7 @@ export const AlertPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div>Primary</div>
+      <div>Info</div>
       <div className="kse-alert kse-alert-info" role="alert">
         <div className="kse-alert-content">
           <div className="kse-alert-description">
