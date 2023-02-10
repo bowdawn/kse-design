@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
+  alertPath,
   buttonPath,
   collapsePath,
   colorsPath,
@@ -10,6 +11,7 @@ import {
   screenMobilePath,
   screenWebPath,
   selectPath,
+  tablePath,
   tagPath,
   typographyPath,
 } from "../routes/paths";
@@ -17,6 +19,9 @@ import {
 export const HomePage: React.FC = () => {
   return (
     <>
+      <div>
+        <NavLink to={"/" + alertPath}>Alert</NavLink>
+      </div>
       <div>
         <NavLink to={"/" + buttonPath}>Button</NavLink>
       </div>
@@ -43,6 +48,9 @@ export const HomePage: React.FC = () => {
       </div>
       <div>
         <NavLink to={"/" + selectPath}>Select</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + tablePath}>Table</NavLink>
       </div>
       <div>
         <NavLink to={"/" + tagPath}>Tag</NavLink>

@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AlertPage } from "../pages/AlertPage";
 import { ButtonPage } from "../pages/ButtonPage";
 import { CollapsePage } from "../pages/CollapsePage";
 import { ColorPage } from "../pages/ColorPage";
@@ -10,6 +11,7 @@ import { MenuPage } from "../pages/MenuPage";
 import { ScreenMobilePage } from "../pages/ScreenMobilePage";
 import { ScreenWebPage } from "../pages/ScreenWebPage";
 import { SelectPage } from "../pages/SelectPage";
+import { TablePage } from "../pages/TablePage";
 import { TagPage } from "../pages/TagPage";
 import { TypographyPage } from "../pages/TypographyPage";
 import {
@@ -24,12 +26,18 @@ import {
   screenMobilePath,
   screenWebPath,
   selectPath,
+  tablePath,
+  alertPath,
 } from "./paths";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+  },
+  {
+    path: alertPath,
+    element: <AlertPage />,
   },
 
   {
@@ -72,6 +80,10 @@ const router = createBrowserRouter([
   {
     path: menuPath,
     element: <MenuPage />,
+  },
+  {
+    path: tablePath,
+    element: <TablePage />,
   },
   {
     path: typographyPath,
