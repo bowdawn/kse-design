@@ -39,8 +39,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>2,000 할인</div>
-              <div>1,000 할인</div>
+              <div>2,000할인</div>
+              <div>1,000할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -112,8 +112,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>2,000 할인</div>
-              <div>1,000 할인</div>
+              <div>2,000할인</div>
+              <div>1,000할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -127,8 +127,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>무료배송 쿠폰</div>
-              <div>1 개</div>
+              <div>무료배송 쿠폰 1개</div>
+              <div></div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -185,9 +185,9 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>5,000 할인</div>
-              <div>2,000 할인</div>
-              <div>1,000 할인</div>
+              <div>5,000할인</div>
+              <div>2,000할인</div>
+              <div>1,000할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -201,8 +201,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>무료배송 쿠폰</div>
-              <div>2 개</div>
+              <div>무료배송 쿠폰 2개</div>
+              <div></div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -260,9 +260,9 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>10,000 할인</div>
-              <div>5,000 할인</div>
-              <div>2,000 할인</div>
+              <div>10,000할인</div>
+              <div>5,000할인</div>
+              <div>2,000할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -276,8 +276,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>무료배송 쿠폰</div>
-              <div>3 개</div>
+              <div>무료배송 쿠폰 3개</div>
+              <div></div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -302,8 +302,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>Special Gift</div>
-              <div>1회</div>
+              <div>Special Gift 1회</div>
+              <div></div>
             </center>
           </Descriptions.Item>
         </Descriptions>
