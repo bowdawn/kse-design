@@ -21,7 +21,7 @@ export const DescriptionsPage: React.FC = () => {
               </center>
               <div className="kse-col-block">
                 <center>
-                  <div className="kse-title-3">글래식 문</div>
+                  <div className="kse-title-3">클래식 문</div>
                   <div>Classic Moon</div>
                 </center>
               </div>
