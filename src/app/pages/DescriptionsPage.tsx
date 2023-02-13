@@ -28,21 +28,28 @@ export const DescriptionsPage: React.FC = () => {
             </div>
           }
         >
-          <Descriptions.Item label={<center>쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>2,000 할인</div>
               <div>1,000 할인</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>무료배송 쿠폰</center>}>
-            <center>
-              <div>-</div>
-            </center>
-          </Descriptions.Item>
           <Descriptions.Item
             label={
               <center>
-                위탁판매 시 <br /> 수수료 면제 서빈스
+                <strong>무료배송 쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
               </center>
             }
           >
@@ -50,7 +57,26 @@ export const DescriptionsPage: React.FC = () => {
               <div>-</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>특별 혜택</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>
+                  위탁판매 시 <br /> 수수료 면제 서비스
+                </strong>
+              </center>
+            }
+          >
+            <center>
+              <div>-</div>
+            </center>
+          </Descriptions.Item>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>특별 혜택</strong>
+              </center>
+            }
+          >
             <center>
               <div>-</div>
             </center>
@@ -75,13 +101,31 @@ export const DescriptionsPage: React.FC = () => {
             </div>
           }
         >
-          <Descriptions.Item label={<center>쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>2,000 할인</div>
               <div>1,000 할인</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>무료배송 쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>무료배송 쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>무료배송 쿠폰</div>
               <div>1 개</div>
@@ -90,7 +134,9 @@ export const DescriptionsPage: React.FC = () => {
           <Descriptions.Item
             label={
               <center>
-                위탁판매 시 <br /> 수수료 면제 서빈스
+                <strong>
+                  위탁판매 시 <br /> 수수료 면제 서비스
+                </strong>
               </center>
             }
           >
@@ -98,7 +144,13 @@ export const DescriptionsPage: React.FC = () => {
               <div>-</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>특별 혜택</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>특별 혜택</strong>
+              </center>
+            }
+          >
             <center>
               <div>-</div>
             </center>
@@ -122,14 +174,32 @@ export const DescriptionsPage: React.FC = () => {
             </div>
           }
         >
-          <Descriptions.Item label={<center>쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>5,000 할인</div>
               <div>2,000 할인</div>
               <div>1,000 할인</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>무료배송 쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>무료배송 쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>무료배송 쿠폰</div>
               <div>2 개</div>
@@ -138,7 +208,9 @@ export const DescriptionsPage: React.FC = () => {
           <Descriptions.Item
             label={
               <center>
-                위탁판매 시 <br /> 수수료 면제 서빈스
+                <strong>
+                  위탁판매 시 <br /> 수수료 면제 서비스
+                </strong>
               </center>
             }
           >
@@ -147,7 +219,13 @@ export const DescriptionsPage: React.FC = () => {
               <div>총 300만원 까지 수수료 면제</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>특별 혜택</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>특별 혜택</strong>
+              </center>
+            }
+          >
             <center>
               <div>-</div>
             </center>
@@ -171,23 +249,43 @@ export const DescriptionsPage: React.FC = () => {
             </div>
           }
         >
-          <Descriptions.Item label={<center>쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
               <div>10,000 할인</div>
               <div>5,000 할인</div>
               <div>2,000 할인</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>무료배송 쿠폰</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>무료배송 쿠폰</strong>
+                <div class="kse-text-primary-10 kse-text-small">
+                  (매월 지급)
+                </div>
+              </center>
+            }
+          >
             <center>
-              <div>무료 배송 쿠폰</div>
+              <div>무료배송 쿠폰</div>
               <div>3 개</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
             label={
               <center>
-                위탁판매 시 <br /> 수수료 면제 서빈스
+                <strong>
+                  위탁판매 시 <br /> 수수료 면제 서비스
+                </strong>
               </center>
             }
           >
@@ -196,7 +294,13 @@ export const DescriptionsPage: React.FC = () => {
               <div>총 500만원 까지 수수료 면제</div>
             </center>
           </Descriptions.Item>
-          <Descriptions.Item label={<center>특별 혜택</center>}>
+          <Descriptions.Item
+            label={
+              <center>
+                <strong>특별 혜택</strong>
+              </center>
+            }
+          >
             <center>
               <div>Special Gift</div>
               <div>1회</div>

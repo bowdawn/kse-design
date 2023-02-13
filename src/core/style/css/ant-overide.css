@@ -2,6 +2,10 @@
   width: 175px !important;
 }
 
+.ant-descriptions-item-label {
+  font-size: 16px !important;
+}
+
 .rank-image-wrapper {
   width: 175px !important;
 }
