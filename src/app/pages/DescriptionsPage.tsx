@@ -39,8 +39,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>2,000할인</div>
-              <div>1,000할인</div>
+              <div>2,000원 할인</div>
+              <div>1,000원 할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -112,8 +112,8 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>2,000할인</div>
-              <div>1,000할인</div>
+              <div>2,000원 할인</div>
+              <div>1,000원 할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -185,9 +185,9 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>5,000할인</div>
-              <div>2,000할인</div>
-              <div>1,000할인</div>
+              <div>5,000원 할인</div>
+              <div>2,000원 할인</div>
+              <div>1,000원 할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
@@ -260,9 +260,9 @@ export const DescriptionsPage: React.FC = () => {
             }
           >
             <center>
-              <div>10,000할인</div>
-              <div>5,000할인</div>
-              <div>2,000할인</div>
+              <div>10,000원 할인</div>
+              <div>5,000원 할인</div>
+              <div>2,000원 할인</div>
             </center>
           </Descriptions.Item>
           <Descriptions.Item
