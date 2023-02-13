@@ -117,7 +117,7 @@
 }
 
 .vipClubWrap .conBox2 dl dt{
-    width:220px;
+    width:250px;
     padding-top:12px;
     margin-right:35px;
 }
@@ -145,7 +145,7 @@
 
 .vipClubWrap .conBox2 dl dt .imgWrap img{
     display:block;
-    width:100%;
+    width:125px;
 }
 
 .vipClubWrap .conBox2 dl dt .nameWrap strong{
@@ -183,7 +183,7 @@
 }
 
 .vipClubWrap .conBox2 dl dd{
-    width:945px;
+    width:900px;
     padding-top:10px;
     border-top:1px solid #DBDBDB;
 }
@@ -220,3 +220,67 @@
     color: #999;
     line-height: 23px;
 }
+
+.kse-text-rank1 *{
+color: #CCC1B2 !important;
+}
+
+.kse-text-rank2 *{
+color: #FCA729 !important;
+}
+
+.kse-text-rank3 *{
+color: #AA4743 !important;
+}
+
+
+.kse-text-rank4 *{
+color: #2857FA !important;
+}
+
+.rank-text{
+  text-align: left;
+  width: 165px;
+}
+
+.table-rank td.kse-table-cell{
+vertical-align: middle;
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.table-rank th.kse-table-cell{
+padding-bottom: 12px;
+vertical-align: middle;
+}
+
+.table-rank td.kse-table-cell{
+border-top: 1px solid #DBDBDB;
+}
+
+.table-rank td.kse-table-cell.rank1{
+border-top: solid 3px #CCC1B2;
+}
+
+.table-rank td.kse-table-cell.rank2{
+border-top: solid 3px #FCA729;
+}
+.table-rank td.kse-table-cell.rank3{
+border-top: solid 3px #AA4743;
+}
+.table-rank td.kse-table-cell.rank4{
+border-top: solid 3px #2857FA;
+}
+.table-rank td.kse-table-cell.table-gap{
+border-top: none;
+}
+
+.table-rank td:nth-child(3), .table-rank td  {
+    font-weight: bold;
+}
+
+
+.table-rank img {
+ width: 60px;
+}
+

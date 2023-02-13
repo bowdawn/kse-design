@@ -9,7 +9,7 @@
 
 .list-link { padding:10px 15px; border-top: 1px solid #e9e9e9; border-bottom: 1px solid #e9e9e9; }
 .list-link li { padding:10px 0px; font-family:dotum }
-.list-link li a { font-family:dotum; color:#828282 }
+
 .list-link span.arrow { padding: 0px 5px 0px 15px; color: #828282; font-weight:bold }
 .list-link span.arrow.prev { background: url(/images/d3/modern_simple/common/icon_prev_arrow.gif) no-repeat left 1px }
 .list-link span.arrow.next { background: url(/images/d3/modern_simple/common/icon_next_arrow.gif) no-repeat left 1px }
@@ -38,4 +38,10 @@
 .privercy-contract .tbl td { height:32px; padding:0; margin:0; border-right: 1px solid #dadada; border-bottom: 1px solid #dadada; letter-spacing:-1px; font-family:dotum }
 .privercy-contract .tbl td .txt-l { padding:5px 3px; margin:0; text-align:left; }
 
+.kse-link-event-dummy a {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+  font-weight: bold;
+  font-size: 20px !important;
+}
 

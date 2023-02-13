@@ -180,9 +180,7 @@
     margin-top:0;
 }
 
-.mypage .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList{
-    padding-top:25px;
-}
+
 
 .mypage .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li{
     width:calc(50% - 30px);
@@ -224,7 +222,7 @@
     font-size:12px;
     color:#a6a6a6;
     line-height:20px;
-    margin-bottom: 10px;
+
 }
 
 .mypage .benefitInfoCon > ul > li span{
@@ -273,3 +271,186 @@
 .mypage .hd h3 { font-size:20px; font-weight:900; line-height:35px }
 .mypage .hd .view { position: absolute; top: 15px; right: 0; color: #767676; font-weight: bold; }
 .mypage .hd .view img{ width: 5px; vertical-align: middle; margin-top: -3px; margin-left: 3px;}
+
+.vipClubWrap *{
+    color:#191919;
+}
+
+.vipClubWrap{
+    padding:0 20px;
+    margin-top: 30px;
+    border-top: 1px solid #EDEDED;
+}
+
+.vipClubWrap .pageTit{
+    padding-bottom: 15px;
+    margin-bottom:15px;
+    font-size: 34px;
+    font-weight: 900;
+    border-bottom: 2px solid #000;
+}
+
+.vipClubWrap .pageSubTit{
+    margin-bottom:30px;
+}
+
+.vipClubWrap .pageSubTit p{
+    margin-bottom:5px;
+    font-size:12px;
+    line-height:18px;
+}
+
+.vipClubWrap .conTit strong{
+    display: block;
+    padding: 30px 0 15px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.vipClubWrap .conTit strong img{
+    width:24px;
+    margin-top:-5px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+.vipClubWrap .conBox2 dl{
+    margin-bottom:30px;
+}
+
+.vipClubWrap .conBox2 dl dt{
+    width: 95px;
+    padding-top: 12px;
+    margin-right: 10px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt{
+    border-top:3px solid #CCC1B2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt{
+    border-top:3px solid #FCA729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt{
+    border-top:3px solid #AA4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt{
+    border-top:3px solid #2857FA;
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap{
+  
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap img{
+    display:block;
+    width:100%;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap{
+text-align: center;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap strong{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap span{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap span{
+    color:#CCC1B2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap span{
+    color:#FCA729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap span{
+    color:#AA4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap span{
+    color:#2857FA;
+}
+
+.vipClubWrap .conBox2 dl dd{
+    width:calc(100% - 150px);
+    padding-top:10px;
+    border-top:1px solid #DBDBDB;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit{
+    margin-bottom:10px;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit strong{
+    display:block;
+    margin-right:15px;
+    font-size:12px;
+    line-height:18px;
+    color:#999;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit span{
+    display:block;
+    font-size:12px;
+    line-height:18px;
+    font-weight:900;
+}
+
+.vipClubWrap .conBox2 dl dd ul{
+    width:100%;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li{
+    position: relative;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #a6a6a6;
+    line-height: 20px;
+    
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li span{
+    position: absolute;
+    top: 0;
+    left: 8px;
+    line-height: 18px;
+    width: 10px;
+    text-align: center;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li > ul > li{
+    padding-left: 15px;
+    font-size: 12px;
+    color: #b8b8b8;
+    line-height: 18px;
+    margin-bottom:5px;
+}
+
+
+
+.kse-required-dash.kse-required.kse-required-absolute:before{
+    left: 8px;
+    top: 4px;
+    display: inline-block;
+    margin-inline-end: unset;
+    color: unset;
+    font-size: unset;
+    content: "-";
+}

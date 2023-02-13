@@ -4,6 +4,7 @@ import { AlertPage } from "../pages/AlertPage";
 import { ButtonPage } from "../pages/ButtonPage";
 import { CollapsePage } from "../pages/CollapsePage";
 import { ColorPage } from "../pages/ColorPage";
+import { DescriptionsPage } from "../pages/DescriptionsPage";
 import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
@@ -28,6 +29,7 @@ import {
   selectPath,
   tablePath,
   alertPath,
+  descriptionsPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -51,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: colorsPath,
     element: <ColorPage />,
+  },
+  {
+    path: descriptionsPath,
+    element: <DescriptionsPage />,
   },
   {
     path: iconPath,

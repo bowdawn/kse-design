@@ -3,3 +3,10 @@
 .bbs-hd .link li a { padding: 0 10px; color: #b7b7b7; background: url(/images/d3/modern_simple/common/bull_bbs_hd_link.gif) no-repeat left 9px; font-size: 18px;}
 .bbs-table-list { border-top:5px solid #000 }
 .bbs-tit h3 { float:left; font-size:25px; color:#000; font-weight:bold; line-height:30px }
+
+.kse-link-faq-dummy a {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+  font-weight: bold;
+  font-size: 20px !important;
+}

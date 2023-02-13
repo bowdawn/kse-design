@@ -5,6 +5,7 @@ import {
   buttonPath,
   collapsePath,
   colorsPath,
+  descriptionsPath,
   iconPath,
   inputPath,
   menuPath,
@@ -25,14 +26,18 @@ export const HomePage: React.FC = () => {
       <div>
         <NavLink to={"/" + buttonPath}>Button</NavLink>
       </div>
-      <div>
-        <NavLink to={"/" + iconPath}>Icon</NavLink>
-      </div>
+
       <div>
         <NavLink to={"/" + collapsePath}>Collapse</NavLink>
       </div>
       <div>
         <NavLink to={"/" + colorsPath}>Colors</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + descriptionsPath}>Descriptions</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + iconPath}>Icon</NavLink>
       </div>
       <div>
         <NavLink to={"/" + inputPath}>Input</NavLink>

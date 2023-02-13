@@ -143,16 +143,16 @@
                     <div class="order_info_write">
                         <dl>
                             <dt class="require">성함</dt>
-                            <dd class="pname"><!--/input_user_name(txt-input1)/--></dd>
+                            <dd class="pname kse-input-wrapper"><!--/input_user_name(txt-input1)/--></dd>
                         </dl>
                         <dl>
                             <dt class="require">휴대폰</dt>
-                            <dd><!--/input_user_tel(txt-input3)/--></dd>
+                            <dd class="kse-input-wrapper"><!--/input_user_tel(txt-input3)/--></dd>
                         </dl>
   
                         <dl>
                             <dt class="require">이메일</dt>
-                            <dd><!--/input_user_email(txt-input1)/--></dd>
+                            <dd class="kse-input-wrapper"><!--/input_user_email(txt-input1)/--></dd>
                         </dl>                        
                     </div>
                 </section>
@@ -173,7 +173,7 @@
                                 
                         <dl>
                             <dt class="require">실수령인 성함</dt>
-                            <dd class="pname"><!--/input_receiver(txt-input1)/--></dd>
+                            <dd class="pname kse-input-wrapper"><!--/input_receiver(txt-input1)/--></dd>
                         </dl>
                         
                         <dl class="order-info-detail">
@@ -256,12 +256,12 @@
                             <dt class="require">주소</dt>
                             <dd>
 <div class="kse-row ">
-                                <input name="post1" style="border-left: none; border-top: none; border-right: none;" id="post1" class="kse-col-block" form="order_form"  class="MS_input_txt txt-zipcode" onclick="this.blur();post();">
+                                <input  name="post1" id="post1" class=" kse-input kse-col-block MS_input_txt txt-zipcode" form="order_form"   onclick="this.blur();post();">
                                 <a href="<!--/link_search_zip/-->" class="btn_zipcode kse-btn kse-btn-primary" style="margin-left: 5px;">우편번호</a>
 </div>                       
 </dd>                        
-                            <dd><!--/input_receiver_addr1(txt-input1)/--></dd>
-                            <dd><!--/input_receiver_addr2(txt-input1)/--></dd>
+                            <dd class="kse-input-wrapper"><!--/input_receiver_addr1(txt-input1)/--></dd>
+                            <dd class="kse-input-wrapper"><!--/input_receiver_addr2(txt-input1)/--></dd>
                         </dl>                        
                         <!--/end_if/-->
                                 
@@ -346,10 +346,13 @@
                         <!--/if_input_user_reserve/-->                        
                         <dl>
                             <dt>멤버십 포인트</dt>
-                            <dd>
+                            <dd> 
+                            <div class="kse-row kse-row-align-center">
+                            <div class="kse-input-wrapper kse-col-block">
                                 <!--/input_user_reserve(txt-reserve)/--> 
+                                </div>
                                 <div class="ck_reserve_cont"><label class="fade"><!--/check_all_reserve/--> 전액사용</label></div>
-                                
+                                </div>
                                 <div class="txt-reserve_msg">
                                     <span>(사용가능한 멤버십 포인트 : <!--/input_possible_reserve(input_reserve)/--> P)<br>멤버십 포인트는 최종 구매금액의 80%까지 사용가능합니다.</span>
                                 </div>
@@ -988,20 +991,21 @@
                 <!--/gift_choice_order/-->
 
                             
-            <div class="btn_box fixed_btn_box">
-                <a href="<!--/link_payment/-->" class="all-ok kse-row kse-row-center kse-row-align-center">
-                    <!--/if_block_final_price/-->
-                    <!--/block_final_price/--><!--/number/total_price/--><!--/end_block/--> 
-                    <!--/end_if/-->
-원 결제하기
-                    <!--/if_login/-->
-                    <!--/if_total_reserve/-->
-                    <p class="total_reserve_txt">(적립예정 멤버십포인트 <!--/block_expect_reserve/--><!--/number/total_reserve/--><!--/end_block/-->P)</p>
-                    <!--/end_if/-->
-                    <!--/end_if/-->
+            <div class="btn_box fixed_btn_box kse-content ">
+            <div class="kse-row">
+                <a href="<!--/link_payment/-->" class="all-ok kse-btn kse-btn-primary kse-btn-large kse-block ">
+                   
+결제하기
+                    
 
                 </a>
-                <a href="<!--/link_back/-->" style="display:none;"><span>이전</span></a>
+                </div>
+                
+                <!--/if_login/-->
+                    <!--/if_total_reserve/-->
+                    <p class="total_reserve_txt kse-required">(적립예정 멤버십포인트 <!--/block_expect_reserve/--><!--/number/total_reserve/--><!--/end_block/-->P)</p>
+                    <!--/end_if/-->
+                    <!--/end_if/-->
             </div>
             <!--/end_form/-->
 <!-- 팝업 -->

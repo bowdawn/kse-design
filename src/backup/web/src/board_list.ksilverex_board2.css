@@ -1,3 +1,10 @@
-.bbs-hd .link li:nth-child(2) a {font-weight: bold; color: #0097e6; font-size:20px;}
+
 .bbs-table-list { border-top:5px solid #000 }
 .bbs-tit h3 { float:left; font-size:25px; color:#000; font-weight:bold; line-height:30px }
+
+.kse-link-announcement-dummy a {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+  font-weight: bold;
+  font-size: 20px !important;
+}

@@ -314,3 +314,283 @@
 #mypage .hd h3 { font-size:24px; font-weight:900; line-height:35px }
 #mypage .hd .view { position: absolute; top: 15px; right: 0; color: #767676; font-weight: bold; }
 #mypage .hd .view img{ width: 5px; vertical-align: middle; margin-top: -3px; margin-left: 3px;}
+
+
+
+
+.pageTit{
+    padding-bottom: 15px;
+    margin-bottom:15px;
+    font-size: 34px;
+    font-weight: 900;
+    border-bottom: 2px solid #000;
+}
+
+ .pageSubTit p{
+    font-size:20px;
+    line-height:32px;
+}
+
+ .conTit strong{
+    display:block;
+    padding:50px 0 17px;
+    font-size:24px;
+    font-weight:900;
+    line-height:35px;
+}
+
+.conTit strong img{
+    width:34px;
+    margin-top:-5px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+ .conBox1{
+    padding-top:70px;
+}
+
+ .conBox1 ul li{
+    width:300px;
+}
+
+.conBox1 ul li .imgWrap img{
+    display:block;
+    width:170px;
+    margin:0 auto 20px;
+}
+
+ .conBox1 ul li .nameWrap{
+    padding-bottom:15px;
+}
+ .conBox1 ul li.rank01 .nameWrap{
+    border-bottom:17px solid #CCC1B2;
+}
+
+ .conBox1 ul li.rank02 .nameWrap{
+    border-bottom:17px solid #FCA729;
+}
+
+.conBox1 ul li.rank03 .nameWrap{
+    border-bottom:17px solid #AA4743;
+}
+
+.conBox1 ul li.rank04 .nameWrap{
+    border-bottom:17px solid #2857FA;
+}
+
+ .conBox1 ul li .nameWrap strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:40px;
+    font-weight:900;
+    text-align:center;
+}
+
+.conBox1 ul li .nameWrap span{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ .conBox1 ul li.rank01 .nameWrap strong,
+ .conBox1 ul li.rank01 .nameWrap span{
+    color:#CCC1B2;
+}
+
+ .conBox1 ul li.rank02 .nameWrap strong,
+ .conBox1 ul li.rank02 .nameWrap span{
+    color:#FCA729;
+}
+
+ .conBox1 ul li.rank03 .nameWrap strong,
+.conBox1 ul li.rank03 .nameWrap span{
+    color:#AA4743;
+}
+
+ .conBox1 ul li.rank04 .nameWrap strong,
+ .conBox1 ul li.rank04 .nameWrap span{
+    color:#2857FA;
+}
+
+.conBox1 ul li .textWrap span{
+    display:block;
+    padding-top:20px;
+    font-size:20px;
+    color:#999;
+    line-height:32px;
+    text-align:center;
+}
+
+ .conBox2 dl{
+    min-height:155px;
+}
+
+.conBox2 dl dt{
+    width:250px;
+    padding-top:12px;
+    margin-right:35px;
+}
+
+ .conBox2 dl.rank01 dt{
+    border-top:3px solid #CCC1B2;
+}
+
+.conBox2 dl.rank02 dt{
+    border-top:3px solid #FCA729;
+}
+
+.conBox2 dl.rank03 dt{
+    border-top:3px solid #AA4743;
+}
+
+.conBox2 dl.rank04 dt{
+    border-top:3px solid #2857FA;
+}
+
+.conBox2 dl dt .imgWrap{
+    width:68px;
+    margin-right:34px;
+}
+
+ .conBox2 dl dt .imgWrap img{
+    display:block;
+    width:100%;
+}
+.conBox2 dl dt .nameWrap strong{
+    display:block;
+    font-size:34px;
+    font-weight:bold;
+    line-height:48px;
+}
+
+.conBox2 dl dt .nameWrap span{
+    display:block;
+    font-size:17px;
+    font-weight:500;
+    line-height:20px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap span{
+    color:#CCC1B2;
+}
+
+ .conBox2 dl.rank02 dt .nameWrap strong,
+ .conBox2 dl.rank02 dt .nameWrap span{
+    color:#FCA729;
+}
+
+ .conBox2 dl.rank03 dt .nameWrap strong,
+.conBox2 dl.rank03 dt .nameWrap span{
+    color:#AA4743;
+}
+
+.conBox2 dl.rank04 dt .nameWrap strong,
+ .conBox2 dl.rank04 dt .nameWrap span{
+    color:#2857FA;
+}
+
+.conBox2 dl dd{
+    width:900px;
+    padding-top:10px;
+    border-top:1px solid #DBDBDB;
+}
+
+ .conBox2 dl dd .gradeBenefit strong{
+    display:inline-block;
+    width:206px;
+    margin-bottom:8px;
+    font-size:16px;
+    line-height:23px;
+    color:#999;
+}
+
+.conBox2 dl dd .gradeBenefit span{
+    display:inline-block;
+    width:206px;
+    margin-bottom:8px;
+    font-size:16px;
+    line-height:23px;
+    font-weight:900;
+}
+
+.conBox3 .benefitInfoCon > ul > li{
+    padding-left: 100px;
+    font-size: 15px;
+    color: #999;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.conBox3 .benefitInfoCon > ul > li > ul > li{
+    padding-left: 20px;
+    font-size: 15px;
+    color: #999;
+    line-height: 23px;
+}
+
+.kse-text-rank1 *{
+color: #CCC1B2 !important;
+}
+
+.kse-text-rank2 *{
+color: #FCA729 !important;
+}
+
+.kse-text-rank3 *{
+color: #AA4743 !important;
+}
+
+
+.kse-text-rank4 *{
+color: #2857FA !important;
+}
+
+.rank-text{
+  text-align: left;
+  width: 105px;
+}
+
+.table-rank td.kse-table-cell{
+vertical-align: middle;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.table-rank th.kse-table-cell{
+padding-bottom: 12px;
+vertical-align: middle;
+}
+
+.table-rank td.kse-table-cell{
+border-top: 1px solid #DBDBDB;
+}
+
+.table-rank td.kse-table-cell.rank1{
+border-top: solid 3px #CCC1B2;
+}
+
+.table-rank td.kse-table-cell.rank2{
+border-top: solid 3px #FCA729;
+}
+.table-rank td.kse-table-cell.rank3{
+border-top: solid 3px #AA4743;
+}
+.table-rank td.kse-table-cell.rank4{
+border-top: solid 3px #2857FA;
+}
+.table-rank td.kse-table-cell.table-gap{
+border-top: none;
+}
+
+.table-rank td:nth-child(3), .table-rank td  {
+    font-weight: bold;
+}
+
+
+.table-rank img {
+ width: 50px;
+}
+

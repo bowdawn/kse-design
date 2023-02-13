@@ -39,4 +39,3 @@ $("#multi_img img").mouseenter(function(){
     $("#zoom").attr("src",thumb);
 });
 
-

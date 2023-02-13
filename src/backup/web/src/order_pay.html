@@ -185,19 +185,19 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row"><div class="txt-l require">성함</div></th>
-                                            <td class="td-user-name">
+                                            <td class="td-user-name kse-input-wrapper">
                                                 <!--/input_user_name/-->
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row"><div class="txt-l require">연락처</div></th>
-                                            <td>
+                                            <th scope="row"><div class="txt-l require ">연락처</div></th>
+                                            <td class="kse-input-wrapper kse-select-wrapper">
                                                 <!--/input_user_tel(w60)/-->
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><div class="txt-l require">이메일</div></th>
-                                            <td>
+                                            <td class="kse-input-wrapper kse-select-wrapper">
                                                 <!--/input_user_email/-->
                                             </td>
                                         </tr>
@@ -228,17 +228,17 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row"><div class="txt-l require">실수령인 성함</div></th>
-                                            <td><!--/input_receiver/--></td>
+                                            <td class="kse-input-wrapper"><!--/input_receiver/--></td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><div class="txt-c require">휴대폰</div></th>
-                                            <td>
+                                            <td class="kse-input-wrapper kse-select-wrapper">
                                                 <!--/input_receiver_mobile(w60)/-->
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><div class="txt-l require">연락처</div></th>
-                                            <td>
+                                            <td class="kse-input-wrapper kse-select-wrapper">
                                                 <!--/input_receiver_tel(w60)/-->
                                             </td>
                                         </tr>                                        
@@ -301,32 +301,42 @@
                                             <!--/end_if/-->
                                         <tr>
                                             <th scope="row"><div class="txt-l require">주소</div></th>
-                                            <td>
+                                            <td class="kse-space-vertical-small" >
+                                            <div class="kse-space kse-space-small">
+                                            <div class="kse-input-wrapper kse-col-block">
                                                 <!--/input_receiver_zip/-->
-                                                <a href="<!--/link_search_zip/-->" class="btn_zipcode">우편번호</a>
-                                                <div class="mt-10">
-                                                    <!--/input_receiver_addr1(w510)/--> 
-                                                    <!--/input_receiver_addr2(w500)/-->
                                                 </div>
+                                                <a href="<!--/link_search_zip/-->" class="btn_zipcode kse-btn kse-btn-primary
+                                                ">우편번호</a>
+                                                </div>
+                                                <div class="kse-input-wrapper">
+                                                
+                                                    <!--/input_receiver_addr1/--> 
+                                                    </div>
+                                                    <div class="kse-input-wrapper">
+                                                    <!--/input_receiver_addr2(w500)/-->
+                                                    </div>
+                                                
                                             </td>
                                         </tr>
                                         <!--/end_if/-->
                                         <!--/if_bank_name/-->
                                         <tr>
                                             <th scope="row"><div class="txt-l">입금자명</div></th>
-                                            <td>
+                                            <td class="kse-input-wrapper">
                                                 <!--/bank_name/-->
                                             </td>
                                         </tr>
                                         <!--/end_if/-->
                                         
                                         <tr>
-                                            <th scope="row"><div class="txt-l">배송 메시지<br /><span></span></div></th>
-                                            <td>
-                                                <!--/text_user_message/-->
+                                            <th scope="row"><div class="txt-l ">배송 메시지<br /><span></span></div></th>
+                                            <td >
+                                                <!--/text_user_message(kse-input)/-->
                                             </td>
                                         </tr>
-                                        
+
+
                                         <!--/if_deliveryquick_use/-->
                                             <!--/if_radio_deliquick_method/-->
                                             <tr>
@@ -337,6 +347,9 @@
                                             </tr>
                                             <!--/end_if/-->
                                         <!--/end_if/-->
+
+
+
                                         <!--/if_input_calendar_date/-->
                                         <tr>
                                             <th scope="row"><div class="txt-l">희망배송일</div></th>
@@ -363,6 +376,10 @@
                                             </td>
                                         </tr>
                                         <!--/end_if/-->
+                                        
+                                       
+
+
                                         <!--/if_select_after_delivery/-->
                                         <tr>
                                             <th scope="row"><div class="txt-l">배송비</div></th>
@@ -373,29 +390,32 @@
                                         <!--/end_if/-->
                                         
                                         
+
+                                        
                                         <!--/if_add_info/-->                                        
                                         <!--/loop_add_info/-->
-                                        <tr>
+                                        <tr> 
                                             <th scope="row"><div class="txt-l"><!--/add_info@input_title/--></div></th>
-                                            <td class="add_info_st">
+                                            <td class="add_info_st kse-select-wrapper">
                                                 <!--/add_info@input_value(w500)/-->
                                             </td>
                                         </tr>
                                         <!--/end_loop/-->
                                         <!--/end_if/-->
+
                                         </tbody>
                                 </table>
                             </div><!-- .tbl-order -->
                             
                             
                             <h3>할인 적용</h3>
-                            <div class="tbl-order" >
+                            <div class="tbl-order" style="padding-left: 240px " >
                                 <table>
                                     <caption>주문상품 할인적용</caption>                                    
                                     <!--/if_login/-->
                                     <colgroup>
-                                        <col style="width:140px" />
-                                        <col style="width:530px" />                                        
+                                        <col style="width:240px" />
+                                                                            
                                         <col style="width:*" />                                        
                                     </colgroup>                                    
                                     <tbody>
@@ -409,36 +429,68 @@
                                         <!--/if_link_coupon/-->
                                         <tr>
                                             <th class="txt-l">쿠폰</th>
-                                            <td>
-                                                <!--/input_coupon_number/-->
-                                            </td>
-                                            <td>
-                                                <a class="btn_coupon_sel" href="<!--/link_coupon/-->">쿠폰선택</a>
+                                            <td >
+                                            <div class="kse-space kse-space-small">
+                                                <!--/input_coupon_number(kse-input)/-->
+                                                 <a class="btn_coupon_sel kse-btn kse-btn-primary" style="width: 78.28px;" href="<!--/link_coupon/-->">쿠폰선택</a>
+                                                </div>
                                                 <!--/coupon_desc/-->
                                             </td>
+                                           
+                                               
+                                           
                                         </tr>
                                         <!--/end_if/-->
                                         
                                         <!--/if_input_user_reserve/-->
                                         <tr>
                                             <th class="txt-l">멤버십포인트</th>
-                                            <td>
-                                                <!--/input_user_reserve/--> 
-                                            </td>
-                                            <td style="text-align:right;">
-                                                <div class="ck-box">
-                                                <label><!--/check_all_reserve/--> 전액사용</label>
+                                            <td class="kse-space-vertical-middle">
+                                            <div class="kse-space kse-space-small kse-row-align-center">
+                                                <!--/input_user_reserve(kse-input)/--> 
+                                                <div>
+                                                <div class="kse-space kse-space-small " style="width: max-content;">
+                                                
+                                                 <!--/check_all_reserve/-->
+                                                 <label>전액사용</label>
+                                                 </div>
                                                 </div>
-                                                <span class="fc-gray" style="line-height:50px;">(사용가능한 멤버십포인트) <!--/input_possible_reserve/-->P</span>
-                                                <div class="cnt-box">
-                                                <font size="2".<span class="fc-gray" style="line-height:10px;">멤버십포인트는 상품금액의 80%까지 사용가능합니다.</font>
+                                                </div>
+                                                <span class="fc-gray kse-row kse-row-space-between kse-row-align-center">
+                                                <div>사용가능한 멤버십포인트:</div> 
+                                                <div class="kse-text-primary kse-text-middle " ><!--/input_possible_reserve(kse-text-middle)/-->P</div></span>
+                                                
+                                                                                                <div class="kse-space-vertical-small" >
+
+                                                <hr class="kse-divider-no-style"/>
+                                                <span class="fc-gray kse-required kse-required-absolute" >멤버십포인트는 상품금액의 80%까지 사용가능합니다. </span>
+                                                 <hr class="kse-divider-no-style"/>
+                                                 </div>
                                                 <!--/if_input_remain_reserve/-->
-                                                    <!--/input_remain_reserve/-->남은 멤버십포인트
+                                                
+                                                <div class="kse-row kse-row-align-center kse-row-space-between"> <div>사용 후 남은 멤버십포인트:</div>
+                                                <div class="input-remain-reserve-wrapper kse-relative kse-input-wrapper" style="height:40px;">
+                                                     <!--/input_remain_reserve/-->
+                                                     <div style="position: absolute;
+    right: 13px;
+    top: 8px;
+    z-index: 11;">P</div>
+                                                    </div>
+                                                   
+                                                    </div>
+                                                     
                                                     
+                                                 
                                                 <!--/end_if/-->
-                                                </div>
+                                                  
+                                               
+                                              
                                             </td>
+                                            
                                         </tr>
+                                        
+                                              
+                                          
                                         <!--/end_if/-->
                                         <!--/if_input_user_deposit/-->
                                         <tr>
@@ -459,7 +511,7 @@
                                     <!--/else/-->
                                         <!--/if_use_simple_join/-->
                                         <colgroup>
-                                            <col style="width: 200px" />
+                                            <col style="width: 240px" />
                                             <col style="width:*" />                                        
                                         </colgroup>                                    
                                         <tbody>
@@ -467,17 +519,32 @@
                                                 <th class="txt-l">간단가입 할인</th>
                                                 <td class="simple-join">
                                                     <!--/block_simple_join/-->
+                                                     <div class="kse-space-vertical-small">
                                                     <!--/if_radio_mem_person/-->
+                                                    <div>
                                                         <div class="radio-box">
                                                             <label class="label"><!--/radio_mem_person/--> 일반회원</label>
                                                         </div>
                                                         <div class="radio-box">
                                                             <label class="label"><!--/radio_mem_company/--> 기업회원</label>
                                                         </div>
-                                                        <br />
+                                                        </div>
                                                     <!--/end_if/-->
-                                                    <!--/input_user_id(w240 txt-c)/--> <!--/input_password(w240 txt-c)/--> <!--/input_email(w240 txt-c)/-->
-                                                    <!--/if_link_apply_join/--><a href="<!--/link_apply_join/-->" class="btn-darkgray">할인받기</a><!--/end_if/-->
+                                                   <div class="kse-input-wrapper">
+                                                    <!--/input_user_id/--> 
+                                                    </div>
+                                                    <div class="kse-input-wrapper">
+                                                    <!--/input_password/--> 
+                                                    </div>
+                                                    <div class="kse-input-wrapper">
+                                                    <!--/input_email/-->
+                                                    </div>
+                                                    
+                                                    <!--/if_link_apply_join/-->
+                                                    <div>
+                                                    <a href="<!--/link_apply_join/-->" class="kse-btn kse-btn-default">할인받기</a>
+                                                    </div>
+                                                    <!--/end_if/--></div>
                                                         <p class="fc-gray mt-10">아이디만 입력하면 주문과 가입이 동시에!<br />
                                                         간단가입하면 <strong class="fc-red"><u>100,000원 이상 주문 시, 1,000원 추가 할인</u></strong>을 받을 수 있습니다!<br />
                                                     <!--/end_block/-->
@@ -526,7 +593,7 @@
                             
                              
                             
-                            
+                           
                             <!--/if_escrow_img/-->
                             <table class="escrow-info" style="display:none;">
                                 <caption>에스크로</caption>
@@ -542,19 +609,20 @@
                                 </tbody>
                             </table>
                             <!--/end_if/-->                            
-                            <div class="tbl-order">    
+                            <div class="tbl-order" style="padding-left: 240px;">    
                                 <table>
                                     <caption>결제 정보</caption>
                                     <colgroup>
-                                        <col style="width: 110px">
+                                        <col style="width: 240px">
                                         <col />
                                     </colgroup>
                                     <tbody>
-                                        <tr>                                     
+                                        <tr>
+                                        <th class="kse-row"> 결제 수단</th>
                                             <td colspan="2">
-                                                <ul class="pay-method">
+                                                <ul class="pay-method kse-space kse-space-middle">
                                                 <!--/loop_order_payment/-->
-                                                    <li style=""><!--/order_payment@radio_value/--></li>
+                                                    <li class="kse-space kse-space-small kse-row-align-center kse-select-wrapper" ><!--/order_payment@radio_value/--></li>
                                                 <!--/end_loop/-->
                                                 </ul>
                                             </td>
@@ -566,7 +634,7 @@
                                 <table >
                                     <caption>증빙신청</caption>
                                     <colgroup>
-                                        <col style="width: 140px;">
+                                        <col style="width: 240px;">
                                         <col />
                                     </colgroup>
                                     <tbody>
@@ -584,16 +652,26 @@
                                                 </div>
                                                 <!--/end_if/-->
 
-                                                <div style="padding-top:5px;">
+                                                <div  style="padding-top:5px;">
                                                 <!--/block_evidence_data/-->
                                                     <!--/block_evidence_donot_data/-->
                                                         <!--/evidence_donot_text/-->
                                                     <!--/end_block/-->
                                                     <!--/block_evidence_cashbill_data/-->
                                                         <!--/if_select_evidence_cashbill_type/-->
+                                                        <div class="kse-select-wrapper" >
                                                             <!--/select_evidence_cashbill_type/-->
-                                                            <!--/block_evidence_cashbill_tel/--><!--/input_evidence_cashbill_tel(w60)/--><!--/end_block/-->
-                                                            <!--/block_evidence_cashbill_card/--><!--/input_evidence_cashbill_card(w60)/--><!--/end_block/-->
+                                                            </div>
+                                                            
+                                                            <br/>
+                                                            <!--/block_evidence_cashbill_tel/-->
+                                                            <!--/input_evidence_cashbill_tel(w60 kse-input)/--><!--/end_block/-->
+                                                       
+                                                            <!--/block_evidence_cashbill_card/-->
+                                                                
+                                                               <!--/input_evidence_cashbill_card(w60)/-->
+                                                              
+                                                            <!--/end_block/-->
                                                             <!--/block_evidence_cashbill_company/-->
                                                                 <!--/input_evidence_cashbill_companyno(w60)/-->
                                                                 <span class="company-name">업체명 : <!--/input_evidence_cashbill_companyname(w60)/--></span>
@@ -680,6 +758,8 @@
                             <!--/end_block/-->
 
                             <div class='lst-order'>
+                            <div class="kse-alert kse-alert-info " style="width: 100%" role="alert"><svg viewBox="64 64 896 896" data-icon="info-circle" width="1em" height="1em" fill="#1677ff" aria-hidden="true" class="kse-alert-icon"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"></path></svg><div class="kse-alert-content"><div class="kse-alert-message">금융사기주의안내</div><div class="kse-alert-description">금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나 금융거래정보, 현금 입금을 요구하는 경우는 없습니다.</div></div></div>
+                                <br/>
                                 <!--/payment_info/-->
                             </div>
 
@@ -708,7 +788,12 @@
                                     </colgroup>
                                     <thead>
                                         <tr>
-                                            <td colspan="2">총 <b class="product_count"></b>개의 상품금액</td>
+                                            <td colspan="2" >
+                                            <div class="kse-space-vertical-small">
+                                            <div class="kse-divider-primary-10" style="    border-top-width: 2px;" ></div>
+                                            <div class="kse-text-primary-10">총 <b class="product_count"></b>개의 상품금액</div>
+                                            <div  class="kse-divider-primary-10" style="    border-top-width: 2px;"></div></div>
+                                            </td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -901,10 +986,13 @@
                                 <label class="label"><!--/checkbox_pay_agree/--> 상기 내용을 확인하였으며, <br/>구매진행에 동의합니다.</label>
                             </div>
                             
-                            <div class="btn_pay_box">                            
+                            <div class="btn_pay_box ">                            
                                 <!--/block_btn_pay/-->
-                                <a href="<!--/link_payment/-->" class="CSSbuttonBlack">결제하기</a>
-                                <a href="<!--/link_cancel/-->" class="CSSbuttonWhite">주문취소</a>
+                                <br/>
+                                <div class="kse-space kse-space-small">
+                              
+                                <a href="<!--/link_payment/-->" class="kse-btn kse-btn-primary kse-btn-large  kse-col-block ">결제하기</a>
+                                </div>
                                 <!--/end_block/-->
                             </div>
                             

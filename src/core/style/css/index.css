@@ -857,6 +857,10 @@
   box-sizing: border-box;
 }
 
+.kse-menu-item-group > ul > li > a {
+  font-size: 16px;
+}
+
 .kse-menu-item-group > ul > li.kse-menu-item-selected {
   background-color: #e6f4ff !important;
   /* primary-6 */

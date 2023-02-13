@@ -2,6 +2,7 @@ export const alertPath = "alert";
 export const buttonPath = "button";
 export const collapsePath = "collapse";
 export const colorsPath = "colors";
+export const descriptionsPath = "descriptions";
 export const iconPath = "icon";
 export const inputPath = "input";
 export const menuPath = "menu";

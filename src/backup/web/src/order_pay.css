@@ -2,7 +2,7 @@
 #contentWrap.order_page h2{line-height:58px; font-size:35px; font-weight:900; letter-spacing:-1px; color:#191919;}
 
 #contentWrap.order_page .order_left_cont{width:1040px;}
-#contentWrap.order_page .order_right_cont{position:absolute; top:3px; right:0; width:320px; box-sizing:border-box; border-radius: 8px; background:#FFF; padding:15px 20px 40px; box-shadow: 10px 10px 15px #0F296B15; z-index:10; max-height: calc(100vh - 276px);
+#contentWrap.order_page .order_right_cont{position:absolute; top:3px; right:0; width:320px; box-sizing:border-box; border-radius: 8px; background:#FFF; padding:24px; box-shadow: 10px 10px 15px #0F296B15; z-index:10; max-height: calc(100vh - 276px);
     overflow: auto; }
 /*
 #order h3 { position: relative; margin-top: 40px; padding-bottom:10px; font-size:22px; color: #202020; font-weight:bold; line-height:18px }
@@ -12,10 +12,10 @@
 #contentWrap.order_page #order h3.ty2{margin-bottom:11px;}
 #contentWrap.order_page #order .tbl-head h3{margin-top:0; display:inline-block; min-width:240px;}
 #contentWrap.order_page #order .order_right_cont h3{position:relative; margin-top:20px; margin-bottom:12px; height:35px; line-height:35px; font-size:24px; color:#191919; font-weight:700;}
-#contentWrap.order_page #order .order_right_cont .tbl-pay2{position:relative; border-top:2px solid #0097e6; border-bottom:2px solid #191919; /*padding:10px 0;*/}
+#contentWrap.order_page #order .order_right_cont .tbl-pay2{position:relative;  border-bottom:2px solid #191919; /*padding:10px 0;*/}
 #contentWrap.order_page #order .order_right_cont .tbl-pay2 thead{}
 #contentWrap.order_page #order .order_right_cont .tbl-pay2 thead tr{}
-#contentWrap.order_page #order .order_right_cont .tbl-pay2 thead td{padding:10px 0; font-size:20px; color:#191919; letter-spacing:0px; font-weight:700; line-height:29px; border-bottom:2px solid #0097e6;}
+#contentWrap.order_page #order .order_right_cont .tbl-pay2 thead td{padding:10px 0; font-size:20px; color:#191919; letter-spacing:0px; font-weight:700; line-height:29px; }
 
 
 #contentWrap.order_page #order .order_right_cont .tbl-pay2 tfoot tr th,
@@ -73,7 +73,6 @@
 #contentWrap.order_page #order .require{}
 #contentWrap.order_page #order .require:after{display:inline-block ; line-height:31px; width:8px; height:8px; border-radius:4px; background:#0097E6; margin-left:10px; content:""; position:relative; top:-4px;  }
 
-#order .MS_input_txt{ height:50px; line-height:51px; margin:0; padding:0 5px; border: 1px solid #ddd;}
 
 /*
 #order h3 label { position: absolute; bottom: 10px; left:100px; font-size: 17px; font-weight: normal; letter-spacing: 0; }
@@ -81,13 +80,20 @@
 
 #order .container { border: 0; display: inline-block; position: relative; width: 180px; height: 25px; overflow: hidden; border: 1px solid #ddd; }
 #order .container select { position: absolute; top: -2px; left: -2px; background: #fff; }
-#order select { /*height: 25px; line-height: 25px;*/ width:20%; height:50px; line-height:51px;  border:0; border-bottom:2px solid #ededed; background: #fff; text-align: center; font-size:18px;  }
 #order .reserve-select select { width:180px; }
-#order input[type=text], 
-#order input[type=password] { width:100%; height: 50px; line-height:51px; padding: 0 5px; border: 0; border-bottom: 2px solid #ededed; font-size:18px; box-sizing:border-box;}
-#order input[name=user_email] { width: 150px; }
+#emergency11{ 
+width: 100px; 
+}
+#emergency31{ 
+width: 100px; 
+}
+#emergency21{ 
+width: 100px; 
+}
+
+
 #order .w60 { width: 100px !important; }
-#order select.w60 { width: 60px !important; height:50px; line-height:51px; font-size:18px; }
+
 #order .w100 { width: 100px !important; }
 #order .w120 { width: 120px !important; }
 #order .w240 { width: 240px !important; }
@@ -116,10 +122,8 @@
 */
 
 
-#contentWrap.order_page #order .order_right_cont .btn_pay_box{overflow:hidden; margin-top:30px;}
-#contentWrap.order_page #order .order_right_cont .btn_pay_box #paybutton{}
-#contentWrap.order_page #order .order_right_cont .btn_pay_box #paybutton a{display:block; float:left; width:130px; height:56px; line-height:54px; text-align:center; border-radius:28px; border:2px solid #0097e6; background:#0097e6; color:#fff; font-size:20px; font-weight:600; box-sizing:border-box;}
-#contentWrap.order_page #order .order_right_cont .btn_pay_box #paybutton a.CSSbuttonWhite{float:right; background:#FFF; color:#0097e6;}
+
+
 
 
 /*
@@ -161,7 +165,6 @@
 #order .tbl-order tfoot td { padding: 25px 0; background: #ececec; border-top: 2px solid #ccc; border-bottom: 1px solid #ccc; }
 #order .tbl-order tfoot td .price { color: #000; font-size: 20px; letter-spacing: -1px; }
 #order .tbl-order tfoot td .price em { color: #f00; font-family:tahoma; font-size: 30px; font-weight: normal; letter-spacing: -1px; }
-#order .tbl-order textarea { width:100%; padding: 0 5px; box-sizing:border-box; /*border: 1px solid #ddd;*/ border:0; border-bottom:2px solid #ededed; line-height:50px; height:50px; font-size:18px; resize:none; overflow:hidden;  }
 #order .tbl-order .date { margin: 10px 0 5px; }
 #order .tbl-order .terms { zoom: 1; color: #888; }
 #order .tbl-order .terms:after { content: ''; display: block; clear: both; }
@@ -173,7 +176,7 @@
 
 #order .tbl-order .pay-method{position:relative; padding-bottom:50px;}
 #order .tbl-order .pay-method:after{display:table; width:100%; content:"";}
-#order .tbl-order .pay-method li { margin: 10px 0; /*padding-left: 18px;*/ /*width:50%;*/ margin-right:20px; float:left; box-sizing:border-box; padding-left:0;  height:50px; line-height:50px;  }
+
 #order .tbl-order .pay-method li em { color: #f00; margin-left:20px;  }
 #order .tbl-order .pay-method li label { display: block; margin-bottom: 5px; margin-left: -18px;  }
 #order .tbl-order .pay-method li input.chk-rdo{width:32px; height:32px; margin-right:5px; }
@@ -283,7 +286,7 @@ w280  MK_pay_add_choice
 #chkwrap .marketing { clear:both; border-top:1px dashed #dadada; }
 #chkwrap .marketing .mk-wrap { height:30px; line-height:32px; }
 
-#order #okreserve, #order #okemoney {margin-top:-3px; border:none; /*background: #f7f7f7;*/ background:#FFF; font-weight: bold; width:80px; text-align:right; }
+#order #okreserve, #order #okemoney {margin-top:-5px; border:none; /*background: #f7f7f7;*/ background:#FFF; font-weight: bold; width:80px; text-align:right; }
 
 
 /* 하이브리드 옵션 */
@@ -300,21 +303,18 @@ w280  MK_pay_add_choice
 #order #email1{width:180px;}
 #order #direct_email,
 #order #emailsel{width:170px;}
-#order #post1{width:320px; border:0; border-bottom:2px solid #ededed;}
-#order .btn_zipcode{display: inline-block; height: 50px; line-height: 51px; width: 200px; text-align: center; border-radius: 25px; color: #FFF; background: #0097e6; font-size: 20px; margin-left: 20px; font-weight: 100;}
+
+
 #order .tbl-order tbody td.add_info_st{font-size:16px; color:#999; text-align:right; }
 
 #order .tbl-order tbody td .MS_bankname_message{display:none;}
 #order .tbl-order .ems_type_box input{width:32px; height:32px; margin-right:10px;}
-#order .tbl-order #usereserve{text-align:right;}
-#order .tbl-order .ck-box{float:left; width:150px; text-align:left; padding-left:20px; box-sizing:border-box; }
+
 #order .tbl-order .ck-box label{line-height:50px;}
 #order .tbl-order .ck-box label input{width:24px; height:24px; }
 #order .tbl-order select#mk_deli_opt_sel{font-size:18px !important;}
 
 
-
-#order .btn_coupon_sel {display:inline-block; margin-left:20px; width:100px; text-align:center; float:left; padding:0 10px; color:#FFF; font-size:16px; line-height:48px; border:1px solid #222; background:#555; border-radius:25px;  }
 #order .coupon-description{float:right; line-height:50px;  }
 
 
@@ -328,8 +328,7 @@ w280  MK_pay_add_choice
 
 
 
-#order #cashbilltype{display:block; width:800px;  }
-#order #cashbilltype select{width:400px;}
+
 #order #evidence_donot_data{color:#f1191f !important; font-size:16px; line-height:24px; }
 #evidence_cashbill_tel span {padding-left: 10px; font-size: 18px; padding:20px }
 #evidence_cashbill_tel input {margin-right: 5px; }
@@ -346,4 +345,28 @@ div.pay_agree_box label {color:#f1191f; font-weight: 800;  } /* 색갈 */
 
 .r_wing_wrap {
 	display: none;
+}
+
+#temp_pass {
+width: 100% !important;
+}
+
+#user_password {
+width: 100% !important;
+}
+
+.input-remain-reserve-wrapper .MS_remain_reserve_message {
+ display: none;
+}
+
+.input-remain-reserve-wrapper > *:nth-child(2){
+ display: none;
+}
+
+.input-remain-reserve-wrapper{
+ visibility: hidden;
+
+}
+.input-remain-reserve-wrapper * {
+ visibility: visible;
 }

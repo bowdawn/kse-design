@@ -1,0 +1,51 @@
+.ant-descriptions-item-label {
+  width: 175px !important;
+}
+
+.rank-image-wrapper {
+  width: 175px !important;
+}
+
+.rank img {
+  width: 56px;
+}
+
+.rank1 * {
+  color: #ccc1b2 !important;
+}
+
+.rank2 * {
+  color: #fca729 !important;
+}
+
+.rank3 * {
+  color: #aa4743 !important;
+}
+
+.rank4 * {
+  color: #2857fa !important;
+}
+
+.rank {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.rank1 {
+  border-top: solid 3px #ccc1b2;
+  border-bottom: solid 3px #ccc1b2;
+}
+
+.rank2 {
+  border-top: solid 3px #fca729;
+  border-bottom: solid 3px #fca729;
+}
+
+.rank3 {
+  border-top: solid 3px #aa4743;
+  border-bottom: solid 3px #aa4743;
+}
+
+.rank4 {
+  border-top: solid 3px #2857fa;
+  border-bottom: solid 3px #2857fa;
+}

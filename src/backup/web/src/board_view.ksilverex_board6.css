@@ -50,3 +50,9 @@
 .privercy-contract .tbl td { height:32px; padding:0; margin:0; border-right: 1px solid #dadada; border-bottom: 1px solid #dadada; letter-spacing:-1px }
 .privercy-contract .tbl td .txt-l { padding:5px 3px; margin:0; text-align:left; }
 
+.kse-link-employment-dummy a {
+  color: #0097e6 !important;
+  fill: #0097e6 !important;
+  font-weight: bold;
+  font-size: 20px !important;
+}

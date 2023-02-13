@@ -448,14 +448,9 @@
 #order .order_info_write dl dt{line-height:24px; font-size:16px; font-weight:700; color:#191919; margin-bottom:5px; }
 #order .order_info_write dl dt.require:after{display:inline-block ; width:6px; height:6px; border-radius:3px; background:#0097E6; margin-left:6px; content:""; position:relative; top:-3px;  }
 #order .order_info_write dl dd{min-height:35px; font-size:12px; line-height:25px; box-sizing:border-box; margin:0 0 5px; padding-top:5px;  color:#191919;}
-#order .order_info_write dl dd.pname{border-bottom:1px solid #ededed; color:#191919; }
 
-#order .order_info_write dl dd .txt-zipcode,
-#order .order_info_write dl dd input[type=tel], 
-#order .order_info_write dl dd input[type=text], 
-#order .order_info_write dl dd input[type=password], 
-#order .order_info_write dl dd input[name=user_email],
-#order .order_info_write dl dd select{border:0 ; border-bottom:1px solid #ededed; color:#191919; height:25px; line-height:25px; font-size:12px;}
+
+
 
 #order .order_info_write dl dd #direct_email,
 #order .order_info_write dl dd #email1,
@@ -463,15 +458,14 @@
 
 #order #evidence_donot_data{font-size:10px !important; line-height:15px; padding:10px 0 !important; color:#FF5320 !important; border:0 !important; }
 
-#order .fixed_btn_box{position:fixed; width:100%; height:80px; left:0; bottom:0; background-color:#0097e6; z-index:10;}
-#order .fixed_btn_box a{ width:100%; height:80px; padding:18px; box-sizing:border-box; color:#FFF; text-align:center; }
-#order .fixed_btn_box a .txt-price{font-size:20px; display:block; line-height:15px; letter-spacing:-0.2px; font-weight:700;}
+#order .fixed_btn_box{position:fixed;  left:0; right:0; bottom:0; background-color: white; z-index:10;}
+
 #order .fixed_btn_box .total_reserve_txt{font-size:15px; line-height:45px;}
 
 
 
 
-#order .order_info_write dl dd.pname input{border:0; height:25px; width:100%; }
+
 #order .order_info_write .sefe_use_box img{vertical-align:middle;}
 #order .order_info_write dl dd .txt-zipcode{width:120px !important;}
 
@@ -479,7 +473,7 @@
 #order .order_info_write dl dd .btn_coupon{width:80px; margin-left:4px; display:inline-block; height:26px; line-height:24px; box-sizing:border-box; text-align:center;  border-radius:8px; color: #FFF; background: #191919; font-size:10px; }
 #order .order_info_write dl dd .txt_coupon_desc{/*height:24px;*/ line-height:24px; color:#999; font-size:12px; }
 
-#order .order_info_write dl dd .txt-reserve{width:calc(100% - 90px) !important; text-align:right; }
+#order .order_info_write dl dd .txt-reserve{ text-align:right; }
 #order .order_info_write dl dd .ck_reserve_cont{display:inline-block; margin-left:10px; height:26px;}
 #order .order_info_write dl dd .ck_reserve_cont label{color:#999; font-size:12px; line-height:26px; }
 #order .order_info_write dl dd .ck_reserve_cont label input{width:16px; height:16px; margin-right:3px; }
@@ -627,6 +621,6 @@ border: solid  #0097e6;
 #block_mobile_area_list .block-add-address .btn-wrap {padding: 15px 10px; overflow: hidden;}
 
 
-.all-ok {
-    font-size: 32px;
+#footer {
+    padding-bottom: 150px;
 }
