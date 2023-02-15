@@ -9,6 +9,7 @@ import {
   iconPath,
   inputPath,
   menuPath,
+  progressPath,
   screenMobilePath,
   screenWebPath,
   selectPath,
@@ -44,6 +45,9 @@ export const HomePage: React.FC = () => {
       </div>
       <div>
         <NavLink to={"/" + menuPath}>Menu</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + progressPath}>Progress</NavLink>
       </div>
       <div>
         <NavLink to={"/" + screenMobilePath}>Screens (Mobile)</NavLink>

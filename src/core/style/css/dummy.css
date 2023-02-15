@@ -1,0 +1,225 @@
+.vipClubWrap * {
+  color: #191919;
+}
+
+.vipClubWrap {
+  padding: 0 20px;
+  margin-top: 30px;
+  border-top: 1px solid #ededed;
+}
+
+.vipClubWrap .pageTit {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: 900;
+  border-bottom: 2px solid #000;
+}
+
+.vipClubWrap .pageSubTit {
+  margin-bottom: 30px;
+}
+
+.vipClubWrap .pageSubTit p {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.vipClubWrap .conTit strong {
+  display: block;
+  padding: 30px 0 15px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 35px;
+}
+
+.vipClubWrap .conTit strong img {
+  width: 24px;
+  margin-top: -5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.vipClubWrap .conBox2 dl {
+  margin-bottom: 30px;
+}
+
+.vipClubWrap .conBox2 dl dt {
+  width: 100%;
+  padding-top: 12px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt {
+  border-top: 3px solid #ccc1b2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt {
+  border-top: 3px solid #fca729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt {
+  border-top: 3px solid #aa4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt {
+  border-top: 3px solid #2857fa;
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap {
+  width: 100px;
+}
+
+.vipClubWrap .conBox2 dl dt .imgWrap img {
+  display: block;
+  width: 100%;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap {
+  text-align: center;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap strong {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.vipClubWrap .conBox2 dl dt .nameWrap span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank01 dt .nameWrap span {
+  color: #ccc1b2;
+}
+
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank02 dt .nameWrap span {
+  color: #fca729;
+}
+
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank03 dt .nameWrap span {
+  color: #aa4743;
+}
+
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap strong,
+.vipClubWrap .conBox2 dl.rank04 dt .nameWrap span {
+  color: #2857fa;
+}
+
+.vipClubWrap .conBox2 dl dd {
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit {
+  margin-bottom: 10px;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit strong {
+  display: block;
+  margin-right: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+}
+
+.vipClubWrap .conBox2 dl dd .gradeBenefit span {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 900;
+}
+
+.vipClubWrap .conBox2 dl dd ul {
+  width: 100%;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #a6a6a6;
+  line-height: 20px;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li span {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  line-height: 18px;
+  width: 10px;
+  text-align: center;
+}
+
+.vipClubWrap .conBox3 .benefitInfoCon > ul > li > ul > li {
+  padding-left: 15px;
+  font-size: 12px;
+  color: #b8b8b8;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.kse-required-dash.kse-required.kse-required-absolute:before {
+  left: 8px;
+  top: 4px;
+  display: inline-block;
+  margin-inline-end: unset;
+  color: unset;
+  font-size: unset;
+  content: "-";
+}
+
+.rank-image-wrapper {
+  width: 175px !important;
+}
+.rank img {
+  width: 56px;
+}
+
+.rank1 * {
+  color: #ccc1b2 !important;
+}
+
+.rank2 * {
+  color: #fca729 !important;
+}
+
+.rank3 * {
+  color: #aa4743 !important;
+}
+
+.rank4 * {
+  color: #2857fa !important;
+}
+
+.rank {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.rank1 {
+  border-top: solid 3px #ccc1b2;
+  border-bottom: solid 3px #ccc1b2;
+}
+
+.rank2 {
+  border-top: solid 3px #fca729;
+  border-bottom: solid 3px #fca729;
+}
+
+.rank3 {
+  border-top: solid 3px #aa4743;
+  border-bottom: solid 3px #aa4743;
+}
+
+.rank4 {
+  border-top: solid 3px #2857fa;
+  border-bottom: solid 3px #2857fa;
+}

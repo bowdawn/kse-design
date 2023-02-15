@@ -9,6 +9,7 @@ import { HomePage } from "../pages/HomePage";
 import { IconPage } from "../pages/IconPage";
 import { InputPage } from "../pages/InputPage";
 import { MenuPage } from "../pages/MenuPage";
+import { ProgressPage } from "../pages/ProgressPage";
 import { ScreenMobilePage } from "../pages/ScreenMobilePage";
 import { ScreenWebPage } from "../pages/ScreenWebPage";
 import { SelectPage } from "../pages/SelectPage";
@@ -30,6 +31,7 @@ import {
   tablePath,
   alertPath,
   descriptionsPath,
+  progressPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -86,6 +88,10 @@ const router = createBrowserRouter([
   {
     path: menuPath,
     element: <MenuPage />,
+  },
+  {
+    path: progressPath,
+    element: <ProgressPage />,
   },
   {
     path: tablePath,

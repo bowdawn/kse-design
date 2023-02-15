@@ -201,6 +201,10 @@
   display: flex;
 }
 
+.kse-space-large {
+  gap: 24px;
+}
+
 .kse-space-middle {
   gap: 16px;
 }
@@ -559,6 +563,11 @@
   padding: 16px 30px;
 }
 
+.kse-btn-large.kse-btn-naver,
+.kse-btn-large.kse-btn-kakao-talk {
+  padding: 18.25px 30px;
+}
+
 /* kse-btn-compact */
 
 .kse-btn-compact {
@@ -859,6 +868,7 @@
 
 .kse-menu-item-group > ul > li > a {
   font-size: 16px;
+  width: 100%;
 }
 
 .kse-menu-item-group > ul > li.kse-menu-item-selected {
@@ -1085,7 +1095,8 @@
   outline: 0;
 }
 
-.kse-input:read-only {
+:not(.kse-input-read-only-border) input:read-only:not(.kse-input),
+:not(.kse-input-read-only-border).kse-input:read-only {
   border: none;
 }
 
@@ -1550,4 +1561,103 @@
 
 .kse-alert-closeable-block {
   width: calc(100% - 22px);
+}
+
+/* Descriptions */
+
+.kse-descriptions-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: auto;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.kse-descriptions {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.kse-descriptions.kse-descriptions-bordered.kse-descriptions-small
+  .kse-descriptions-item-label,
+.kse-descriptions.kse-descriptions-bordered.kse-descriptions-small
+  .kse-descriptions-item-content {
+  padding: 8px 16px;
+}
+
+.kse-descriptions .kse-descriptions-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-view {
+  border: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-descriptions .kse-descriptions-view {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-view > table {
+  table-layout: auto;
+  border-collapse: collapse;
+}
+.kse-descriptions .kse-descriptions-view table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-row {
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.ranks-mobile .kse-descriptions-item-label,
+.ranks-mobile .rank-image-wrapper {
+  width: 150px !important;
+}
+.ranks-mobile .kse-descriptions-item-content {
+  font-size: 12px !important;
+}
+
+.ranks-mobile .kse-descriptions-item-label {
+  font-size: 14px !important;
+}
+
+[class^="kse-descriptions"] [class^="kse-descriptions"],
+[class*=" kse-descriptions"] [class^="kse-descriptions"],
+[class^="kse-descriptions"] [class*=" kse-descriptions"],
+[class*=" kse-descriptions"] [class*=" kse-descriptions"] {
+  box-sizing: border-box;
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-item-label {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-item-label,
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-item-content {
+  padding: 16px 24px;
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-descriptions.kse-descriptions-bordered
+  .kse-descriptions-item-content:last-child {
+  border-inline-end: none;
+}
+
+.kse-descriptions.kse-descriptions-bordered .kse-descriptions-row:last-child {
+  border-bottom: none;
 }
