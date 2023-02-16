@@ -4,7 +4,7 @@ import React from "react";
 export const TablePage: React.FC = () => {
   return (
     <>
-      <Table
+      {/* <Table
         columns={[
           {
             title: "등급별 혜택 안내 ",
@@ -133,6 +133,32 @@ export const TablePage: React.FC = () => {
               </div>
             ),
           },
+        ]}
+      /> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <Table
+        bordered
+        tableLayout="fixed"
+        style={{ width: 634 }}
+        size="small"
+        pagination={false}
+        title={() => <div>대량구매할인 동일상품 구매 시, 옵션 포함</div>}
+        footer={() => <div>할인적용금액은 장바구니에서 확인해주세요.</div>}
+        columns={[
+          {
+            title: "수량",
+            dataIndex: "quantity",
+            align: "center",
+          },
+          { title: "할인", dataIndex: "sale", align: "center" },
+        ]}
+        dataSource={[
+          { quantity: "50 ~ 99개 개당", sale: "1%" },
+          { quantity: "100 ~ 149 개당", sale: "2%" },
+          { quantity: "150 ~ 199 개당", sale: "3%" },
         ]}
       />
     </>

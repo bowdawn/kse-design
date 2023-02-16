@@ -1,11 +1,3 @@
-.ant-descriptions-item-label {
-  width: 175px !important;
-}
-
-.ant-descriptions-item-label {
-  font-size: 16px !important;
-}
-
 .rank-image-wrapper {
   width: 175px !important;
 }
@@ -51,4 +43,16 @@
 .rank4 {
   border-top: solid 3px #2857fa;
   border-bottom: solid 3px #2857fa;
+}
+
+.ant-table-wrapper .ant-table {
+  border-radius: 4px !important;
+}
+
+.ant-table-wrapper .ant-table .ant-table-title {
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.ant-table-wrapper .ant-table-footer {
+  border-radius: 0 0 4px 4px !important;
 }

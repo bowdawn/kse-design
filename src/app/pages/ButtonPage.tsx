@@ -62,6 +62,8 @@ export const ButtonPage: React.FC = () => {
           option 3
         </div>
       </div>
+      <div>danger button</div>
+      <div className="kse-btn kse-btn-danger-primary">button primary</div>
     </>
   );
 };
