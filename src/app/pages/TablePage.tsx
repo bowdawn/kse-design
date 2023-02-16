@@ -153,12 +153,31 @@ export const TablePage: React.FC = () => {
             dataIndex: "quantity",
             align: "center",
           },
-          { title: "할인", dataIndex: "sale", align: "center" },
+          // {
+          //   title: (
+          //     <div>
+          //       <div>할인</div>
+          //       <div className="kse-text-secondary">(개당)</div>
+          //     </div>
+          //   ),
+          //   dataIndex: "sale",
+          //   align: "center",
+          // },
+          {
+            title: (
+              <div>
+                <div>가격</div>
+                <div className="kse-text-secondary">(개당)</div>
+              </div>
+            ),
+            dataIndex: "price",
+            align: "center",
+          },
         ]}
         dataSource={[
-          { quantity: "50 ~ 99개 개당", sale: "1%" },
-          { quantity: "100 ~ 149 개당", sale: "2%" },
-          { quantity: "150 ~ 199 개당", sale: "3%" },
+          { quantity: "50개 ~ 99개", sale: "1%", price: "99,000원" },
+          { quantity: "100개 ~ 149개", sale: "2%", price: "98,000원" },
+          { quantity: "150개 ~ 199개", sale: "3%", price: "97,000원" },
         ]}
       />
     </>
