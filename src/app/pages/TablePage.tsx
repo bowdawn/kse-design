@@ -4,7 +4,7 @@ import React from "react";
 export const TablePage: React.FC = () => {
   return (
     <>
-      {/* <Table
+      <Table
         columns={[
           {
             title: "등급별 혜택 안내 ",
@@ -19,12 +19,7 @@ export const TablePage: React.FC = () => {
             align: "center",
             width: "20%",
           },
-          {
-            title: "위탁판매 시 수수료 면제 서비스",
-            dataIndex: "fee",
-            align: "center",
-            width: "20%",
-          },
+
           {
             title: "특별 혜택",
             dataIndex: "special",
@@ -70,7 +65,7 @@ export const TablePage: React.FC = () => {
               </div>
             ),
             fee: "-",
-            special: "-",
+            special: "- 본사 직배송 서비스 (서울 / 수도권 일부 지역)",
           },
           {
             rank: (
@@ -98,7 +93,14 @@ export const TablePage: React.FC = () => {
                 <div>총 300만원 까지 수수료 면제</div>
               </div>
             ),
-            special: "-",
+            special: (
+              <div>
+                <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
+                <div>
+                  - 위탁판매 시 상품 금액 기준 총 300만원까지 수수료 면제
+                </div>
+              </div>
+            ),
           },
           {
             rank: (
@@ -128,13 +130,16 @@ export const TablePage: React.FC = () => {
             ),
             special: (
               <div>
-                <div>Special Gift</div>
-                <div>1 회</div>
+                <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
+                <div>
+                  - 위탁판매 시 상품 금액 기준 총 500만원까지 수수료 면제
+                </div>
+                <div>- Special Gift 1회</div>
               </div>
             ),
           },
         ]}
-      /> */}
+      />
       <br />
       <br />
       <br />
