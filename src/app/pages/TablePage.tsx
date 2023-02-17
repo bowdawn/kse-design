@@ -23,7 +23,7 @@ export const TablePage: React.FC = () => {
           {
             title: "특별 혜택",
             dataIndex: "special",
-            align: "center",
+            align: "left",
             width: "20%",
           },
         ]}
