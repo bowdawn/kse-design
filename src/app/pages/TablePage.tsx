@@ -10,21 +10,21 @@ export const TablePage: React.FC = () => {
             title: "등급별 혜택 안내 ",
             dataIndex: "rank",
             align: "center",
-            width: "20%",
+            width: "25%",
           },
           { title: "쿠폰", dataIndex: "coupon", align: "center", width: "20%" },
           {
             title: "무료배송 쿠폰",
             dataIndex: "delivery",
             align: "center",
-            width: "20%",
+            width: "25%",
           },
 
           {
-            title: "특별 혜택",
+            title: <div>특별 혜택</div>,
             dataIndex: "special",
-            align: "left",
-            width: "20%",
+            align: "center",
+            width: "25%",
           },
         ]}
         dataSource={[
@@ -42,8 +42,8 @@ export const TablePage: React.FC = () => {
               </div>
             ),
             delivery: "-",
-            fee: "-",
-            special: "-",
+
+            special: <div>-</div>,
           },
           {
             rank: (
@@ -65,7 +65,13 @@ export const TablePage: React.FC = () => {
               </div>
             ),
             fee: "-",
-            special: "- 본사 직배송 서비스 (서울 / 수도권 일부 지역)",
+            special: (
+              <div className="kse-row kse-row-center">
+                <div style={{ textAlign: "start" }}>
+                  - 본사 직배송 서비스 (서울 / 수도권 일부 지역)
+                </div>
+              </div>
+            ),
           },
           {
             rank: (
@@ -87,17 +93,13 @@ export const TablePage: React.FC = () => {
                 <div>2개</div>
               </div>
             ),
-            fee: (
-              <div>
-                <div>위탁판매 상품 금액 기준 </div>
-                <div>총 300만원 까지 수수료 면제</div>
-              </div>
-            ),
+
             special: (
-              <div>
-                <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
-                <div>- 위탁판매 시 상품 금액 기준</div>
-                <div>총 300만원까지 수수료 면제</div>
+              <div className="kse-row kse-row-center">
+                <div style={{ textAlign: "start" }}>
+                  <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
+                  <div>- 위탁판매 시 상품 금액 총 300만원까지 수수료 면제</div>
+                </div>
               </div>
             ),
           },
@@ -121,18 +123,14 @@ export const TablePage: React.FC = () => {
                 <div>3개</div>
               </div>
             ),
-            fee: (
-              <div>
-                <div>위탁판매 상품 금액 기준 </div>
-                <div>총 500만원 까지 수수료 면제</div>
-              </div>
-            ),
+
             special: (
-              <div>
-                <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
-                <div>- 위탁판매 시 상품 금액 기준</div>
-                <div>총 500만원까지 수수료 면제</div>
-                <div>- Special Gift 1회</div>
+              <div className="kse-row kse-row-center">
+                <div style={{ textAlign: "start" }}>
+                  <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
+                  <div>- 위탁판매 시 상품 금액 총 500만원까지 수수료 면제</div>
+                  <div>- Special Gift 1회</div>
+                </div>
               </div>
             ),
           },
