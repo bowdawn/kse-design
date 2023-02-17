@@ -309,6 +309,18 @@
   color: #2857fa;
 }
 
+.kse-text-black {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.kse-text-align-start {
+  text-align: start;
+}
+
+.kse-text-align-center {
+  text-align: center;
+}
+
 /* Link */
 .kse-link-primary-bg-hover {
   color: white !important;
@@ -797,7 +809,7 @@
   padding-right: 64px;
 
   margin-bottom: 0;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: transparent;
   opacity: 1;
   order: 0;
@@ -1711,4 +1723,263 @@
 
 .kse-descriptions.kse-descriptions-bordered .kse-descriptions-row:last-child {
   border-bottom: none;
+}
+
+/* Table */
+.kse-table.kse-table-small {
+  font-size: 14px;
+}
+
+.kse-table {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.kse-table-container table > thead > tr:first-child th:first-child {
+  border-start-start-radius: 4px;
+}
+
+.kse-table.kse-table-bordered > .ant-table-container {
+  border-inline-start: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-table-container {
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+}
+
+.kse-table-container::before {
+  inset-inline-start: 0;
+}
+
+.kse-table-container::before,
+.kse-table-container::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 30px;
+  transition: box-shadow 0.3s;
+  content: "";
+  pointer-events: none;
+}
+
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-content
+  > table,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-header
+  > table {
+}
+
+.kse-table-wrapper table {
+  width: 100%;
+  text-align: start;
+  border-radius: 4px 4px 0 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+[class^="kse-table"] [class^="kse-table"] {
+  box-sizing: border-box;
+}
+
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-content
+  > table
+  > thead
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-header
+  > table
+  > thead
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-body
+  > table
+  > thead
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-summary
+  > table
+  > thead
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-content
+  > table
+  > tbody
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-header
+  > table
+  > tbody
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-body
+  > table
+  > tbody
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-summary
+  > table
+  > tbody
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-content
+  > table
+  > tfoot
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-header
+  > table
+  > tfoot
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-body
+  > table
+  > tfoot
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-summary
+  > table
+  > tfoot
+  > tr
+  > th,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-content
+  > table
+  > tfoot
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-header
+  > table
+  > tfoot
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-body
+  > table
+  > tfoot
+  > tr
+  > td,
+.kse-table.kse-table-bordered
+  > .kse-table-container
+  > .kse-table-summary
+  > table
+  > tfoot
+  > tr
+  > td {
+  border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-table-thead > tr > th {
+  position: relative;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  text-align: start;
+  background: #fafafa;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  transition: background 0.3s ease;
+}
+
+.kse-table-thead > tr > th,
+.kse-table-tbody > tr > td,
+tfoot > tr > th,
+tfoot > tr > td {
+  position: relative;
+  padding: 16px 16px;
+  overflow-wrap: break-word;
+}
+
+.kse-table.kse-table-bordered > .kse-table-footer {
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  border-top: 0;
+}
+.kse-table-footer {
+  border-radius: 0 0 4px 4px;
+}
+
+.kse-table-footer {
+  padding: 16px 16px;
+  color: rgba(0, 0, 0, 0.88);
+  background: #fafafa;
+}
+
+.kse-table-tbody > tr:last-child > td {
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-table-tbody > tr > td {
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+  transition: background 0.3s;
+}
+
+.kse-table-tbody > tr:first-child > td,
+.kse-table-wrapper .kse-table-tbody > tr.kse-table-measure-row + tr > td {
+  border-top: none;
+}
+
+.kse-table-container {
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+}
+
+.kse-table-wrapper
+  .kse-table-container
+  table
+  > thead
+  > tr:first-child
+  th:last-child {
+  border-start-end-radius: 4px;
+}
+
+.kse-table-wrapper .kse-table-container table > thead > tr:first-child th {
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-table-wrapper .kse-table-container table > thead > tr th:first-child {
+  border-left: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.kse-table-wrapper .kse-table-container table > tbody > tr td:first-child {
+  border-left: 1px solid rgba(5, 5, 5, 0.06);
 }

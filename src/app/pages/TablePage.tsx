@@ -5,6 +5,7 @@ export const TablePage: React.FC = () => {
   return (
     <>
       <Table
+        pagination={false}
         columns={[
           {
             title: "등급별 혜택 안내 ",
@@ -143,11 +144,14 @@ export const TablePage: React.FC = () => {
       <Table
         bordered
         tableLayout="fixed"
-        style={{ width: 634 }}
-        size="small"
-        pagination={false}
-        title={() => <div>대량구매할인 동일상품 구매 시, 옵션 포함</div>}
-        footer={() => <div>할인적용금액은 장바구니에서 확인해주세요.</div>}
+        footer={() => (
+          <div>
+            <div className="kse-required">
+              할인적용금액은 나의 금고에서 확인해주세요.
+            </div>
+            <div className="kse-required">입력할 내용을 입력해주세요</div>
+          </div>
+        )}
         columns={[
           {
             title: "수량",
@@ -164,23 +168,99 @@ export const TablePage: React.FC = () => {
             dataIndex: "sale",
             align: "center",
           },
-          // {
-          //   title: (
-          //     <div>
-          //       <div>가격</div>
-          //       <div className="kse-text-secondary">(개당)</div>
-          //     </div>
-          //   ),
-          //   dataIndex: "price",
-          //   align: "center",
-          // },
         ]}
         dataSource={[
-          { quantity: "50개 ~ 99개", sale: "1%", price: "99,000원" },
-          { quantity: "100개 ~ 149개", sale: "2%", price: "98,000원" },
-          { quantity: "150개 ~ 199개", sale: "3%", price: "97,000원" },
+          { quantity: "50개 ~ 99개", sale: "1%" },
+          { quantity: "100개 ~ 149개", sale: "2%" },
+          { quantity: "150개 ~ 199개", sale: "3%" },
         ]}
       />
+
+      <br />
+      <br />
+
+      <div className="kse-table-wrapper">
+        <div className="kse-table kse-table-small kse-table-bordered kse-table-layout-fixed">
+          <div className="kse-table-container">
+            <div className="kse-table-content">
+              <table style={{ tableLayout: "fixed" }}>
+                <colgroup></colgroup>
+                <thead className="kse-table-thead">
+                  <tr>
+                    <th
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      수량
+                    </th>
+                    <th
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      <div>
+                        <div>할인</div>
+                        <div className="kse-text-secondary">(개당)</div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="kse-table-tbody">
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      50개 ~ 99개
+                    </td>
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      1%
+                    </td>
+                  </tr>
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      100개 ~ 149개
+                    </td>
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      2%
+                    </td>
+                  </tr>
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      150개 ~ 199개
+                    </td>
+                    <td
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      3%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="kse-table-footer">
+            <div>
+              <div className="kse-required">
+                할인적용금액은 장바구니에서 확인해주세요.
+              </div>
+              <div className="kse-required">할인은 개당 적용됩니다.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
