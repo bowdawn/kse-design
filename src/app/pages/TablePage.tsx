@@ -67,7 +67,7 @@ export const TablePage: React.FC = () => {
             fee: "-",
             special: (
               <div className="kse-row kse-row-center">
-                <div style={{ textAlign: "start" }}>
+                <div style={{ textAlign: "start", width: 325 }}>
                   - 본사 직배송 서비스 (서울 / 수도권 일부 지역)
                 </div>
               </div>
@@ -96,7 +96,7 @@ export const TablePage: React.FC = () => {
 
             special: (
               <div className="kse-row kse-row-center">
-                <div style={{ textAlign: "start" }}>
+                <div style={{ textAlign: "start", width: 325 }}>
                   <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
                   <div>- 위탁판매 시 상품 금액 총 300만원까지 수수료 면제</div>
                 </div>
@@ -126,7 +126,7 @@ export const TablePage: React.FC = () => {
 
             special: (
               <div className="kse-row kse-row-center">
-                <div style={{ textAlign: "start" }}>
+                <div style={{ textAlign: "start", width: 325 }}>
                   <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
                   <div>- 위탁판매 시 상품 금액 총 500만원까지 수수료 면제</div>
                   <div>- Special Gift 1회</div>
