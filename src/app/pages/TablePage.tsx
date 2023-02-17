@@ -96,9 +96,8 @@ export const TablePage: React.FC = () => {
             special: (
               <div>
                 <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
-                <div>
-                  - 위탁판매 시 상품 금액 기준 총 300만원까지 수수료 면제
-                </div>
+                <div>- 위탁판매 시 상품 금액 기준</div>
+                <div>총 300만원까지 수수료 면제</div>
               </div>
             ),
           },
@@ -131,9 +130,8 @@ export const TablePage: React.FC = () => {
             special: (
               <div>
                 <div>- 본사 직배송 서비스 (서울 / 수도권 일부 지역)</div>
-                <div>
-                  - 위탁판매 시 상품 금액 기준 총 500만원까지 수수료 면제
-                </div>
+                <div>- 위탁판매 시 상품 금액 기준</div>
+                <div>총 500만원까지 수수료 면제</div>
                 <div>- Special Gift 1회</div>
               </div>
             ),
