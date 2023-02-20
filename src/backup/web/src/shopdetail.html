@@ -327,9 +327,9 @@
                                               </td>
                                           </tr>
                                           <!--/end_if/-->
-
                                           <tr class="delivery">
-                                              <th scope="row"><div class="tb-left">배송 방법</div></th>
+                                              
+<th scope="row"><div class="tb-left">배송 방법</div></th>
                                               <td>
                                                   <div class="tb-left">
                                                      <b><!--/if_is_smartpickup/--><a href="<!--/link_smartpickup/-->">[VIP쇼룸 방문수령 신청]</a><!--/end_if/--></b><br/>
@@ -701,6 +701,7 @@
                                                                   <!--/input_quantity/-->
                                                                   <a href="<!--/link_quantity_up/-->" class="btn-up">수량증가</a>
                                                                   <a href="<!--/link_quantity_down/-->" class="btn-dw">수량감소</a>
+
                                                               </div>
                                                           </dd>
                                                       </dl>
@@ -732,6 +733,38 @@
                                               </div>
                                               </td>
                                           </tr>
+<!--/else/-->
+                                                <!--/if_discount_promotion_title/-->
+                                                <tr>
+                                                    <th scope="row"><div class="tb-left">혜택</div></th>
+                                                    <td class="buy-benefit">
+                                                        <div class="tb-left">
+                                                            <span class="tit-txt"><!--/discount_promotion_title/--></span>
+                                                            <a href="#none" class="btn-view"><span>더보기</span> <em>▼</em></a>
+                                                            <!--/if_is_promotion_bulk/-->
+                                                            <!-- 더보기 레이어 -->
+                                                            <div class="view-wrap">
+                                                                <div class="layer-view">
+                                                                    <p><!--/discount_promotion_title/--><br />동일상품 구매 시, <!--/if_discount_promotion_option_apply/-->옵션 포함<!--/else/-->옵션 제외<!--/end_if/--></p>
+                                                                    <ul class="list">
+                                                                        <!--/loop_bulk_info/-->
+                                                                        <li>· <!--/bulk_info@min_stock/--> ~ <!--/bulk_info@max_stock/-->개 개당
+                                                                            <span class="fc-red">
+                                                                                    <!--/if_discount_promotion_discount_type(WON)/--><!--/number/bulk_info@price/-->원
+                                                                                    <!--/else/--><!--/bulk_info@percent/-->%<!--/end_if/--> 할인
+                                                                            </span>
+                                                                        </li>
+                                                                        <!--/end_loop/-->
+                                                                        <li class="layer-info">* 할인적용금액은 장바구니에서<br>확인해주세요.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a href="#none" class="btn-close" id="view_close"><img src="/images/common/btn_layer_close.gif" alt="" /></a>
+                                                            </div>
+                                                            <!--/end_if/-->
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!--/end_if/-->
                                               <!--/end_if/-->
                                           <!--/end_if/-->
                                           
@@ -754,7 +787,7 @@
    <!-- 상품 배송정보 영역 -->
                   <!--/if_usergroup_name/-->
                       <div class="shopdetailInfoDelivery">
-                          <p><strong>[<!--/usergroup_name/-->]</strong> 등급 <strong><!--/user_name/--></strong> 고객님 환영합니다. <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--></p>
+                          <p><strong class="<!--/if_usergroup_name(클래식 문)/-->kse-text-rank1<!--/else_if_usergroup_name(엘리트 문)/-->kse-text-rank2<!--/else_if_usergroup_name(노블 문)/-->kse-text-rank3<!--/else_if_usergroup_name(로열 문)/-->kse-text-rank4<!--/else/-->kse-text-rank1<!--/end_if/-->" >[<!--/usergroup_name/-->]</strong> 등급 <strong><!--/user_name/--></strong> 고객님 환영합니다. <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--></p>
                           <p><!--/if_usergroup_reserve_message/-->(<!--/usergroup_reserve_message/-->)<br /><!--/end_if/--></p>
                           <!--/if_group_message/-->
                               <p><!--/group_message/--></p>
@@ -765,10 +798,30 @@
 <br/><br/>
 
 
-                              <div class="prd-btns">
-                                  <!--/if_soldout/-->
-                                  <div class="kse-btn kse-btn-default kse-btn-disabled kse-btn-large">상품이 품절되었습니다.</div>
-                                  <!--/else/-->
+                              <div class="prd-btns kse-row">
+                                  <div class="soldout-btns kse-block kse-row kse-space kse-space-middle">
+                                    <!--/if_soldout/-->
+                                        <!--/if_is_short_soldout/-->
+                                            <span id="soldout_once" class="kse-btn kse-btn-default kse-btn-large kse-btn-disabled kse-col-block" >
+                                                상품이 품절되었습니다
+                                            </span>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    <!--/if_link_short_soldout_sms/-->
+                                       
+                                            <a  id="soldout_sms" class="kse-btn kse-btn-danger-primary kse-btn-large kse-col-block" href="<!--/link_short_soldout_sms/-->" >
+                                                
+                                                재입고 알림 신청
+                                                
+                                            </a>
+                                    <!--/end_if/-->
+                                    </div>
+                                    <!--/if_soldout/-->
+                                        <!--/if_not_is_short_soldout/-->
+                                            <div class="kse-btn kse-btn-default kse-btn-large kse-btn-disabled">상품이 품절되었습니다</div>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    <!--/if_not_soldout/-->
                                   
                                   <div class="kse-row kse-block ">
                                  <a class="kse-col-block" href="<!--/link_basket/-->"><button type="button" class="kse-btn kse-btn-default kse-btn-large kse-block">금고에 담기</button></a>

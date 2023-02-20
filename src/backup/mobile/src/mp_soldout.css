@@ -1,0 +1,26 @@
+.h_title h3 span { font-weight:normal; }
+.h_title h3 .fc-blue { color:#0e67ec; }
+.btn-wrap {padding:15px 10px;}
+.btn-wrap div {width:49%; float:left;}
+.btn-wrap div:last-child {float:right;}
+.all-select {font-weight:bold; border-top: 1px solid #4a4a4a; border-bottom: 1px solid #dedede; background-color: #f1f1f1; padding:10px;}
+.restockList li {padding:20px 0; border-bottom:1px solid #dedede;}
+figure {width:100%; display: table; box-sizing: border-box; padding:0 10px;}
+.basketLeft {width:130px; position:relative; float: left;}
+.basketLeft a {padding:0 20px; display:block;}
+.basketLeft .MS_input_txt {top:0; left:0; position:absolute;}
+.basketRight {padding-left:130px;}
+.basketRight p {color:#707070; margin-bottom:5px;}
+.basketRight .pname {font-weight:bold; border-bottom:1px solid #dedede;  padding-bottom: 4px;}
+.basketRight .pname .fa {float:right; margin-top: -6px;}
+.basketRight .fc-red { color:#f00; }
+.ul-txt { padding:10px; }
+.more .more-title {color: #3b3b3b;}
+
+@media screen and (min-width:768px) {
+ .all-select {border-bottom:0px none;}
+ .restockList ul {width: 100%; display: table; table-layout: fixed; box-sizing: border-box; border-bottom: 1px solid #d9d9d9;}
+ .restockList li {width:50%; border-bottom:0px none; display: inline-block; vertical-align: top; border-top: 1px solid #d9d9d9;}
+ .restockList ul li:first-child {border: 0px none;}
+ .restockList ul li:nth-child(2) {border: 0px none;} 
+}

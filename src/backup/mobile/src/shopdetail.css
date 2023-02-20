@@ -115,7 +115,7 @@ hr.line{
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .btn_relation a {width:50px; height:50px; color:#fff; background-color:#636363; display: inline-block; font-size:0.917em; border-radius: 4px; border:1px solid #424242;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .btn_relation a:first-child {}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .btn_relation a .fa {display:block; margin:6px 0 3px 0;}
-.shopdetailInfoDelivery {padding:10px 15px; font-size: 15px; color: #3b3b3b; line-height: 29px;}
+.shopdetailInfoDelivery {padding:10px 0px; font-size: 15px; color: #3b3b3b; line-height: 29px;}
 
 /* 硅价规过苞 硅价厚 */
 
@@ -374,11 +374,11 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 /* 眠啊 备己 惑前 */
 .shopdetail .shopdetailInfo .shopdetailInfoTit { height:40px; line-height:42px; padding:0 12px;  border-bottom:1px solid #c7c7c7; font-size:18px; color:#000; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap:after { clear: both; content: ""; display: block; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap { width:100%; border-bottom:1px solid #c7c7c7; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop { float:left; width:35%; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop figure { padding:15px 12px; border:0; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue { float:right; width:52%; padding:15px 0; margin-right:3%; border:0; }
-.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue .shopdetailInfoprdName { font-size:16; font-weight:bold; color:#3b3b3b; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap {  border-bottom:1px solid #c7c7c7; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop { float:left; width: 100px; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoTop figure {border:0; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue { float:right; width:52%;  border:0; }
+.shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue .shopdetailInfoprdName { font-size:16px; font-weight:bold; color:#3b3b3b; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue .shopdetailInfoCont { width:auto; margin:0; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoValue .shopdetailInfoName { width:auto; }
 .shopdetail .shopdetailInfo .shopdetailInfoWrap .shopdetailInfoSelect p { padding:0; background:none; }
@@ -773,4 +773,10 @@ font-family: "Nanum Gothic", sans-serif !important;}
 
 .shopdetailImage img{
         width: -webkit-fill-available;
+}
+
+
+.MS_prod_img_s{
+    height: 100px;
+    width: 100px;
 }

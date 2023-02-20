@@ -54,7 +54,7 @@
 #productDetail .thumb-info .info > *{text-indent: 0px;}
 #productDetail .thumb-info .info .sns{text-indent:0 !important; position: absolute; top: 0; right: 0; width: 45px; text-align: right;}
 #productDetail .thumb-info .info .sns a{display:block; margin-bottom: 7px;}
-#productDetail .thumb-info .info .prd-btns{font-size:0; text-indent:0; }
+
 #productDetail .thumb-info .info .prd-icon { padding-top:10px;
     display: inline-block;
     vertical-align: bottom; }
@@ -69,7 +69,7 @@
     line-height: 1.5;
     text-indent: 0;
     padding-left: 0px;}
-#productDetail .thumb-info .info .table-opt { margin-top:20px; margin-bottom: 50px;}
+#productDetail .thumb-info .info .table-opt { margin-top:20px;}
 #productDetail .thumb-info .info .table-opt th{letter-spacing:0px}
 #productDetail .thumb-info .info .table-opt th,
 #productDetail .thumb-info .info .table-opt td { padding:7px 0; color: #777; font-weight: normal; font-family: 'Nanum Gothic';  font-size: 14px; }
@@ -107,7 +107,6 @@
 #productDetail .thumb-info .info .table-opt .opt-spin .btns a.btn-dw { background: url(/images/d3/modern_simple/btn/btn_h5_spin_dw.gif) no-repeat 50% 50%; }
 #productDetail .thumb-info .info .prd-btns .soldout { margin-top:0px; margin-left:15px; width:350px; height:90px; font-size:22px; color:#bf4141; text-align:center; line-height:90px; letter-spacing:1px; border:3px solid #231f20; background:#fff }
 
-#productDetail .thumb-info .info .prd-btns a{margin-right:8px;display: inline-block; height:54px; line-height: 54px;font-size: 19px !important; font-family: 'Nanum Gothic';}
 #productDetail .thumb-info .info .prd-btns .btn_cart {width: 248px; text-indent: 0; text-align: center; border: 1px solid #bfbfbf;}
 #productDetail .thumb-info .info .prd-btns .btn_buy {width: 248px; color: #fff; text-align: center; background: #0097e6; border: 1px solid #0097e6;}
 #productDetail .thumb-info .info .prd-btns .btn_wish{margin-right:0; width: 110px; text-align: center; border: 1px solid #bfbfbf;}
@@ -512,3 +511,19 @@ td.area-btn-size-chart a.btn-size-chart:active { position: relative; top: 1px }
 .info{
 padding-bottom: 64px;
 }
+
+/* 구매할인 */
+#productDetail .buy-benefit { position:relative; }
+#productDetail .buy-benefit .tit-txt { font-size:18px; color:#000; }
+#productDetail .buy-benefit .view-wrap { position:relative; }
+#productDetail .buy-benefit .btn-view { display:inline-block; padding:2px 3px 2px 5px; font-size:15px; color:#000; font-family:"Malgun Gothic"; background: url(/images/common/bg_layer_gray.gif) no-repeat; border:1px solid #e3e3e3; }
+#productDetail .buy-benefit .btn-view em { display: inline-block; font-size:10px; vertical-align: top; }
+#productDetail .buy-benefit .view-wrap { display:none; position:absolute; top:30px; left:50%; max-width:186px; margin-left:-208px; padding:15px; background:#fff; border:1px solid #000; z-index:1; }
+#productDetail .buy-benefit .view-wrap.active { display:block; }
+#productDetail .buy-benefit .view-wrap .layer-view { font-size:14px; line-height:20px; color:#000; font-weight:bold; }
+#productDetail .buy-benefit .view-wrap .layer-view .fc-red { color:#ff0000; }
+#productDetail .buy-benefit .view-wrap .layer-view ul.list {margin-top:5px;}
+#productDetail .buy-benefit .view-wrap .layer-view ul li.layer-info { color:#585858; border-top:1px solid #ccc; padding-top:5px; margin-top:5px; font-weight:normal; }
+#productDetail .buy-benefit .view-wrap .btn-close { position:absolute; right:10px; top:5px; }
+/* 구매할인 */
+

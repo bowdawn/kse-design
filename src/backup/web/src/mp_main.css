@@ -36,11 +36,6 @@
     color:#767676;
 }
 
-#mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupBenefit{
-    display:none;
-    font-size:21px;
-    color:#767676;
-}
 
 #mypage .myPageMainWrap .rightBox .userGroup .grp .userGroupBenefit strong{
     font-weight:900;
@@ -355,4 +350,15 @@ width: unset;
     text-align: center;
     line-height: 18px;
     margin-bottom: 5px;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup.rank04 .grp .nextGradeWrap .levelupPoint {
+    left: 96.8%;
+}
+
+#mypage .myPageMainWrap .rightBox .userGroup.rank03 .grp .nextGradeWrap .levelupPoint {
+    left: 64.5%;
+}
+#mypage .myPageMainWrap .rightBox .userGroup.rank02 .grp .nextGradeWrap .levelupPoint {
+    left: 32.3%;
 }

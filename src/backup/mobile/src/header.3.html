@@ -1,10 +1,48 @@
-<div class="userGrade <!--/if_group_name(초승달)/-->rank01<!--/else_if_group_name(반달)/-->rank02<!--/else_if_group_name(상현달)/-->rank03<!--/else_if_group_name(보름달)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
+<div class="userGrade <!--/if_group_name(클래식 문)/-->rank01<!--/else_if_group_name(엘리트 문)/-->rank02<!--/else_if_group_name(노블 문)/-->rank03<!--/else_if_group_name(로열 문)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
 <!--/if_login/-->
+<div
+    class="userGroup clearfix <!--/if_group_name(클래식 문)/-->rank01<!--/else_if_group_name(엘리트 문)/-->rank02<!--/else_if_group_name(노블 문)/-->rank03<!--/else_if_group_name(로열 문)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
+    <div class="lvl-img">
+        <img src="/design/ksilverex/22_renew/img/rank01.png" class="rank01" />
+        <img src="/design/ksilverex/22_renew/img/rank02.png" class="rank02" />
+        <img src="/design/ksilverex/22_renew/img/rank03.png" class="rank03" />
+        <img src="/design/ksilverex/22_renew/img/rank04.png" class="rank04" />
+    </div>
+
+    <div class="nextGradeWrap box2">
+        <ul class="clearfix userRank">
+            <li class="fl"><span>C</span></li>
+            <li class="fl"><span>E</span></li>
+            <li class="fl"><span>N</span></li>
+            <li class="fl"><span>R</span></li>
+        </ul>
+        <!--/if_group_name(로열 문)/--><!--/else/-->
+        <div class="levelupPoint">
+            <span>다음 등급까지 남은 금액</span>
+            <strong><!--/next_group_price_gap/--> 원</strong>
+        </div>
+        <!--/end_if/-->
+    </div>
+
+
+<div class="grp">
+        <div class="box1">
+            <p class="userGroupName">
+                <!--/user_name/-->님의 회원등급은<br>
+                <strong class="userRank">
+                    <!--/group_name/-->
+                </strong>
+                입니다.
+            </p>
+        </div>
+
+    </div>
+   
+
+
+</div>
 <!--/else/-->
-<p class="userGroupName">로그인하시면 등급 및 혜택을 볼 수 있습니다.</p>
+<p class="userGroupName" style="font-size: 16px;font-weight: bold;">로그인하시면 등급 및 혜택을 볼 수 있습니다.</p>
 <!--/end_if/-->
     </p>
-    <!--/if_next_group_benefit/-->
-    <p class="nextGrade"><strong><!--/next_group_name/--></strong> 등급까지 남은 금액은 <strong class="roboto"><!--/next_group_price_gap/-->원</strong> 입니다.</p>
-    <!--/end_if/-->
 </div>

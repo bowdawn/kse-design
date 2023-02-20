@@ -39,3 +39,10 @@ $("#multi_img img").mouseenter(function(){
     $("#zoom").attr("src",thumb);
 });
 
+// 대량구매 혜택 더보기
+    jQuery('.btn-view').on('click', function(){
+            jQuery('.view-wrap').addClass('active');
+        });
+    jQuery('.view-wrap #view_close').click(function() {
+        jQuery('.view-wrap').removeClass('active');
+    });

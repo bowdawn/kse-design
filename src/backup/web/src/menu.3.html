@@ -1,20 +1,15 @@
-<div class="userGrade <!--/if_group_name(초승달)/-->rank01<!--/else_if_group_name(반달)/-->rank02<!--/else_if_group_name(상현달)/-->rank03<!--/else_if_group_name(보름달)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
-   <!--/if_login/-->
-<p class="userGroupName"><!--/user_name/-->님의 회원등급은 <strong class="userRank"><!--/group_name/--></strong>입니다.</p>
-<!--/else/-->
-<p class="userGroupName">로그인하시면 등급 및 혜택을 볼 수 있습니다.</p>
-<!--/end_if/-->
-    <p class="userGroupBenefit">
-        <strong class="userRank">
-            <!--/group_name/-->
-        </strong>
-        고객님은 구매금액의 
-        <strong class="rank02 reservePer">0.1</strong>
-        <strong class="rank03 reservePer">0.2</strong>
-        <strong class="rank04 reservePer">0.3</strong>
-        %의 멤버십포인트가 <strong>추가 적립</strong>됩니다.
-    </p>
+<div
+    class="userGrade <!--/if_group_name(클래식 문)/-->rank01<!--/else_if_group_name(엘리트 문)/-->rank02<!--/else_if_group_name(노블 문)/-->rank03<!--/else_if_group_name(로열 문)/-->rank04<!--/else/-->rank01<!--/end_if/-->">
+    <!--/if_login/-->
+    <p class="userGroupName"><!--/user_name/-->님의 회원등급은 <strong class="userRank"><!--/group_name/--></strong>입니다.</p>
+    <!--/else/-->
+    <p class="userGroupName">로그인하시면 등급 및 혜택을 볼 수 있습니다.</p>
+    <!--/end_if/-->
+
     <!--/if_next_group_benefit/-->
-    <p class="nextGrade"><strong><!--/next_group_name/--></strong> 등급까지 남은 주문 금액은 <strong class="roboto"><!--/next_group_price_gap/-->원</strong> 입니다.</p>
+    <!--/if_group_name(로열 문)/--><!--/else/-->
+    <p class="nextGrade"><strong><!--/next_group_name/--></strong> 등급까지 남은 주문 금액은 <strong
+            class="roboto"><!--/next_group_price_gap/-->원</strong> 입니다.</p>
+             <!--/end_if/-->
     <!--/end_if/-->
 </div>

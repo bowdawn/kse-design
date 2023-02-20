@@ -10,7 +10,7 @@
                         <dt class="blind">현재 위치</dt>
                         <dd>
                             <a href="/">HOME</a> 
-                            &gt; 브랜드
+                            &gt; BRAND
                         </dd>
                     </dl>
                     
@@ -20,26 +20,27 @@
                     
                     <div class="brand-select">
                         <!--/select_brand_list/-->
-                        <a href="<!--/link_select_brand/-->">브랜드 검색</a>
+                        <a href="<!--/link_select_brand/-->">검색</a>
                     </div>                    
                                    
                     <!--/if_brand_banner/-->
                     <div class="brand-banner">
                         <!--/brand_banner/-->
+<p class="line"></p>
                     </div>
                     <!--/end_if/-->
-<br/><br/>
+
                     <div class="page-body">
                         <div class="item-wrap">
                             <!--/if_promotion_product/-->
                             <div class="cateTit">
-                                <h3></h3>
+                                <h3>추천상품</h3>
                                 <p class="line"></p>
                             </div>
                             <div class="item-cont">
-                                <!--/loop_promotion_product(100)/-->
+                                <!--/loop_promotion_product(4)/-->
                                 <dl class="item-list">
-                                    <dt class="thumb"><a href="<!--/promotion_product@link/-->"><img src="<!--/promotion_product@image_m/-->" alt="" title="" /></a></dt>
+                                    <dt class="thumb"><a href="<!--/promotion_product@link/-->"><img src="<!--/promotion_product@image_m/-->" alt="상품 섬네일" title="상품 섬네일" /></a></dt>
                                     <dd class="prd-info">
                                         <ul> 
                                             <li class="prd-ico"><!--/promotion_product@icons/--></li>
@@ -78,106 +79,146 @@
                                 </dl>
                                 <!--/end_loop/-->
                             </div><!-- //item-cont -->
-                            <!--/end_if/-->   
+                             
                             
-                            <div class="item-info">
-                                <div class="item-total">
-                                   
+                                <!--/else_if_cate1_name/-->
+                                
+                                 <div class="class-list">	
+                                       <ul>
+                                        <!--/loop_category/-->
+                                            <li><a href="<!--/category@link/-->"><!--/category@name/--></a></li>
+                                        <!--/end_loop/-->
+                                        </ul>
+                                    </div>
+                                  
+                                    
+                                <!--/end_if/-->
+                                 <!--/if_product/-->
+                                 <div class="item-info">
+                                    <dl class="item-order sort">
+                                        <dd>
+                                            <select onchange="if(this.value) location.href=(this.value);">
+                                                <option value="javascript:sendsort('sellcnt')" <!--/if_now_sort_type(sellcnt)/-->selected<!--/end_if/-->>인기상품순</option>
+                                                <option value="javascript:sendsort('order')" <!--/if_now_sort_type(order)/-->selected<!--/end_if/-->>신상품순</option>
+                                                <option value="javascript:sendsort('brandname')" <!--/if_now_sort_type(brandname)/-->selected<!--/end_if/-->>상품명순</option>
+                                                <option value="javascript:sendsort('price')" <!--/if_now_sort_type(price)/-->selected<!--/end_if/-->>낮은가격순</option>
+                                                <option value="javascript:sendsort('price2')" <!--/if_now_sort_type(price2)/-->selected<!--/end_if/-->>높은가격순</option>
+                                                <option value="javascript:sendsort('viewcnt')" <!--/if_now_sort_type(viewcnt)/-->selected<!--/end_if/-->>조회순</option>
+                                            </select>
+                                        </dd>
+                                     </dl><!-- .total-sort -->
                                 </div>
-                                <dl class="item-order sort">
-                                    <dt class="blind">검색결과 정렬</dt>
+                                <!--/end_if/-->
+                                
+                            </div>                            
+
+
+                            <div class="item-wrap">                                
+                                <!--/if_product/-->
+                                <div class="item-cont catelist">
+                                <!--/loop_product(60)/-->                                    
+                                                                        
+                                    <dl class="item-list loop<!--/idx/-->">
+                                    <dt class="thumb">
+                                        <p id="s_price" style="display:none"> <!--/if_product@price_consumer(+1)/--><!--/product@price_consumer/--><!--/else/--><!--/product@price_sell/--><!--/end_if/--></p>
+                                        <p id="s_dc" style="display:none"><!--/if_product@price_discount/--><!--/product@price_discount/--><!--/else/--><!--/product@price_sell/--><!--/end_if/--></p>
+                                        <script>
+                                           var no<!--/idx/-->sp = $(".catelist .loop<!--/idx/--> #s_price").text();
+                                           var no<!--/idx/-->s_dc = $(".catelist .loop<!--/idx/--> #s_dc").text();     
+                                           var no<!--/idx/-->sM = 100-[(no<!--/idx/-->s_dc/no<!--/idx/-->sp)*100];
+                                           var no<!--/idx/-->Olim = Math.round(no<!--/idx/-->sM);
+                                           var no<!--/idx/-->goInt = "<em class='num'>" + no<!--/idx/-->Olim + "</em><em class='percent'>%</em>";
+                                        </script>
+                                        <!--/if_product@is_term_discount/-->
+                                            <p class="dc term"><script> $(".catelist .loop<!--/idx/--> .term").append(no<!--/idx/-->goInt);
+                                            if(no<!--/idx/-->Olim == 0){
+                                                $(".catelist .loop<!--/idx/--> .dc.term").hide();
+                                            }
+                                            </script></p>
+                                        <!--/else/-->
+                                            <!--/if_product@discount_info/--><p class="dc"><!--/product@discount_info/--><em>%</em></p><!--/end_if/-->
+                                            <!--/if_product@discount_percent/--><p class="dc"><!--/product@discount_percent/--><em>%</em></p><!--/end_if/-->
+                                        <!--/end_if/-->
+                                        <a href="<!--/product@link/-->"><img src="<!--/product@image_m/-->" <!--/product@rollover/-->  /></a>
+                                        <div class="cart"><a href="<!--/product@link_preview/-->"><img src="/design/ksilverex/supermarket/img/cart_icon.png"></a></div>
+
+                                    </dt>
                                     <dd>
                                         <ul>
-                                            <li><a href="<!--/link_sort_date/-->"><span></span></a></li>
-                                            <li><a href="<!--/link_sort_product_name/-->"><span></span></a></li>
-                                            <li><a href="<!--/link_sort_view_count/-->"><span></span></a></li>
-                                            <li><a href="<!--/link_sort_sell_count/-->"><span></span></a></li>
-                                            <li><a href="<!--/link_sort_price_down/-->"><span></span></a></li>
-                                            <li class="nobg"><a href="<!--/link_sort_price_up/-->"><span></span></a></li>
-                                        </ul>
-                                    </dd>
-                                 </dl><!-- .total-sort -->
-                            </div>
-                            
-                            <!--/if_product/-->
-                            <div class="item-cont">
-                            <!--/loop_product(100)/-->
-                                <dl class="item-list">
-                                    <dt class="thumb"><a href="<!--/product@link/-->"><img src="<!--/product@image_m/-->" /></a></dt>
-                                    <dd class="prd-info">
-                                        <ul>   
-                                            <li class="prd-ico"><!--/product@icons/--></li>
-                                            <li class="prd-name"><a href="<!--/product@link/-->"><!--/product@name/--></a></li>
-                                            <li class="prd-price">
-                                            <!--/if_product@price_replace/-->
-                                                <!--/product@price_replace/-->
-                                            <!--/else_if_product@is_soldout/-->
-                                                Sold Out
+                                            <li class="prd-name"><!--/notag/product@name/--></li>
+              
+                                            <!--/if_product@subname/--><li class="prd-subname"><!--/notag/product@subname/--></li><!--/end_if/-->
+
+
+                                           
+
+                                            <!--/if_product@is_soldout/-->
+                                                <li class="prd-soldout">품절</li>
                                             <!--/else/-->
-                                                <!--/if_product@price_discount/-->
-                                                    <strike><!--/number/product@price_sell/-->원</strike>
-                                                    <span class="price"><!--/number/product@price_discount/-->원</span>
+                                                <!--/if_product@price_replace/-->
+                                                    <li class="prd-replace"><!--/product@price_replace/--></li>
                                                 <!--/else/-->
-                                                    <!--/if_product@price_consumer(+1)/-->
-                                                        <strike><!--/number/product@price_consumer/-->원</strike>
-                                                    <!--/end_if/-->
-                                                    <span class="price"><!--/number/product@price_sell/-->원</span>
+                                                <!--/if_product@price_consumer(+1)/-->
+                                                <!--/if_product@price_discount/-->
+                                                <li class="prd-consumer <!--/if_product@discount_percent/--><!--/else_if_product@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/product@price_consumer/--></strike></li>
+                                                <li class="prd-price"><!--/number/product@price_discount/--><em>원</em></li>
+
+                                                <!--/else/-->
+                                                <li class="prd-consumer <!--/if_product@discount_percent/--><!--/else_if_product@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/product@price_consumer/--></strike></li>
+                                                <li class="prd-price"><!--/number/product@price_sell/--><em>원</em></li>
+
+
+                                                <!--/end_if/-->
+                                                <!--/else/-->
+                                                <!--/if_product@price_discount/-->
+                                                <li class="prd-consumer <!--/if_product@discount_percent/--><!--/else_if_product@discount_info/--><!--/else/--> dn<!--/end_if/-->"><strike><!--/number/product@price_sell/--></strike></li>
+                                                <li class="prd-price"><!--/number/product@price_discount/--><em>원</em></li>
+                                                <!--/else/-->
+                                                <li class="prd-price"><!--/number/product@price_sell/--><em>원</em></li>
+                                                <!--/end_if/-->
                                                 <!--/end_if/-->
                                             <!--/end_if/-->
-                                            </li>
-                                            <!--/if_product@color/-->
-                                            <li class="prd-color">
-                                                <!--/loop_product@color/-->
-                                                <font color="<!--/product@color@code/-->">■</font>
-                                                <!--/end_loop/-->
-                                            </li>
                                             <!--/end_if/-->
-                                            <!--/if_product@btn_option_preview/-->
-                                            <li class="prd-preview">
-                                                <!--/product@btn_option_preview/-->
-                                            </li>
-                                            <!--/end_if/-->
+
                                         </ul>
                                     </dd>
                                 </dl>
-                                <!--/if_step(4)/-->
-                            </div><div class="item-cont">
-                                <!--/end_if/-->
-                            <!--/end_loop/-->
-                            </div>
-
-                            <div class="paging">
-                                <!--/if_pager_product::first@link/-->
-                                <a href="<!--/pager_product::first@link/-->" class="first">&lt;&lt;</a>
-                                <!--/end_if/-->
-                                <!--/if_pager_product::prev@link/-->
-                                <a href="<!--/pager_product::prev@link/-->" class="prev">&lt;</a>
-                                <!--/end_if/-->
-                                <!--/loop_pager_product::page/-->
-                                <!--/if_pager_product::page@current/-->
-                                <a href="<!--/pager_product::current@link/-->" class="now"><!--/pager_product::current/--></a>
-                                <!--/else/-->
-                                <a href="<!--/pager_product::page@link/-->"><!--/pager_product::page/--></a>
-                                <!--/end_if/-->
                                 <!--/end_loop/-->
-                                <!--/if_pager_product::next@link/-->
-                                <a href="<!--/pager_product::next@link/-->" class="next">&gt;</a>
+                                
+                                <div class="paging">
+                                    <!--/if_pager_product::first@link/-->
+                                    <a href="<!--/pager_product::first@link/-->" class="first">&lt;&lt;</a>
+                                    <!--/end_if/-->
+                                    <!--/if_pager_product::prev@link/-->
+                                    <a href="<!--/pager_product::prev@link/-->" class="prev">&lt;</a>
+                                    <!--/end_if/-->
+                                    <!--/loop_pager_product::page/-->
+                                    <!--/if_pager_product::page@current/-->
+                                    <a href="<!--/pager_product::current@link/-->" class="now"><!--/pager_product::current/--></a>
+                                    <!--/else/-->
+                                    <a href="<!--/pager_product::page@link/-->"><!--/pager_product::page/--></a>
+                                    <!--/end_if/-->
+                                    <!--/end_loop/-->
+                                    <!--/if_pager_product::next@link/-->
+                                    <a href="<!--/pager_product::next@link/-->" class="next">&gt;</a>
+                                    <!--/end_if/-->
+                                    <!--/if_pager_product::last@link/-->
+                                    <a href="<!--/pager_product::last@link/-->"  class="last">&gt;&gt;</a>
+                                    <!--/end_if/-->
+                                </div>                                
+                                
+                                <!--/else/-->
+                                <p class="nodata">상품이 없습니다.</p>
+                                </div>
+                                
                                 <!--/end_if/-->
-                                <!--/if_pager_product::last@link/-->
-                                <a href="<!--/pager_product::last@link/-->"  class="last">&gt;&gt;</a>
-                                <!--/end_if/-->
-                            </div>
-                            <!--/end_if/-->
-                            
-                        </div><!-- //item-wrap -->  
-                        
-                    </div><!-- .page-body -->
-                    
-                </div><!-- #productClass -->
-            </div><!-- #content -->
-            <hr />
-        </div><!-- #contentWrap -->
-    </div><!-- #contentWrapper -->
-    <hr />
-    <!--/include_footer(1)/-->
-</div><!-- #wrap -->
+                               
+                            </div><!-- //item-wrap -->
+                        </div><!-- .page-body -->
+                    </div><!-- #productClass -->
+                </div><!-- #content -->
+            </div><!-- #contentWrap -->
+        </div><!-- #contentWrapper-->
+        <hr />
+        <!--/include_footer(1)/-->
+    </div><!-- #wrap -->

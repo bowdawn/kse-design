@@ -1,7 +1,6 @@
 /*페이지 공통*/
-#mypage *{
-    color:#191919;
-}
+
+
 
 #mypage .myPageMainWrap{
     position:relative;
@@ -555,8 +554,8 @@ color: #2857FA !important;
 
 .table-rank td.kse-table-cell{
 vertical-align: middle;
-padding-top: 12px;
-padding-bottom: 12px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .table-rank th.kse-table-cell{
@@ -594,3 +593,30 @@ border-top: none;
  width: 50px;
 }
 
+.membership-info-header-wrapper .conBox1 ul li .nameWrap strong {
+ font-size: 24px;
+}
+
+.membership-info-header-wrapper  .conBox1 ul li .nameWrap span{
+font-size: 16px;
+}
+
+.membership-info-header-wrapper .conBox1 ul li .textWrap span {
+   font-size: 16px;
+    color: #999 !important;
+  
+}
+
+
+.membership-info-header-wrapper .pageSubTit p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.membership-info-header-wrapper .pageTit {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 900;
+    border-bottom: 2px solid #000;
+}

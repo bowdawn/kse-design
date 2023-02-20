@@ -38,16 +38,16 @@
 
 #productClass .cate-wrap .class-list ul { *zoom:1; margin-top: 10px; }
 #productClass .cate-wrap .class-list ul:after { display:block; clear:both; content:'' }
-#productClass .cate-wrap .class-list ul li { float: left; }
+#productClass .cate-wrap .class-list ul li { float: left; padding: 5px 20px 10px 20px;  border-bottom: 1px solid #e3e3e3;}
 #productClass .cate-wrap .class-list ul li a {
-    display: block;
+ 
     font-size: 18px;
-    border-bottom: 1px solid #e3e3e3;
-    padding: 5px 20px 10px 20px;
+   
+    
     color: #555555;
     font-weight: bold;}
-#productClass .cate-wrap .class-list ul li.on{}
-#productClass .cate-wrap .class-list ul li.on a{border-bottom: 3px solid #0097e6; padding-bottom: 9px;}
+#productClass .cate-wrap .class-list ul li.on{ padding-bottom: 9px; border-bottom: 3px solid #0097e6; }
+#productClass .cate-wrap .class-list ul li.on a{}
 
 #productClass .cateTit h3{
     font-size: 22px;

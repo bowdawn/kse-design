@@ -40,7 +40,7 @@ body * {  }
     #chkwrap .cont ul li a { line-height:17px !important }
 }
 
-h4.tit { margin-top: 50px; margin-bottom: 5px; padding-left:5px; font-size: 14px; font-weight: bold }
+h4.tit { margin-top: 5px; margin-bottom: 5px; padding-left:5px; font-size: 14px; font-weight: bold }
 
 /* 이용 약관 */
 .privercy-contract textarea { width:97%; height:165px }

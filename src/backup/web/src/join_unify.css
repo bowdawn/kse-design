@@ -1,6 +1,6 @@
 body { color:#000; }
 #join .page-body {width:682px; margin:0 auto;}
-#join .form-wrap {width:100%; margin-top:30px; border:1px solid #aaa; border-radius:8px; padding-bottom:21px; box-sizing: border-box;}
+#join .form-wrap {width:100%; margin-top:30px; border:1px solid #aaa; border-radius:4px; padding-bottom:21px; box-sizing: border-box;}
 #join .form-wrap h3.form-title {padding:21px 25px 0; font-size: 18px; font-family: 'Malgun Gothic'; cursor: pointer;}
 #join .form-wrap h3.form-title strong {display:block; background: url(/images/common/ico_arrow_up.png) no-repeat right center; letter-spacing:-1px;}
 #join .form-wrap h3.form-title.off strong {background: url(/images/common/ico_arrow_down.png) no-repeat right center;}
@@ -27,7 +27,7 @@ body { color:#000; }
 #join .form-wrap ul.form-list li label:first-child {display:block; margin-bottom:7px; font-weight:700; font-size: 18px; letter-spacing: 0.5px;}
 #join .form-wrap ul.form-list li label span {color:#f50000; vertical-align:middle;}
 #join .form-wrap ul.form-list li .normal-input,
-#join .form-wrap ul.form-list li .MS_select,
+
 #join .form-wrap ul.form-list li .MS_textarea {border-radius:4px; border:1px solid #c7c7c7; border-radius:4px; font-size:14px; font-family:'Malgun Gothic'; letter-spacing:-1px;}
 #join .form-wrap ul.form-list li .normal-input {display:inline-block; width:100%; height:46px; line-height:46px; padding:0 15px; box-sizing: border-box;}
 #join .form-wrap ul.form-list li .normal-input:focus {border-color:#000;}
@@ -35,8 +35,6 @@ body { color:#000; }
 #join .form-wrap ul.form-list li .normal-input::-webkit-input-placeholder {color:#999;}
 #join .form-wrap ul.form-list li .normal-input:-ms-input-placeholder {color:#999;}
 #join .form-wrap ul.form-list li .normal-input::placeholder {color:#999;}
-#join .form-wrap ul.form-list li .MS_select {width:100%; height:46px; line-height:46px; padding:0 15px; background:url(/images/common/ico_arrow_down.png) no-repeat 97% 50%; -webkit-appearance: none; -moz-appearance: none; appearance:none;}
-#join .form-wrap ul.form-list li .MS_select::-ms-expand {display: none;}
 #join .form-wrap ul.form-list li .MS_textarea {width:528px; height:50px; padding:15px;}
 #join .form-wrap ul.form-list li .MS_radio,
 #join .form-wrap ul.form-list li .MS_radio:checked,
@@ -46,9 +44,9 @@ body { color:#000; }
 #join .form-wrap ul.form-list li .MS_radio:checked {background:url(/images/common/join_radio_on.png) no-repeat center center; border:0;}
 #join .form-wrap ul.form-list li .MS_checkbox {background:url(/images/common/join_checkbox_off.png) no-repeat center center; width:24px; height:24px; border-radius:100%; border:1px solid #c7c7c7;}
 #join .form-wrap ul.form-list li .MS_checkbox:checked {background:url(/images/common/join_checkbox_on.png) no-repeat center center; border:0;}
-#join .form-wrap ul.form-list li .MS_tel { width:165px}
+#join .form-wrap ul.form-list li .MS_tel { width:178px}
 #join .form-wrap ul.form-list li .MS_post { width:160px}
-#join .form-wrap ul.form-list li .MS_input_email { width:177px}
+#join .form-wrap ul.form-list li .MS_input_email { width:176px}
 #join .form-wrap ul.form-list li .w350 {width:350px;}
 #join .form-wrap ul.form-list li .w116 {width:116px;}
 #join .form-wrap ul.form-list li .w140 {width:140px;}
@@ -63,11 +61,9 @@ body { color:#000; }
 #join .form-wrap ul.form-list li .input-wrap label {display:inline-block; margin-bottom:0; vertical-align:middle; cursor:pointer;}
 #join .form-wrap ul.form-list li p.error-msg {margin-top:7px; font-size:13px; color:#f50000;}
 #join .form-wrap ul.form-list li p.msg {margin-top:7px; font-size:13px; color:#666;}
-#join .form-wrap ul.form-list li .check {display:table; width:100%; margin-bottom:10px;}
-#join .form-wrap ul.form-list li .check input,
-#join .form-wrap ul.form-list li .check .btn-check {display:table-cell;}
-#join .form-wrap ul.form-list li .check .btn-check {width:140px;}
-#join .form-wrap ul.form-list li .check .btn-check a {display:inline-block; width:128px; height:44px; line-height:44px; margin-left:10px; border:1px solid #000; border-radius:4px; font-size:16px; font-family:'Malgun Gothic'; letter-spacing:0px; font-weight:700; text-align:center;}
+
+
+
 #join .form-wrap ul.form-list li .check .w102 {width:102px;}
 #join .form-wrap ul.form-list li .check .w102 a {width:92px;}
 #join .form-wrap ul.form-list li label.label-gender {display:inline-block; width:120px; }
@@ -83,7 +79,7 @@ body { color:#000; }
 #join .form-wrap ul.form-list.sns-wrap li .cut {position:absolute; right:16px; top:17px; background:transparent;}
 
 #join .btn-join {margin-top:30px;}
-#join .btn-join a {display:block; padding:25px 0; background:#0097e6; border-radius:8px; color:#fff; text-align:center; font-family: 'Malgun Gothic'; font-size:25px; font-weight:700; letter-spacing:0.5px;}
+
 
 #terms .page-body { width: 682px; margin:0 auto;}
 /* s 약관수정 220705 */
@@ -167,3 +163,8 @@ body { color:#000; }
 .pop-layer-agree .layer-wrap .agree-chk {padding:20px 0 30px;}
 .pop-layer-agree .layer-wrap .agree-chk label {font-family:'Malgun Gothic'; font-size:14px; color:#000; letter-spacing:-1px;}
 .pop-layer-agree .layer-wrap .agree-chk input {display:inline-block; margin-right:5px;}
+
+
+.MS_birthday{
+    width: 169px;
+}

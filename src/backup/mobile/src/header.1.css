@@ -178,13 +178,12 @@ aside nav li .fa {   }
 
 
 aside nav li.no-line{margin-top:0 !important; border-bottom:0 !important;}
-aside nav li.plan{text-align: center; padding-top: 25px; display: table;}
-aside nav li.plan a{ margin-bottom: 10px !important;display:inline-block; width:48.5%; height: inherit; line-height: inherit; padding: 0 !important; margin: 0; border: 1px solid #ededed;}
-aside nav li.plan a:nth-child(odd){float: left;}
-aside nav li.plan a:nth-child(even){float:right;}
+aside nav li.plan{text-align: center; padding-top: 25px;}
+aside nav li.plan a{border: 1px solid #ededed; border-radius: 4px;}
+aside nav li.plan a svg {max-width: 125px;}
 
-aside nav li.plan a img{width:100%;}
-aside nav li.plan a em{display: block;text-align: center; padding: 13px;font-size: 15px; color: #646464;}
+aside nav li.plan a svg * {    fill: #555;}
+aside nav li.plan a em{display: block;text-align: center; padding-top: 16px;font-size: 15px; color: #555;}
 
 aside .asideBottom {text-align: center;padding: 12px; background: #fafafa; }
 aside .asideBottom ul{margin-top: -5px;display: inline-block; width: 100%; }

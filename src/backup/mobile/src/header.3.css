@@ -1,71 +1,243 @@
-.userGrade{
-    padding:0 20px;
+/*회원 그룹 정보*/
+ .userGroup{
+    padding:100px 20px 0;
 }
 
-.userGrade p.userGroupName{
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 32px;
-    color: #191919;
+ .userGroup .lvl-img{
+    width:35%;
+    margin:0 auto 20px;
 }
 
-.userGrade p.userGroupName strong{
-    font-weight:900;
-    color:#191919;
-}
-
-.userGrade p.userGroupBenefit{
+ .userGroup .lvl-img img{
     display:none;
-    margin-bottom: 5px;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 18px;
-    color: #191919;
+    width:100%;
 }
 
-.userGrade p.userGroupBenefit strong{
-    font-weight:900;
+.userGroup.rank01 .lvl-img img.rank01,
+.userGroup.rank02 .lvl-img img.rank02,
+.userGroup.rank03 .lvl-img img.rank03,
+.userGroup.rank04 .lvl-img img.rank04{
+    display:block;
 }
 
-.userGrade p.userGroupBenefit .reservePer{
+ .userGroup .nextGradeWrap{
+    position:relative;
+    padding:15px 0;
+}
+
+ .userGroup .nextGradeWrap ul li{
+    position:relative;
+    width:calc((100% - 20px)/3);
+}
+
+ .userGroup .nextGradeWrap ul li:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:calc(100% - 5px);
+    height:6px;
+    left:10px;
+    top:7px;
+    background:#dbdbdb;
+    z-index:-1;
+}
+
+ .userGroup .nextGradeWrap ul li:last-child{
+    width:20px;
+}
+
+ .userGroup .nextGradeWrap ul li:last-child:after{
     display:none;
 }
 
-.userGrade.rank02 p.userGroupBenefit,
-.userGrade.rank03 p.userGroupBenefit,
-.userGrade.rank04 p.userGroupBenefit,
-.userGrade.rank02 p.userGroupBenefit .reservePer.rank02,
-.userGrade.rank03 p.userGroupBenefit .reservePer.rank03,
-.userGrade.rank04 p.userGroupBenefit .reservePer.rank04{
-    display:inline-block;
-}
-
-.userGrade.rank01 p.userGroupName .userRank,
-.userGrade.rank01 p.userGroupBenefit .userRank{
-    color:#CCC1B2;
-}
-
-.userGrade.rank02 p.userGroupName .userRank,
-.userGrade.rank02 p.userGroupBenefit .userRank{
-    color:#FCA729;
-}
-
-.userGrade.rank03 p.userGroupName .userRank,
-.userGrade.rank03 p.userGroupBenefit .userRank{
-    color:#AA4743;
-}
-
-.userGrade.rank04 p.userGroupName .userRank,
-.userGrade.rank04 p.userGroupBenefit .userRank{
-    color:#2857FA;
-}
-
-.userGrade p.nextGrade{
+ .userGroup .nextGradeWrap ul li span{
+    display:block;
+    width:20px;
+    height:20px;
     font-size:12px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    background:#dbdbdb;
+    border-radius:15px;
+}
+
+.userGroup .nextGradeWrap .levelupPoint {
+    width: 150px;
+    margin:35px auto 0;
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.15);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+ .userGroup .nextGradeWrap .levelupPoint span {
+    display: block;
+    font-size: 12px;
+    color: #b2b2b2;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+ .userGroup .nextGradeWrap .levelupPoint strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+}
+
+ .userGroup .grp{
+    text-align:center;
+}
+
+ .userGroup .grp .userGroupName{
+    padding:15px 0 33px;
+    font-size:24px;
+    line-height:35px;
+    font-weight:900;
+}
+
+.userGroup .grp .userGroupName strong{
+    font-weight:900;
     color:#767676;
 }
 
-.userGrade p.nextGrade strong{
+ .userGroup .grp .moreViewBenefit{
+    font-size:12px;
     font-weight:900;
 }
+
+ .userGroup.open .grp .moreViewBenefit{
+    display:none;
+}
+
+.userGroup .grp .moreViewBenefit img{
+    width:5px;
+    vertical-align:middle;
+    margin-top:-3px;
+    margin-left:5px;
+}
+
+
+/*회원 그룹 등급별 색지정*/
+/*초승달*/
+ .userGroup.rank01 .grp .userGroupName strong.userRank{
+    color:#CCC1B2;
+}
+ .userGroup.rank01 .nextGradeWrap ul.userRank li:nth-child(1) span{
+    background:#CCC1B2;
+}
+/*반달*/
+.userGroup.rank02 .grp .userGroupName strong.userRank{
+    color:#FCA729;
+}
+ .userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(1) span,
+.userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(1):after,
+ .userGroup.rank02 .nextGradeWrap ul.userRank li:nth-child(2) span{
+    background:#FCA729;
+}
+/*상현달*/
+.userGroup.rank03 .grp .userGroupName strong.userRank{
+    color:#AA4743;
+}
+ .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(1) span,
+ .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(1):after,
+ .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(2) span,
+ .userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(2):after,
+.userGroup.rank03 .nextGradeWrap ul.userRank li:nth-child(3) span{
+    background:#AA4743;
+}
+/*보름달*/
+ .userGroup.rank04 .grp .userGroupName strong.userRank{
+    color:#2957FF;
+}
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(1) span,
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(1):after,
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(2) span,
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(2):after,
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(3) span,
+.userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(3):after,
+ .userGroup.rank04 .nextGradeWrap ul.userRank li:nth-child(4) span{
+    background:#2957FF;
+}
+
+
+
+/*회원 그룹 혜택*/
+ .userGroup .userGradeBenefit{
+    width:100%;
+}
+
+.userGroup .userGradeBenefit .nowGradeBenefit{
+    margin-top:30px;
+    padding-top:25px;
+    border-top:1px solid #eee;
+}
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .hd{
+    margin-top:0;
+}
+
+
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li{
+    width:calc(50% - 30px);
+    padding:10px 10px 30px;
+    margin-right:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li:nth-child(2n){
+    margin-right:0;
+}
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li .imgWrap{
+    display: block;
+    margin-bottom:5px;
+    transform: scale(0.85) translate(-15px, 0);
+}
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li span{
+    margin-bottom:10px;
+    font-size:12px;
+    color:#a5a5a5;
+}
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .nowGradeBenefitList li strong{
+    font-size:18px;
+    font-weight:900;
+}
+
+
+
+
+
+
+
+/*회원 그룹 등급별 노출 지정*/
+
+ .userGroup .userGradeBenefit .nowGradeBenefit .rank02,
+ .userGroup .userGradeBenefit .nowGradeBenefit .rank03,
+ .userGroup .userGradeBenefit .nowGradeBenefit .rank04{
+    display:none;
+}
+
+
+
+.userGroup.rank02 .userGradeBenefit .nowGradeBenefit .rank02{
+    display:block;
+}
+
+ .userGroup.rank03 .userGradeBenefit .nowGradeBenefit .rank03{
+    display:block;
+}
+
+ .userGroup.rank04 .userGradeBenefit .nowGradeBenefit .rank04{
+    display:block;
+}
+
+

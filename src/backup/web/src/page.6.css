@@ -1,6 +1,4 @@
-.vipClubWrap *{
-    color:#191919;
-}
+
 
 .vipClubWrap{
     padding-top:85px;
@@ -32,84 +30,6 @@
     margin-top:-5px;
     margin-right:10px;
     vertical-align: middle;
-}
-
-.vipClubWrap .conBox1{
-    padding-top:70px;
-}
-
-.vipClubWrap .conBox1 ul li{
-    width:300px;
-}
-
-.vipClubWrap .conBox1 ul li .imgWrap img{
-    display:block;
-    width:170px;
-    margin:0 auto 20px;
-}
-
-.vipClubWrap .conBox1 ul li .nameWrap{
-    padding-bottom:15px;
-}
-
-.vipClubWrap .conBox1 ul li.rank01 .nameWrap{
-    border-bottom:17px solid #CCC1B2;
-}
-
-.vipClubWrap .conBox1 ul li.rank02 .nameWrap{
-    border-bottom:17px solid #FCA729;
-}
-
-.vipClubWrap .conBox1 ul li.rank03 .nameWrap{
-    border-bottom:17px solid #AA4743;
-}
-
-.vipClubWrap .conBox1 ul li.rank04 .nameWrap{
-    border-bottom:17px solid #2857FA;
-}
-
-.vipClubWrap .conBox1 ul li .nameWrap strong{
-    display:block;
-    margin-bottom:5px;
-    font-size:40px;
-    font-weight:900;
-    text-align:center;
-}
-
-.vipClubWrap .conBox1 ul li .nameWrap span{
-    display: block;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.vipClubWrap .conBox1 ul li.rank01 .nameWrap strong,
-.vipClubWrap .conBox1 ul li.rank01 .nameWrap span{
-    color:#CCC1B2;
-}
-
-.vipClubWrap .conBox1 ul li.rank02 .nameWrap strong,
-.vipClubWrap .conBox1 ul li.rank02 .nameWrap span{
-    color:#FCA729;
-}
-
-.vipClubWrap .conBox1 ul li.rank03 .nameWrap strong,
-.vipClubWrap .conBox1 ul li.rank03 .nameWrap span{
-    color:#AA4743;
-}
-
-.vipClubWrap .conBox1 ul li.rank04 .nameWrap strong,
-.vipClubWrap .conBox1 ul li.rank04 .nameWrap span{
-    color:#2857FA;
-}
-
-.vipClubWrap .conBox1 ul li .textWrap span{
-    display:block;
-    padding-top:20px;
-    font-size:20px;
-    color:#999;
-    line-height:32px;
-    text-align:center;
 }
 
 .vipClubWrap .conBox2 dl{
