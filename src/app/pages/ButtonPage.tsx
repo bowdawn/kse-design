@@ -29,6 +29,8 @@ export const ButtonPage: React.FC = () => {
       </div>
       <div>default active button</div>
       <button className="kse-btn kse-btn-default-active">default active</button>
+      <div>primary small button</div>
+      <button className="kse-btn kse-btn-primary kse-btn-small">primary</button>
       <div>primary large button</div>
       <button className="kse-btn kse-btn-primary kse-btn-large">primary</button>
       <div>compact default button (border-radius: 0px)</div>
@@ -62,8 +64,10 @@ export const ButtonPage: React.FC = () => {
           option 3
         </div>
       </div>
+      <div>danger default</div>
+      <div className="kse-btn kse-btn-danger">danger default</div>
       <div>danger button</div>
-      <div className="kse-btn kse-btn-danger-primary">button primary</div>
+      <div className="kse-btn kse-btn-danger-primary">danger primary</div>
     </>
   );
 };

@@ -61,15 +61,11 @@
   border-start-start-radius: 4px !important;
 }
 
-.ant-table-container table > thead > tr:first-child th:last-child {
+.ant-table-bordered
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  th:last-child {
   border-start-end-radius: 4px !important;
-}
-
-.kse-table-tbody > tr:last-child > td {
-  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
-}
-
-.kse-table-tbody > tr > td {
-  border-top: 1px solid rgba(5, 5, 5, 0.06);
-  transition: background 0.3s;
 }

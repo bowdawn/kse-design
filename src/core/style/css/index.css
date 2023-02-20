@@ -620,6 +620,28 @@
   border-color: #4096ff !important;
 }
 
+.kse-btn-default-active:hover:after {
+  /* primary-6 */
+  box-shadow: 0 0 4px 4px #0097e6;
+  border-radius: 4px;
+  opacity: 0.1;
+
+  transition: 0s;
+}
+
+.kse-btn:active:after {
+  /* primary-6 */
+  box-shadow: 0 0 0 0 #0097e6;
+  border-radius: 4px;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* kse-btn-small*/
+.kse-btn-small {
+  padding: 4px 7.5px;
+}
+
 /* kse-btn-large */
 
 .kse-btn-large {
@@ -1730,6 +1752,15 @@
   font-size: 14px;
 }
 
+.kse-table-wrapper .kse-table.kse-table-small .kse-table-title,
+.kse-table-wrapper .kse-table.kse-table-small .kse-table-footer,
+.kse-table-wrapper .kse-table.kse-table-small .kse-table-thead > tr > th,
+.kse-table-wrapper .kse-table.kse-table-small .kse-table-tbody > tr > td,
+.kse-table-wrapper .kse-table.ant-table-small tfoot > tr > th,
+.kse-table-wrapper .kse-table.ant-table-small tfoot > tr > td {
+  padding: 8px;
+}
+
 .kse-table {
   box-sizing: border-box;
   margin: 0;
@@ -1972,14 +2003,29 @@ tfoot > tr > td {
   border-start-end-radius: 4px;
 }
 
-.kse-table-wrapper .kse-table-container table > thead > tr:first-child th {
+.kse-table-wrapper
+  .kse-table.kse-table-bordered
+  .kse-table-container
+  table
+  > thead
+  > tr:first-child
+  th {
   border-top: 1px solid rgba(5, 5, 5, 0.06);
 }
 
-.kse-table-wrapper .kse-table-container table > thead > tr th:first-child {
-  border-left: 1px solid rgba(5, 5, 5, 0.06);
-}
-
-.kse-table-wrapper .kse-table-container table > tbody > tr td:first-child {
+.kse-table-wrapper
+  .kse-table.kse-table-bordered
+  .kse-table-container
+  table
+  > thead
+  > tr
+  th:first-child,
+.kse-table-wrapper
+  .kse-table.kse-table-bordered
+  .kse-table-container
+  table
+  > tbody
+  > tr
+  td:first-child {
   border-left: 1px solid rgba(5, 5, 5, 0.06);
 }
