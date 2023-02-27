@@ -1,0 +1,1178 @@
+<!--/script_scroll(1)/-->
+<div id="wrap">
+    <!--/include_header(1)/-->
+    <div id="contentWrapper">
+        <div id="contentWrap" class="order_page">
+            <!--/include_menu(1)/-->
+            <div id="content">
+                <div id="order">
+                    <dl class="loc-navi">
+                        <dt class="blind">현재 위치</dt>
+                        <dd><a href="/">Home</a> &gt; <strong>주문서</strong></dd>
+                    </dl>
+                    <div class="page-body">
+                        <!--/form_order/-->
+                        <fieldset>
+                            <legend>주문 폼</legend>
+                            <h2>주문서 작성</h2>
+                            <div class="order_left_cont">
+                                <h3 style="margin-top:35px;">주문 리스트</h3>
+                                <div class="tbl-order">
+                                    <table class="order-table">
+                                        <caption>주문 리스트</caption>
+                                        <colgroup>
+                                            <col style="width: 240px" />
+                                            <col style="width: *" />
+                                            <col style="width: 280px" />
+                                        </colgroup>
+                                        <tbody>
+                                            <!--/loop_order_product/-->
+                                            <tr>
+                                                <td>
+                                                    <div class="thumb">
+                                                        <img src="<!--/order_product@image_s/-->" width="200">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <dl class="order-info">
+                                                        <dt class="order-name">
+                                                            <!--/if_order_product@provider_icon/--><img
+                                                                src="<!--/order_product@provider_icon/-->"><!--/end_if/-->
+                                                            <a href="<!--/order_product@link/-->"><!--/order_product@name/-->
+                                                                <!--/if_order_product@icon_bankonly/--><img
+                                                                    src="<!--/order_product@icon_bankonly/-->" /><!--/end_if/-->
+                                                                <!--/if_order_product@icon_cardonly/--><img
+                                                                    src="<!--/order_product@icon_cardonly/-->" /><!--/end_if/-->
+                                                            </a>
+                                                        </dt>
+                                                        <!--/if_order_product@option/-->
+                                                        <dd class="order-option"><!--/order_product@option/--></dd>
+                                                        <!--/end_if/-->
+                                                        <!--/if_weightdeli_use/-->
+                                                        <dd class="order-weight"><!--/order_product@weight/--></dd>
+                                                        <!--/end_if/-->
+                                                        <dd class="order-count">수량 :
+                                                            <!--/number/order_product@amount/-->개<input type="hidden"
+                                                                class="order_product_count"
+                                                                value="<!--/number/order_product@amount/-->" /></dd>
+                                                    </dl>
+                                                </td>
+                                                <td>
+                                                    <div
+                                                        class="order-price <!--/if_not_order_product@total_discount_price(0)/-->btn_discount<!--/end_if/-->">
+                                                        <!--/if_order_product@is_term_discount/-->
+                                                        <!--/order_product@dc_price_all/-->원
+                                                        <!--/else/-->
+                                                        <!--/number/order_product@total_price/-->원
+                                                        <!--/end_if/-->
+                                                    </div>
+
+                                                    <!--/if_not_order_product@total_discount_price(0)/-->
+                                                    <div class="discount-box">
+                                                        <table class="discount-table">
+                                                            <caption>주문 리스트</caption>
+                                                            <colgroup>
+                                                                <col style="width: 100px" />
+                                                                <col style="width: *" />
+                                                            </colgroup>
+
+                                                            <tr class="st1">
+                                                                <th>할인금액</th>
+                                                                <td>
+                                                                    <div><!--/order_product@total_discount_price/-->원
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <!--/end_if/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+
+                                            <!--/gift_choice_order/-->
+
+                                            <!--/if_group_sale_price(+1)/-->
+                                            <tr>
+                                                <td>
+                                                    <div class="tb-left">회원 그룹 할인 금액 </div>
+                                                </td>
+                                                <td colspan="2">
+                                                    <div class="tb-center">
+                                                        - <!--/group_sale_price/--> 원
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_group_sale_reserve(+1)/-->
+                                            <tr>
+                                                <td>
+                                                    <div class="tb-left">적립예정 멤버십포인트 </div>
+                                                </td>
+                                                <td colspan="2">
+                                                    <div class="tb-center">
+                                                        <!--/group_sale_reserve/-->&#169;
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/if_is_beecon_info/-->
+                                            <tr>
+                                                <td>
+                                                    <div class="tb-left">
+                                                        비콘 바로 가기 할인/적립 내용
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-right">
+                                                        <!--/if_beecon_sale_price/-->
+                                                        - <!--/beecon_sale_price/-->원
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="tb-right">
+                                                        <!--/if_beecon_sale_reserve/-->
+                                                        <!--/beecon_sale_reserve/-->원
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        </tbody>
+                                    </table>
+                                </div><!-- .table-order -->
+
+
+                                <!--/if_group_name(초승달)/-->
+                                <div class="mem-lvl">
+                                    <div class="lvl-img">
+                                        <!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG
+                                            SRC="http://ksilverex.img15.kr/12345.jpg"><!--/end_if/--></div>
+                                    <p>
+                                        <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인
+                                        <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인
+                                        <!--/end_if/--><em><!--/group_name/--></em> 등급 고객님입니다.<br />
+                                        <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                        <!--/group_message/-->
+                                    </p>
+                                </div><!-- .mem-lvl -->
+                                <!--/end_if/-->
+                                <!--/if_group_name(반달)/-->
+                                <div class="mem-lvl">
+                                    <div class="lvl-img">
+                                        <!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG
+                                            SRC="http://ksilverex.img15.kr/123456.jpg"><!--/end_if/--></div>
+                                    <p>
+                                        <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인
+                                        <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인
+                                        <!--/end_if/--><em><!--/group_name/--></em> 등급 우수고객님입니다.<br />
+                                        <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                        <!--/group_message/-->
+                                    </p>
+                                </div><!-- .mem-lvl -->
+                                <!--/end_if/-->
+                                <!--/if_group_name(상현달)/-->
+                                <div class="mem-lvl">
+                                    <div class="lvl-img">
+                                        <!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG
+                                            SRC="http://ksilverex.img15.kr/%BB%F3%C7%F6%B4%DE.jpg"><!--/end_if/--></div>
+                                    <p>
+                                        <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인
+                                        <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인
+                                        <!--/end_if/--><em><!--/group_name/--></em> 등급 최우수고객님입니다.<br />
+                                        <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                        <!--/group_message/-->
+                                    </p>
+                                </div><!-- .mem-lvl -->
+                                <!--/end_if/-->
+                                <!--/if_group_name(보름달)/-->
+                                <div class="mem-lvl">
+                                    <div class="lvl-img">
+                                        <!--/if_group_image/-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG
+                                            SRC="http://ksilverex.img15.kr/%BA%B8%B8%A7%B4%DE.jpg"><!--/end_if/--></div>
+                                    <p>
+                                        <!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인
+                                        <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인
+                                        <!--/end_if/--><em><!--/group_name/--></em> 등급 최상위고객님입니다.<br />
+                                        <!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+                                        <!--/group_message/-->
+                                    </p>
+                                </div><!-- .mem-lvl -->
+                                <!--/end_if/-->
+
+                                <h3 style="">주문자 정보</h3>
+                                <div class="tbl-order" style="padding-left:240px;">
+                                    <table>
+                                        <caption>주문자 정보</caption>
+                                        <colgroup>
+                                            <col style="width: 240px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">성함</div>
+                                                </th>
+                                                <td class="td-user-name kse-input-wrapper">
+                                                    <!--/input_user_name/-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require ">연락처</div>
+                                                </th>
+                                                <td class="kse-input-wrapper kse-select-wrapper">
+                                                    <!--/input_user_tel(w60)/-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">이메일</div>
+                                                </th>
+                                                <td class="kse-input-wrapper kse-select-wrapper">
+                                                    <!--/input_user_email/-->
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div><!-- .tbl-order -->
+
+
+                                <div class="tbl-head">
+                                    <h3>배송지 정보</h3>
+                                    <div class="chk-cont">
+                                        <!--/checkbox_same_data/--><label>주문자 정보와 같음</label>
+                                    </div>
+                                    <!--/if_checkbox_modify_address/-->
+                                    <div class="chk-cont">
+                                        <!--/checkbox_modify_address/--><label class="chk-label">해당 배송지 정보를 나의 회원정보로
+                                            등록</label>
+                                    </div>
+                                    <!--/end_if/-->
+                                </div>
+                                <div class="tbl-order" style="padding-left:240px;">
+                                    <table>
+                                        <caption>배송 정보 입력</caption>
+                                        <colgroup>
+                                            <col style="width: 240px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">실수령인 성함</div>
+                                                </th>
+                                                <td class="kse-input-wrapper"><!--/input_receiver/--></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-c require">휴대폰</div>
+                                                </th>
+                                                <td class="kse-input-wrapper kse-select-wrapper">
+                                                    <!--/input_receiver_mobile(w60)/-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">연락처</div>
+                                                </th>
+                                                <td class="kse-input-wrapper kse-select-wrapper">
+                                                    <!--/input_receiver_tel(w60)/-->
+                                                </td>
+                                            </tr>
+                                            <!--/if_checkbox_safe_use/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">안심번호</div>
+                                                </th>
+                                                <td>
+                                                    <div><!--/checkbox_safe_use/--> 안심번호 사용 (무료) <!--/tooltip_safe/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/if_use_ems/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">배송지 선택</div>
+                                                </th>
+                                                <td class="ems_type_box">
+                                                    <!--/radio_ems_type/-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">주소</div>
+                                                </th>
+                                                <td>
+                                                    <!--/block_ems_overseas/-->
+                                                    <!--/if_radio_ems_type_ems/-->
+                                                    <!--/radio_ems_type_ems/--> EMS <!--/radio_ems_type_premium/--> 프리미엄
+                                                    EMS<br />
+                                                    <!--/end_if/-->
+                                                    <div class="mt-10">
+                                                        <!--/input_ems_country/-->
+                                                        <span style="display:none">
+                                                            <!--/ems_total_price/--> <!--/ems_total_price_usd/-->
+                                                        </span>
+                                                    </div>
+                                                    <div class="mt-10">
+                                                        <!--/input_ems_zip(w120)/--> : zipcode <br /> <br />
+                                                        <!--/input_ems_addr(w240)/-->
+                                                    </div>
+                                                    <div class="mt-10">
+                                                        주소와 수령인 성함은 필히 영문으로 기재 바랍니다.
+                                                    </div>
+                                                    <!--/end_block/-->
+                                                    <!--/block_ems_kor/-->
+                                                    <!--/radio_delivery_addr/-->
+                                                    <div class="mt-10">
+                                                        <!--/input_receiver_zip/-->
+                                                        <a href="<!--/link_search_zip/-->" class="btn_zipcode">우편번호</a>
+                                                    </div>
+                                                    <div class="mt-10">
+                                                        <!--/input_receiver_addr1(w240)/-->
+                                                        <!--/input_receiver_addr2(w240)/-->
+                                                    </div>
+                                                    <!--/end_block/-->
+                                                </td>
+                                            </tr>
+                                            <!--/else/-->
+                                            <!--/if_login/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">배송지 선택</div>
+                                                </th>
+                                                <td class="ems_type_box">
+                                                    <!--/radio_delivery_addr/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l require">주소</div>
+                                                </th>
+                                                <td class="kse-space-vertical-small">
+                                                    <div class="kse-space kse-space-small">
+                                                        <div class="kse-input-wrapper kse-col-block">
+                                                            <!--/input_receiver_zip/-->
+                                                        </div>
+                                                        <a href="<!--/link_search_zip/-->" class="btn_zipcode kse-btn kse-btn-primary
+                                                ">우편번호</a>
+                                                    </div>
+                                                    <div class="kse-input-wrapper">
+
+                                                        <!--/input_receiver_addr1/-->
+                                                    </div>
+                                                    <div class="kse-input-wrapper">
+                                                        <!--/input_receiver_addr2(w500)/-->
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/if_bank_name/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">입금자명</div>
+                                                </th>
+                                                <td class="kse-input-wrapper">
+                                                    <!--/bank_name/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l ">배송 메시지<br /><span></span></div>
+                                                </th>
+                                                <td>
+                                                    <!--/text_user_message(kse-input)/-->
+                                                </td>
+                                            </tr>
+
+
+                                            <!--/if_deliveryquick_use/-->
+                                            <!--/if_radio_deliquick_method/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">배송설정</div>
+                                                </th>
+                                                <td>
+                                                    <!--/radio_deliquick_method/--> <!--/radio_deliquick_hour/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/end_if/-->
+
+
+
+                                            <!--/if_input_calendar_date/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">희망배송일</div>
+                                                </th>
+                                                <td>
+                                                    <!--/if_smartcalendar_page/-->
+                                                    <!--/smartcalendar_page/-->
+                                                    <!--/if_select_delivery_time/-->
+                                                    <div class="select-delivery-time">희망배송시간 :
+                                                        <!--/select_delivery_time/--></div>
+                                                    <!--/end_if/-->
+                                                    <!--/else/-->
+                                                    <!--/if_input_calendar_date/-->
+                                                    <div><!--/checkbox_first_delivery_date/--> 가능한 빨리 배송</div>
+                                                    <div>
+                                                        <!--/input_calendar_date/-->
+                                                        <!--/if_link_calendar_open/-->
+                                                        <a href="#none" onclick="<!--/link_calendar_open/-->"><img
+                                                                src="/images/d3/modern_simple/smart_calendar.png" /></a>
+                                                        <!--/end_if/-->
+                                                        <!--/if_select_delivery_time/-->
+                                                        <!--/select_delivery_time/-->
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                    <!--/end_if/-->
+                                                    <!--/end_if/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+
+
+
+                                            <!--/if_select_after_delivery/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">배송비</div>
+                                                </th>
+                                                <td>
+                                                    <span class="delivery-select"><!--/select_after_delivery/--></span>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+
+
+
+                                            <!--/if_add_info/-->
+                                            <!--/loop_add_info/-->
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l"><!--/add_info@input_title/--></div>
+                                                </th>
+                                                <td class="add_info_st kse-select-wrapper">
+                                                    <!--/add_info@input_value(w500)/-->
+                                                </td>
+                                            </tr>
+                                            <!--/end_loop/-->
+                                            <!--/end_if/-->
+
+                                        </tbody>
+                                    </table>
+                                </div><!-- .tbl-order -->
+
+
+                                <h3>할인 적용</h3>
+                                <div class="tbl-order" style="padding-left: 240px ">
+                                    <table>
+                                        <caption>주문상품 할인적용</caption>
+                                        <!--/if_login/-->
+                                        <colgroup>
+                                            <col style="width:240px" />
+
+                                            <col style="width:*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <!--/if_select_reserve_discount/-->
+                                            <tr class="select-reserve-discount">
+                                                <th class="txt-l">즉시할인/적립</th>
+                                                <td colspan="2">
+                                                    <div class="reserve-select"><!--/select_reserve_discount/--></div>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_link_coupon/-->
+                                            <tr>
+                                                <th class="txt-l">쿠폰</th>
+                                                <td>
+                                                    <div class="kse-space kse-space-small">
+                                                        <!--/input_coupon_number(kse-input)/-->
+                                                        <a class="btn_coupon_sel kse-btn kse-btn-primary"
+                                                            style="width: 78.28px;" href="<!--/link_coupon/-->">쿠폰선택</a>
+                                                    </div>
+                                                    <!--/coupon_desc/-->
+                                                </td>
+
+
+
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_input_user_reserve/-->
+                                            <tr>
+                                                <th class="txt-l">멤버십포인트</th>
+                                                <td class="kse-space-vertical-middle">
+                                                    <div class="kse-space kse-space-small kse-row-align-center">
+                                                        <!--/input_user_reserve(kse-input)/-->
+                                                        <div>
+                                                            <div class="kse-space kse-space-small "
+                                                                style="width: max-content;">
+
+                                                                <!--/check_all_reserve/-->
+                                                                <label>전액사용</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span
+                                                        class="fc-gray kse-row kse-row-space-between kse-row-align-center">
+                                                        <div>사용가능한 멤버십포인트:</div>
+                                                        <div class="kse-text-primary kse-text-middle ">
+                                                            <!--/input_possible_reserve(kse-text-middle)/-->P</div>
+                                                    </span>
+
+                                                    <div class="kse-space-vertical-small">
+
+                                                        <hr class="kse-divider-no-style" />
+                                                        <span class="fc-gray kse-required kse-required-absolute">멤버십포인트는
+                                                            상품금액의 80%까지 사용가능합니다. </span>
+                                                        <hr class="kse-divider-no-style" />
+                                                    </div>
+                                                    <!--/if_input_remain_reserve/-->
+
+                                                    <div class="kse-row kse-row-align-center kse-row-space-between">
+                                                        <div>사용 후 남은 멤버십포인트:</div>
+                                                        <div class="input-remain-reserve-wrapper kse-relative kse-input-wrapper"
+                                                            style="height:40px;">
+                                                            <!--/input_remain_reserve/-->
+                                                            <div style="position: absolute;
+    right: 13px;
+    top: 8px;
+    z-index: 11;">P</div>
+                                                        </div>
+
+                                                    </div>
+
+
+
+                                                    <!--/end_if/-->
+
+
+
+                                                </td>
+
+                                            </tr>
+
+
+
+                                            <!--/end_if/-->
+                                            <!--/if_input_user_deposit/-->
+                                            <tr>
+                                                <th class="txt-l">예치금 사용</th>
+                                                <td>
+                                                    <!--/input_user_deposit/-->
+                                                </td>
+                                                <td style="text-align:right;">
+                                                    <div class="cnt-box">
+                                                        <label><!--/check_all_deposit/--> 전액사용</label>
+                                                    </div>
+                                                    <span class="fc-gray" style="line-height:50px;">(사용준비 예치금:
+                                                        <!--/input_possible_deposit/-->원)</span>
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                        </tbody>
+                                        <!--/else/-->
+                                        <!--/if_use_simple_join/-->
+                                        <colgroup>
+                                            <col style="width: 240px" />
+                                            <col style="width:*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="txt-l">간단가입 할인</th>
+                                                <td class="simple-join">
+                                                    <!--/block_simple_join/-->
+                                                    <div class="kse-space-vertical-small">
+                                                        <!--/if_radio_mem_person/-->
+                                                        <div>
+                                                            <div class="radio-box">
+                                                                <label class="label"><!--/radio_mem_person/-->
+                                                                    일반회원</label>
+                                                            </div>
+                                                            <div class="radio-box">
+                                                                <label class="label"><!--/radio_mem_company/-->
+                                                                    기업회원</label>
+                                                            </div>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                        <div class="kse-input-wrapper">
+                                                            <!--/input_user_id/-->
+                                                        </div>
+                                                        <div class="kse-input-wrapper">
+                                                            <!--/input_password/-->
+                                                        </div>
+                                                        <div class="kse-input-wrapper">
+                                                            <!--/input_email/-->
+                                                        </div>
+
+                                                        <!--/if_link_apply_join/-->
+                                                        <div>
+                                                            <a href="<!--/link_apply_join/-->"
+                                                                class="kse-btn kse-btn-default">할인받기</a>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                    <p class="fc-gray mt-10">아이디만 입력하면 주문과 가입이 동시에!<br />
+                                                        간단가입하면 <strong class="fc-red"><u>100,000원 이상 주문 시, 1,000원 추가
+                                                                할인</u></strong>을 받을 수 있습니다!<br />
+                                                        <!--/end_block/-->
+                                                        <!--/block_simple_apply/-->
+                                                        <!--/input_join_benefit(txt-c)/--> 원
+                                                        <!--/if_link_cancel_join/--><a href="<!--/link_cancel_join/-->"
+                                                            class="btn-gray">할인취소</a><!--/end_if/-->
+                                                    <p class="fc-gray mt-10"><strong class="fc-red">주문과 동시에 회원가입이
+                                                            완료됩니다.</strong></p>
+                                                    <!--/end_block/-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!--/end_if/-->
+                                        <!--/end_if/-->
+                                        <!--/if_okcashbag_set/-->
+                                        <colgroup>
+                                            <col style="width: 200px" />
+                                            <col style="width:*" />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="txt-l tit">제휴 포인트 사용 <!--/okcashbag_notice/--></th>
+                                                <td>
+                                                    <img src="/images/d3/modern_simple/img_okcashbag.gif"
+                                                        alt="OK CASHBAG" />
+                                                    <!--/okcashbag_input/-->
+                                                    <!--/okcashbag_btn/-->
+                                                    <p class="fc-gray mt-10">(OK캐시백 포인트는 상품결제에만 가능합니다. 배송비 결제에는 사용이
+                                                        불가합니다.)</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!--/end_if/-->
+                                    </table>
+                                </div><!-- .tbl-pay -->
+
+
+
+                                <div class="tbl-head">
+                                    <div><!--/gift_choice_order/--></div>
+
+                                    <h3>결제 방법 선택</h3>
+                                    <!--/if_checkbox_before_pay/-->
+                                    <div class="chk-cont">
+                                        <!--/checkbox_before_pay/--><label>선택하신 결제수단을 다음에도 적용</label>
+                                    </div>
+                                    <!--/end_if/-->
+                                </div>
+
+
+
+
+                                <!--/if_escrow_img/-->
+                                <table class="escrow-info" style="display:none;">
+                                    <caption>에스크로</caption>
+                                    <colgroup>
+                                        <col style="width: 150px">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><!--/escrow_img/--></th>
+                                            <td>고객님은 현금으로 결제하실 때 <!--/escrow_name/-->의 구매안전서비스를 이용하실 수 있습니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--/end_if/-->
+                                <div class="tbl-order" style="padding-left: 240px;">
+                                    <table>
+                                        <caption>결제 정보</caption>
+                                        <colgroup>
+                                            <col style="width: 240px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="kse-row"> 결제 수단</th>
+                                                <td colspan="2">
+                                                    <ul class="pay-method kse-space kse-space-middle">
+                                                        <!--/loop_order_payment/-->
+                                                        <li
+                                                            class="kse-space kse-space-small kse-row-align-center kse-select-wrapper">
+                                                            <!--/order_payment@radio_value/--></li>
+                                                        <!--/end_loop/-->
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- 증빙신청 태그 추가 시 임의로 태그를 제거하게 되면 결제 등 정상 동작이 불가할 수 있습니다 !!! -->
+                                    <!--/block_evidence/-->
+                                    <table>
+                                        <caption>증빙신청</caption>
+                                        <colgroup>
+                                            <col style="width: 240px;">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">증빙신청</div>
+                                                </th>
+                                                <td class="evidence-cont">
+
+                                                    <div class="radio-box"><!--/radio_evidence_no/--> 신청안함</div>
+                                                    <!--/if_radio_evidence_cashbill/-->
+                                                    <div class="radio-box"><!--/radio_evidence_cashbill/--> 현금영수증</div>
+                                                    <!--/end_if/-->
+                                                    <!--/if_radio_evidence_taxbill/-->
+                                                    <div class="radio-box">
+                                                        <!--/radio_evidence_taxbill/--> 세금계산서
+                                                    </div>
+                                                    <!--/end_if/-->
+
+                                                    <div style="padding-top:5px;">
+                                                        <!--/block_evidence_data/-->
+                                                        <!--/block_evidence_donot_data/-->
+                                                        <!--/evidence_donot_text/-->
+                                                        <!--/end_block/-->
+                                                        <!--/block_evidence_cashbill_data/-->
+                                                        <!--/if_select_evidence_cashbill_type/-->
+                                                        <div class="kse-select-wrapper">
+                                                            <!--/select_evidence_cashbill_type/-->
+                                                        </div>
+
+                                                        <br />
+                                                        <!--/block_evidence_cashbill_tel/-->
+                                                        <!--/input_evidence_cashbill_tel(w60 kse-input)/--><!--/end_block/-->
+
+                                                        <!--/block_evidence_cashbill_card/-->
+
+                                                        <!--/input_evidence_cashbill_card(w60)/-->
+
+                                                        <!--/end_block/-->
+                                                        <!--/block_evidence_cashbill_company/-->
+                                                        <!--/input_evidence_cashbill_companyno(w60)/-->
+                                                        <span class="company-name">업체명 :
+                                                            <!--/input_evidence_cashbill_companyname(w60)/--></span>
+                                                        <!--/end_block/-->
+                                                        <!--/end_if/-->
+                                                        <!--/end_block/-->
+
+                                                        <!--/block_evidence_taxbill_data/-->
+                                                        <table class="tbl-taxbill">
+                                                            <colgroup>
+                                                                <col style="width: 19%">
+                                                                <col style="width: *">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>신청자명</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_name/--></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>휴대폰번호</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_phone(w60)/-->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>이메일</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_email(w100)/-->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>사업자번호</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div>
+                                                                            <!--/input_evidence_taxbill_companyno(w60)/-->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>상호(법인명)</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_companyname/-->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>대표자명</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_owner/--></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>사업장주소</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div>
+                                                                            <!--/input_evidence_taxbill_zip(w320)/-->
+                                                                            <a href="<!--/link_evidence_search_zip/-->"
+                                                                                class="btn_zipcode">우편번호</a><br />
+                                                                            <!--/input_evidence_taxbill_addr1(w510)/--><br />
+                                                                            <!--/input_evidence_taxbill_addr2(w500)/-->
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>업태</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_biz/--></div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div>종목</div>
+                                                                    </th>
+                                                                    <td>
+                                                                        <div><!--/input_evidence_taxbill_item/--></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--/end_block/-->
+                                                        <!--/end_block/-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--/end_block/-->
+
+                                <div class='lst-order'>
+                                    <div class="kse-alert kse-alert-info " style="width: 100%" role="alert"><svg
+                                            viewBox="64 64 896 896" data-icon="info-circle" width="1em" height="1em"
+                                            fill="#1677ff" aria-hidden="true" class="kse-alert-icon">
+                                            <path
+                                                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z">
+                                            </path>
+                                        </svg>
+                                        <div class="kse-alert-content">
+                                            <div class="kse-alert-message">금융사기주의안내</div>
+                                            <div class="kse-alert-description">금융기관 및 수사기관, 감독기관 등 어떠한 공공기관도 개인정보나
+                                                금융거래정보, 현금 입금을 요구하는 경우는 없습니다.</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <!--/payment_info/-->
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div><!-- //.order_left_cont // -->
+
+
+                            <div class="order_right_cont kse-shadow">
+                                <h3>결제 정보</h3>
+                                <div class="tbl-pay2">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:120px">
+                                            <col style="width: *">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="kse-space-vertical-small">
+                                                        <div class="kse-divider-primary-10"
+                                                            style="    border-top-width: 2px;"></div>
+                                                        <div class="kse-text-primary-10">총 <b
+                                                                class="product_count"></b>개의 상품금액</div>
+                                                        <div class="kse-divider-primary-10"
+                                                            style="    border-top-width: 2px;"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>주문 금액</th>
+                                                <td><strong><em><!--/block_op_product_price/--><!--/number/op_product_price/--><!--/end_block/--></em>
+                                                        원</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th>배송비</th>
+                                                <td><strong><em><!--/block_op_delivery_price/--><!--/number/op_delivery_price/--><!--/end_block/--></em><!--/block_op_delivery_unit/-->
+                                                        원<!--/end_block/--></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th>할인 금액</th>
+                                                <td><strong><em
+                                                            class="fc-blue"><!--/block_op_sale_price/--><!--/number/op_sale_price/--><!--/end_block/-->
+                                                            원</em></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th>택배 보험</th>
+                                                <td><strong><em><!--/block_op_add_price/--><!--/number/op_total_vat/--><!--/end_block/--></em>
+                                                        원</strong></td>
+                                            </tr>
+                                        </tbody>
+                                        <!--/if_block_final_price/-->
+                                        <tfoot>
+                                            <tr>
+                                                <th>결제예정 금액</th>
+                                                <td><strong class="price"><em><!--/block_unit_dollar/-->$<!--/end_block/-->
+                                                            <!--/block_final_price/--><!--/number/total_price/--><!--/end_block/--></em>
+                                                        <!--/block_unit_won/-->원<!--/end_block/--></strong></td>
+                                            </tr>
+                                            <!--/if_login/-->
+                                            <!--/if_total_reserve/-->
+                                            <tr>
+                                                <th>적립예정 멤버십포인트</th>
+                                                <td><!--/block_expect_reserve/--><!--/number/total_reserve/--><!--/end_block/-->P
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/end_if/-->
+                                        </tfoot>
+                                        <!--/end_if/-->
+                                    </table>
+                                </div><!-- // .tbl-pay2 // -->
+
+                                <h3><!--/if_login/-->주문 결제<!--/else/-->약관<!--/end_if/-->동의 (필수)</h3>
+                                <h3 class="kse-row kse-row-start"><label style="right:unset;"
+                                        class="btn_agree"><!--/if_login/-->청약철회 <!--/else/-->이용약관
+                                        <!--/end_if/-->방침</label></h3>
+                                <div class="agree-box">
+
+
+
+                                    <!--/if_text_recall_policy/-->
+                                    <div style="width:280px; table-layout:fixed;">
+                                        <ul>
+                                            <li>
+                                                <table>
+                                                    <colgroup>
+                                                        <col width="280px" />
+                                                    </colgroup>
+                                                    <style>
+                                                        #recallpolicy {
+                                                            width: 270px;
+                                                            height: 100px;
+                                                            color: #ff5f26;
+                                                            font-size: 15px;
+                                                        }
+                                                    </style>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" align="left">청약철회 방침 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top"><br />
+                                                                <!--/text_recall_policy/-->
+                                                                <br />
+                                                                <label
+                                                                    class="label w120"><!--/radio_recall_policy_ok/-->
+                                                                    동의합니다.</label>
+                                                                <label class="label"><!--/radio_recall_policy_no/-->
+                                                                    동의하지 않습니다.</label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--/end_if/-->
+
+
+
+
+                                    <!--/if_not_login/-->
+                                    <!--/if_use_simple_join/-->
+
+                                    <div id="chkwrap">
+                                        <!--/new_privacy_agree/-->
+                                        <!--/new_privacy_terms/-->
+                                    </div>
+
+                                    <!--/else/-->
+                                    <table style="width:100%; table-layout:fixed;">
+                                        <caption>주문자 동의</caption>
+                                        <colgroup>
+                                            <col style="width: 100px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">약관동의</div>
+                                                </th>
+                                                <td>
+                                                    <div class="new-privercy-contract">
+                                                        <p>이용약관</p>
+                                                        <div class="privercy-contract">
+                                                            <textarea cols="80" wrap="off" rows="10"
+                                                                readonly><!--/text_contract_terms/--></textarea>
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_contract_ok/--> 약관에 동의합니다.</label>
+                                                            <label><!--/radio_contract_no/--> 약관에 동의 하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                    <!--/if_use_privacy/-->
+                                                    <div class="new-privercy-contract">
+                                                        <!--/new_privacy_terms/-->
+                                                    </div>
+                                                    <!--/else/-->
+                                                    <!--/if_new_privercy_type/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div class="privercy-contract-tap">
+                                                            <ul>
+                                                                <li class="sel"><a href="#none">수집하는 개인정보 항목</a></li>
+                                                                <li><a href="#none">개인정보의 수집 이용목적</a></li>
+                                                                <li class="end"><a href="#none">개인정보의 보유 및 이용기간</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="privercy-contract">
+                                                                <!--/text_privercy_policy1/--></div>
+                                                            <div class="privercy-contract" style="display: none;">
+                                                                <!--/text_privercy_policy2/--></div>
+                                                            <div class="privercy-contract" style="display: none;">
+                                                                <!--/text_privercy_policy3/--></div>
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_policy_ok/--> 정보수집에
+                                                                동의합니다.</label>
+                                                            <label><!--/radio_privercy_policy_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/if_third_party/-->
+                                                        <p>개인정보의 제3자 제공</p>
+                                                        <div class="privercy-contract"><!--/text_third_party_terms/-->
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_third_party_ok/--> 제3자 제공에 동의합니다.</label>
+                                                            <label><!--/radio_third_party_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                        <!--/if_trust/-->
+                                                        <p>개인정보 처리위탁안내</p>
+                                                        <div class="privercy-contract"><!--/text_trust_terms/--></div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_trust_ok/--> 처리위탁에 동의합니다.</label>
+                                                            <label><!--/radio_trust_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                        <!--/end_if/-->
+                                                    </div>
+                                                    <!--/else/-->
+                                                    <div class="new-privercy-contract">
+                                                        <p>개인정보 수집에 대한 동의</p>
+                                                        <div class="privercy-contract"><!--/text_privercy_policy/-->
+                                                        </div>
+                                                        <div class="privercy-agree">
+                                                            <label><!--/radio_privercy_policy_ok/--> 약관에 동의합니다.</label>
+                                                            <label><!--/radio_privercy_policy_no/--> 동의하지 않습니다.</label>
+                                                        </div>
+                                                    </div>
+                                                    <!--/end_if/-->
+                                                    <!--/end_if/-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--/end_if/-->
+                                    <!--/end_if/-->
+
+
+
+                                    <!--/if_provider_privacy_agree/-->
+                                    <table>
+                                        <caption>주문자 동의</caption>
+                                        <colgroup>
+                                            <col style="width: 130px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <div class="txt-l">개인정보 공급자<br />제공 동의</div>
+                                                </th>
+                                                <td>
+                                                    <!--/provider_privacy_agree/-->
+                                                    <br />
+                                                    <label class="label w120"><!--/radio_provider_agree_ok/-->
+                                                        동의합니다.</label>
+                                                    <label class="label"><!--/radio_provider_agree_no/--> 동의하지
+                                                        않습니다.</label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--/end_if/-->
+
+                                </div>
+
+
+                                <div class="pay_agree_box">
+                                    <label class="label"><!--/checkbox_pay_agree/--> 상기 내용을 확인하였으며, <br />구매진행에
+                                        동의합니다.</label>
+                                </div>
+
+                                <div class="btn_pay_box ">
+                                    <!--/block_btn_pay/-->
+                                    <br />
+                                    <div class="kse-space kse-space-small">
+
+                                        <a href="<!--/link_payment/-->"
+                                            class="kse-btn kse-btn-primary kse-btn-large  kse-col-block ">결제하기</a>
+                                    </div>
+                                    <!--/end_block/-->
+                                </div>
+
+                            </div><!-- //.order_right_cont // -->
+                        </fieldset>
+                        <!--/end_form/-->
+                    </div><!-- .page-body -->
+                </div><!-- #order -->
+            </div><!-- #content -->
+        </div><!-- #contentWrap -->
+    </div><!-- #contentWrapper-->
+    <hr />
+    <!--/include_footer(1)/-->
+</div><!-- #wrap -->

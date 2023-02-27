@@ -261,6 +261,103 @@ export const TablePage: React.FC = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <div className="kse-table-wrapper" style={{ width: 280 }}>
+        <div className="kse-table kse-table-small kse-table-bordered kse-table-layout-fixed">
+          <div className="kse-table-container">
+            <div className="kse-table-content">
+              <table style={{ tableLayout: "fixed" }}>
+                <colgroup></colgroup>
+                <thead className="kse-table-thead">
+                  <tr>
+                    <th
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      목적
+                    </th>
+                    <th
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      항목
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="kse-table-tbody kse-text-small">
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td className="kse-table-cell">
+                      주문자 정보 확인, 주문 내역 안내, 주문 내역 조회
+                    </td>
+                    <td className="kse-table-cell">
+                      주문자 정보(이름, 연락처, 이메일)
+                    </td>
+                  </tr>
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td className="kse-table-cell">
+                      상품 배송(구매/환불/취소/교환)을 위한 수취인 정보
+                    </td>
+                    <td className="kse-table-cell">
+                      수취인 정보(이름, 연락처1, 연락처2, 주소)
+                    </td>
+                  </tr>
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td className="kse-table-cell">
+                      무통장 결제 내역 확인을 위한 입금자명
+                    </td>
+                    <td className="kse-table-cell">
+                      무통장 입금자명(미입력 시, 주문자명 사용)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="kse-table-cell">현금영수증 발행</td>
+                    <td className="kse-table-cell">
+                      휴대폰번호, 국세청 현금영수증 카드번호
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="kse-table-cell">세금계산서 발행</td>
+                    <td className="kse-table-cell">
+                      신청자 정보(신청자명, 휴대폰번호, 이메일)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="kse-table-wrapper" style={{ width: 280 }}>
+        <div className="kse-table kse-table-small kse-table-bordered kse-table-layout-fixed">
+          <div className="kse-table-container">
+            <div className="kse-table-content">
+              <table style={{ tableLayout: "fixed" }}>
+                <colgroup></colgroup>
+                <thead className="kse-table-thead">
+                  <tr>
+                    <th
+                      className="kse-table-cell"
+                      style={{ textAlign: "center" }}
+                    >
+                      보유기간
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="kse-table-tbody kse-text-small">
+                  <tr className="kse-table-row kse-table-row-level-0">
+                    <td className="kse-table-cell">
+                      주문일로부터 90일까지 보유하며, 관계 법령에 따라 5년간
+                      보관
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
