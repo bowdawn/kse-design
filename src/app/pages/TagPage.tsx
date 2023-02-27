@@ -25,6 +25,22 @@ export const TagPage: React.FC = () => {
       <div className="kse-space kse-space-middle">
         <div className="kse-tag kse-tag-primary">인기상품</div>
       </div>
+      <br />
+      <h1>New Tag Choice</h1>
+      <div className="kse-space kse-space-middle">
+        <div className="kse-tag kse-tag-magenta">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-red">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-volcano">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-orange">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-gold">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-lime">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-green">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-cyan">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-blue">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-geekblue">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-purple">대량 구매 할인</div>
+        <div className="kse-tag kse-tag-primary">대량 구매 할인</div>
+      </div>
     </div>
   );
 };
