@@ -146,6 +146,10 @@
 }
 
 .kse-row-align-center {
+  align-items: center !important;
+}
+
+.kse-row-align-center-important {
   align-items: center;
 }
 
