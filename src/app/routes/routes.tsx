@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AlertPage } from "../pages/AlertPage";
+import { BreadcrumbPage } from "../pages/BreadcrumbPage";
 import { ButtonPage } from "../pages/ButtonPage";
 import { CollapsePage } from "../pages/CollapsePage";
 import { ColorPage } from "../pages/ColorPage";
@@ -32,6 +33,7 @@ import {
   alertPath,
   descriptionsPath,
   progressPath,
+  breadcrumbPath,
 } from "./paths";
 
 const router = createBrowserRouter([
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: alertPath,
     element: <AlertPage />,
+  },
+  {
+    path: breadcrumbPath,
+    element: <BreadcrumbPage />,
   },
 
   {

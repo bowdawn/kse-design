@@ -1,4 +1,5 @@
 export const alertPath = "alert";
+export const breadcrumbPath = "breadcrumb";
 export const buttonPath = "button";
 export const collapsePath = "collapse";
 export const colorsPath = "colors";

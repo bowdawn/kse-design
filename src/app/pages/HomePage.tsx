@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import {
   alertPath,
+  breadcrumbPath,
   buttonPath,
   collapsePath,
   colorsPath,
@@ -23,6 +24,9 @@ export const HomePage: React.FC = () => {
     <>
       <div>
         <NavLink to={"/" + alertPath}>Alert</NavLink>
+      </div>
+      <div>
+        <NavLink to={"/" + breadcrumbPath}>Breadcrumb</NavLink>
       </div>
       <div>
         <NavLink to={"/" + buttonPath}>Button</NavLink>
