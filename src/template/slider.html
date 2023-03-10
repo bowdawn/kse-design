@@ -3,24 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ant Design Breadcrumb Example</title>
-    <!-- Include Ant Design CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.4/antd.min.css"
-        integrity="sha512-vV7TmTfEjms7mud91+E+/A32tBWhnLQsYtRWsLDtSC2Z62cUpZbvrCJ8eNn0BDaDGLLPFk/9l9XgURfE0xBO1Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../core/style/css/index.css">
 </head>
 
 <body>
-    <!-- Breadcrumb Component -->
-    <div id="breadcrumb">
-        <nav aria-label="breadcrumb">
-            <ol>
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-            </ol>
-        </nav>
+    <div class="kse-collapse ">
+        <div class="kse-collapse-panel ">
+            <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                <div class="kse-collapse-header-text kse-text-middle" style="padding-left: 16px;">실버</div>
+            </div>
+        </div>
+        <div class="kse-collapse-panel ">
+            <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                <div class="kse-collapse-header-text kse-text-middle" style="padding-left: 16px;">골드</div>
+            </div>
+            <div class="kse-collapse-content" style="display: block;">
+                <div class="kse-text-middle kse-link-hover kse-collapse-link-text">금화</div>
+                <div class="kse-text-middle kse-link-hover kse-collapse-link-text">골드바</div>
+            </div>
+        </div>
+        <div class="kse-collapse-panel ">
+            <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                <div class="kse-collapse-header-text kse-text-middle" style="padding-left: 16px;">공예품 </div>
+            </div>
+            <div class="kse-collapse-content" style="display: block;">
+                <div class=" kse-collapse">
+                    <div class="kse-collapse-panel">
+                        <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                            <div class="kse-collapse-header-text" style="padding-left: 16px;">은장식품 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" kse-collapse">
+                    <div class="kse-collapse-panel">
+                        <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                            <div class="kse-collapse-header-text" style="padding-left: 16px;">은계급장 </div>
+                        </div>
+                        <div class="kse-collapse-content kse-list " style="display: block;">
+                            <div class="kse-text-middle kse-link-hover kse-collapse-link-text">군인 계급장</div>
+                            <div class="kse-text-middle kse-link-hover kse-collapse-link-text">경찰 계급장</div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" kse-collapse">
+                    <div class="kse-collapse-panel">
+                        <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                            <div class="kse-collapse-header-text" style="padding-left: 16px;">그라폰 파버카스텔</div>
+                        </div>
+                        <div class="kse-collapse-content kse-list ">
+                            <div class="kse-text-middle kse-link-hover kse-collapse-link-text">필기구</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kse-collapse-panel ">
+            <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                <div class="kse-collapse-header-text kse-text-middle" style="padding-left: 16px;">아트투자 </div>
+            </div>
+        </div>
+        <div class="kse-collapse-panel ">
+            <div class=" kse-collapse-header kse-collapse-header-large  kse-space kse-space-middle">
+                <div class="kse-collapse-header-text kse-text-middle" style="padding-left: 16px;">수집용품</div>
+            </div>
+        </div>
     </div>
-
+    <script>
+        const collapsePanels = document.querySelectorAll('.kse-collapse-panel');
+        collapsePanels.forEach(panel => {
+            const header = panel.querySelector('.kse-collapse-header');
+            const content = panel.querySelector('.kse-collapse-content');
+            header.addEventListener('click', () => {
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const CollapsePage = () => {
+  useEffect(() => {
+    const collapsePanels = document.querySelectorAll(".kse-collapse-panel");
+    collapsePanels.forEach((panel) => {
+      const header = panel.querySelector(".kse-collapse-header");
+      const content = panel.querySelector(".kse-collapse-content");
+
+      /* @ts-ignore */
+
+      header.addEventListener("click", () => {
+        /* @ts-ignore */
+
+        content.style.display =
+          /* @ts-ignore */
+
+          content.style.display === "block" ? "none" : "block";
+      });
+    });
+  }, []);
   return (
     <>
+      {" "}
       <h1> Style </h1>
       <h3>default</h3>
       <div style={{ maxWidth: 600 }}>
@@ -127,7 +146,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h3>primary type</h3>
       <div style={{ maxWidth: 600 }} className="kse-collapse-primary-wrapper">
         <div className="kse-collapse ">
@@ -251,7 +269,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h3>info type</h3>
       <div style={{ maxWidth: 600 }} className="kse-collapse-info-wrapper">
         <div className="kse-collapse ">
@@ -375,7 +392,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h3>warning type</h3>
       <div style={{ maxWidth: 600 }} className="kse-collapse-warning-wrapper">
         <div className="kse-collapse ">
@@ -499,7 +515,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h3>success type</h3>
       <div style={{ maxWidth: 600 }} className="kse-collapse-success-wrapper">
         <div className="kse-collapse ">
@@ -623,7 +638,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h3>danger type</h3>
       <div style={{ maxWidth: 600 }} className="kse-collapse-danger-wrapper">
         <div className="kse-collapse ">
@@ -747,7 +761,6 @@ export const CollapsePage = () => {
           </div>
         </div>
       </div>
-
       <h2>Inspirations</h2>
       <a href="https://ant.design/components/collapse">Antd Collapse </a>
     </>
